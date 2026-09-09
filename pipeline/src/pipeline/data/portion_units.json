@@ -1,0 +1,542 @@
+{
+ "_doc": [
+  "Criterio humano versionado (revisión experta).",
+  "weighed_foods: alimentos que él PESA casi siempre y de los que NUNCA escribe un recuento distinto de 1. Un «1 pasas»",
+  "  no describe una ración: la unidad correcta es el gramo y se escribe su mediana. Barrido de todo el catálogo.",
+  "  Se excluyen a propósito los alimentos de los que sí escribe recuentos reales («2 hamburguesas», «1/2 aguacate»,",
+  "  «2 o 3 rebanadas» de pan): ahí el recuento es su ración y se respeta.",
+  "shake_foods: batidos de proteína. Él nombra los gramos (batido sin cantidad solo el 3,5 %) y el compositor los emitía",
+  "  como «1 batido». Escribe cazos 38 veces en 40.871 componentes: la unidad es el gramo, sin nota de equivalencia.",
+  "ration_coherence: dentro de una franja, dos alimentos del MISMO macrogrupo guardan una razón de cantidades compatible con la razón de sus medianas. Bandas p05-p95 medidas sobre sus propias dietas, por macrogrupo. Declarado: el ejemplo de la hamburguesa que dio el preparador (160 g junto a 280 g de pollo, razón observada/predicha 0,71) NO viola esta banda; cae dentro de lo que él mismo escribe.",
+  "unquantified_supplements: los que ÉL deja sin cantidad la mayoría de las veces (electrolitos 96,2 %). Emitirlos sin cantidad es fidelidad, no defecto; la comprobación de conformidad los exceptúa.",
+  "supplement_rations: la mediana con la que ÉL dosifica cada suplemento (n >= 10), en la unidad que más usa para él. Sirve para que un suplemento emitido SIN cantidad reciba su ración, nunca para pisar una heredada."
+ ],
+ "min_gram_observations": 5,
+ "weighed_foods": [
+  {
+   "food": "avena",
+   "gram_median": 30.0,
+   "n_grams": 524,
+   "n_pieces": 11
+  },
+  {
+   "food": "guacamole",
+   "gram_median": 30.0,
+   "n_grams": 150,
+   "n_pieces": 1
+  },
+  {
+   "food": "queso fresco",
+   "gram_median": 60.0,
+   "n_grams": 126,
+   "n_pieces": 1
+  },
+  {
+   "food": "proteína aislada",
+   "gram_median": 60.0,
+   "n_grams": 117,
+   "n_pieces": 2
+  },
+  {
+   "food": "requesón",
+   "gram_median": 60.0,
+   "n_grams": 93,
+   "n_pieces": 5
+  },
+  {
+   "food": "espárragos",
+   "gram_median": 80.0,
+   "n_grams": 75,
+   "n_pieces": 1
+  },
+  {
+   "food": "crema de arroz",
+   "gram_median": 80.0,
+   "n_grams": 54,
+   "n_pieces": 2
+  },
+  {
+   "food": "centeno",
+   "gram_median": 120.0,
+   "n_grams": 51,
+   "n_pieces": 1
+  },
+  {
+   "food": "aceite de coco",
+   "gram_median": 30.0,
+   "n_grams": 38,
+   "n_pieces": 9
+  },
+  {
+   "food": "maltodextrina",
+   "gram_median": 30.0,
+   "n_grams": 23,
+   "n_pieces": 2
+  },
+  {
+   "food": "bebida de soja",
+   "gram_median": 65.0,
+   "n_grams": 10,
+   "n_pieces": 1
+  },
+  {
+   "food": "sal",
+   "gram_median": 1.0,
+   "n_grams": 8,
+   "n_pieces": 2
+  },
+  {
+   "food": "frutos rojos",
+   "gram_median": 60.0,
+   "n_grams": 6,
+   "n_pieces": 1
+  },
+  {
+   "food": "melón",
+   "gram_median": 60.0,
+   "n_grams": 6,
+   "n_pieces": 1
+  },
+  {
+   "food": "pasas",
+   "gram_median": 25.0,
+   "n_grams": 5,
+   "n_pieces": 1
+  },
+  {
+   "food": "jengibre",
+   "gram_median": 1.0,
+   "n_grams": 5,
+   "n_pieces": 1
+  }
+ ],
+ "shake_foods": [
+  {
+   "food": "batido de proteínas",
+   "gram_median": 40.0,
+   "n_grams": 306
+  },
+  {
+   "food": "proteína aislada",
+   "gram_median": 60.0,
+   "n_grams": 117
+  },
+  {
+   "food": "caseína",
+   "gram_median": 50.0,
+   "n_grams": 1,
+   "_note": "n=1 en gramos; su p50 en el texto de las dietas es 50 gr y es un batido de proteínas como los otros"
+  }
+ ],
+ "ration_coherence": {
+  "min_observations": 20,
+  "by_group": {
+   "PROTEIN": {
+    "n_pairs": 5144,
+    "p05": 0.5625,
+    "p95": 1.6667,
+    "p50": 0.979
+   },
+   "CARB": {
+    "n_pairs": 5002,
+    "p05": 0.45,
+    "p95": 2.6667,
+    "p50": 1.0
+   },
+   "VEGETABLE": {
+    "n_pairs": 2365,
+    "p05": 0.4167,
+    "p95": 2.1875,
+    "p50": 1.0
+   },
+   "FAT": {
+    "n_pairs": 1601,
+    "p05": 0.48,
+    "p95": 2.5,
+    "p50": 1.0
+   },
+   "SUPPLEMENT": {
+    "n_pairs": 841,
+    "p05": 0.2963,
+    "p95": 5.0,
+    "p50": 1.0
+   },
+   "CONDIMENT": {
+    "n_pairs": 91,
+    "p05": 0.1,
+    "p95": 2.0,
+    "p50": 0.5
+   },
+   "DAIRY": {
+    "n_pairs": 65,
+    "p05": 1.0,
+    "p95": 1.0,
+    "p50": 1.0
+   }
+  }
+ },
+ "food_gram_medians": {
+  "aceite de coco": 30.0,
+  "aceitunas": 22.5,
+  "aguacate": 50.0,
+  "ajo": 10.0,
+  "ajo en polvo": 1.0,
+  "algas": 120.0,
+  "almendras": 15.0,
+  "amilopectina": 40.0,
+  "aminoácidos": 15.0,
+  "anacardos": 20.0,
+  "arroz": 150.0,
+  "arándanos": 40.0,
+  "atún": 180.0,
+  "avellanas": 15.0,
+  "avena": 30.0,
+  "batido de proteínas": 40.0,
+  "bcaa": 10.0,
+  "boniato": 150.0,
+  "brócoli": 60.0,
+  "caballa": 180.0,
+  "cacahuetes": 20.0,
+  "calabacín": 120.0,
+  "carne roja": 250.0,
+  "cebolla": 20.0,
+  "centeno": 120.0,
+  "cerdo": 155.0,
+  "cereales integrales": 60.0,
+  "champiñones": 45.0,
+  "chía": 4.0,
+  "creatina": 6.0,
+  "crema de arroz": 80.0,
+  "crema de cacahuete": 30.0,
+  "cúrcuma": 1.0,
+  "eaa": 5.0,
+  "ensalada": 150.0,
+  "espinacas": 130.0,
+  "espárragos": 80.0,
+  "garbanzos": 160.0,
+  "glutamina": 15.0,
+  "guacamole": 30.0,
+  "guisantes": 150.0,
+  "harina de avena": 40.0,
+  "harina de trigo": 30.0,
+  "jamón serrano": 80.0,
+  "judías verdes": 180.0,
+  "lechuga": 60.0,
+  "legumbres": 160.0,
+  "maltodextrina": 30.0,
+  "maíz": 50.0,
+  "merluza": 200.0,
+  "muesli": 60.0,
+  "nueces": 15.0,
+  "pan integral": 100.0,
+  "panga": 200.0,
+  "pasta al huevo": 195.0,
+  "pasta integral": 150.0,
+  "patata": 162.5,
+  "pavo": 150.0,
+  "pechuga de pollo": 200.0,
+  "pepinillos": 50.0,
+  "pepino": 60.0,
+  "pescado azul": 220.0,
+  "pescado blanco": 220.0,
+  "pipas de calabaza": 15.0,
+  "pollo": 200.0,
+  "proteína aislada": 60.0,
+  "puré de verduras": 130.0,
+  "queso": 50.0,
+  "queso fresco": 60.0,
+  "quinoa": 100.0,
+  "remolacha": 20.0,
+  "requesón": 60.0,
+  "salmón": 160.0,
+  "sardinas": 180.0,
+  "ternera": 240.0,
+  "tofu": 170.0,
+  "tomate": 100.0,
+  "verduras": 150.0,
+  "zanahoria": 50.0
+ },
+ "unquantified_supplements": [
+  {
+   "food": "electrolitos",
+   "share_unquantified": 0.962,
+   "n": 266
+  },
+  {
+   "food": "minerales",
+   "share_unquantified": 0.933,
+   "n": 120
+  },
+  {
+   "food": "batido de carbohidratos (carga)",
+   "share_unquantified": 0.86,
+   "n": 43
+  },
+  {
+   "food": "cafeína",
+   "share_unquantified": 0.697,
+   "n": 66
+  },
+  {
+   "food": "glutamina",
+   "share_unquantified": 0.672,
+   "n": 137
+  },
+  {
+   "food": "sinefrina",
+   "share_unquantified": 0.6,
+   "n": 15
+  },
+  {
+   "food": "vitamina c",
+   "share_unquantified": 0.5,
+   "n": 36
+  },
+  {
+   "food": "coenzima q10",
+   "share_unquantified": 0.5,
+   "n": 10
+  }
+ ],
+ "max_alternatives_observed": {
+  "per_diet_mean_max": 4.07,
+  "group_p95": 5,
+  "group_max": 9
+ },
+ "supplement_rations": [
+  {
+   "food": "amilopectina",
+   "median": 40.0,
+   "unit": "g",
+   "n": 138
+  },
+  {
+   "food": "aminoácidos",
+   "median": 15.0,
+   "unit": "g",
+   "n": 271
+  },
+  {
+   "food": "arginina",
+   "median": 3.0,
+   "unit": "unidad",
+   "n": 31
+  },
+  {
+   "food": "ashwagandha",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 12
+  },
+  {
+   "food": "barrita proteica",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 11
+  },
+  {
+   "food": "batido de proteínas",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 1053
+  },
+  {
+   "food": "bcaa",
+   "median": 10.0,
+   "unit": "g",
+   "n": 124
+  },
+  {
+   "food": "berberina",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 25
+  },
+  {
+   "food": "calcio",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 263
+  },
+  {
+   "food": "caseína",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 12
+  },
+  {
+   "food": "cla",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 28
+  },
+  {
+   "food": "colágeno",
+   "median": 15.0,
+   "unit": "g",
+   "n": 16
+  },
+  {
+   "food": "complejo zinc-magnesio",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 328
+  },
+  {
+   "food": "creatina",
+   "median": 6.0,
+   "unit": "g",
+   "n": 439
+  },
+  {
+   "food": "diurético",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 20
+  },
+  {
+   "food": "eaa",
+   "median": 5.0,
+   "unit": "g",
+   "n": 127
+  },
+  {
+   "food": "espirulina",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 66
+  },
+  {
+   "food": "hierro",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 28
+  },
+  {
+   "food": "l-carnitina",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 38
+  },
+  {
+   "food": "magnesio",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 193
+  },
+  {
+   "food": "maltodextrina",
+   "median": 30.0,
+   "unit": "g",
+   "n": 23
+  },
+  {
+   "food": "multivitamínico",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 1567
+  },
+  {
+   "food": "nac",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 10
+  },
+  {
+   "food": "omega 3",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 635
+  },
+  {
+   "food": "onagra",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 415
+  },
+  {
+   "food": "potasio",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 919
+  },
+  {
+   "food": "probiótico",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 26
+  },
+  {
+   "food": "protector articular",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 98
+  },
+  {
+   "food": "protector hepático",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 11
+  },
+  {
+   "food": "proteína aislada",
+   "median": 60.0,
+   "unit": "g",
+   "n": 117
+  },
+  {
+   "food": "quemagrasa",
+   "median": 2.0,
+   "unit": "unidad",
+   "n": 244
+  },
+  {
+   "food": "taurina",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 47
+  },
+  {
+   "food": "tirosina",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 21
+  },
+  {
+   "food": "tribulus",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 56
+  },
+  {
+   "food": "vitamina b",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 112
+  },
+  {
+   "food": "vitamina d",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 124
+  },
+  {
+   "food": "vitamina e",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 27
+  },
+  {
+   "food": "vitamina k",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 62
+  },
+  {
+   "food": "zinc",
+   "median": 1.0,
+   "unit": "unidad",
+   "n": 18
+  }
+ ]
+}

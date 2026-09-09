@@ -1,0 +1,17 @@
+
+  ────────────────────────────────────────────────────────────────────────────
+   Final Pro Sports · Codespace listo
+
+   1) Levantar la pila (la primera vez tarda ~8 min: compila y carga el corpus)
+
+        docker compose -f docker-compose.yml -f docker-compose.codespaces.yml up -d --build
+
+   2) Hacer PÚBLICOS los puertos 4200 y 8080 (pestaña PORTS -> clic derecho ->
+      Port Visibility -> Public). Los DOS: el navegador del cliente habla con
+      Keycloak directamente, no a través de la aplicación.
+
+   3) Mandarle la URL del 4200. Usuario de prueba: entrenador / entrenador
+
+   Para apagarlo:  docker compose -f docker-compose.yml -f docker-compose.codespaces.yml down
+  ────────────────────────────────────────────────────────────────────────────
+

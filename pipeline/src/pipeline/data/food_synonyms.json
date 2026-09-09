@@ -1,0 +1,1930 @@
+{
+ "_doc": "Reviewed synonym dictionary of the food catalogue (E1.2, dataset-v1). Two levels: family -> canonical food -> normalised keys (as produced by build_food_catalog.normalize_key). Canonical names and keys are Spanish data values; family identifiers are snake_case Spanish. Human decisions: see ANONYMIZATION_REPORT / NORMALIZATION_REPORT. Versioned so every catalogue can be cited and reverted. v2 (Task A audit): unit words and compound fragments removed, nutritionally distinct foods split, misspellings kept as declared synonyms; see _dataset/synonym_changes.json.",
+ "families": {
+  "carne": {
+   "carne roja": [
+    "carne_roja",
+    "carne roja",
+    "carne",
+    "carne magra",
+    "carne picada",
+    "carne picada roja",
+    "carne elegir",
+    "carne blanca",
+    "carne picada roja blanca",
+    "carne picada mezclada",
+    "potro"
+   ],
+   "ternera": [
+    "ternera",
+    "carne ternera",
+    "solomillo ternera",
+    "entrecot",
+    "entrecot ternera",
+    "lomo ternera",
+    "buey",
+    "vaca",
+    "chuleton",
+    "carne picada ternera",
+    "redondo ternera",
+    "ternera max"
+   ],
+   "cerdo": [
+    "cerdo",
+    "lomo",
+    "lomo cerdo",
+    "cinta lomo",
+    "lomo fresco",
+    "secreto iberico",
+    "pluma iberica",
+    "costillas",
+    "cerdo iberico",
+    "chuleta cerdo",
+    "lomo iberico",
+    "presa iberica",
+    "cerdo magra"
+   ],
+   "solomillo": [
+    "solomillo",
+    "solomillo cerdo"
+   ],
+   "conejo": [
+    "conejo"
+   ],
+   "cordero": [
+    "cordero"
+   ],
+   "hígado": [
+    "higado",
+    "higado vaca",
+    "higado ternera",
+    "higado pollo"
+   ]
+  },
+  "ave": {
+   "pollo": [
+    "pollo",
+    "pollo fiambre",
+    "contra muslo",
+    "contramuslo",
+    "muslo",
+    "muslo pollo",
+    "contramuslo pollo",
+    "carne pollo",
+    "carne picada pollo",
+    "pollo carne pesada",
+    "pollo pechuga",
+    "pollo picado"
+   ],
+   "pechuga de pollo": [
+    "pechuga pollo",
+    "pechuga",
+    "pechugas pollo",
+    "pechuga de pollo",
+    "pechuga pollo pavo"
+   ],
+   "pavo": [
+    "pavo",
+    "pechuga pavo",
+    "pavo pechuga",
+    "pa vo",
+    "pavo oternera",
+    "pavo piel",
+    "carne pavo",
+    "carne picada pavo",
+    "pavo picado",
+    "pavo cocido"
+   ]
+  },
+  "embutido": {
+   "jamón serrano": [
+    "jamon serrano",
+    "jamon",
+    "jamon iberico",
+    "jamon curado",
+    "jamon bellota",
+    "paleta",
+    "jamon cerdo"
+   ],
+   "jamón cocido": [
+    "jamon cocido",
+    "jamon york",
+    "york",
+    "fiambre",
+    "fiambre pavo",
+    "jamon pavo",
+    "fiambre pollo",
+    "lacon",
+    "jamon_cocido",
+    "jamon_york"
+   ],
+   "lomo embuchado": [
+    "lomo embuchado",
+    "lomo embuchado iberico",
+    "cana lomo"
+   ],
+   "embutido": [
+    "embutido",
+    "embutidos",
+    "chorizo",
+    "salchichon",
+    "fuet",
+    "mortadela",
+    "salchicha",
+    "salchichas",
+    "salchichas pavo",
+    "salchichas pollo",
+    "bacon",
+    "beicon",
+    "panceta",
+    "cecina"
+   ]
+  },
+  "pescado_blanco": {
+   "pescado blanco": [
+    "pescado_blanco",
+    "pescado",
+    "blanco",
+    "blanco elegir",
+    "pescado_blanco elegir",
+    "pescado_blanco eleccion",
+    "pescado tiene blanco",
+    "pescado blanco",
+    "pescado_blanco alternar",
+    "lenguado",
+    "lubina",
+    "dorada",
+    "rape",
+    "rodaballo",
+    "gallo",
+    "pescadilla",
+    "mero",
+    "corvina",
+    "tilapia",
+    "abadejo",
+    "halibut",
+    "besugo",
+    "perca",
+    "rosada"
+   ],
+   "merluza": [
+    "merluza",
+    "merluja"
+   ],
+   "panga": [
+    "panga"
+   ],
+   "bacalao": [
+    "bacalao",
+    "bacalao desalado"
+   ]
+  },
+  "pescado_azul": {
+   "pescado azul": [
+    "pescado_azul",
+    "azul",
+    "azul elegir",
+    "trucha",
+    "jurel",
+    "emperador",
+    "pez espada",
+    "boqueron",
+    "boquerones",
+    "anchoa",
+    "anchoas",
+    "arenque"
+   ],
+   "salmón": [
+    "salmon",
+    "salmon fresco",
+    "salmon ahumado",
+    "salmon plancha"
+   ],
+   "caballa": [
+    "caballa",
+    "caballa aceite oliva",
+    "caballa escurrida"
+   ],
+   "sardinas": [
+    "sardina",
+    "sardinas",
+    "sardinilla",
+    "sardinillas",
+    "sardinas aceite oliva"
+   ],
+   "bonito": [
+    "bonito",
+    "bonito aceite oliva",
+    "bonito norte"
+   ],
+   "atún": [
+    "atun",
+    "atun natural",
+    "atun agua",
+    "atun claro",
+    "atun rojo",
+    "atun aceite",
+    "atun aceite oliva",
+    "atun escurrido",
+    "atun aceite oliva escurrida",
+    "atun enjuagada",
+    "atun oliva",
+    "atun aceite oliva lavar",
+    "atun previamente",
+    "atun cantidad quepa"
+   ]
+  },
+  "marisco": {
+   "marisco": [
+    "marisco",
+    "mariscos",
+    "gamba",
+    "gambas",
+    "langostino",
+    "langostinos",
+    "mejillon",
+    "mejillones",
+    "almeja",
+    "almejas",
+    "berberecho",
+    "berberechos",
+    "calamar",
+    "calamares",
+    "sepia",
+    "pulpo",
+    "cigala",
+    "cigalas",
+    "navaja",
+    "navajas",
+    "vieira",
+    "zamburinas",
+    "gambones",
+    "chipirones",
+    "surimi",
+    "palitos cangrejo"
+   ]
+  },
+  "huevo": {
+   "huevo": [
+    "huevo",
+    "huevos",
+    "huevo entero",
+    "huevo completo",
+    "huevo cocido",
+    "huevos cocidos",
+    "huevo duro",
+    "huevo frito",
+    "huevo pollo"
+   ],
+   "clara de huevo": [
+    "clara",
+    "clara huevo",
+    "claras huevo",
+    "claras",
+    "clara pasteurizada",
+    "claras pasteurizadas",
+    "clara huevo pasteurizada",
+    "clarta"
+   ],
+   "yema de huevo": [
+    "yema",
+    "yema huevo",
+    "yemas",
+    "yemas huevo",
+    "yema merienda"
+   ],
+   "tortilla": [
+    "tortilla",
+    "tortilla francesa",
+    "tortilla clara",
+    "tortilla claras",
+    "tortilla clarta",
+    "tortilla espinacas",
+    "tortilla atun",
+    "tortilla huevos",
+    "tortilla champinones",
+    "tortilla verduras",
+    "tortilla avena",
+    "tortilla avena clara",
+    "tortilla francesa atun"
+   ],
+   "huevos revueltos": [
+    "huevos revueltos",
+    "huevos_revueltos"
+   ]
+  },
+  "lacteo": {
+   "leche": [
+    "leche",
+    "leche_desnatada",
+    "leche_entera",
+    "leche_semidesnatada",
+    "leche vaca",
+    "leche desnatada",
+    "leche entera",
+    "leche semidesnatada"
+   ],
+   "leche sin lactosa": [
+    "leche sin_lactosa",
+    "leche sin_lactosa desnatada",
+    "leche desnatada sin_lactosa"
+   ],
+   "yogur": [
+    "yogur",
+    "yogurt",
+    "yogures",
+    "yogur griego",
+    "yogurt griego",
+    "yogur proteico",
+    "yogur proteina",
+    "yogurt proteina",
+    "yogur bifidus",
+    "yogur 0",
+    "yogur 0_0",
+    "yogurt batido",
+    "yogur batido",
+    "yogurt leche",
+    "yogur leche"
+   ],
+   "yogur sin lactosa": [
+    "yogur sin_lactosa",
+    "yogurt sin_lactosa"
+   ],
+   "queso fresco": [
+    "queso_fresco",
+    "queso_fresco burgos",
+    "queso burgos",
+    "queso_batido",
+    "quark",
+    "queso quark",
+    "skyr",
+    "cottage",
+    "queso cottage",
+    "queso freso",
+    "queso_fresco batido"
+   ],
+   "requesón": [
+    "requeson",
+    "queso requeson",
+    "queso_fresco requeson",
+    "requesson"
+   ],
+   "queso": [
+    "queso",
+    "queso curado",
+    "queso semicurado",
+    "queso cabra",
+    "queso oveja",
+    "queso rallado",
+    "queso manchego",
+    "queso havarti",
+    "queso mozzarella",
+    "mozzarella",
+    "queso parmesano",
+    "parmesano",
+    "queso feta",
+    "feta",
+    "queso light",
+    "queso elegir",
+    "queso alguno"
+   ],
+   "kéfir": [
+    "kefir",
+    "kefir cabra",
+    "kefir vaca"
+   ],
+   "mantequilla": [
+    "mantequilla",
+    "mantequilla ghee",
+    "ghee"
+   ]
+  },
+  "bebida_vegetal": {
+   "leche vegetal": [
+    "leche vegetal",
+    "leche avena",
+    "leche arroz",
+    "bebida avena",
+    "bebida vegetal",
+    "leche avellana",
+    "leche anacardo",
+    "bebida arroz"
+   ],
+   "bebida de almendras": [
+    "leche almendra",
+    "leche almendras",
+    "bebida almendra",
+    "bebida almendras"
+   ],
+   "bebida de soja": [
+    "leche soja",
+    "bebida soja",
+    "yogur soja",
+    "yogurt soja",
+    "soja"
+   ],
+   "leche de coco": [
+    "leche_coco",
+    "leche coco",
+    "bebida coco"
+   ],
+   "yogur vegetal": [
+    "yogur vegetal",
+    "yogurt vegetal",
+    "yogurt coco",
+    "yogur coco",
+    "yogur almendra",
+    "yogur avena"
+   ]
+  },
+  "cereal": {
+   "avena": [
+    "avena",
+    "copo avena",
+    "copos avena",
+    "avena integral",
+    "salvado avena",
+    "avena copos",
+    "avena molida",
+    "avena cereal"
+   ],
+   "harina de avena": [
+    "harina avena",
+    "harina avena integral"
+   ],
+   "cereales integrales": [
+    "cereales",
+    "cereal",
+    "cereales integrales",
+    "cereal integral",
+    "cereal trigo",
+    "cereal maiz",
+    "cereal fibra",
+    "cereal arroz",
+    "cereales desayuno",
+    "granola",
+    "cornflakes",
+    "copos maiz",
+    "corn flakes",
+    "all bran",
+    "salvado trigo",
+    "salvado",
+    "espelta",
+    "cuscus",
+    "cus cus",
+    "bulgur",
+    "cereal muesli"
+   ],
+   "muesli": [
+    "muesli"
+   ],
+   "centeno": [
+    "centeno",
+    "centeno poder",
+    "centeno integral"
+   ],
+   "quinoa": [
+    "quinoa",
+    "quinua",
+    "quinoa cocida"
+   ],
+   "crema de arroz": [
+    "crema arroz",
+    "arroz crema"
+   ],
+   "tortitas de arroz": [
+    "tortita arroz",
+    "tortitas arroz",
+    "tortita maiz",
+    "tortitas maiz",
+    "tortitas",
+    "tortita",
+    "tortitas arroz maiz",
+    "tortita arroz baja",
+    "tortita arroz baja sodio",
+    "tortita carrefour",
+    "tortita arroz integral",
+    "tortitas trigo sarraceno"
+   ],
+   "tortitas de avena": [
+    "tortitas avena",
+    "tortita avena",
+    "tortita avena claras",
+    "tortitas avena claras",
+    "tortita avena clara",
+    "pancake",
+    "pancakes",
+    "tortitas proteicas",
+    "tortita proteica",
+    "crepe",
+    "crepes",
+    "gofre",
+    "gofres",
+    "creps"
+   ],
+   "galletas": [
+    "galleta",
+    "galletas",
+    "galletas integrales",
+    "galletas avena",
+    "galletas maria",
+    "galletas arroz"
+   ],
+   "harina de trigo": [
+    "harina trigo",
+    "harina",
+    "harina integral",
+    "harina espelta"
+   ],
+   "harina sin gluten": [
+    "harina maiz",
+    "harina arroz",
+    "harina garbanzo",
+    "harina trigo sarraceno",
+    "harina avena sin_gluten"
+   ],
+   "trigo sarraceno": [
+    "trigo sarraceno",
+    "alforfon"
+   ],
+   "amaranto": [
+    "amaranto"
+   ],
+   "mijo": [
+    "mijo"
+   ]
+  },
+  "pan": {
+   "pan integral": [
+    "pan integral",
+    "pan",
+    "integral",
+    "pan centeno",
+    "pan espelta",
+    "pan semillas",
+    "pan molde integral",
+    "pan tostado",
+    "pan molde",
+    "pan cereales",
+    "pan cereal",
+    "pan cereal integral",
+    "pan integral cereal",
+    "pan integral centeno",
+    "biscote",
+    "biscotes",
+    "biscote integral",
+    "pan sandwich integral",
+    "pan trigo sarraceno",
+    "tostada",
+    "tostadas",
+    "tostada integral",
+    "pan_tostado"
+   ],
+   "sándwich": [
+    "sandwich",
+    "sandwich integral",
+    "sandwich pan integral",
+    "sandwich pan cereal",
+    "sandwich pan centeno",
+    "bocadillo",
+    "bocata",
+    "sandwich pavo",
+    "sandwich pollo",
+    "sandwich atun",
+    "sandwich jamon",
+    "wrap",
+    "wraps",
+    "montadito"
+   ],
+   "pan blanco": [
+    "pan_blanco",
+    "pan barra",
+    "baguette",
+    "pan molde blanco"
+   ],
+   "pan sin gluten": [
+    "pan sin_gluten",
+    "pan integral sin_gluten",
+    "pan molde sin_gluten"
+   ]
+  },
+  "arroz": {
+   "arroz": [
+    "arroz",
+    "arroz integral",
+    "arroz basmati",
+    "arroz_blanco",
+    "arroz cocido",
+    "arroz salvaje",
+    "arroz hervido",
+    "arroz redondo",
+    "arroz largo",
+    "arroz almidon",
+    "arroz vaporizado"
+   ]
+  },
+  "pasta": {
+   "pasta integral": [
+    "pasta",
+    "pasta integral",
+    "macarron",
+    "macarrones",
+    "espagueti",
+    "espaguetis",
+    "fideo",
+    "fideos",
+    "pasta trigo integral",
+    "tallarines",
+    "pasta blanca",
+    "pasta verdura",
+    "pasta vegetal",
+    "macarron blanco",
+    "noodles",
+    "pasta arroz"
+   ],
+   "pasta al huevo": [
+    "pasta huevo"
+   ],
+   "pasta sin gluten": [
+    "pasta sin_gluten",
+    "pasta integral sin_gluten"
+   ]
+  },
+  "tuberculo": {
+   "patata": [
+    "patata",
+    "patatas",
+    "patata cocida",
+    "patata asada",
+    "patata hervida",
+    "patata horno",
+    "papa",
+    "patata piel"
+   ],
+   "boniato": [
+    "boniato",
+    "batata",
+    "boniato asado",
+    "boniato cocido",
+    "camote",
+    "batata boniato"
+   ],
+   "yuca": [
+    "yuca",
+    "mandioca",
+    "tapioca"
+   ],
+   "puré de patata": [
+    "pure patata",
+    "pure patatas",
+    "pure boniato"
+   ]
+  },
+  "legumbre": {
+   "legumbres": [
+    "legumbre",
+    "legumbres",
+    "legumbres cocidas",
+    "legumbre fria",
+    "legumbre garbanzo"
+   ],
+   "lentejas": [
+    "lenteja",
+    "lentejas",
+    "lentejas cocidas",
+    "lentejas rojas"
+   ],
+   "garbanzos": [
+    "garbanzo",
+    "garbanzos",
+    "garbanzos cocidos",
+    "hummus"
+   ],
+   "alubias": [
+    "alubia",
+    "alubias",
+    "judias blancas",
+    "alubias blancas",
+    "judias pintas",
+    "frijoles",
+    "habichuelas"
+   ],
+   "guisantes": [
+    "guisante",
+    "guisantes"
+   ],
+   "edamame": [
+    "edamame",
+    "habas soja"
+   ],
+   "tofu": [
+    "tofu"
+   ],
+   "seitán": [
+    "seitan"
+   ],
+   "soja texturizada": [
+    "soja texturizada",
+    "heura",
+    "tempeh",
+    "proteina soja"
+   ],
+   "pasta de legumbres": [
+    "pasta legumbre",
+    "pasta lenteja",
+    "pasta lentejas",
+    "pasta garbanzo"
+   ],
+   "hamburguesa vegetal": [
+    "hamburguesa vegetal",
+    "hamburguesa vegana",
+    "hamburguesa soja"
+   ]
+  },
+  "verdura": {
+   "verduras": [
+    "verdura",
+    "verduras",
+    "verduras variadas",
+    "verduras plancha",
+    "verduras horno",
+    "verduras vapor",
+    "verduras salteadas",
+    "verduras cocidas",
+    "verdura variada",
+    "verduras eleccion",
+    "verduras libre",
+    "vegetales",
+    "vegetal",
+    "hortalizas",
+    "hortaliza",
+    "verduras verdes",
+    "verdura verde",
+    "verdura libre",
+    "menestra",
+    "menestra verduras",
+    "pisto",
+    "parrillada verduras",
+    "wok verduras",
+    "verduras wok",
+    "verdura hervida",
+    "verdura cocinada",
+    "verdura hervida asada",
+    "verdura asada",
+    "verdura arroz vaporizado"
+   ],
+   "ensalada": [
+    "ensalada",
+    "ensalada verde",
+    "ensalada mixta",
+    "ensalada variada",
+    "ensalada completa",
+    "ensalada libre",
+    "ensalada eleccion",
+    "ensalada mediterranea",
+    "ensalada tomate lechuga",
+    "ensalada lechuga tomate",
+    "ensalada cesar",
+    "ensalada vegetal",
+    "ensalada tomate",
+    "ensalada lechuga",
+    "ensalada vegetal verdura",
+    "ensalada legumbre fria"
+   ],
+   "tomate": [
+    "tomate",
+    "tomates",
+    "tomate cherry",
+    "tomates cherry",
+    "tomate rallado",
+    "tomate triturado",
+    "tomate frito",
+    "tomate pera"
+   ],
+   "lechuga": [
+    "lechuga",
+    "lechugas",
+    "lechuga romana",
+    "lechuga iceberg",
+    "cogollo",
+    "cogollos",
+    "canonigos",
+    "canonigo",
+    "rucula",
+    "brotes verdes",
+    "brotes tiernos",
+    "escarola",
+    "endibia",
+    "endibias"
+   ],
+   "espinacas": [
+    "espinaca",
+    "espinacas",
+    "espinacas baby",
+    "espinaca fresca"
+   ],
+   "brócoli": [
+    "brocoli",
+    "brecol",
+    "brocoli cocido",
+    "brocoli vapor"
+   ],
+   "pimiento": [
+    "pimiento",
+    "pimientos",
+    "pimiento_rojo",
+    "pimiento_verde",
+    "pimiento rojo",
+    "pimiento verde",
+    "pimientos rojos",
+    "pimientos verdes",
+    "pimientos asados",
+    "pimiento asado",
+    "pimientos padron"
+   ],
+   "pepino": [
+    "pepino",
+    "pepinos"
+   ],
+   "cebolla": [
+    "cebolla",
+    "cebollas",
+    "cebolleta",
+    "cebolla morada",
+    "cebolla roja"
+   ],
+   "zanahoria": [
+    "zanahoria",
+    "zanahorias",
+    "zanahoria rallada"
+   ],
+   "calabacín": [
+    "calabacin",
+    "calabacines"
+   ],
+   "berenjena": [
+    "berenjena",
+    "berenjenas"
+   ],
+   "calabaza": [
+    "calabaza"
+   ],
+   "champiñones": [
+    "champinon",
+    "champinones",
+    "setas",
+    "seta",
+    "hongos",
+    "shiitake"
+   ],
+   "espárragos": [
+    "esparrago",
+    "esparragos",
+    "esparragos trigueros",
+    "esparragos verdes",
+    "esparragos blancos",
+    "esparrago blanco",
+    "trigueros"
+   ],
+   "judías verdes": [
+    "judias_verdes",
+    "judia verde",
+    "judias",
+    "judias planas"
+   ],
+   "alcachofas": [
+    "alcachofa",
+    "alcachofas"
+   ],
+   "coliflor": [
+    "coliflor"
+   ],
+   "col": [
+    "col",
+    "repollo",
+    "col lombarda",
+    "lombarda",
+    "col rizada",
+    "kale"
+   ],
+   "acelgas": [
+    "acelga",
+    "acelgas"
+   ],
+   "puerro": [
+    "puerro",
+    "puerros"
+   ],
+   "apio": [
+    "apio"
+   ],
+   "remolacha": [
+    "remolacha"
+   ],
+   "maíz": [
+    "maiz",
+    "maiz dulce"
+   ],
+   "puré de verduras": [
+    "pure verdura",
+    "pure verduras",
+    "crema verduras",
+    "crema verdura",
+    "crema calabacin",
+    "crema calabaza",
+    "pure calabaza",
+    "pure calabacin",
+    "gazpacho",
+    "salmorejo",
+    "puree",
+    "pure"
+   ],
+   "caldo": [
+    "caldo",
+    "caldo verduras",
+    "caldo pollo",
+    "caldo huesos",
+    "consome",
+    "sopa",
+    "sopa verduras",
+    "sopa calabaza",
+    "sopa verdura",
+    "sopa miso",
+    "sopa cebolla"
+   ],
+   "pepinillos": [
+    "pepinillo",
+    "pepinillos",
+    "encurtido",
+    "encurtidos"
+   ],
+   "aceitunas": [
+    "aceituna",
+    "aceitunas",
+    "aceituna negra",
+    "aceituna verde"
+   ],
+   "algas": [
+    "alga",
+    "algas",
+    "algas marinas",
+    "alga marina",
+    "chlorella",
+    "espirulina chlorella",
+    "nori",
+    "wakame"
+   ]
+  },
+  "fruta": {
+   "fruta": [
+    "fruta",
+    "frutas",
+    "fruta temporada",
+    "fruta fresca",
+    "fruta eleccion",
+    "fruta libre",
+    "fruta manzana",
+    "fruta elegri"
+   ],
+   "plátano": [
+    "platano",
+    "platanos",
+    "banana",
+    "bananas",
+    "platano canario",
+    "platano maduro"
+   ],
+   "manzana": [
+    "manzana",
+    "manzanas",
+    "manzana verde",
+    "manzana roja",
+    "manzana golden",
+    "manzana fuji",
+    "manzana piel"
+   ],
+   "kiwi": [
+    "kiwi",
+    "kiwis"
+   ],
+   "naranja": [
+    "naranja",
+    "naranjas"
+   ],
+   "fresas": [
+    "fresa",
+    "fresas",
+    "freson",
+    "fresones"
+   ],
+   "arándanos": [
+    "arandano",
+    "arandanos"
+   ],
+   "frutos rojos": [
+    "frutos rojos",
+    "frambuesa",
+    "frambuesas",
+    "mora",
+    "moras",
+    "fruta roja",
+    "frutas rojas",
+    "fruto rojo",
+    "bayas"
+   ],
+   "piña": [
+    "pina",
+    "pina natural",
+    "pina almibar",
+    "pina previamente",
+    "rodja pina"
+   ],
+   "melón": [
+    "melon"
+   ],
+   "sandía": [
+    "sandia"
+   ],
+   "pera": [
+    "pera",
+    "peras"
+   ],
+   "mandarina": [
+    "mandarina",
+    "mandarinas"
+   ],
+   "melocotón": [
+    "melocoton",
+    "melocotones",
+    "nectarina",
+    "paraguayo"
+   ],
+   "uvas": [
+    "uva",
+    "uvas"
+   ],
+   "cerezas": [
+    "cereza",
+    "cerezas",
+    "picota",
+    "picotas"
+   ],
+   "mango": [
+    "mango"
+   ],
+   "papaya": [
+    "papaya"
+   ],
+   "granada": [
+    "granada"
+   ],
+   "limón": [
+    "limon",
+    "limones",
+    "zumo limon",
+    "lima",
+    "jugo limon",
+    "limon exprimido"
+   ],
+   "dátiles": [
+    "datil",
+    "datiles"
+   ],
+   "pasas": [
+    "pasa",
+    "pasas",
+    "uvas pasas",
+    "orejones",
+    "higos secos",
+    "ciruelas pasas"
+   ]
+  },
+  "fruto_seco": {
+   "frutos secos": [
+    "frutos_secos",
+    "fruto_seco",
+    "mix frutos_secos"
+   ],
+   "nueces": [
+    "nuez",
+    "nueces",
+    "nuez pecana",
+    "nueces pecanas"
+   ],
+   "nuez de brasil": [
+    "nuez brasil",
+    "nueces brasil"
+   ],
+   "almendras": [
+    "almendra",
+    "almendras",
+    "almendras crudas",
+    "almendras tostadas",
+    "almendra cruda",
+    "almendras naturales"
+   ],
+   "cacahuetes": [
+    "cacahuete",
+    "cacahuetes",
+    "cachuete",
+    "mani"
+   ],
+   "anacardos": [
+    "anacardo",
+    "anacardos"
+   ],
+   "avellanas": [
+    "avellana",
+    "avellanas"
+   ],
+   "pistachos": [
+    "pistacho",
+    "pistachos"
+   ],
+   "crema de cacahuete": [
+    "crema cacahuete",
+    "manteca cacahuete",
+    "mantequilla cacahuete",
+    "crema mani"
+   ],
+   "harina de almendra": [
+    "harina almendra",
+    "harina almendras"
+   ],
+   "crema de almendras": [
+    "crema almendras",
+    "crema almendra",
+    "crema anacardos",
+    "crema avellanas",
+    "crema frutos_secos"
+   ],
+   "nuez de macadamia": [
+    "nuez macadamia",
+    "nueces macadamia",
+    "macadamia"
+   ]
+  },
+  "semilla": {
+   "semillas": [
+    "semilla",
+    "semillas",
+    "semillas lino",
+    "lino",
+    "semillas sesamo",
+    "sesamo",
+    "semillas girasol",
+    "pipas girasol",
+    "pipas",
+    "semillas mixtas",
+    "lino molido",
+    "semilla sesamo",
+    "semilla mixta"
+   ],
+   "chía": [
+    "chia",
+    "semillas chia",
+    "semilla chia"
+   ],
+   "pipas de calabaza": [
+    "pipa calabaza",
+    "pipas calabaza",
+    "semillas calabaza",
+    "semilla calabaza"
+   ],
+   "tahini": [
+    "tahini",
+    "tahin",
+    "crema sesamo"
+   ]
+  },
+  "grasa": {
+   "aceite de oliva virgen extra": [
+    "aceite oliva virgen extra",
+    "aceite oliva virgen",
+    "aceite oliva",
+    "aove",
+    "oliva virgen",
+    "oliva virgen extra",
+    "oliva",
+    "aceite virgen extra",
+    "aceite virgen",
+    "aceite",
+    "aceite oliva virgen extra ecologico",
+    "aceite oliva extra",
+    "aceite oliva virgen crudo"
+   ],
+   "aceite de coco": [
+    "aceite coco",
+    "coco",
+    "coco rallado",
+    "aceite coco virgen"
+   ],
+   "aguacate": [
+    "aguacate",
+    "aguacates",
+    "medio aguacate"
+   ],
+   "guacamole": [
+    "guacamole",
+    "guacamole untado",
+    "guacamole huntado"
+   ],
+   "grasas": [
+    "grasa",
+    "grasas",
+    "grasa saludable",
+    "grasas saludables",
+    "fuente grasa",
+    "grasa buena"
+   ],
+   "aceite de linaza": [
+    "aceite linaza",
+    "aceite lino",
+    "linaza"
+   ]
+  },
+  "suplemento_proteina": {
+   "batido de proteínas": [
+    "batido proteinas",
+    "batido proteina",
+    "batido",
+    "proteina",
+    "proteinas",
+    "proteina whey",
+    "whey",
+    "whey protein",
+    "proteina suero",
+    "batido whey",
+    "proteina polvo",
+    "batido mezcla",
+    "progresiva",
+    "batido progresiva",
+    "porteina",
+    "protes",
+    "prote",
+    "protes whey"
+   ],
+   "proteína aislada": [
+    "aislado proteina",
+    "aislado proteinas",
+    "proteina aislada",
+    "isolate",
+    "iso",
+    "aislado",
+    "batido isolate",
+    "proteina aislada suero",
+    "aislado suero"
+   ],
+   "caseína": [
+    "caseina",
+    "caseinato",
+    "batido caseina",
+    "proteina caseina"
+   ],
+   "barrita proteica": [
+    "barrita",
+    "barritas",
+    "barrita proteica",
+    "barritas proteicas",
+    "barrita proteinas",
+    "barrita proteina",
+    "barrita energetica",
+    "barrita cereales",
+    "barritas cereales",
+    "barra proteica"
+   ],
+   "bebida de proteínas": [
+    "bebida proteica",
+    "bebida proteinas",
+    "batido proteico",
+    "batidos proteicos",
+    "leche proteica"
+   ],
+   "proteína vegetal": [
+    "proteina vegetal",
+    "proteina vegana",
+    "proteina guisante",
+    "proteina arroz"
+   ]
+  },
+  "suplemento_carbohidrato": {
+   "amilopectina": [
+    "amilopectina",
+    "amilopectinas",
+    "amilopeptina",
+    "amilopeptinas",
+    "amylopeptin",
+    "ciclodextrina",
+    "almidon",
+    "amylopectin"
+   ],
+   "maltodextrina": [
+    "maltodextrina",
+    "dextrosa"
+   ],
+   "batido de carbohidratos (carga)": [
+    "carga",
+    "batido carga",
+    "carbo",
+    "carbos",
+    "hidratos",
+    "hidratos carbono",
+    "carbohidratos",
+    "carbohidrato",
+    "hidrato",
+    "cho",
+    "hc"
+   ],
+   "gel energético": [
+    "gel",
+    "geles",
+    "gel energetico",
+    "geles energeticos",
+    "gel carbohidratos"
+   ]
+  },
+  "aminoacidos": {
+   "bcaa": [
+    "bcaa",
+    "bcaas",
+    "bcca",
+    "bccas",
+    "aminoacidos ramificados",
+    "aminoacido bcaas",
+    "hcaa"
+   ],
+   "eaa": [
+    "eaa",
+    "eaas",
+    "esencial",
+    "esenciales",
+    "aminoacido esencial",
+    "aminoacidos esenciales"
+   ],
+   "aminoácidos": [
+    "aminoacido",
+    "aminoacidos",
+    "amino",
+    "aminos",
+    "amino acido",
+    "aa"
+   ],
+   "glutamina": [
+    "glutamina",
+    "l glutamina"
+   ],
+   "creatina": [
+    "creatina",
+    "creatina monohidrato",
+    "creatine"
+   ],
+   "l-carnitina": [
+    "carnitina",
+    "l carnitina",
+    "l carnitine",
+    "carnitine",
+    "acetil carnitina",
+    "acetil l carnitina",
+    "carnitina tartrato"
+   ],
+   "arginina": [
+    "arginina",
+    "l arginina",
+    "citrulina",
+    "precursor oxido nitrico",
+    "oxido nitrico",
+    "nitric oxide"
+   ],
+   "taurina": [
+    "taurina"
+   ],
+   "tirosina": [
+    "tirosina",
+    "tyrosine",
+    "tirosine",
+    "l tirosina"
+   ],
+   "nac": [
+    "nac",
+    "n acetil cisteina"
+   ]
+  },
+  "vitamina": {
+   "multivitamínico": [
+    "multivitaminas",
+    "multivitaminico",
+    "polivitaminico",
+    "polivitaminicos",
+    "vitaminas",
+    "vitamina",
+    "complejo vitaminico",
+    "multivitamina",
+    "multi vitaminas",
+    "multi vitamina",
+    "vitaminas minerales",
+    "vitamina mineral",
+    "multivitamico"
+   ],
+   "vitamina c": [
+    "vitamina c",
+    "vit c",
+    "vitamina_c"
+   ],
+   "vitamina d": [
+    "vitamina d",
+    "vitamina d3",
+    "d3",
+    "vit d",
+    "vitamina d3 k2",
+    "d3 k2",
+    "d3k2",
+    "vitamina_d"
+   ],
+   "vitamina k": [
+    "vitamina k",
+    "vitamina k2",
+    "k2",
+    "k",
+    "vitamina_k"
+   ],
+   "vitamina b": [
+    "vitamina b",
+    "vit b",
+    "complejo b",
+    "complejo vitamina b",
+    "vitamina b12",
+    "b12",
+    "vitamina b6",
+    "vitamina b complejo",
+    "vitamina_b"
+   ],
+   "vitamina e": [
+    "vitamina e",
+    "vitamina_e"
+   ]
+  },
+  "mineral": {
+   "potasio": [
+    "potasio",
+    "suplemento potasio",
+    "potasio liquido",
+    "potasion"
+   ],
+   "magnesio": [
+    "magnesio",
+    "citrato magnesio",
+    "zmb",
+    "zmb6",
+    "magnesio pued comprar"
+   ],
+   "calcio": [
+    "calcio",
+    "calcio magnesio"
+   ],
+   "hierro": [
+    "hierro"
+   ],
+   "complejo de hierro": [
+    "complejo hierro",
+    "hierro complejo"
+   ],
+   "zinc": [
+    "zinc"
+   ],
+   "minerales": [
+    "mineral",
+    "minerales",
+    "multimineral",
+    "mineral complex"
+   ],
+   "electrolitos": [
+    "electrolitos",
+    "electrolito",
+    "sales minerales",
+    "sal mineral",
+    "isotonico",
+    "bebida isotonica"
+   ],
+   "cromo": [
+    "cromo",
+    "cromium picolinato",
+    "picolinato cromo"
+   ],
+   "complejo zinc-magnesio": [
+    "complejo zinc magnesio",
+    "zinc magnesio",
+    "zinc magnesio b6"
+   ]
+  },
+  "suplemento_otro": {
+   "quemagrasa": [
+    "quemagrasa",
+    "quemagrasas",
+    "termogenico",
+    "fat burner",
+    "lipo",
+    "quemagrasa rojo",
+    "quemagrasa posibe"
+   ],
+   "cafeína": [
+    "cafeina",
+    "cafeina anhidra",
+    "mg cafeina"
+   ],
+   "pre-entreno": [
+    "pre entreno",
+    "preentreno",
+    "pre workout",
+    "preworkout"
+   ],
+   "tribulus": [
+    "tribulus",
+    "tribulu",
+    "tribu",
+    "t90"
+   ],
+   "cla": [
+    "cla"
+   ],
+   "omega 3": [
+    "omega 3",
+    "omega",
+    "omega 3 6 9",
+    "omegas",
+    "aceite pescado",
+    "omega3",
+    "omega 3 6",
+    "suplemento omega",
+    "aceite esencial omega"
+   ],
+   "onagra": [
+    "onagra",
+    "onagro",
+    "aceite onagra"
+   ],
+   "coenzima q10": [
+    "q10",
+    "coenzima q10",
+    "coq10"
+   ],
+   "protector articular": [
+    "protector articular",
+    "articular",
+    "condroitina",
+    "glucosamina",
+    "oseo",
+    "protector oseo",
+    "colageno articular",
+    "msm"
+   ],
+   "colágeno": [
+    "colageno",
+    "colageno hidrolizado"
+   ],
+   "espirulina": [
+    "espirulina",
+    "spirulina"
+   ],
+   "probiótico": [
+    "probiotico",
+    "probioticos",
+    "probiotic"
+   ],
+   "berberina": [
+    "berberina"
+   ],
+   "ashwagandha": [
+    "ashwagandha",
+    "aswaganda"
+   ],
+   "maca": [
+    "maca"
+   ],
+   "diurético": [
+    "diuretico",
+    "drenante",
+    "linfatico drenante"
+   ],
+   "levadura nutricional": [
+    "levadura nutricional",
+    "levadura cerveza"
+   ],
+   "melatonina": [
+    "melatonina",
+    "infusion melatonina"
+   ],
+   "prebiótico": [
+    "prebiotico",
+    "prebioticos",
+    "inulina",
+    "fibra prebiotica"
+   ],
+   "sinefrina": [
+    "sinefrina",
+    "synephrine"
+   ],
+   "protector hepático": [
+    "cardo mariano",
+    "hepatico",
+    "protector hepatico",
+    "silimarina"
+   ],
+   "support": [
+    "support"
+   ],
+   "hydroxiter": [
+    "hydroxiter",
+    "hidroxiter"
+   ]
+  },
+  "bebida": {
+   "agua": [
+    "agua",
+    "agua mineral",
+    "agua_con_gas",
+    "agua gas",
+    "agua limon",
+    "agua templada",
+    "litros agua",
+    "agua tibia",
+    "litro",
+    "litros",
+    "agua litro"
+   ],
+   "café": [
+    "cafe",
+    "cafe_solo",
+    "cafe descafeinado",
+    "descafeinado",
+    "cafe negro",
+    "cafe americano"
+   ],
+   "té": [
+    "te_verde",
+    "te_rojo",
+    "te_negro",
+    "te_matcha",
+    "matcha",
+    "te_blanco",
+    "te_limon",
+    "te rooibos",
+    "rooibos",
+    "te_fucu",
+    "fucu",
+    "te_verde rojo"
+   ],
+   "infusión": [
+    "infusion",
+    "infusiones",
+    "manzanilla",
+    "poleo",
+    "poleo menta",
+    "menta poleo",
+    "tila",
+    "infusion manzanilla",
+    "hierbabuena",
+    "infusion digestiva",
+    "cola caballo",
+    "infusion cola caballo"
+   ],
+   "zumo": [
+    "zumo",
+    "zumos",
+    "zumo natural",
+    "zumo fruta",
+    "zumo frutas",
+    "zumo manzana",
+    "zumo tomate",
+    "zumo verde",
+    "smoothie",
+    "zumo naranja",
+    "zumo naranja natural",
+    "zumo naranja pulpa",
+    "zumo limon naranja",
+    "nectar",
+    "nectar zumo",
+    "tetra brick nectar zumo",
+    "zumo naranja comiendo pulpa",
+    "zumo naranja colar",
+    "batido frutas"
+   ],
+   "refresco light": [
+    "refresco light",
+    "refresco zero",
+    "coca cola zero",
+    "cocacola zero",
+    "coca cola light",
+    "refresco cero",
+    "bebida zero",
+    "bebida light",
+    "refresco",
+    "refrescos"
+   ],
+   "cerveza": [
+    "cerveza",
+    "cana",
+    "cerveza sin alcohol",
+    "cerveza 0_0"
+   ],
+   "vino": [
+    "vino",
+    "vino tinto",
+    "vino_blanco"
+   ],
+   "bebida energética": [
+    "bebida energetica",
+    "monster",
+    "red bull",
+    "redbull",
+    "bebida energetica cero"
+   ],
+   "café con leche": [
+    "cafe_con_leche",
+    "cafe leche sacarina",
+    "cortado",
+    "cafe cortado",
+    "cafe_cortado"
+   ]
+  },
+  "condimento": {
+   "sal": [
+    "sal",
+    "sal_marina",
+    "sal yodada",
+    "sal comun",
+    "sal normal",
+    "sal mesa"
+   ],
+   "sal del himalaya": [
+    "sal_del_himalaya",
+    "sal_himalaya",
+    "himalaya",
+    "sal_rosa",
+    "sal_rosa himalaya"
+   ],
+   "especias": [
+    "especias",
+    "especia",
+    "hierbas",
+    "hierbas aromaticas",
+    "pimienta",
+    "pimienta negra",
+    "curry",
+    "oregano",
+    "pimenton",
+    "comino",
+    "cebolla polvo",
+    "hierbas provenzales",
+    "albahaca",
+    "tomillo",
+    "romero",
+    "jengibre polvo",
+    "condimentos",
+    "condimento",
+    "eneldo",
+    "laurel",
+    "nuez moscada",
+    "clavo",
+    "cilantro",
+    "menta"
+   ],
+   "cúrcuma": [
+    "curcuma",
+    "curcuma pimienta",
+    "curcuma pimienta negra",
+    "curcuma si"
+   ],
+   "ajo": [
+    "ajo",
+    "ajos"
+   ],
+   "vinagre": [
+    "vinagre",
+    "vinagre manzana",
+    "vinagre modena",
+    "vinagre balsamico",
+    "vinagre vino",
+    "vinagre jerez"
+   ],
+   "mostaza": [
+    "mostaza"
+   ],
+   "salsa de soja": [
+    "salsa soja",
+    "soja salsa"
+   ],
+   "edulcorante": [
+    "edulcorante",
+    "edulcorantes",
+    "algo edulcorante",
+    "algo edulcorante pero azucar",
+    "sucralosa",
+    "eritritol",
+    "sirope agave",
+    "agave"
+   ],
+   "sacarina": [
+    "sacarina"
+   ],
+   "stevia": [
+    "stevia",
+    "estevia"
+   ],
+   "miel": [
+    "miel"
+   ],
+   "canela": [
+    "canela",
+    "canela polvo",
+    "canela ceilan"
+   ],
+   "cacao puro": [
+    "cacao",
+    "cacao puro",
+    "cacao desgrasado",
+    "cacao polvo",
+    "cacao puro polvo"
+   ],
+   "ajo en polvo": [
+    "ajo polvo",
+    "ajo granulado"
+   ],
+   "perejil": [
+    "perejil",
+    "perejil fresco"
+   ],
+   "jengibre": [
+    "jengibre",
+    "infusion jengibre",
+    "jengibre fresco",
+    "jengibre rallado"
+   ],
+   "bicarbonato": [
+    "bicarbonato",
+    "bicarbonato sodico",
+    "bicarbonato de sodio",
+    "bicarbonato sodio",
+    "sal bicarbonato"
+   ]
+  },
+  "dulce": {
+   "chocolate negro": [
+    "chocolate_negro",
+    "chocolate",
+    "chocolate 85",
+    "chocolate 90",
+    "chocolate 99",
+    "chocolate 70",
+    "chocolate 80",
+    "chocolate puro"
+   ],
+   "postre o dulce": [
+    "natillas",
+    "flan",
+    "flan huevo",
+    "cuajada",
+    "arroz leche",
+    "helado",
+    "helado proteico",
+    "mousse",
+    "postre",
+    "postre lacteo",
+    "dulce",
+    "dulces",
+    "bolleria",
+    "pasteles",
+    "pastel",
+    "tarta",
+    "galletas chocolate"
+   ],
+   "gelatina": [
+    "gelatina",
+    "gelatina azucar",
+    "gelatina light",
+    "gelatina sin azucar"
+   ]
+  },
+  "plato_preparado": {
+   "hamburguesa": [
+    "hamburguesa",
+    "hamburguesas",
+    "hamburguesa ternera casera",
+    "albondigas",
+    "albondiga",
+    "hamburguesa pollo",
+    "hamburguesa pavo"
+   ],
+   "pizza": [
+    "pizza",
+    "pizza casera",
+    "pizza avena",
+    "base pizza"
+   ],
+   "sushi": [
+    "sushi",
+    "poke",
+    "poke bowl"
+   ]
+  }
+ }
+}

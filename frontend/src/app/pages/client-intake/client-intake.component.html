@@ -1,0 +1,379 @@
+<div class="page-header">
+  <app-button variant="icon" icon="arrow_back" ariaLabel="volver" [routerLink]="['/clients', id()]" />
+  <h1>
+    {{ 'intake.title' | translate }} <span class="muted">{{ view()?.client?.full_name || record().identification.full_name }}</span>
+  </h1>
+  @if (savedAt()) {
+    <span class="muted small">{{ 'intake.savedAt' | translate: { t: savedAt() } }}</span>
+  }
+  <app-button variant="primary" icon="save" [disabled]="saving()" (clicked)="save()">{{ 'intake.save' | translate }}</app-button>
+</div>
+<app-loading [active]="!view()" />
+
+@if (view(); as v) {
+  <div class="grid-3-2">
+    <div>
+      <app-tabs [tabs]="tabLabels()" [(selected)]="section" />
+      @switch (section()) {
+        @case (0) {
+          <div class="tab">
+            <app-form [columns]="2">
+              <app-input
+                class="span-2"
+                [label]="'intake.identification.name' | translate"
+                [value]="record().identification.full_name"
+                (valueChange)="patch('identification', 'full_name', $event)" />
+              <app-datepicker
+                [label]="'intake.identification.birth' | translate"
+                [value]="record().identification.birth_date"
+                (valueChange)="patch('identification', 'birth_date', $event)" />
+              <app-input
+                [label]="'intake.identification.phone' | translate"
+                type="tel"
+                [value]="record().identification.phone"
+                (valueChange)="patch('identification', 'phone', $event)" />
+              <app-input
+                class="span-2"
+                [label]="'intake.identification.email' | translate"
+                type="email"
+                [value]="record().identification.email"
+                (valueChange)="patch('identification', 'email', $event)" />
+            </app-form>
+          </div>
+        }
+
+        @case (1) {
+          <div class="tab">
+            <app-form [columns]="3">
+              <app-datepicker
+                [label]="'intake.physiology.firstVisit' | translate"
+                [value]="record().physiology.first_visit"
+                (valueChange)="patch('physiology', 'first_visit', $event)" />
+              <app-input
+                [label]="'intake.physiology.weight' | translate"
+                type="number"
+                suffix="kg"
+                [value]="record().physiology.initial_weight_kg"
+                (valueChange)="patch('physiology', 'initial_weight_kg', $event)" />
+              <app-input
+                [label]="'intake.physiology.height' | translate"
+                type="number"
+                suffix="cm"
+                [value]="record().physiology.height_cm"
+                (valueChange)="patch('physiology', 'height_cm', $event)" />
+              <app-input
+                [label]="'intake.physiology.wrist' | translate"
+                type="number"
+                suffix="cm"
+                [value]="record().physiology.wrist_cm"
+                (valueChange)="patch('physiology', 'wrist_cm', $event)"
+                [hint]="'intake.physiology.wristHint' | translate" />
+              <app-input
+                [label]="'intake.physiology.waist' | translate"
+                type="number"
+                suffix="cm"
+                [value]="record().physiology.waist_cm"
+                (valueChange)="patch('physiology', 'waist_cm', $event)" />
+              <app-input
+                [label]="'intake.physiology.neck' | translate"
+                type="number"
+                suffix="cm"
+                [value]="record().physiology.neck_cm"
+                (valueChange)="patch('physiology', 'neck_cm', $event)" />
+              <app-input
+                [label]="'intake.physiology.hip' | translate"
+                type="number"
+                suffix="cm"
+                [value]="record().physiology.hip_cm"
+                (valueChange)="patch('physiology', 'hip_cm', $event)"
+                [hint]="'intake.physiology.hipHint' | translate" />
+              <app-select
+                class="span-2"
+                [label]="'intake.physiology.somatotype' | translate"
+                [options]="somatotypes"
+                [allowEmpty]="true"
+                [value]="record().physiology.somatotype"
+                (valueChange)="patch('physiology', 'somatotype', $event)"
+                [hint]="
+                  v.body_composition.somatotype_hint ? ('intake.physiology.somatotypeHint' | translate: { s: v.body_composition.somatotype_hint }) : null
+                " />
+            </app-form>
+            <div class="row tiles">
+              <app-stat-tile
+                [label]="'intake.physiology.bodyFat' | translate"
+                [value]="v.body_composition.body_fat_pct ?? '—'"
+                unit="%"
+                [hint]="v.body_composition.note ?? 'US Navy'"
+                [tone]="v.body_composition.body_fat_pct ? 'accent' : 'neutral'" />
+              <app-stat-tile label="IMC" [value]="v.body_composition.bmi ?? '—'" unit="kg/m²" [hint]="v.latest_weight_kg ? v.latest_weight_kg + ' kg' : null" />
+              <app-stat-tile [label]="'intake.physiology.frame' | translate" [value]="v.body_composition.frame_index ?? '—'" [hint]="'altura / muñeca'" />
+            </div>
+          </div>
+        }
+
+        @case (2) {
+          <div class="tab">
+            <app-form [columns]="2">
+              <app-textarea
+                [label]="'intake.medical.allergies' | translate"
+                [value]="record().medical.allergies"
+                (valueChange)="patch('medical', 'allergies', $event)" />
+              <app-textarea
+                [label]="'intake.medical.intolerances' | translate"
+                [value]="record().medical.intolerances"
+                (valueChange)="patch('medical', 'intolerances', $event)" />
+              <app-textarea
+                [label]="'intake.medical.injuries' | translate"
+                [value]="record().medical.injuries"
+                (valueChange)="patch('medical', 'injuries', $event)" />
+              <app-textarea
+                [label]="'intake.medical.surgeries' | translate"
+                [value]="record().medical.surgeries"
+                (valueChange)="patch('medical', 'surgeries', $event)" />
+            </app-form>
+          </div>
+        }
+
+        @case (3) {
+          <div class="tab">
+            <app-form [columns]="2">
+              <app-textarea
+                [label]="'intake.diet.liked' | translate"
+                [value]="record().diet.liked_foods"
+                (valueChange)="patch('diet', 'liked_foods', $event)" />
+              <app-textarea
+                [label]="'intake.diet.disliked' | translate"
+                [value]="record().diet.disliked_foods"
+                (valueChange)="patch('diet', 'disliked_foods', $event)"
+                [hint]="'intake.diet.dislikedHint' | translate" />
+              <app-textarea
+                class="span-2"
+                [label]="'intake.diet.vices' | translate"
+                [value]="record().diet.food_vices"
+                (valueChange)="patch('diet', 'food_vices', $event)" />
+              <app-select
+                [label]="'intake.diet.smokes' | translate"
+                [options]="yesNo"
+                [allowEmpty]="true"
+                [value]="boolValue(record().diet.smokes)"
+                (valueChange)="patch('diet', 'smokes', $event === null ? null : $event === 'true')" />
+              <app-select
+                [label]="'intake.diet.drinks' | translate"
+                [options]="yesNo"
+                [allowEmpty]="true"
+                [value]="boolValue(record().diet.drinks_alcohol)"
+                (valueChange)="patch('diet', 'drinks_alcohol', $event === null ? null : $event === 'true')" />
+            </app-form>
+            @if (matching(); as m) {
+              <p class="small muted">
+                {{ 'intake.diet.matched' | translate }}: {{ matchedText() || '—' }}
+                @if (m['disliked_foods'].unmatched.length) {
+                  · <span class="tone-warn">{{ 'intake.diet.unmatched' | translate }}: {{ m['disliked_foods'].unmatched.join(', ') }}</span>
+                }
+              </p>
+            }
+          </div>
+        }
+
+        @case (4) {
+          <div class="tab">
+            <app-form [columns]="2">
+              <app-input
+                [label]="'intake.sports.years' | translate"
+                type="number"
+                [value]="record().sports.training_years"
+                (valueChange)="patch('sports', 'training_years', $event)" />
+              <app-input [label]="'intake.sports.sports' | translate" [value]="record().sports.sports" (valueChange)="patch('sports', 'sports', $event)" />
+              <app-textarea
+                [label]="'intake.sports.achievements' | translate"
+                [value]="record().sports.achievements"
+                (valueChange)="patch('sports', 'achievements', $event)" />
+              <app-textarea
+                [label]="'intake.sports.goals' | translate"
+                [value]="record().sports.goals_text"
+                (valueChange)="patch('sports', 'goals_text', $event)" />
+              <app-input
+                [label]="'intake.sports.work' | translate"
+                [value]="record().sports.work_schedule"
+                (valueChange)="patch('sports', 'work_schedule', $event)" />
+              <app-input
+                [label]="'intake.sports.training' | translate"
+                [value]="record().sports.training_schedule"
+                (valueChange)="patch('sports', 'training_schedule', $event)" />
+              <app-textarea
+                [label]="'intake.sports.supplements' | translate"
+                [value]="record().sports.supplements_owned"
+                (valueChange)="patch('sports', 'supplements_owned', $event)"
+                [hint]="'intake.sports.supplementsHint' | translate" />
+              <app-textarea
+                [label]="'intake.sports.firstDiet' | translate"
+                [value]="record().sports.first_diet_notes"
+                (valueChange)="patch('sports', 'first_diet_notes', $event)" />
+              <app-input
+                [label]="'intake.sports.watch' | translate"
+                [value]="record().sports.watch_brand"
+                (valueChange)="patch('sports', 'watch_brand', $event)"
+                [hint]="'intake.sports.watchHint' | translate" />
+            </app-form>
+          </div>
+        }
+
+        @case (5) {
+          <div class="tab">
+            <div class="row import">
+              <app-file-upload [label]="'intake.body.import' | translate" accept=".json" (loaded)="onScaleFile($event)" />
+              <span class="muted small hint">{{ 'intake.body.importHint' | translate }}</span>
+            </div>
+            <div class="field-grid manual">
+              <app-datepicker [label]="'intake.body.date' | translate" [(value)]="manualDate" />
+              @for (f of manualFields; track f.key) {
+                <app-input [label]="f.label | translate" type="number" [value]="manualValue(f.key)" (valueChange)="patchManual(f.key, $event)" />
+              }
+              <div class="actions">
+                <app-button variant="secondary" icon="add" [disabled]="!manualValue('weight_kg')" (clicked)="addManual()">{{
+                  'intake.body.add' | translate
+                }}</app-button>
+              </div>
+            </div>
+            @if (importMessage()) {
+              <p class="small tone-accent">{{ importMessage() }}</p>
+            }
+            <app-table [columns]="measurementColumns" [rows]="measurementRows()">
+              <ng-template #cell let-row let-col="col">
+                @switch (col.key) {
+                  @case ('measured_at') {
+                    {{ row.measured_at.slice(0, 16).replace('T', ' ') }}
+                  }
+                  @default {
+                    {{ row[col.key] ?? '—' }}
+                  }
+                }
+              </ng-template>
+            </app-table>
+          </div>
+        }
+
+        @case (6) {
+          <div class="tab">
+            <div class="row import">
+              <app-file-upload [label]="'intake.labs.import' | translate" accept=".csv,.json,.txt" (loaded)="onLabFile($event)" />
+              <app-datepicker [label]="'intake.labs.date' | translate" [(value)]="labDate" class="date" />
+              <span class="muted small hint">{{ 'intake.labs.importHint' | translate }}</span>
+            </div>
+            <div class="field-grid manual">
+              <app-input class="full" [label]="'intake.labs.marker' | translate" [value]="newLab().marker" (valueChange)="patchLab('marker', $event ?? '')" />
+              <app-input
+                [label]="'intake.labs.value' | translate"
+                type="number"
+                [compact]="true"
+                [value]="newLab().value"
+                (valueChange)="patchLab('value', $event)" />
+              <app-input [label]="'intake.labs.unit' | translate" [compact]="true" [value]="newLab().unit" (valueChange)="patchLab('unit', $event)" />
+              <app-input
+                [label]="'intake.labs.min' | translate"
+                type="number"
+                [compact]="true"
+                [value]="newLab().ref_low"
+                (valueChange)="patchLab('ref_low', $event)" />
+              <app-input
+                [label]="'intake.labs.max' | translate"
+                type="number"
+                [compact]="true"
+                [value]="newLab().ref_high"
+                (valueChange)="patchLab('ref_high', $event)" />
+              <div class="actions">
+                <app-button variant="secondary" icon="add" [disabled]="!newLab().marker || newLab().value === null" (clicked)="addLab()">{{
+                  'intake.labs.add' | translate
+                }}</app-button>
+              </div>
+            </div>
+            @if (labs(); as l) {
+              <p class="small muted">{{ 'intake.labs.summary' | translate: { n: l.total_rows, out: l.out_of_range, reports: labReports().length } }}</p>
+              <h3>{{ 'intake.labs.reports' | translate }}</h3>
+              <app-table [columns]="reportColumns" [rows]="reportRows()" [clickable]="true" (rowClicked)="pickReport($event)">
+                <ng-template #cell let-row let-col="col">
+                  @switch (col.key) {
+                    @case ('measured_at') {
+                      <span [class.selected]="row.key === currentReport()?.key">{{ row.measured_at ?? ('intake.labs.noDate' | translate) }}</span>
+                    }
+                    @case ('out_of_range') {
+                      @if (row.out_of_range) {
+                        <app-chips [chips]="[{ label: row.out_of_range, tone: 'warn' }]" />
+                      } @else {
+                        0
+                      }
+                    }
+                    @case ('sources') {
+                      {{ row.sources.join(', ') }}
+                    }
+                    @default {
+                      {{ row[col.key] ?? '—' }}
+                    }
+                  }
+                </ng-template>
+              </app-table>
+
+              @if (currentReport(); as report) {
+                <h3>
+                  {{ 'intake.labs.detail' | translate: { date: report.measured_at ?? ('intake.labs.noDate' | translate) } }}
+                </h3>
+                <app-table [columns]="labColumns" [rows]="labRows()">
+                  <ng-template #cell let-row let-col="col">
+                    @switch (col.key) {
+                      @case ('range') {
+                        {{ range(row) }}
+                      }
+                      @case ('status') {
+                        <app-chips [chips]="[{ label: row.status.replace('_', ' '), tone: statusTone(row.status) }]" />
+                      }
+                      @case ('actions') {
+                        <app-button variant="icon" icon="delete_outline" ariaLabel="borrar" (clicked)="deleteLab(row)" />
+                      }
+                      @default {
+                        {{ row[col.key] ?? '—' }}
+                      }
+                    }
+                  </ng-template>
+                </app-table>
+              }
+            }
+          </div>
+        }
+      }
+    </div>
+
+    <div>
+      <div class="panel">
+        <div class="panel-title">
+          <h2>{{ 'intake.completeness.title' | translate }}</h2>
+        </div>
+        <div class="row tiles">
+          <app-stat-tile
+            [label]="'intake.completeness.algorithm' | translate"
+            [value]="pct(v.completeness.algorithm.ratio)"
+            [tone]="v.completeness.algorithm.ratio === 1 ? 'ok' : 'warn'"
+            [hint]="v.completeness.algorithm.present.length + ' / ' + v.completeness.algorithm.total" />
+          <app-stat-tile
+            [label]="'intake.completeness.record' | translate"
+            [value]="pct(v.completeness.record.ratio)"
+            [hint]="v.completeness.record.present.length + ' / ' + v.completeness.record.total" />
+        </div>
+        <h3>{{ 'intake.completeness.missingAlgorithm' | translate }}</h3>
+        <app-chips [chips]="missingAlgorithm()" [emptyLabel]="'intake.completeness.complete' | translate" />
+        <h3>{{ 'intake.completeness.missingRecord' | translate }}</h3>
+        <app-chips [chips]="missingRecord()" [emptyLabel]="'intake.completeness.complete' | translate" />
+      </div>
+      <div class="panel">
+        <div class="panel-title">
+          <h2>{{ 'intake.engine.title' | translate }}</h2>
+        </div>
+        <h3>{{ 'intake.engine.restrictions' | translate }}</h3>
+        <app-chips [chips]="engineRestrictions()" [emptyLabel]="'detail.none' | translate" />
+        <h3>{{ 'intake.engine.disliked' | translate }}</h3>
+        <app-chips [chips]="engineDisliked()" [emptyLabel]="'detail.none' | translate" />
+        <h3>{{ 'intake.engine.supplements' | translate }}</h3>
+        <app-chips [chips]="engineSupplements()" [emptyLabel]="'detail.none' | translate" />
+      </div>
+    </div>
+  </div>
+}

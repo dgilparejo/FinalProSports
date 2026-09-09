@@ -1,0 +1,9 @@
+{
+ "sex": "M",
+ "age": 29,
+ "height_cm": 182,
+ "activity_level": 5,
+ "goal": "descarga_carga",
+ "expect_goal_not_servable": true,
+ "not_servable_reason": "Banda NO SERVIR de `neighbourhood_policy`: descarga_carga: 4 clientes distintos en el corpus. Por debajo de dos clientes distintos del objetivo el consenso no es un consenso, y servirlo como «basado en casos» afirmaria algo que la evidencia no sostiene. Antes de las bandas este perfil devolvia una dieta; ahora devuelve 422 goal_not_servable, y ese es el comportamiento aprobado, no una regresion."
+}

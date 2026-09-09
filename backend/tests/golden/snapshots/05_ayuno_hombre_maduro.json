@@ -1,0 +1,265 @@
+{
+ "compliance": 0.5833333333333334,
+ "forced_changes": [],
+ "k_effective": 20,
+ "meals": [
+  {
+   "groups": [
+    [
+     {
+      "food": "té",
+      "food_id": 58,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ]
+   ],
+   "slot": "RECIEN LEVANTADO"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "café",
+      "food_id": 65,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "multivitamínico",
+      "food_id": 4,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "té",
+      "food_id": 58,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "pan integral",
+      "food_id": 25,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ]
+   ],
+   "slot": "MEDIA MAÑANA"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "pollo",
+      "food_id": 1,
+      "quantity": 180.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "arroz",
+      "food_id": 2,
+      "quantity": 165.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "multivitamínico",
+      "food_id": 4,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "almendras",
+      "food_id": 6,
+      "quantity": 20.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "pavo",
+      "food_id": 7,
+      "quantity": 155.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "pasta integral",
+      "food_id": 14,
+      "quantity": 170.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "aceite de oliva virgen extra",
+      "food_id": 5,
+      "quantity": 1.0,
+      "unit": "cucharada"
+     }
+    ],
+    [
+     {
+      "food": "ajo en polvo",
+      "food_id": 85,
+      "quantity": 1.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "COMIDA"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "atún",
+      "food_id": 12,
+      "quantity": 2.0,
+      "unit": "lata"
+     }
+    ],
+    [
+     {
+      "food": "pan integral",
+      "food_id": 25,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "aguacate",
+      "food_id": 19,
+      "quantity": 60.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "almendras",
+      "food_id": 6,
+      "quantity": 20.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "tomate",
+      "food_id": 17,
+      "quantity": 110.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "MERIENDA"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "aceite de oliva virgen extra",
+      "food_id": 5,
+      "quantity": 1.0,
+      "unit": "cucharada"
+     }
+    ],
+    [
+     {
+      "food": "pescado blanco",
+      "food_id": 9,
+      "quantity": 240.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "nueces",
+      "food_id": 8,
+      "quantity": 20.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "yema de huevo",
+      "food_id": 11,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "ensalada",
+      "food_id": 13,
+      "quantity": 120.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "CENA"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "quemagrasa",
+      "food_id": 32,
+      "quantity": 2.0,
+      "unit": "unidad"
+     },
+     {
+      "food": "cafeína",
+      "food_id": 99,
+      "quantity": 20.0,
+      "unit": "unidad"
+     }
+    ]
+   ],
+   "slot": "ANTES DE ENTRENAR"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "batido de proteínas",
+      "food_id": 3,
+      "quantity": 40.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "creatina",
+      "food_id": 27,
+      "quantity": 10.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "DESPUES DE ENTRENAR"
+  }
+ ],
+ "notes": [
+  "NO METER NADA DE SAL EN LAS COMIDAS",
+  "Todos los alimentos que se puedan cocinar se deben cocinar mejor que tomarlos crudos en esta dieta, y si es posible, esperar a que se enfríen antes de comerlos, intentar no freír los alimentos con aceite, el aceite se debe consumir crudo aunque se el eche a la comida.",
+  "Controlar la ingesta de agua que debe de ser de 2,5 a 3 litros y medio por día contando el agua de los batidos de proteínas. HAY QUE BEBER AUNQUE NO SE TENGA SED, PERO A TRAGOS PEQUEÑOS., Y ENTRE COMIDAS PRINCIPALMENTE.",
+  "Evitar las bebidas con sabor, con gas, azucaradas y zumos.",
+  "Puedes saltarte la dieta 3 comidas en Semana, siempre separadas entre al menos 5 o 6 comidas."
+ ],
+ "routing": "cold_start",
+ "strategy": "case_based_composer"
+}

@@ -1,0 +1,53 @@
+.search
+  width: 240px
+
+.code
+  font-weight: 600
+
+.actions
+  justify-content: flex-end
+  gap: 12px
+
+// Tarjetas: solo se pintan por debajo del corte (`layout.narrow()`), así que no necesitan media query propia.
+.cards
+  list-style: none
+  margin: 0 0 12px
+  padding: 0
+  display: grid
+  gap: 10px
+
+.card
+  display: flex
+  flex-direction: column
+  gap: 6px
+  padding: 12px 14px
+  background: var(--surface)
+  border: 1px solid var(--border)
+  border-radius: var(--radius)
+
+.card-name
+  font-size: 16px
+  font-weight: 600
+  color: var(--text)
+  &:hover
+    color: var(--accent)
+    text-decoration: none
+
+.card-facts
+  margin: 0
+  .goal
+    color: var(--text)
+
+.card-diets
+  margin: 0
+  color: var(--text-muted)
+
+// Las dos acciones separadas del resto: son lo único que se pulsa por error al recorrer una lista con el pulgar.
+.card-actions
+  gap: 16px
+  padding-top: 6px
+  border-top: 1px solid var(--border)
+
+@media (max-width: 720px)
+  .actions
+    justify-content: flex-start

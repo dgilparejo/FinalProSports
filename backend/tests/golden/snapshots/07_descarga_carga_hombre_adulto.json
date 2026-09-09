@@ -1,0 +1,380 @@
+{
+ "compliance": 0.8333333333333334,
+ "forced_changes": [],
+ "k_effective": 1,
+ "meals": [
+  {
+   "groups": [
+    [
+     {
+      "food": "batido de proteínas",
+      "food_id": 3,
+      "quantity": 50.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "aminoácidos",
+      "food_id": 16,
+      "quantity": 15.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "RECIEN LEVANTADO"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "arroz",
+      "food_id": 2,
+      "quantity": 200.0,
+      "unit": "g"
+     },
+     {
+      "food": "pasta integral",
+      "food_id": 14,
+      "quantity": 200.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "batido de proteínas",
+      "food_id": 3,
+      "quantity": 40.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "almendras",
+      "food_id": 6,
+      "quantity": 15.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "yema de huevo",
+      "food_id": 11,
+      "quantity": 2.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "atún",
+      "food_id": 12,
+      "quantity": null,
+      "unit": ""
+     }
+    ],
+    [
+     {
+      "food": "tortilla",
+      "food_id": 29,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ]
+   ],
+   "slot": "DESAYUNO"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "pollo",
+      "food_id": 1,
+      "quantity": 100.0,
+      "unit": "g"
+     },
+     {
+      "food": "pavo",
+      "food_id": 7,
+      "quantity": 100.0,
+      "unit": "g"
+     },
+     {
+      "food": "atún",
+      "food_id": 12,
+      "quantity": 2.0,
+      "unit": "lata"
+     }
+    ],
+    [
+     {
+      "food": "arroz",
+      "food_id": 2,
+      "quantity": 200.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "MEDIA MAÑANA"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "pollo",
+      "food_id": 1,
+      "quantity": 190.0,
+      "unit": "g"
+     },
+     {
+      "food": "pavo",
+      "food_id": 7,
+      "quantity": 270.0,
+      "unit": "g"
+     },
+     {
+      "food": "ternera",
+      "food_id": 24,
+      "quantity": 300.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "arroz",
+      "food_id": 2,
+      "quantity": 250.0,
+      "unit": "g"
+     },
+     {
+      "food": "pasta integral",
+      "food_id": 14,
+      "quantity": 280.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "almendras",
+      "food_id": 6,
+      "quantity": 20.0,
+      "unit": "g"
+     },
+     {
+      "food": "nueces",
+      "food_id": 8,
+      "quantity": 20.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "COMIDA"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "pollo",
+      "food_id": 1,
+      "quantity": 215.0,
+      "unit": "g"
+     },
+     {
+      "food": "pavo",
+      "food_id": 7,
+      "quantity": 215.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "arroz",
+      "food_id": 2,
+      "quantity": 170.0,
+      "unit": "g"
+     },
+     {
+      "food": "pasta integral",
+      "food_id": 14,
+      "quantity": 180.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "almendras",
+      "food_id": 6,
+      "quantity": 20.0,
+      "unit": "g"
+     },
+     {
+      "food": "avellanas",
+      "food_id": 121,
+      "quantity": 20.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "MEDIA TARDE"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "pollo",
+      "food_id": 1,
+      "quantity": 225.0,
+      "unit": "g"
+     },
+     {
+      "food": "pescado blanco",
+      "food_id": 9,
+      "quantity": 260.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "arroz",
+      "food_id": 2,
+      "quantity": 200.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "aceite de oliva virgen extra",
+      "food_id": 5,
+      "quantity": 1.0,
+      "unit": "cucharada"
+     }
+    ],
+    [
+     {
+      "food": "nueces",
+      "food_id": 8,
+      "quantity": 10.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "ensalada",
+      "food_id": 13,
+      "quantity": 150.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "CENA"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "batido de proteínas",
+      "food_id": 3,
+      "quantity": 40.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "almendras",
+      "food_id": 6,
+      "quantity": 1.0,
+      "unit": "unidad"
+     },
+     {
+      "food": "nueces",
+      "food_id": 8,
+      "quantity": 10.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "ANTES DE DORMIR"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "batido de proteínas",
+      "food_id": 3,
+      "quantity": 40.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "aminoácidos",
+      "food_id": 16,
+      "quantity": 15.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "ANTES DE ENTRENAR"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "batido de proteínas",
+      "food_id": 3,
+      "quantity": 40.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "DESPUES DE ENTRENAR"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "multivitamínico",
+      "food_id": 4,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "potasio",
+      "food_id": 10,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "omega 3",
+      "food_id": 15,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "magnesio",
+      "food_id": 33,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "calcio",
+      "food_id": 38,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ]
+   ],
+   "slot": "SUPLEMENTOS"
+  }
+ ],
+ "notes": [],
+ "routing": "cold_start",
+ "strategy": "case_based_composer"
+}

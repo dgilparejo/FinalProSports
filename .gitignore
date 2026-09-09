@@ -1,0 +1,53 @@
+# En el arbol PUBLICO los documentos SI se versionan (el README cita el informe de calidad y la
+# justificacion de la separacion). Las reglas que ignoraban /docs/* son convenio del arbol privado.
+
+# El sello que escribe el montador al TERMINAR BIEN. Vive en el arbol de salida, no en el repositorio.
+/.public-tree-ok
+# ---- DATA NEVER ENTERS THE CODE REPOSITORY ----
+# The corpus, the frozen dataset and the anonymised client files live outside this tree (FPS_DATA_DIR / FPS_DATASET_DIR in .env).
+# These patterns are a second line of defence in case something is copied here by mistake; the tree audit (make audit) is the third.
+_dataset/
+_meta/
+clientes/
+PREPARACIONES-*/
+db_*/
+# La documentacion del proyecto es la MEMORIA, no este arbol. Lo que el codigo escribe en `docs/` (informe de
+# normalizacion, envolvente, rotacion, figuras del arnes) es salida generada y se regenera cuando hace falta:
+# `make eval`, `make envelope`, `pipeline/report.py`. Aqui dentro tambien caian las copias de trabajo de los
+# documentos ORIGINALES del profesional, que no pueden versionarse nunca.
+#
+# UNA excepcion, y esta declarada: `docs/evaluation/results.json`, que es la FUENTE de todas las cifras de la
+# evaluacion y la memoria lo cita. Se excluye por contenido y se reincluye ese fichero: una negacion no funciona si
+# el directorio padre esta excluido entero, de ahi los `/*`.
+
+# ---- local configuration and secrets ----
+.env
+/.codespaces/
+
+# ---- Python ----
+__pycache__/
+*.pyc
+.pytest_cache/
+.import_linter_cache/
+*.egg-info/
+backend/.venv/
+# downloaded model weights at the repository ROOT only (anchored): the bare `models/` pattern swallowed frontend/src/app/models/ (44 files never committed until 2026-08-26)
+/models/
+
+# ---- frontend ----
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+
+# ---- IDE: only the run configurations are versioned ----
+.idea/*
+!.idea/runConfigurations/
+
+# El dataset PUBLICO es un artefacto de construccion: se regenera byte a byte con
+# `export_public_dataset.py` + `synthesize_case_base.py` (deterministas). Se versiona en el
+# repositorio PUBLICO, no aqui, para no llevar los mismos datos dos veces.
+seed/dataset_public/
+
+# Partes de ejecución que el cargador y el vectorizador escriben DENTRO del dataset (fecha, filas, avisos).
+# No son corpus ni criterio: son el diario de una ejecución concreta y solo producen commits de ruido.
+seed/dataset*/*_log.json

@@ -1,0 +1,31 @@
+<header class="topbar">
+  <a class="brand" routerLink="/">
+    <img src="assets/logo/logo.jpg" [alt]="config.brand" />
+  </a>
+  <nav class="nav">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">{{ 'nav.clients' | translate }}</a>
+  </nav>
+  <span class="spacer"></span>
+  <app-profile-menu />
+</header>
+@if (logger.lastError(); as err) {
+  <div class="toast tone-danger" role="alert">
+    <span class="material-icons">error_outline</span>
+    <span>{{ err }}</span>
+    <button type="button" class="dismiss" (click)="logger.clearError()" aria-label="cerrar">×</button>
+  </div>
+}
+@if (identity.sessionExpired()) {
+  <div class="expired-backdrop" role="alertdialog" aria-modal="true" aria-labelledby="expired-title">
+    <div class="expired">
+      <span class="material-icons">lock_clock</span>
+      <h2 id="expired-title">{{ 'auth.expired.title' | translate }}</h2>
+      <p class="muted">{{ 'auth.expired.body' | translate }}</p>
+      <app-button variant="primary" icon="login" (clicked)="identity.reauthenticate()">{{ 'auth.expired.cta' | translate }}</app-button>
+    </div>
+  </div>
+}
+<main class="page">
+  <app-breadcrumb />
+  <router-outlet />
+</main>

@@ -1,0 +1,35 @@
+.code
+  font-size: 13px
+  font-weight: 400
+  margin-left: 8px
+
+.tab
+  padding: 16px 4px 4px
+  min-width: 0
+
+.tiles
+  gap: 12px
+  margin-top: 12px
+
+// Rejilla de una lectura o de una fila de analítica. El ancho mínimo es 150 px (`.field-grid`), así que en el escritorio
+// caben seis por línea dentro de la columna ancha y en un móvil bajan a una sola sin media query.
+.manual
+  margin: 12px 0
+
+.import
+  .hint
+    flex: 1 1 240px
+    min-width: 0
+
+.date
+  width: 230px
+
+h3
+  margin: 12px 0 6px
+
+@media (max-width: 720px)
+  .tab
+    padding: 12px 0 4px
+  .import
+    .hint
+      flex: 1 1 100%

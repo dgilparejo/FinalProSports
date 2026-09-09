@@ -1,0 +1,602 @@
+[
+ {
+  "sex": "M",
+  "age_bucket": "edad_35_45",
+  "goal": "definicion_grasa",
+  "diet_count": 51,
+  "clients": [
+   "SINT_001",
+   "SINT_072",
+   "SINT_074",
+   "SINT_117",
+   "SINT_128",
+   "SINT_133",
+   "SINT_175",
+   "SINT_181",
+   "SINT_191",
+   "SINT_215",
+   "SINT_225",
+   "SINT_233",
+   "SINT_247",
+   "SINT_264",
+   "SINT_291",
+   "SINT_295"
+  ],
+  "client_count": 16
+ },
+ {
+  "sex": "M",
+  "age_bucket": "edad_NA",
+  "goal": "definicion_grasa",
+  "diet_count": 48,
+  "clients": [
+   "SINT_002",
+   "SINT_012",
+   "SINT_050",
+   "SINT_054",
+   "SINT_134",
+   "SINT_139",
+   "SINT_148",
+   "SINT_157",
+   "SINT_201",
+   "SINT_228",
+   "SINT_238",
+   "SINT_241",
+   "SINT_242",
+   "SINT_254",
+   "SINT_269",
+   "SINT_290",
+   "SINT_292",
+   "SINT_297"
+  ],
+  "client_count": 18
+ },
+ {
+  "sex": "M",
+  "age_bucket": "edad_45_55",
+  "goal": "definicion_grasa",
+  "diet_count": 25,
+  "clients": [
+   "SINT_003",
+   "SINT_066",
+   "SINT_165",
+   "SINT_169",
+   "SINT_184",
+   "SINT_234",
+   "SINT_245",
+   "SINT_255",
+   "SINT_267",
+   "SINT_277"
+  ],
+  "client_count": 10
+ },
+ {
+  "sex": "M",
+  "age_bucket": "edad_NA",
+  "goal": "cetosis_keto",
+  "diet_count": 17,
+  "clients": [
+   "SINT_004",
+   "SINT_014",
+   "SINT_022",
+   "SINT_027",
+   "SINT_076",
+   "SINT_116"
+  ],
+  "client_count": 6
+ },
+ {
+  "sex": "M",
+  "age_bucket": "edad_NA",
+  "goal": "ayuno_intermitente",
+  "diet_count": 30,
+  "clients": [
+   "SINT_005",
+   "SINT_007",
+   "SINT_040",
+   "SINT_047",
+   "SINT_061",
+   "SINT_065",
+   "SINT_075",
+   "SINT_090",
+   "SINT_281",
+   "SINT_293"
+  ],
+  "client_count": 10
+ },
+ {
+  "sex": "M",
+  "age_bucket": "edad_25_35",
+  "goal": "definicion_grasa",
+  "diet_count": 64,
+  "clients": [
+   "SINT_006",
+   "SINT_067",
+   "SINT_070",
+   "SINT_099",
+   "SINT_104",
+   "SINT_124",
+   "SINT_126",
+   "SINT_142",
+   "SINT_151",
+   "SINT_166",
+   "SINT_168",
+   "SINT_199",
+   "SINT_204",
+   "SINT_213",
+   "SINT_223",
+   "SINT_226",
+   "SINT_244",
+   "SINT_253",
+   "SINT_258",
+   "SINT_261",
+   "SINT_268"
+  ],
+  "client_count": 21
+ },
+ {
+  "sex": "M",
+  "age_bucket": "edad_25_35",
+  "goal": "volumen_masa",
+  "diet_count": 92,
+  "clients": [
+   "SINT_009",
+   "SINT_013",
+   "SINT_023",
+   "SINT_035",
+   "SINT_059",
+   "SINT_085",
+   "SINT_088",
+   "SINT_106",
+   "SINT_136",
+   "SINT_143",
+   "SINT_173",
+   "SINT_177",
+   "SINT_194",
+   "SINT_210",
+   "SINT_218",
+   "SINT_220",
+   "SINT_224",
+   "SINT_240",
+   "SINT_257",
+   "SINT_276",
+   "SINT_298"
+  ],
+  "client_count": 21
+ },
+ {
+  "sex": "M",
+  "age_bucket": "edad_35_45",
+  "goal": "ayuno_intermitente",
+  "diet_count": 22,
+  "clients": [
+   "SINT_010",
+   "SINT_034",
+   "SINT_038",
+   "SINT_043",
+   "SINT_111",
+   "SINT_118",
+   "SINT_183"
+  ],
+  "client_count": 7
+ },
+ {
+  "sex": "M",
+  "age_bucket": "edad_25_35",
+  "goal": "cetosis_keto",
+  "diet_count": 19,
+  "clients": [
+   "SINT_011",
+   "SINT_025",
+   "SINT_032",
+   "SINT_033",
+   "SINT_055",
+   "SINT_103",
+   "SINT_154"
+  ],
+  "client_count": 7
+ },
+ {
+  "sex": "F",
+  "age_bucket": "edad_45_55",
+  "goal": "cetosis_keto",
+  "diet_count": 10,
+  "clients": [
+   "SINT_015",
+   "SINT_087"
+  ],
+  "client_count": 2
+ },
+ {
+  "sex": "M",
+  "age_bucket": "edad_0_25",
+  "goal": "ayuno_intermitente",
+  "diet_count": 17,
+  "clients": [
+   "SINT_016",
+   "SINT_077",
+   "SINT_107"
+  ],
+  "client_count": 3
+ },
+ {
+  "sex": "F",
+  "age_bucket": "edad_NA",
+  "goal": "cetosis_keto",
+  "diet_count": 10,
+  "clients": [
+   "SINT_017",
+   "SINT_039",
+   "SINT_091"
+  ],
+  "client_count": 3
+ },
+ {
+  "sex": "M",
+  "age_bucket": "edad_45_55",
+  "goal": "volumen_masa",
+  "diet_count": 22,
+  "clients": [
+   "SINT_019",
+   "SINT_112",
+   "SINT_209",
+   "SINT_250",
+   "SINT_283"
+  ],
+  "client_count": 5
+ },
+ {
+  "sex": "F",
+  "age_bucket": "edad_55_mas",
+  "goal": "volumen_masa",
+  "diet_count": 8,
+  "clients": [
+   "SINT_020"
+  ],
+  "client_count": 1
+ },
+ {
+  "sex": "M",
+  "age_bucket": "edad_NA",
+  "goal": "volumen_masa",
+  "diet_count": 70,
+  "clients": [
+   "SINT_024",
+   "SINT_030",
+   "SINT_044",
+   "SINT_083",
+   "SINT_109",
+   "SINT_113",
+   "SINT_130",
+   "SINT_131",
+   "SINT_132",
+   "SINT_145",
+   "SINT_147",
+   "SINT_149",
+   "SINT_150",
+   "SINT_171",
+   "SINT_179",
+   "SINT_185",
+   "SINT_203",
+   "SINT_211",
+   "SINT_212",
+   "SINT_270",
+   "SINT_282",
+   "SINT_289",
+   "SINT_299"
+  ],
+  "client_count": 23
+ },
+ {
+  "sex": "F",
+  "age_bucket": "edad_0_25",
+  "goal": "volumen_masa",
+  "diet_count": 5,
+  "clients": [
+   "SINT_026"
+  ],
+  "client_count": 1
+ },
+ {
+  "sex": "F",
+  "age_bucket": "edad_25_35",
+  "goal": "ayuno_intermitente",
+  "diet_count": 8,
+  "clients": [
+   "SINT_029"
+  ],
+  "client_count": 1
+ },
+ {
+  "sex": "F",
+  "age_bucket": "edad_55_mas",
+  "goal": "ayuno_intermitente",
+  "diet_count": 3,
+  "clients": [
+   "SINT_031",
+   "SINT_095"
+  ],
+  "client_count": 2
+ },
+ {
+  "sex": "M",
+  "age_bucket": "edad_35_45",
+  "goal": "cetosis_keto",
+  "diet_count": 20,
+  "clients": [
+   "SINT_036",
+   "SINT_048",
+   "SINT_069",
+   "SINT_092",
+   "SINT_108",
+   "SINT_110",
+   "SINT_161"
+  ],
+  "client_count": 7
+ },
+ {
+  "sex": "F",
+  "age_bucket": "edad_NA",
+  "goal": "ayuno_intermitente",
+  "diet_count": 5,
+  "clients": [
+   "SINT_037",
+   "SINT_056",
+   "SINT_280"
+  ],
+  "client_count": 3
+ },
+ {
+  "sex": "M",
+  "age_bucket": "edad_0_25",
+  "goal": "definicion_grasa",
+  "diet_count": 58,
+  "clients": [
+   "SINT_041",
+   "SINT_057",
+   "SINT_093",
+   "SINT_097",
+   "SINT_105",
+   "SINT_114",
+   "SINT_141",
+   "SINT_155",
+   "SINT_163",
+   "SINT_167",
+   "SINT_170",
+   "SINT_188",
+   "SINT_193",
+   "SINT_197",
+   "SINT_208",
+   "SINT_216",
+   "SINT_232",
+   "SINT_235",
+   "SINT_294"
+  ],
+  "client_count": 19
+ },
+ {
+  "sex": "F",
+  "age_bucket": "edad_55_mas",
+  "goal": "definicion_grasa",
+  "diet_count": 21,
+  "clients": [
+   "SINT_042",
+   "SINT_121",
+   "SINT_176",
+   "SINT_237"
+  ],
+  "client_count": 4
+ },
+ {
+  "sex": "M",
+  "age_bucket": "edad_35_45",
+  "goal": "volumen_masa",
+  "diet_count": 79,
+  "clients": [
+   "SINT_045",
+   "SINT_078",
+   "SINT_115",
+   "SINT_120",
+   "SINT_123",
+   "SINT_127",
+   "SINT_140",
+   "SINT_144",
+   "SINT_158",
+   "SINT_160",
+   "SINT_172",
+   "SINT_187",
+   "SINT_207",
+   "SINT_219",
+   "SINT_227",
+   "SINT_239",
+   "SINT_256",
+   "SINT_260",
+   "SINT_263",
+   "SINT_271",
+   "SINT_273",
+   "SINT_285"
+  ],
+  "client_count": 22
+ },
+ {
+  "sex": "F",
+  "age_bucket": "edad_0_25",
+  "goal": "ayuno_intermitente",
+  "diet_count": 3,
+  "clients": [
+   "SINT_046",
+   "SINT_262"
+  ],
+  "client_count": 2
+ },
+ {
+  "sex": "F",
+  "age_bucket": "edad_0_25",
+  "goal": "definicion_grasa",
+  "diet_count": 1,
+  "clients": [
+   "SINT_049"
+  ],
+  "client_count": 1
+ },
+ {
+  "sex": "F",
+  "age_bucket": "edad_25_35",
+  "goal": "cetosis_keto",
+  "diet_count": 3,
+  "clients": [
+   "SINT_051",
+   "SINT_063"
+  ],
+  "client_count": 2
+ },
+ {
+  "sex": "F",
+  "age_bucket": "edad_25_35",
+  "goal": "definicion_grasa",
+  "diet_count": 4,
+  "clients": [
+   "SINT_052",
+   "SINT_162",
+   "SINT_236",
+   "SINT_243"
+  ],
+  "client_count": 4
+ },
+ {
+  "sex": "M",
+  "age_bucket": "edad_25_35",
+  "goal": "ayuno_intermitente",
+  "diet_count": 27,
+  "clients": [
+   "SINT_053",
+   "SINT_080",
+   "SINT_098",
+   "SINT_119",
+   "SINT_296"
+  ],
+  "client_count": 5
+ },
+ {
+  "sex": "M",
+  "age_bucket": "edad_55_mas",
+  "goal": "definicion_grasa",
+  "diet_count": 2,
+  "clients": [
+   "SINT_058",
+   "SINT_186"
+  ],
+  "client_count": 2
+ },
+ {
+  "sex": "F",
+  "age_bucket": "edad_NA",
+  "goal": "volumen_masa",
+  "diet_count": 14,
+  "clients": [
+   "SINT_060",
+   "SINT_062",
+   "SINT_217",
+   "SINT_246",
+   "SINT_272"
+  ],
+  "client_count": 5
+ },
+ {
+  "sex": "F",
+  "age_bucket": "edad_25_35",
+  "goal": "volumen_masa",
+  "diet_count": 6,
+  "clients": [
+   "SINT_071",
+   "SINT_138",
+   "SINT_159"
+  ],
+  "client_count": 3
+ },
+ {
+  "sex": "M",
+  "age_bucket": "edad_0_25",
+  "goal": "volumen_masa",
+  "diet_count": 17,
+  "clients": [
+   "SINT_073",
+   "SINT_096",
+   "SINT_174",
+   "SINT_198",
+   "SINT_205",
+   "SINT_265",
+   "SINT_284"
+  ],
+  "client_count": 7
+ },
+ {
+  "sex": "M",
+  "age_bucket": "edad_45_55",
+  "goal": "ayuno_intermitente",
+  "diet_count": 1,
+  "clients": [
+   "SINT_079"
+  ],
+  "client_count": 1
+ },
+ {
+  "sex": "F",
+  "age_bucket": "edad_NA",
+  "goal": "definicion_grasa",
+  "diet_count": 13,
+  "clients": [
+   "SINT_100",
+   "SINT_152",
+   "SINT_180",
+   "SINT_189",
+   "SINT_202"
+  ],
+  "client_count": 5
+ },
+ {
+  "sex": "F",
+  "age_bucket": "edad_45_55",
+  "goal": "volumen_masa",
+  "diet_count": 8,
+  "clients": [
+   "SINT_101"
+  ],
+  "client_count": 1
+ },
+ {
+  "sex": "M",
+  "age_bucket": "edad_45_55",
+  "goal": "cetosis_keto",
+  "diet_count": 10,
+  "clients": [
+   "SINT_102",
+   "SINT_286"
+  ],
+  "client_count": 2
+ },
+ {
+  "sex": "F",
+  "age_bucket": "edad_35_45",
+  "goal": "definicion_grasa",
+  "diet_count": 8,
+  "clients": [
+   "SINT_125",
+   "SINT_200",
+   "SINT_278"
+  ],
+  "client_count": 3
+ },
+ {
+  "sex": "F",
+  "age_bucket": "edad_35_45",
+  "goal": "volumen_masa",
+  "diet_count": 9,
+  "clients": [
+   "SINT_214",
+   "SINT_252",
+   "SINT_275"
+  ],
+  "client_count": 3
+ }
+]

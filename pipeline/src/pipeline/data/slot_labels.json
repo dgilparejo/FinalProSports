@@ -1,0 +1,27 @@
+{
+  "_doc": "Human criterion (2026-08-27, dataset-v2): the slot splitter of the original extractor recognised only twelve header prefixes, so every other label line the professional writes inside a diet was appended to whatever slot was open. This file classifies the 160 label families found in dataset-v1 (3.221 occurrences, 8.490 catalogue components). Rules are applied in the order below, first match wins; the regexes run against the label with parentheses, times, digits and decoration stripped, upper-cased and accent-free.",
+  "_categories": {
+    "A": "a real eating occasion -> its block MOVES to the target slot",
+    "B": "a category header INSIDE the meal (supplements, macro sub-lists, recipe helpers) -> block STAYS (parse_items.HEADER_LABELS already drops the prefix)",
+    "C": "an alternative version of the same meal (TIPO 1/2, OPCIÓN 1/2, DÍA 2, CARGA) -> block STAYS; declared bias: the options are counted cumulatively although they are exclusive",
+    "D": "prose (observations, advice, water instructions) -> block moves to the diet's notes; today it is parsed as an instruction and DROPPED",
+    "E": "signature residue and training content leaked into a diet document -> block dropped",
+    "F": "residual long tail not covered by the lexicon -> left untouched and declared"
+  },
+  "occasions": [
+    {"target": "MERIENDA", "pattern": "^MEDIA TARDE\\b|^MERIENDA TARDE\\b|^MEDIATARDE\\b|^RECREO\\b|^ENTRE COMIDA Y MEDIA TARDE|^PRE ?-?CENA\\b|^MERIENCENA\\b"},
+    {"target": "RECENA", "pattern": "^ANTES DE DORMIR\\b|^ANTES DE IRTE A LA CAMA\\b|^ANTES DE ACOSTAR|^SI TARDAS EN IRTE A LA CAMA\\b|^ANTES DE LA CAMA\\b|^ULTIMA TOMA\\b|^ANTES DE IR A DORMIR\\b|^AL ACOSTARSE\\b|^AL IRTE A LA CAMA\\b|^ANTES DE IRSE A DORMIR\\b|^ANTES DE IRTE A DORMIR\\b|^SI TARDAS EN IRTE A DORMIR\\b|^SI TE DUERMES|^SI TE ACUESTAS TARDE|^RECENA\\b|^SEGUNDA CENA\\b"},
+    {"target": "MITAD DE ENTRENAMIENTO", "pattern": "^MITAD DE ENTRENAMIENTO\\b|^MITAD ENTRENAMIENTO\\b|^MITAD DE ENTRENO\\b|^EN MITAD DEL ENTRENAMIENTO\\b|^A MITAD DE ENTRENO|^DURANTE EL ENTRENAMIENTO\\b|^DURANTE ENTRENAMIENTO\\b|^DURANTE\\b|^INTRAENTRENO\\b|^INTRA ENTRENO\\b|^CADA HORA|^EN LOS PRIMEROS KMS|^ANTES Y DURANTE"},
+    {"target": "OTHER", "pattern": "^RECIEN LEVANTAD|^AL LEVANTARSE\\b|^NADA MAS LEVANTAR|^EN AYUNAS\\b|^ANTES DEL DESAYUNO\\b|^ANTES DESAYUNO\\b|^AL DESPERTAR|^A ESTOMAGO VACIO"},
+    {"target": "DESPUES DE ENTRENAR", "pattern": "^JUSTO DESPUES DE ENTRENAR|^UNA HORA DESPUES DE ENTRENAR|^INMEDIATAMENTE DESPUES DE ENTRENAR|^TRAS EL ENTRENAMIENTO|^ESPUES DE ENTRENAR|^DE MEDIA HORA A UNA HORA DESPUES|^Y DESPUES DE LOS"},
+    {"target": "ANTES DE ENTRENAR", "pattern": "^ANTES DEL CARDIO|^ANTES CARDIO|^DIEZ MINUTOS ANTES DE ENTRENAR|^JUSTO ANTES DE ENTRENAR|^ANTES DEL ENTRENAMIENTO|^ANTESDE ENTRENAR|^ANTES DE SEGUNDO ENTRENAMIENTO|^ANTES DE ENTRENAR|^ANTES ACTIVIDADES|^ANTES DESFILE|^DE A ANTES DE UNA CARRERA|^ENTRENAR$"},
+    {"target": "MEDIA MAÑANA", "pattern": "^ENTRE DESAYUNO Y MEDIA MANANA|^MEDIA MANANA\\b"},
+    {"target": null, "pattern": "^ANTES DE LA COMIDA\\b|^ANTES DE CENA Y COMIDA\\b|^ANTES DE MERIENDA\\b|^ANTES DE IR A TRABAJAR\\b|^POSTRE\\b"}
+  ],
+  "signature": "CORREO|MAIL|EMAIL|\\bTEL\\b|TLF|TFNO|TELEFONO|WWW|HTTP|@|INSTAGRAM|WHATSAPP|^MODIFICADO POR|^ABDOMINALES|^OBLICUOS|^GIROS CON|^VERTICALES|^LARGOS |^CORTOS |IRELAX",
+  "sublabel": "^SUPLEMENTO|^SI HACES CARDIO\\b|^SI ENTRENAS|^EXTRA\\b|^ADEMAS\\b|^OPCIONAL\\b|^POSTRE\\b|^ACOMPANA|^PROTEINAS?$|^GRASAS?$|^HIDRATOS?$|^SALSAS|^ESPECIAS|^ENSALADA|^ALINAR|^INGREDIENTES|^A ELEGIR|^PARA DAR SABOR|^PUEDES HACER|^BEBIDAS|^CLA$|^PRODUCTOS RECOMENDADOS|^PREFERIBLEMENTE ALTERNAR|^TENGA HAMBRE",
+  "variant": "^TIPO\\b|^OPCION|^DIA\\b|^ALTERNATIVA|^CARGA\\b|^DESCARGA\\b|^VARIANTE|^SEMANA\\b|^LUNES|^MARTES|^MIERCOLES|^JUEVES|^VIERNES|^SABADO|^DOMINGO|^FIN DE SEMANA|^ENTRE SEMANA|^MENU\\b|^VERSION|^SI NO ENTRENAS|^SI NO VAS A ENTRENAR|^SI NO TE DA TIEMPO|ER DIA$|^O DIA$|^DIARIO$|^CATABOLICO",
+  "note": "^OBSERVA|^RECOMEND|^CONSEJ|^IMPORTANT|^NOTA|^CONTROLAR|^EVITAR|^RECUERD|^AGUA\\b|^INGESTA|^HIDRATA|^SUENO|^DESCANSO|^CARDIO\\b|^ENTRENAMIENTO\\b|^HORARIO|^PESO\\b|^OBJETIVO|^ACLARACION|^ADVERTENC|^PROHIB|^NO\\b|^SUPLEMENTACION\\b|^INFORMACION|^INDICACION|^INSTRUCCION|^COMENTARIO|^SUSTITU|^CANTIDAD|^MUY IMPORTANTE",
+  "_known_slots_doc": "The slots the LEGACY splitter already recognised: a label starting with one of these was split correctly in dataset-v1 and is not a mark. MITAD DE ENTRENAMIENTO is deliberately NOT here — it is the slot this pass creates.",
+  "known_slots": ["DESAYUNO", "MEDIA MANANA", "ALMUERZO", "COMIDA", "MERIENDA", "CENA", "RECENA", "ANTES DE ENTRENAR", "DESPUES DE ENTRENAR", "DESPUES ENTRENAR", "POST", "PRE ENTRENO", "BATIDO"]
+}

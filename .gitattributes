@@ -1,0 +1,16 @@
+# Line endings are decided by the repository, not by each machine's core.autocrlf (Git for Windows defaults it to true): a fresh clone
+# on Windows came out CRLF and Prettier flagged 128 frontend files (clean-clone verification, 2026-08-26). Everything textual is LF.
+* text=auto eol=lf
+*.sh text eol=lf
+*.ps1 text eol=lf
+*.png binary
+*.jpg binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
+
+# El corpus que viaja con el repositorio (seed/dataset) se guarda TAL CUAL, sin normalizar finales de linea. Ya esta en
+# LF, pero `text=auto` decide fichero a fichero y una conversion silenciosa sobre 27 MB de JSONL cambiaria los bytes y
+# con ellos los sha1 que `seed/dataset/MANIFEST.json` publica para poder comprobar que lo clonado es lo exportado.
+seed/dataset/** -text

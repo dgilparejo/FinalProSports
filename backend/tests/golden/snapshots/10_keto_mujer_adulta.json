@@ -1,0 +1,242 @@
+{
+ "compliance": 0.7692307692307693,
+ "forced_changes": [],
+ "k_effective": 20,
+ "meals": [
+  {
+   "groups": [
+    [
+     {
+      "food": "pollo",
+      "food_id": 1,
+      "quantity": 190.0,
+      "unit": "g"
+     },
+     {
+      "food": "cerdo",
+      "food_id": 39,
+      "quantity": 200.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "electrolitos",
+      "food_id": 44,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "aguacate",
+      "food_id": 19,
+      "quantity": 80.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "ternera",
+      "food_id": 24,
+      "quantity": 225.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "ajo",
+      "food_id": 37,
+      "quantity": 50.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "multivitamínico",
+      "food_id": 4,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "cúrcuma",
+      "food_id": 49,
+      "quantity": 1.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "ajo en polvo",
+      "food_id": 85,
+      "quantity": 1.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "ensalada",
+      "food_id": 13,
+      "quantity": 130.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "COMIDA"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "crema de cacahuete",
+      "food_id": 78,
+      "quantity": 35.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "almendras",
+      "food_id": 6,
+      "quantity": 15.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "atún",
+      "food_id": 12,
+      "quantity": 2.0,
+      "unit": "lata"
+     }
+    ],
+    [
+     {
+      "food": "tortitas de arroz",
+      "food_id": 50,
+      "quantity": 100.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "requesón",
+      "food_id": 82,
+      "quantity": 65.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "queso fresco",
+      "food_id": 62,
+      "quantity": 65.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "MERIENDA"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "ensalada",
+      "food_id": 13,
+      "quantity": 150.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "pescado blanco",
+      "food_id": 9,
+      "quantity": 220.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "nueces",
+      "food_id": 8,
+      "quantity": 20.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "pescado azul",
+      "food_id": 48,
+      "quantity": 205.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "yema de huevo",
+      "food_id": 11,
+      "quantity": 1.5,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "clara de huevo",
+      "food_id": 18,
+      "quantity": 3.5,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "aceite de oliva virgen extra",
+      "food_id": 5,
+      "quantity": 1.0,
+      "unit": "cucharada"
+     }
+    ]
+   ],
+   "slot": "CENA"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "quemagrasa",
+      "food_id": 32,
+      "quantity": 2.0,
+      "unit": "unidad"
+     }
+    ]
+   ],
+   "slot": "ANTES DE ENTRENAR"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "batido de proteínas",
+      "food_id": 3,
+      "quantity": 40.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "DESPUES DE ENTRENAR"
+  }
+ ],
+ "notes": [
+  "Masticar bien los alimentos y comer despacio.",
+  "Controlar la ingesta de agua que debe de ser de 2,5 a 3 litros y medio por día contando el agua de los batidos de proteínas. HAY QUE BEBER AUNQUE NO SE TENGA SED, PERO A TRAGOS PEQUEÑOS., Y ENTRE COMIDAS PRINCIPALMENTE.",
+  "ALGUNA VEZ EN LA CENA PUEDES SUSTITUIR EL PESCADO POR POLLO",
+  "DEBE HABER AL MENOS 16 HORAS ENTRE LA ÚLTIMA COMIDA Y LA PRIMERA.",
+  "No beber alcohol.",
+  "Todos los alimentos que se puedan cocinar se deben cocinar mejor que tomarlos crudos en esta dieta, y si es posible, esperar a que se enfríen antes de comerlos, intentar no freír los alimentos con aceite, el aceite se debe consumir crudo aunque se el eche a la comida.",
+  "SI TE ENTRA ANSIEDAD PUEDES COMER ALGO DE CHOCOLATE NEGRO O GELATINA SIN       AZÚCAR, NUNCA TOMAR HIDRATOS DE CARBONO O AZÚCARES.",
+  "Puedes saltarte la dieta 3 comidas en Semana, siempre separadas entre al menos 5 o 6 comidas."
+ ],
+ "routing": "cold_start",
+ "strategy": "case_based_composer"
+}

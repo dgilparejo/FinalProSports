@@ -1,0 +1,9 @@
+{
+ "sex": "M",
+ "age": 33,
+ "height_cm": 176,
+ "activity_level": 3,
+ "goal": "hipocalorica",
+ "expect_goal_not_servable": true,
+ "not_servable_reason": "Banda NO SERVIR de `neighbourhood_policy`: hipocalorica: UN cliente; los veinte votos son la misma persona. Por debajo de dos clientes distintos del objetivo el consenso no es un consenso, y servirlo como «basado en casos» afirmaria algo que la evidencia no sostiene. Antes de las bandas este perfil devolvia una dieta; ahora devuelve 422 goal_not_servable, y ese es el comportamiento aprobado, no una regresion."
+}

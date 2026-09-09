@@ -1,0 +1,79 @@
+{
+ "_doc": [
+  "Criterio humano versionado (revisión experta §3).",
+  "El catálogo E1 agrupa «Arroz vaporizado», «Arroz integral» y «Arroz blanco» en un solo canónico `arroz`: la variante se",
+  "pierde y el compositor no puede emitirla. Regenerar E1 costaría catálogo, dataset, embeddings y toda la medición, y no",
+  "es asumible a once días del depósito. Pero la variante SÍ sobrevive en `normalized_key`, que el compositor ya consensúa",
+  "entre los k vecinos: basta con que el renderizador la escriba CONSERVANDO el food_id. Es fiel a lo que él escribió y no",
+  "mueve ninguna cifra publicada, porque el motor sigue razonando sobre el canónico.",
+  "Se admite solo si extiende el canónico con UN calificador limpio y tiene soporte >= 20; los restos del parser",
+  "(«pollo sal», «pavo oternera») y los calificadores que nombran OTRO alimento («ensalada tomate») quedan fuera por NOISE.",
+  "Cobertura declarada: recupera «integral» y «blanco» del arroz, NO «vaporizado» (389 apariciones), que la normalización",
+  "disolvió y que solo volvería regenerando E1."
+ ],
+ "min_support": 20,
+ "variants": {
+  "creatina": [
+   {
+    "key": "creatina monohidrato",
+    "text": "Creatina monohidrato",
+    "n": 68,
+    "share": 0.148
+   }
+  ],
+  "arroz": [
+   {
+    "key": "arroz integral",
+    "text": "Arroz integral",
+    "n": 524,
+    "share": 0.277
+   },
+   {
+    "key": "arroz blanco",
+    "text": "Arroz blanco",
+    "n": 204,
+    "share": 0.108
+   }
+  ],
+  "ensalada": [
+   {
+    "key": "ensalada vegetal",
+    "text": "Ensalada vegetal",
+    "n": 75,
+    "share": 0.101
+   }
+  ],
+  "te": [
+   {
+    "key": "te verde",
+    "text": "Te verde",
+    "n": 68,
+    "share": 0.527
+   }
+  ],
+  "cafe": [
+   {
+    "key": "cafe solo",
+    "text": "Cafe solo",
+    "n": 87,
+    "share": 0.763
+   }
+  ],
+  "limon": [
+   {
+    "key": "limon exprimido",
+    "text": "Limon exprimido",
+    "n": 60,
+    "share": 0.833
+   }
+  ],
+  "queso": [
+   {
+    "key": "queso curado",
+    "text": "Queso curado",
+    "n": 30,
+    "share": 0.492
+   }
+  ]
+ }
+}

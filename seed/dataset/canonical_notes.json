@@ -1,0 +1,190 @@
+{
+ "source": "dataset diets.jsonl notes",
+ "n_diets": 1203,
+ "note_occurrences": 4829,
+ "artefacts_dropped": 8,
+ "kept": 4821,
+ "matched_by_a_theme": 3172,
+ "artefact_pattern": "^\\s*(observaciones|recomendaciones|consejos|notas|aclaraciones|importante)\\s*:?\\s*$|^\\s*[/(\"'.,-]*\\s*(tel|telf|tlf|teléfono|telefono|correo|email|e-mail|whatsapp|www|http)\\b|^[\\s(\"'/.,:;-]*$",
+ "min_support_diets": 15,
+ "themes": [
+  {
+   "id": "hidratacion",
+   "pattern": "litros de agua|ingesta de agua|beber agua|beber.{0,20}litros|tragos peque|aunque no se tenga sed|hidrataci[oó]n|entre comidas.{0,30}beber|no beber (mucho|mucha cantidad)",
+   "canonical": "Controlar la ingesta de agua que debe de ser de 2,5 a 3 litros y medio por día contando el agua de los batidos de proteínas. HAY QUE BEBER AUNQUE NO SE TENGA SED, PERO A TRAGOS PEQUEÑOS., Y ENTRE COMIDAS PRINCIPALMENTE.",
+   "support_diets": 583,
+   "support_share": 0.4846,
+   "distinct_wordings": 316,
+   "canonical_times": 19,
+   "must_match": "\\d+[.,]?\\d*\\s*(?:litros?|ml\\b|cc\\b)",
+   "rule_ids": [
+    "agua_2.5L"
+   ]
+  },
+  {
+   "id": "evitar_bebidas_con_sabor",
+   "pattern": "bebidas con sabor|con gas|azucaradas|zumos|carbonatad|refrescos",
+   "canonical": "Evitar las bebidas con sabor, con gas, azucaradas y zumos.",
+   "support_diets": 559,
+   "support_share": 0.4647,
+   "distinct_wordings": 72,
+   "canonical_times": 118,
+   "must_match": null,
+   "rule_ids": []
+  },
+  {
+   "id": "evitar_azucar_y_postres",
+   "pattern": "no tomar postres|evitar el az[uú]car|evitar az[uú]car|nada de az[uú]car|sin az[uú]car añadid|harinas blancas|cereales en caja|dulces",
+   "canonical": "EVITAR EL AZÚCAR.",
+   "support_diets": 425,
+   "support_share": 0.3533,
+   "distinct_wordings": 60,
+   "canonical_times": 68,
+   "must_match": null,
+   "rule_ids": [
+    "prohibido_azucar_procesados",
+    "mujeres_prohibicion_azucar"
+   ]
+  },
+  {
+   "id": "sal",
+   "pattern": "nada de sal|evitar la sal|sal yodada|sal del himalaya|pizca de sal|pizaca de sal|nunca sal|baja en sodio",
+   "canonical": "NO METER NADA DE SAL EN LAS COMIDAS",
+   "support_diets": 331,
+   "support_share": 0.2751,
+   "distinct_wordings": 95,
+   "canonical_times": 25,
+   "must_match": null,
+   "rule_ids": [
+    "sal_himalaya",
+    "mujeres_sal_himalaya"
+   ]
+  },
+  {
+   "id": "evitar_alcohol",
+   "pattern": "alcoh[oó]l",
+   "canonical": "No beber alcohol.",
+   "support_diets": 269,
+   "support_share": 0.2236,
+   "distinct_wordings": 26,
+   "canonical_times": 57,
+   "must_match": null,
+   "rule_ids": []
+  },
+  {
+   "id": "frecuencia_de_comidas",
+   "pattern": "horas y media sin comer|sin comer nada|saltarte|saltar.{0,15}comida|dos comidas|2 comidas|cada \\d+ horas",
+   "canonical": "Puedes saltarte la dieta 3 comidas en Semana, siempre separadas entre al menos 5 o 6 comidas.",
+   "support_diets": 220,
+   "support_share": 0.1829,
+   "distinct_wordings": 53,
+   "canonical_times": 47,
+   "must_match": "(?:saltarte 1 comida|dos comidas|2 comidas|saltar.*comida)",
+   "rule_ids": [
+    "saltarse_comidas_fibra",
+    "saltarse_comidas_fases_tempranas"
+   ]
+  },
+  {
+   "id": "comer_despacio",
+   "pattern": "masticar|despacio",
+   "canonical": "Masticar bien los alimentos y comer despacio.",
+   "support_diets": 220,
+   "support_share": 0.1829,
+   "distinct_wordings": 11,
+   "canonical_times": 28,
+   "must_match": "(?:masticar|despacio)",
+   "rule_ids": [
+    "comer_despacio"
+   ]
+  },
+  {
+   "id": "ayuno_intermitente",
+   "pattern": "16\\s*(a\\s*17\\s*)?horas|ayuno intermitente|16 h\\b",
+   "canonical": "DEBE HABER AL MENOS 16 HORAS ENTRE LA ÚLTIMA COMIDA Y LA PRIMERA.",
+   "support_diets": 151,
+   "support_share": 0.1255,
+   "distinct_wordings": 16,
+   "canonical_times": 41,
+   "must_match": "(?:16\\s*(a\\s*17\\s*)?horas|ayuno intermitente|16 h)",
+   "rule_ids": [
+    "ayuno_16h",
+    "ayuno_estable_por_fase"
+   ]
+  },
+  {
+   "id": "ansiedad_chocolate_o_gelatina",
+   "pattern": "ansiedad|chocolate negro|chocolate puro|gelatina",
+   "canonical": "SI TE ENTRA ANSIEDAD PUEDES COMER ALGO DE CHOCOLATE NEGRO O GELATINA SIN       AZÚCAR, NUNCA TOMAR HIDRATOS DE CARBONO O AZÚCARES.",
+   "support_diets": 148,
+   "support_share": 0.123,
+   "distinct_wordings": 35,
+   "canonical_times": 51,
+   "must_match": null,
+   "rule_ids": [
+    "ansiedad_chocolate_o_gelatina",
+    "mujeres_chocolate_gelatina"
+   ]
+  },
+  {
+   "id": "especias",
+   "pattern": "especias",
+   "canonical": "Puedes usar especias en la comida",
+   "support_diets": 145,
+   "support_share": 0.1205,
+   "distinct_wordings": 42,
+   "canonical_times": 20,
+   "must_match": null,
+   "rule_ids": []
+  },
+  {
+   "id": "descanso",
+   "pattern": "dormir\\s+(de\\s+)?\\d|horas de sue[ñn]o|descansar bien|descanso nocturno",
+   "canonical": "Dormir de 7 a 8 horas.",
+   "support_diets": 116,
+   "support_share": 0.0964,
+   "distinct_wordings": 1,
+   "canonical_times": 116,
+   "must_match": null,
+   "rule_ids": []
+  },
+  {
+   "id": "sustituir_pescado_por_pollo",
+   "pattern": "sustituir el pescado|sustituir el huevo|por pollo",
+   "canonical": "ALGUNA VEZ EN LA CENA PUEDES SUSTITUIR EL PESCADO POR POLLO",
+   "support_diets": 47,
+   "support_share": 0.0391,
+   "distinct_wordings": 3,
+   "canonical_times": 34,
+   "must_match": "(?:sustituir el pescado|sustituir el huevo|por pollo)",
+   "rule_ids": [
+    "sustituir_pescado_por_pollo",
+    "pescado_pollo_v1"
+   ]
+  },
+  {
+   "id": "coccion_y_aceite",
+   "pattern": "cocinar|fre[ií]r|aceite.{0,25}crudo|crudos|plancha|horno|hervid",
+   "canonical": "Todos los alimentos que se puedan cocinar se deben cocinar mejor que tomarlos crudos en esta dieta, y si es posible, esperar a que se enfríen antes de comerlos, intentar no freír los alimentos con aceite, el aceite se debe consumir crudo aunque se el eche a la comida.",
+   "support_diets": 26,
+   "support_share": 0.0216,
+   "distinct_wordings": 8,
+   "canonical_times": 13,
+   "must_match": null,
+   "rule_ids": []
+  },
+  {
+   "id": "soja",
+   "pattern": "soja",
+   "canonical": "Prohibida la Soja y derivados.",
+   "support_diets": 20,
+   "support_share": 0.0166,
+   "distinct_wordings": 5,
+   "canonical_times": 14,
+   "must_match": null,
+   "rule_ids": [
+    "soja_prohibida"
+   ]
+  }
+ ]
+}

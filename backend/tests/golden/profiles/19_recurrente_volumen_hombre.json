@@ -1,0 +1,8 @@
+{
+ "sex": "M",
+ "age": 26,
+ "height_cm": 181,
+ "activity_level": 5,
+ "goal": "volumen_masa",
+ "recurrent": true
+}

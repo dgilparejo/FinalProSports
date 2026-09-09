@@ -1,0 +1,48 @@
+.code
+  font-size: 13px
+  font-weight: 400
+  margin-left: 8px
+
+.facts
+  display: grid
+  grid-template-columns: 120px 1fr
+  gap: 4px 12px
+  margin: 0 0 12px
+  dt
+    color: var(--text-muted)
+  dd
+    margin: 0
+
+h3
+  margin: 12px 0 6px
+
+.tiles
+  gap: 12px
+
+.meal
+  margin: 4px 0
+  font-size: 13px
+
+.saved
+  list-style: none
+  margin: 0
+  padding: 0
+  li
+    display: flex
+    align-items: center
+    gap: 8px
+    min-height: var(--row)
+    border-bottom: 1px solid var(--border)
+    &:last-child
+      border-bottom: 0
+  .material-icons
+    font-size: 18px
+    color: var(--text-faint)
+
+@media (max-width: 720px)
+  .contact
+    display: block
+    margin-left: 0
+  .saved li
+    flex-wrap: wrap
+    padding: 6px 0

@@ -1,0 +1,42 @@
+{
+ "_doc": "Commercial brand names found in the prescriptions, mapped to their GENERIC function in the catalogue (data owner). Rule: no canonical_name may be a brand; brand keys live ONLY here (never in food_synonyms.json) and build_food_catalog merges them as synonyms of the generic canonical. Genericising a brand is not the same as excluding a substance: hormonal / anabolic products have no legitimate generic and stay in excluded_substances.json (testo best, testo f200, anabol, moratinol while unidentified). Keys are normalised (build_food_catalog.normalize_key). `unmapped_brands` documents brands seen in the corpus with no catalogue generic (left unmapped on purpose).",
+ "brands": [
+  {"brand": "Viggro", "keys": ["viggro", "diez entrenar viggro"], "generic": "amilopectina", "family": "suplemento_carbohidrato", "note": "amylopectin brand; was excluded_precautionary in E1, restored as its generic function"},
+  {"brand": "Vitargo", "keys": ["vitargo"], "generic": "amilopectina", "family": "suplemento_carbohidrato", "note": "patented barley starch carbohydrate"},
+  {"brand": "Fatrans / X-Trans", "keys": ["fatrans", "fat trans", "xtrans"], "generic": "quemagrasa", "family": "suplemento_otro", "note": "fat burner brand"},
+  {"brand": "Tegor", "keys": ["quemagrasa tegor", "tegor"], "generic": "quemagrasa", "family": "suplemento_otro", "note": "laboratory brand used as a descriptor of the fat burner"},
+  {"brand": "Rejuvenix", "keys": ["rejuvenix", "quemagrasa rejuvenix"], "generic": "quemagrasa", "family": "suplemento_otro", "note": "fat burner brand"},
+  {"brand": "Trimatrix", "keys": ["trimatrix", "batido trimatrix", "proteina trimatrix"], "generic": "batido de proteínas", "family": "suplemento_proteina", "note": "protein blend brand (210 components)"},
+  {"brand": "Factores", "keys": ["factores", "factor", "v factores"], "generic": "batido de proteínas", "family": "suplemento_proteina", "note": "protein product line"},
+  {"brand": "Whey Cell", "keys": ["whey cell", "proteina whey cell", "cell"], "generic": "batido de proteínas", "family": "suplemento_proteina", "note": "whey protein brand"},
+  {"brand": "Amino Power", "keys": ["amino power"], "generic": "aminoácidos", "family": "aminoacidos", "note": "amino acid blend brand (117 components)"},
+  {"brand": "MAP (Master Amino Acid Pattern)", "keys": ["map", "maps"], "generic": "eaa", "family": "aminoacidos", "note": "essential amino acid formula brand"},
+  {"brand": "Kre-Alkalyn", "keys": ["kreaklyn", "kre alkalyn", "krealkalyn", "kre alcalyn"], "generic": "creatina", "family": "aminoacidos", "note": "buffered creatine brand"},
+  {"brand": "Osteocart", "keys": ["osteocart", "oseocart"], "generic": "protector articular", "family": "suplemento_otro", "note": "joint support brand"},
+  {"brand": "Artiflex", "keys": ["artiflex"], "generic": "protector articular", "family": "suplemento_otro", "note": "joint support brand"},
+  {"brand": "Condro Plus", "keys": ["condro plu", "condro plus", "condroplus"], "generic": "protector articular", "family": "suplemento_otro", "note": "chondroitin brand"},
+  {"brand": "Liv 52", "keys": ["liv 52", "liv52", "liv"], "generic": "protector hepático", "family": "suplemento_otro", "note": "herbal liver-support brand; the former canonical 'liv 52' is renamed to its generic function"},
+  {"brand": "Legalon", "keys": ["legalon"], "generic": "protector hepático", "family": "suplemento_otro", "note": "silymarin brand"},
+  {"brand": "Omnivit", "keys": ["omnivit"], "generic": "multivitamínico", "family": "vitamina", "note": "multivitamin brand"},
+  {"brand": "Animal Pak", "keys": ["animal pack", "animal pak", "animal"], "generic": "multivitamínico", "family": "vitamina", "note": "multivitamin/mineral pack brand"},
+  {"brand": "Water Out", "keys": ["water out"], "generic": "diurético", "family": "suplemento_otro", "note": "herbal diuretic brand"},
+  {"brand": "ArgininePro / NOX / Nitrates", "keys": ["argininepro", "arginine pro", "nox", "nitrates"], "generic": "arginina", "family": "aminoacidos", "note": "nitric-oxide precursor brands (arginine / citrulline based)"},
+  {"brand": "Ovofull", "keys": ["ovofull"], "generic": "clara de huevo", "family": "huevo", "note": "liquid egg white brand"},
+  {"brand": "Voluminator", "keys": ["voluminator"], "generic": "batido de carbohidratos (carga)", "family": "suplemento_carbohidrato", "note": "mass-gainer brand (carbohydrate + protein shake)"},
+  {"brand": "High Voltage", "keys": ["high voltage"], "generic": "pre-entreno", "family": "suplemento_otro", "note": "pre-workout brand"},
+  {"brand": "Actimel", "keys": ["actimel", "actimel azucar"], "generic": "yogur", "family": "lacteo", "note": "fermented milk brand"},
+  {"brand": "Magnical D", "keys": ["magnical d", "magnical"], "generic": "calcio", "family": "mineral", "note": "calcium + magnesium + vitamin D brand"},
+  {"brand": "ZMA", "keys": ["zma", "t zma"], "generic": "complejo zinc-magnesio", "family": "mineral", "note": "registered trademark (zinc monomethionine aspartate + magnesium aspartate + B6); the former canonical 'zma' is renamed to its generic function"}
+ ],
+ "unmapped_brands": [
+  {"brand": "Test Pump", "keys": ["test pump"], "decision": "excluded_precautionary", "reason": "commercial name suggests a testosterone product; no legitimate generic (added to excluded_substances.json)"},
+  {"brand": "Glucobest", "keys": ["glucobest", "glucobest cenar"], "decision": "unmapped", "reason": "glucose-metabolism blend of unknown composition"},
+  {"brand": "Vinali", "keys": ["vinali"], "decision": "unmapped", "reason": "unknown composition"},
+  {"brand": "iRelax / Sueño Comp", "keys": ["irelax stress comp", "sueno comp"], "decision": "unmapped", "reason": "sleep/stress blends without a catalogue generic"},
+  {"brand": "Opti Hair", "keys": ["opti hair"], "decision": "unmapped", "reason": "cosmetic supplement, not a dietary component"},
+  {"brand": "Cola Cao", "keys": ["cola cao", "grs cola cao"], "decision": "unmapped", "reason": "sugared cocoa drink: not 'cacao puro' (would violate the processed-sugar rule)"},
+  {"brand": "Nocilla proteica", "keys": ["nocilla proteina"], "decision": "unmapped", "reason": "protein spread without a catalogue generic"},
+  {"brand": "Glucogen", "keys": ["glucogen"], "decision": "unmapped", "reason": "unknown carbohydrate product"},
+  {"brand": "Keto BHB", "keys": ["keto bhb"], "decision": "unmapped", "reason": "exogenous ketones: no catalogue generic"}
+ ]
+}

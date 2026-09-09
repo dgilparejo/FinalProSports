@@ -1,0 +1,3049 @@
+{
+ "_synthetic": true,
+ "generated_by": "build_synthetic_fixture.py",
+ "_note": "Cliente INVENTADO. Ni un dato de una persona real: las dos versiones previas las compuso el motor contra la base de casos sintética, la báscula y la analítica están generadas.",
+ "full_name": "Ibai Sintético Demo",
+ "birth_date": "1996-04-17",
+ "phone": "+34 000 000 099",
+ "email_parts": [
+  "ibai.sintetico",
+  "demo.invalid"
+ ],
+ "sex": "M",
+ "height_cm": 179,
+ "activity_level": 5,
+ "goal": "volumen_masa",
+ "restrictions": [
+  "contains_lactose"
+ ],
+ "record": {
+  "first_visit": "2026-03-02",
+  "initial_weight_kg": 74.5,
+  "height_cm": 179,
+  "wrist_cm": 17.2,
+  "waist_cm": 80.0,
+  "neck_cm": 38.5,
+  "hip_cm": null,
+  "somatotype": "mesomorfo",
+  "allergies": "ninguna",
+  "intolerances": "lactosa",
+  "injuries": "ninguna",
+  "surgeries": "ninguna",
+  "liked_foods": "arroz, pavo, plátano",
+  "disliked_foods": "coliflor",
+  "food_vices": "refrescos",
+  "smokes": false,
+  "drinks_alcohol": false,
+  "training_years": 4,
+  "sports": "gimnasio (fuerza)",
+  "achievements": "primer torneo amateur",
+  "goals_text": "subir masa muscular sin ensuciar la dieta",
+  "work_schedule": "9:00-18:00",
+  "training_schedule": "19:00-20:30",
+  "supplements_owned": "creatina, batido de proteínas",
+  "first_diet_notes": null,
+  "watch_brand": "Garmin"
+ },
+ "scale": [
+  {
+   "measured_at": 1782891600000,
+   "weight_kg": 77.2,
+   "fat_pct": 14.4,
+   "muscle_mass_kg": 62.5,
+   "hydration_pct": 58.3,
+   "bone_mass_kg": 3.6,
+   "visceral_fat_rating": 6.5,
+   "metabolic_age": 30,
+   "basal_met_kcal": "1746",
+   "source": "scale"
+  },
+  {
+   "measured_at": 1785570000000,
+   "weight_kg": 77.8,
+   "fat_pct": 14.5,
+   "muscle_mass_kg": 62.8,
+   "hydration_pct": 58.3,
+   "bone_mass_kg": 3.7,
+   "visceral_fat_rating": 6.6,
+   "metabolic_age": 30,
+   "basal_met_kcal": "1752",
+   "source": "scale"
+  },
+  {
+   "measured_at": 1788248400000,
+   "weight_kg": 78.4,
+   "fat_pct": 14.6,
+   "muscle_mass_kg": 63.3,
+   "hydration_pct": 58.2,
+   "bone_mass_kg": 3.7,
+   "visceral_fat_rating": 6.6,
+   "metabolic_age": 30,
+   "basal_met_kcal": "1758",
+   "source": "scale"
+  }
+ ],
+ "labs": [
+  {
+   "marker": "Glucosa",
+   "value": 91.0,
+   "unit": "mg/dL",
+   "ref_low": 70.0,
+   "ref_high": 100.0,
+   "measured_at": "2026-07-08",
+   "note": null,
+   "source": "file"
+  },
+  {
+   "marker": "Hemoglobina glicosilada",
+   "value": 5.1,
+   "unit": "%",
+   "ref_low": 4.0,
+   "ref_high": 5.7,
+   "measured_at": "2026-07-08",
+   "note": null,
+   "source": "file"
+  },
+  {
+   "marker": "Colesterol total",
+   "value": 181.0,
+   "unit": "mg/dL",
+   "ref_low": null,
+   "ref_high": 200.0,
+   "measured_at": "2026-07-08",
+   "note": null,
+   "source": "file"
+  },
+  {
+   "marker": "HDL",
+   "value": 57.0,
+   "unit": "mg/dL",
+   "ref_low": 40.0,
+   "ref_high": null,
+   "measured_at": "2026-07-08",
+   "note": null,
+   "source": "file"
+  },
+  {
+   "marker": "LDL",
+   "value": 104.0,
+   "unit": "mg/dL",
+   "ref_low": null,
+   "ref_high": 130.0,
+   "measured_at": "2026-07-08",
+   "note": null,
+   "source": "file"
+  },
+  {
+   "marker": "Triglicéridos",
+   "value": 96.0,
+   "unit": "mg/dL",
+   "ref_low": null,
+   "ref_high": 150.0,
+   "measured_at": "2026-07-08",
+   "note": null,
+   "source": "file"
+  },
+  {
+   "marker": "Ferritina",
+   "value": 112.0,
+   "unit": "ng/mL",
+   "ref_low": 30.0,
+   "ref_high": 300.0,
+   "measured_at": "2026-07-08",
+   "note": null,
+   "source": "file"
+  },
+  {
+   "marker": "Hierro",
+   "value": 98.0,
+   "unit": "µg/dL",
+   "ref_low": 60.0,
+   "ref_high": 170.0,
+   "measured_at": "2026-07-08",
+   "note": null,
+   "source": "file"
+  },
+  {
+   "marker": "Vitamina D",
+   "value": 27.0,
+   "unit": "ng/mL",
+   "ref_low": 30.0,
+   "ref_high": 100.0,
+   "measured_at": "2026-07-08",
+   "note": null,
+   "source": "file"
+  },
+  {
+   "marker": "Vitamina B12",
+   "value": 386.0,
+   "unit": "pg/mL",
+   "ref_low": 200.0,
+   "ref_high": 900.0,
+   "measured_at": "2026-07-08",
+   "note": null,
+   "source": "file"
+  },
+  {
+   "marker": "TSH",
+   "value": 1.8,
+   "unit": "mUI/L",
+   "ref_low": 0.4,
+   "ref_high": 4.0,
+   "measured_at": "2026-07-08",
+   "note": null,
+   "source": "file"
+  },
+  {
+   "marker": "Creatinina",
+   "value": 1.02,
+   "unit": "mg/dL",
+   "ref_low": 0.7,
+   "ref_high": 1.3,
+   "measured_at": "2026-07-08",
+   "note": null,
+   "source": "file"
+  }
+ ],
+ "previous": [
+  {
+   "date": "2026-06-03",
+   "payload": {
+    "profile": {
+     "client_code": "",
+     "professional_id": "prof_001",
+     "sex": "M",
+     "age": 30,
+     "height_cm": 179,
+     "activity_level": 5,
+     "goal": "volumen_masa",
+     "has_allergies": false,
+     "has_intolerances": true,
+     "has_medical_restrictions": false,
+     "restrictions": [
+      {
+       "kind": "contains_lactose",
+       "strict": true
+      }
+     ],
+     "is_athlete": null,
+     "sport": null,
+     "disliked_food_ids": [],
+     "owned_supplement_ids": []
+    },
+    "strategy": "case_based_composer",
+    "parameters": {
+     "k": 20,
+     "inclusion_threshold": 0.35,
+     "slot_threshold": 0.35,
+     "max_alternatives": 4,
+     "note_threshold": 0.35,
+     "min_notes": 3,
+     "alternative_link": 0.5,
+     "compound_link": 0.5,
+     "degradation": "none",
+     "min_cases_to_compose": 3,
+     "similarity_weighting": 0.0,
+     "repeat_penalty": 0.2,
+     "k_effective": 20,
+     "same_goal_cases": 20,
+     "routing": "cold_start",
+     "history_size": 0,
+     "novelty": "equilibrada",
+     "neighbourhood": {
+      "band": "servir",
+      "goal_diets": 20,
+      "goal_clients": 20,
+      "distinct_clients": 20,
+      "available_goal_clients": 47
+     },
+     "neighbourhood_warning": null,
+     "plausibility": {
+      "applied": true,
+      "changes": [
+       {
+        "kind": "portion_in_grams",
+        "slot": "RECIEN LEVANTADO",
+        "food_id": 3,
+        "canonical_name": "batido de proteínas",
+        "detail": "«batido de proteínas» no se prescribe por unidades; escrito con su ración habitual 40 g"
+       },
+       {
+        "kind": "portion_in_grams",
+        "slot": "ANTES DE DORMIR",
+        "food_id": 3,
+        "canonical_name": "batido de proteínas",
+        "detail": "«batido de proteínas» no se prescribe por unidades; escrito con su ración habitual 40 g"
+       },
+       {
+        "kind": "portion_in_grams",
+        "slot": "ANTES DE ENTRENAR",
+        "food_id": 3,
+        "canonical_name": "batido de proteínas",
+        "detail": "«batido de proteínas» no se prescribe por unidades; escrito con su ración habitual 40 g"
+       },
+       {
+        "kind": "portion_in_grams",
+        "slot": "DESPUES DE ENTRENAR",
+        "food_id": 3,
+        "canonical_name": "batido de proteínas",
+        "detail": "«batido de proteínas» no se prescribe por unidades; escrito con su ración habitual 40 g"
+       }
+      ]
+     }
+    },
+    "retrieved_case_ids": [
+     "SINT_112::v01",
+     "SINT_226::v01",
+     "SINT_243::v01",
+     "SINT_184::v01",
+     "SINT_062::v01",
+     "SINT_132::v01",
+     "SINT_252::v01",
+     "SINT_262::v01",
+     "SINT_300::v01",
+     "SINT_131::v01",
+     "SINT_156::v01",
+     "SINT_185::v01",
+     "SINT_094::v01",
+     "SINT_096::v01",
+     "SINT_140::v01",
+     "SINT_197::v01",
+     "SINT_221::v01",
+     "SINT_030::v01",
+     "SINT_045::v01",
+     "SINT_088::v01"
+    ],
+    "meals": [
+     {
+      "slot": "RECIEN LEVANTADO",
+      "groups": [
+       {
+        "position": 1,
+        "options": [
+         {
+          "food_id": 4,
+          "canonical_name": "multivitamínico",
+          "display_name": null,
+          "normalized_key": "multivitamínico",
+          "text": "1 unidad multivitamínico",
+          "quantity": 1.0,
+          "unit": "unidad",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.6,
+           "cases": [
+            "SINT_184::v01",
+            "SINT_062::v01",
+            "SINT_300::v01",
+            "SINT_185::v01",
+            "SINT_140::v01",
+            "SINT_045::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "slot": "DESAYUNO",
+      "groups": [
+       {
+        "position": 0,
+        "options": [
+         {
+          "food_id": 21,
+          "canonical_name": "avena",
+          "display_name": null,
+          "normalized_key": "avena",
+          "text": "60 g avena",
+          "quantity": 60.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.8571,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_226::v01",
+            "SINT_184::v01",
+            "SINT_132::v01",
+            "SINT_252::v01",
+            "SINT_262::v01",
+            "SINT_300::v01",
+            "SINT_131::v01",
+            "SINT_094::v01",
+            "SINT_140::v01",
+            "SINT_197::v01",
+            "SINT_088::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "desayuno_avena_cereales",
+             "prevalence": 0.644,
+             "lift": null
+            },
+            {
+             "rule_id": "hidratos_primera_mitad_dia",
+             "prevalence": 0.866,
+             "lift": null
+            }
+           ]
+          }
+         }
+        ]
+       },
+       {
+        "position": 1,
+        "options": [
+         {
+          "food_id": 11,
+          "canonical_name": "yema de huevo",
+          "display_name": null,
+          "normalized_key": "yema de huevo",
+          "text": "1 unidad yema de huevo",
+          "quantity": 1.0,
+          "unit": "unidad",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.7143,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_226::v01",
+            "SINT_243::v01",
+            "SINT_184::v01",
+            "SINT_132::v01",
+            "SINT_131::v01",
+            "SINT_185::v01",
+            "SINT_094::v01",
+            "SINT_197::v01",
+            "SINT_088::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       },
+       {
+        "position": 2,
+        "options": [
+         {
+          "food_id": 34,
+          "canonical_name": "cereales integrales",
+          "display_name": null,
+          "normalized_key": "cereales integrales",
+          "text": "60 g cereales integrales",
+          "quantity": 60.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.5,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_226::v01",
+            "SINT_184::v01",
+            "SINT_132::v01",
+            "SINT_262::v01",
+            "SINT_300::v01",
+            "SINT_131::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "desayuno_avena_cereales",
+             "prevalence": 0.644,
+             "lift": null
+            },
+            {
+             "rule_id": "hidratos_primera_mitad_dia",
+             "prevalence": 0.866,
+             "lift": null
+            }
+           ]
+          }
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "slot": "MEDIA MAÑANA",
+      "groups": [
+       {
+        "position": 0,
+        "options": [
+         {
+          "food_id": 7,
+          "canonical_name": "pavo",
+          "display_name": null,
+          "normalized_key": "pavo",
+          "text": "140 g pavo",
+          "quantity": 140.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.8571,
+           "cases": [
+            "SINT_226::v01",
+            "SINT_184::v01",
+            "SINT_062::v01",
+            "SINT_132::v01",
+            "SINT_252::v01",
+            "SINT_300::v01",
+            "SINT_131::v01",
+            "SINT_094::v01",
+            "SINT_096::v01",
+            "SINT_197::v01",
+            "SINT_221::v01",
+            "SINT_045::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       },
+       {
+        "position": 1,
+        "options": [
+         {
+          "food_id": 2,
+          "canonical_name": "arroz",
+          "display_name": null,
+          "normalized_key": "arroz",
+          "text": "180 g arroz",
+          "quantity": 180.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.6429,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_184::v01",
+            "SINT_252::v01",
+            "SINT_300::v01",
+            "SINT_131::v01",
+            "SINT_096::v01",
+            "SINT_140::v01",
+            "SINT_197::v01",
+            "SINT_045::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "hidratos_primera_mitad_dia",
+             "prevalence": 0.866,
+             "lift": null
+            }
+           ]
+          }
+         }
+        ]
+       },
+       {
+        "position": 2,
+        "options": [
+         {
+          "food_id": 6,
+          "canonical_name": "almendras",
+          "display_name": null,
+          "normalized_key": "almendras",
+          "text": "20 g almendras",
+          "quantity": 20.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.6429,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_226::v01",
+            "SINT_184::v01",
+            "SINT_132::v01",
+            "SINT_300::v01",
+            "SINT_094::v01",
+            "SINT_140::v01",
+            "SINT_197::v01",
+            "SINT_221::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       },
+       {
+        "position": 3,
+        "options": [
+         {
+          "food_id": 1,
+          "canonical_name": "pollo",
+          "display_name": null,
+          "normalized_key": "pollo",
+          "text": "210 g pollo",
+          "quantity": 210.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.5714,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_226::v01",
+            "SINT_062::v01",
+            "SINT_132::v01",
+            "SINT_252::v01",
+            "SINT_094::v01",
+            "SINT_197::v01",
+            "SINT_221::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       },
+       {
+        "position": 4,
+        "options": [
+         {
+          "food_id": 25,
+          "canonical_name": "pan integral",
+          "display_name": null,
+          "normalized_key": "pan integral",
+          "text": "1.5 loncha pan integral",
+          "quantity": 1.5,
+          "unit": "loncha",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.3571,
+           "cases": [
+            "SINT_184::v01",
+            "SINT_132::v01",
+            "SINT_300::v01",
+            "SINT_131::v01",
+            "SINT_094::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "hidratos_primera_mitad_dia",
+             "prevalence": 0.866,
+             "lift": null
+            }
+           ]
+          }
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "slot": "COMIDA",
+      "groups": [
+       {
+        "position": 0,
+        "options": [
+         {
+          "food_id": 2,
+          "canonical_name": "arroz",
+          "display_name": null,
+          "normalized_key": "arroz",
+          "text": "170 g arroz",
+          "quantity": 170.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.9286,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_226::v01",
+            "SINT_184::v01",
+            "SINT_062::v01",
+            "SINT_132::v01",
+            "SINT_300::v01",
+            "SINT_131::v01",
+            "SINT_156::v01",
+            "SINT_185::v01",
+            "SINT_094::v01",
+            "SINT_197::v01",
+            "SINT_030::v01",
+            "SINT_088::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "hidratos_primera_mitad_dia",
+             "prevalence": 0.866,
+             "lift": null
+            }
+           ]
+          }
+         }
+        ]
+       },
+       {
+        "position": 1,
+        "options": [
+         {
+          "food_id": 1,
+          "canonical_name": "pollo",
+          "display_name": null,
+          "normalized_key": "pollo",
+          "text": "190 g pollo",
+          "quantity": 190.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.8571,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_226::v01",
+            "SINT_184::v01",
+            "SINT_062::v01",
+            "SINT_252::v01",
+            "SINT_300::v01",
+            "SINT_156::v01",
+            "SINT_185::v01",
+            "SINT_094::v01",
+            "SINT_197::v01",
+            "SINT_030::v01",
+            "SINT_088::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       },
+       {
+        "position": 2,
+        "options": [
+         {
+          "food_id": 14,
+          "canonical_name": "pasta integral",
+          "display_name": null,
+          "normalized_key": "pasta integral",
+          "text": "180 g pasta integral",
+          "quantity": 180.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.7143,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_184::v01",
+            "SINT_132::v01",
+            "SINT_252::v01",
+            "SINT_300::v01",
+            "SINT_131::v01",
+            "SINT_185::v01",
+            "SINT_197::v01",
+            "SINT_030::v01",
+            "SINT_088::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "hidratos_primera_mitad_dia",
+             "prevalence": 0.866,
+             "lift": null
+            }
+           ]
+          }
+         }
+        ]
+       },
+       {
+        "position": 3,
+        "options": [
+         {
+          "food_id": 26,
+          "canonical_name": "legumbres",
+          "display_name": null,
+          "normalized_key": "legumbres",
+          "text": "210 g legumbres",
+          "quantity": 210.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.5714,
+           "cases": [
+            "SINT_226::v01",
+            "SINT_184::v01",
+            "SINT_132::v01",
+            "SINT_131::v01",
+            "SINT_185::v01",
+            "SINT_094::v01",
+            "SINT_197::v01",
+            "SINT_088::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "hidratos_primera_mitad_dia",
+             "prevalence": 0.866,
+             "lift": null
+            }
+           ]
+          }
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "slot": "MEDIA TARDE",
+      "groups": [
+       {
+        "position": 0,
+        "options": [
+         {
+          "food_id": 1,
+          "canonical_name": "pollo",
+          "display_name": null,
+          "normalized_key": "pollo",
+          "text": "230 g pollo",
+          "quantity": 230.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 1.0,
+           "cases": [
+            "SINT_243::v01",
+            "SINT_062::v01",
+            "SINT_132::v01",
+            "SINT_156::v01",
+            "SINT_185::v01",
+            "SINT_096::v01",
+            "SINT_140::v01",
+            "SINT_221::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       },
+       {
+        "position": 1,
+        "options": [
+         {
+          "food_id": 7,
+          "canonical_name": "pavo",
+          "display_name": null,
+          "normalized_key": "pavo",
+          "text": "165 g pavo",
+          "quantity": 165.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.75,
+           "cases": [
+            "SINT_243::v01",
+            "SINT_156::v01",
+            "SINT_185::v01",
+            "SINT_096::v01",
+            "SINT_140::v01",
+            "SINT_221::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       },
+       {
+        "position": 2,
+        "options": [
+         {
+          "food_id": 2,
+          "canonical_name": "arroz",
+          "display_name": null,
+          "normalized_key": "arroz",
+          "text": "155 g arroz",
+          "quantity": 155.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.625,
+           "cases": [
+            "SINT_132::v01",
+            "SINT_156::v01",
+            "SINT_096::v01",
+            "SINT_140::v01",
+            "SINT_221::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       },
+       {
+        "position": 3,
+        "options": [
+         {
+          "food_id": 6,
+          "canonical_name": "almendras",
+          "display_name": null,
+          "normalized_key": "almendras",
+          "text": "20 g almendras",
+          "quantity": 20.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.5,
+           "cases": [
+            "SINT_243::v01",
+            "SINT_132::v01",
+            "SINT_140::v01",
+            "SINT_221::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       },
+       {
+        "position": 4,
+        "options": [
+         {
+          "food_id": 12,
+          "canonical_name": "atún",
+          "display_name": null,
+          "normalized_key": "atún",
+          "text": "2 lata atún",
+          "quantity": 2.0,
+          "unit": "lata",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.375,
+           "cases": [
+            "SINT_243::v01",
+            "SINT_156::v01",
+            "SINT_140::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "slot": "CENA",
+      "groups": [
+       {
+        "position": 0,
+        "options": [
+         {
+          "food_id": 5,
+          "canonical_name": "aceite de oliva virgen extra",
+          "display_name": null,
+          "normalized_key": "aceite de oliva virgen extra",
+          "text": "1 cucharada aceite de oliva virgen extra",
+          "quantity": 1.0,
+          "unit": "cucharada",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.8,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_243::v01",
+            "SINT_062::v01",
+            "SINT_252::v01",
+            "SINT_300::v01",
+            "SINT_131::v01",
+            "SINT_156::v01",
+            "SINT_096::v01",
+            "SINT_197::v01",
+            "SINT_221::v01",
+            "SINT_030::v01",
+            "SINT_045::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "cena_proteina_grasa_verdura",
+             "prevalence": 0.855,
+             "lift": null
+            }
+           ]
+          }
+         }
+        ]
+       },
+       {
+        "position": 1,
+        "options": [
+         {
+          "food_id": 9,
+          "canonical_name": "pescado blanco",
+          "display_name": null,
+          "normalized_key": "pescado blanco",
+          "text": "220 g pescado blanco",
+          "quantity": 220.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.8,
+           "cases": [
+            "SINT_226::v01",
+            "SINT_243::v01",
+            "SINT_062::v01",
+            "SINT_252::v01",
+            "SINT_262::v01",
+            "SINT_300::v01",
+            "SINT_131::v01",
+            "SINT_094::v01",
+            "SINT_096::v01",
+            "SINT_221::v01",
+            "SINT_030::v01",
+            "SINT_045::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "cena_proteina_grasa_verdura",
+             "prevalence": 0.855,
+             "lift": null
+            }
+           ]
+          }
+         }
+        ]
+       },
+       {
+        "position": 2,
+        "options": [
+         {
+          "food_id": 13,
+          "canonical_name": "ensalada",
+          "display_name": null,
+          "normalized_key": "ensalada",
+          "text": "130 g ensalada",
+          "quantity": 130.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.7333,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_062::v01",
+            "SINT_252::v01",
+            "SINT_262::v01",
+            "SINT_300::v01",
+            "SINT_131::v01",
+            "SINT_156::v01",
+            "SINT_096::v01",
+            "SINT_197::v01",
+            "SINT_221::v01",
+            "SINT_045::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "cena_proteina_grasa_verdura",
+             "prevalence": 0.855,
+             "lift": null
+            }
+           ]
+          }
+         }
+        ]
+       },
+       {
+        "position": 3,
+        "options": [
+         {
+          "food_id": 1,
+          "canonical_name": "pollo",
+          "display_name": null,
+          "normalized_key": "pollo",
+          "text": "205 g pollo",
+          "quantity": 205.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.6667,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_226::v01",
+            "SINT_243::v01",
+            "SINT_252::v01",
+            "SINT_262::v01",
+            "SINT_300::v01",
+            "SINT_131::v01",
+            "SINT_156::v01",
+            "SINT_096::v01",
+            "SINT_197::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "cena_proteina_grasa_verdura",
+             "prevalence": 0.855,
+             "lift": null
+            }
+           ]
+          }
+         }
+        ]
+       },
+       {
+        "position": 4,
+        "options": [
+         {
+          "food_id": 2,
+          "canonical_name": "arroz",
+          "display_name": null,
+          "normalized_key": "arroz",
+          "text": "150 g arroz",
+          "quantity": 150.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.6,
+           "cases": [
+            "SINT_226::v01",
+            "SINT_243::v01",
+            "SINT_062::v01",
+            "SINT_252::v01",
+            "SINT_300::v01",
+            "SINT_131::v01",
+            "SINT_156::v01",
+            "SINT_197::v01",
+            "SINT_221::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       },
+       {
+        "position": 5,
+        "options": [
+         {
+          "food_id": 8,
+          "canonical_name": "nueces",
+          "display_name": null,
+          "normalized_key": "nueces",
+          "text": "20 g nueces",
+          "quantity": 20.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.4667,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_226::v01",
+            "SINT_062::v01",
+            "SINT_131::v01",
+            "SINT_094::v01",
+            "SINT_197::v01",
+            "SINT_045::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "cena_proteina_grasa_verdura",
+             "prevalence": 0.855,
+             "lift": null
+            }
+           ]
+          }
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "slot": "ANTES DE DORMIR",
+      "groups": [
+       {
+        "position": 1,
+        "options": [
+         {
+          "food_id": 6,
+          "canonical_name": "almendras",
+          "display_name": null,
+          "normalized_key": "almendras",
+          "text": "20 g almendras",
+          "quantity": 20.0,
+          "unit": "g",
+          "alternative_group": "ANTES DE DORMIR-1",
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.875,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_132::v01",
+            "SINT_262::v01",
+            "SINT_156::v01",
+            "SINT_185::v01",
+            "SINT_045::v01",
+            "SINT_088::v01"
+           ],
+           "rules": []
+          }
+         },
+         {
+          "food_id": 8,
+          "canonical_name": "nueces",
+          "display_name": null,
+          "normalized_key": "nueces",
+          "text": "20 g nueces",
+          "quantity": 20.0,
+          "unit": "g",
+          "alternative_group": "ANTES DE DORMIR-1",
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.75,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_132::v01",
+            "SINT_262::v01",
+            "SINT_185::v01",
+            "SINT_045::v01",
+            "SINT_088::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       },
+       {
+        "position": 2,
+        "options": [
+         {
+          "food_id": 1,
+          "canonical_name": "pollo",
+          "display_name": null,
+          "normalized_key": "pollo",
+          "text": "230 g pollo",
+          "quantity": 230.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.75,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_262::v01",
+            "SINT_156::v01",
+            "SINT_185::v01",
+            "SINT_221::v01",
+            "SINT_045::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       },
+       {
+        "position": 3,
+        "options": [
+         {
+          "food_id": 7,
+          "canonical_name": "pavo",
+          "display_name": null,
+          "normalized_key": "pavo",
+          "text": "125 g pavo",
+          "quantity": 125.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.5,
+           "cases": [
+            "SINT_262::v01",
+            "SINT_185::v01",
+            "SINT_221::v01",
+            "SINT_045::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "slot": "ANTES DE ENTRENAR",
+      "groups": [
+       {
+        "position": 0,
+        "options": [
+         {
+          "food_id": 20,
+          "canonical_name": "piña",
+          "display_name": null,
+          "normalized_key": "piña",
+          "text": "2 loncha piña",
+          "quantity": 2.0,
+          "unit": "loncha",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.75,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_184::v01",
+            "SINT_132::v01",
+            "SINT_300::v01",
+            "SINT_156::v01",
+            "SINT_094::v01",
+            "SINT_096::v01",
+            "SINT_140::v01",
+            "SINT_197::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       },
+       {
+        "position": 1,
+        "options": [
+         {
+          "food_id": 27,
+          "canonical_name": "creatina",
+          "display_name": null,
+          "normalized_key": "creatina",
+          "text": "10 g creatina",
+          "quantity": 10.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.6667,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_226::v01",
+            "SINT_132::v01",
+            "SINT_156::v01",
+            "SINT_096::v01",
+            "SINT_140::v01",
+            "SINT_197::v01",
+            "SINT_045::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "suplementacion_pre_post",
+             "prevalence": 0.616,
+             "lift": 1.49
+            },
+            {
+             "rule_id": "hombres_suplementacion",
+             "prevalence": 0.46,
+             "lift": 2.86
+            }
+           ]
+          }
+         }
+        ]
+       },
+       {
+        "position": 3,
+        "options": [
+         {
+          "food_id": 47,
+          "canonical_name": "bcaa",
+          "display_name": null,
+          "normalized_key": "bcaa",
+          "text": "10 g bcaa",
+          "quantity": 10.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.4167,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_184::v01",
+            "SINT_131::v01",
+            "SINT_094::v01",
+            "SINT_140::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "suplementacion_pre_post",
+             "prevalence": 0.616,
+             "lift": 1.49
+            },
+            {
+             "rule_id": "hombres_suplementacion",
+             "prevalence": 0.46,
+             "lift": 2.86
+            }
+           ]
+          }
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "slot": "MITAD DE ENTRENAMIENTO",
+      "groups": [
+       {
+        "position": 0,
+        "options": [
+         {
+          "food_id": 16,
+          "canonical_name": "aminoácidos",
+          "display_name": null,
+          "normalized_key": "aminoácidos",
+          "text": "15 g aminoácidos",
+          "quantity": 15.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 1.0,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_226::v01",
+            "SINT_262::v01",
+            "SINT_131::v01",
+            "SINT_185::v01",
+            "SINT_094::v01",
+            "SINT_221::v01",
+            "SINT_045::v01",
+            "SINT_088::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "suplementacion_pre_post",
+             "prevalence": 0.616,
+             "lift": 1.49
+            },
+            {
+             "rule_id": "hombres_suplementacion",
+             "prevalence": 0.46,
+             "lift": 2.86
+            }
+           ]
+          }
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "slot": "DESPUES DE ENTRENAR",
+      "groups": [
+       {
+        "position": 0,
+        "options": [
+         {
+          "food_id": 27,
+          "canonical_name": "creatina",
+          "display_name": null,
+          "normalized_key": "creatina",
+          "text": "10 g creatina",
+          "quantity": 10.0,
+          "unit": "g",
+          "alternative_group": "DESPUES DE ENTRENAR-0",
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.875,
+           "cases": [
+            "SINT_226::v01",
+            "SINT_243::v01",
+            "SINT_184::v01",
+            "SINT_062::v01",
+            "SINT_132::v01",
+            "SINT_262::v01",
+            "SINT_300::v01",
+            "SINT_156::v01",
+            "SINT_094::v01",
+            "SINT_096::v01",
+            "SINT_140::v01",
+            "SINT_197::v01",
+            "SINT_030::v01",
+            "SINT_088::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "suplementacion_pre_post",
+             "prevalence": 0.616,
+             "lift": 1.49
+            },
+            {
+             "rule_id": "hombres_suplementacion",
+             "prevalence": 0.46,
+             "lift": 2.86
+            }
+           ]
+          }
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": [
+     "ALGUNA VEZ EN LA CENA PUEDES SUSTITUIR EL PESCADO POR POLLO",
+     "No beber alcohol.",
+     "Puedes saltarte la dieta 3 comidas en Semana, siempre separadas entre al menos 5 o 6 comidas.",
+     "DEBE HABER AL MENOS 16 HORAS ENTRE LA ÚLTIMA COMIDA Y LA PRIMERA.",
+     "Prohibida la Soja y derivados.",
+     "Masticar bien los alimentos y comer despacio.",
+     "Puedes usar especias en la comida",
+     "EVITAR EL AZÚCAR.",
+     "Evitar las bebidas con sabor, con gas, azucaradas y zumos.",
+     "NO METER NADA DE SAL EN LAS COMIDAS"
+    ],
+    "validation": {
+     "compliance": 0.8888888888888888,
+     "rules": [
+      {
+       "rule_id": "agua_2.5L",
+       "applicable": true,
+       "satisfied": false,
+       "enforced": false
+      },
+      {
+       "rule_id": "comer_despacio",
+       "applicable": true,
+       "satisfied": true,
+       "enforced": false
+      },
+      {
+       "rule_id": "prohibido_azucar_procesados",
+       "applicable": true,
+       "satisfied": true,
+       "enforced": false
+      },
+      {
+       "rule_id": "suplementacion_pre_post",
+       "applicable": true,
+       "satisfied": true,
+       "enforced": false
+      },
+      {
+       "rule_id": "cena_proteina_grasa_verdura",
+       "applicable": true,
+       "satisfied": true,
+       "enforced": false
+      },
+      {
+       "rule_id": "desayuno_avena_cereales",
+       "applicable": true,
+       "satisfied": true,
+       "enforced": false
+      },
+      {
+       "rule_id": "fruta_no_en_cena",
+       "applicable": true,
+       "satisfied": true,
+       "enforced": false
+      },
+      {
+       "rule_id": "hidratos_primera_mitad_dia",
+       "applicable": true,
+       "satisfied": true,
+       "enforced": false
+      },
+      {
+       "rule_id": "hombres_suplementacion",
+       "applicable": true,
+       "satisfied": true,
+       "enforced": false
+      }
+     ],
+     "forced_changes": [
+      {
+       "slot": "RECIEN LEVANTADO",
+       "food_id": 3,
+       "canonical_name": "batido de proteínas",
+       "action": "removed",
+       "reason": "restriction:contains_lactose"
+      },
+      {
+       "slot": "ANTES DE DORMIR",
+       "food_id": 3,
+       "canonical_name": "batido de proteínas",
+       "action": "removed",
+       "reason": "restriction:contains_lactose"
+      },
+      {
+       "slot": "ANTES DE ENTRENAR",
+       "food_id": 3,
+       "canonical_name": "batido de proteínas",
+       "action": "removed",
+       "reason": "restriction:contains_lactose"
+      },
+      {
+       "slot": "DESPUES DE ENTRENAR",
+       "food_id": 3,
+       "canonical_name": "batido de proteínas",
+       "action": "removed",
+       "reason": "restriction:contains_lactose"
+      }
+     ],
+     "warnings": []
+    }
+   }
+  },
+  {
+   "date": "2026-07-18",
+   "payload": {
+    "profile": {
+     "client_code": "",
+     "professional_id": "prof_001",
+     "sex": "M",
+     "age": 30,
+     "height_cm": 179,
+     "activity_level": 5,
+     "goal": "volumen_masa",
+     "has_allergies": false,
+     "has_intolerances": true,
+     "has_medical_restrictions": false,
+     "restrictions": [
+      {
+       "kind": "contains_lactose",
+       "strict": true
+      }
+     ],
+     "is_athlete": null,
+     "sport": null,
+     "disliked_food_ids": [],
+     "owned_supplement_ids": []
+    },
+    "strategy": "case_based_composer",
+    "parameters": {
+     "k": 20,
+     "inclusion_threshold": 0.35,
+     "slot_threshold": 0.35,
+     "max_alternatives": 4,
+     "note_threshold": 0.35,
+     "min_notes": 3,
+     "alternative_link": 0.5,
+     "compound_link": 0.5,
+     "degradation": "none",
+     "min_cases_to_compose": 3,
+     "similarity_weighting": 0.0,
+     "repeat_penalty": 0.2,
+     "k_effective": 20,
+     "same_goal_cases": 20,
+     "routing": "cold_start",
+     "history_size": 0,
+     "novelty": "equilibrada",
+     "neighbourhood": {
+      "band": "servir",
+      "goal_diets": 20,
+      "goal_clients": 20,
+      "distinct_clients": 20,
+      "available_goal_clients": 47
+     },
+     "neighbourhood_warning": null,
+     "plausibility": {
+      "applied": true,
+      "changes": [
+       {
+        "kind": "portion_in_grams",
+        "slot": "RECIEN LEVANTADO",
+        "food_id": 3,
+        "canonical_name": "batido de proteínas",
+        "detail": "«batido de proteínas» no se prescribe por unidades; escrito con su ración habitual 40 g"
+       },
+       {
+        "kind": "portion_in_grams",
+        "slot": "ANTES DE DORMIR",
+        "food_id": 3,
+        "canonical_name": "batido de proteínas",
+        "detail": "«batido de proteínas» no se prescribe por unidades; escrito con su ración habitual 40 g"
+       },
+       {
+        "kind": "portion_in_grams",
+        "slot": "ANTES DE ENTRENAR",
+        "food_id": 3,
+        "canonical_name": "batido de proteínas",
+        "detail": "«batido de proteínas» no se prescribe por unidades; escrito con su ración habitual 40 g"
+       },
+       {
+        "kind": "portion_in_grams",
+        "slot": "DESPUES DE ENTRENAR",
+        "food_id": 3,
+        "canonical_name": "batido de proteínas",
+        "detail": "«batido de proteínas» no se prescribe por unidades; escrito con su ración habitual 40 g"
+       }
+      ]
+     }
+    },
+    "retrieved_case_ids": [
+     "SINT_112::v01",
+     "SINT_226::v01",
+     "SINT_243::v01",
+     "SINT_184::v01",
+     "SINT_062::v01",
+     "SINT_132::v01",
+     "SINT_252::v01",
+     "SINT_262::v01",
+     "SINT_300::v01",
+     "SINT_131::v01",
+     "SINT_156::v01",
+     "SINT_185::v01",
+     "SINT_094::v01",
+     "SINT_096::v01",
+     "SINT_140::v01",
+     "SINT_197::v01",
+     "SINT_221::v01",
+     "SINT_030::v01",
+     "SINT_045::v01",
+     "SINT_088::v01"
+    ],
+    "meals": [
+     {
+      "slot": "RECIEN LEVANTADO",
+      "groups": [
+       {
+        "position": 1,
+        "options": [
+         {
+          "food_id": 4,
+          "canonical_name": "multivitamínico",
+          "display_name": null,
+          "normalized_key": "multivitamínico",
+          "text": "1 unidad multivitamínico",
+          "quantity": 1.0,
+          "unit": "unidad",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.6,
+           "cases": [
+            "SINT_184::v01",
+            "SINT_062::v01",
+            "SINT_300::v01",
+            "SINT_185::v01",
+            "SINT_140::v01",
+            "SINT_045::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "slot": "DESAYUNO",
+      "groups": [
+       {
+        "position": 0,
+        "options": [
+         {
+          "food_id": 21,
+          "canonical_name": "avena",
+          "display_name": null,
+          "normalized_key": "avena",
+          "text": "60 g avena",
+          "quantity": 60.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.8571,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_226::v01",
+            "SINT_184::v01",
+            "SINT_132::v01",
+            "SINT_252::v01",
+            "SINT_262::v01",
+            "SINT_300::v01",
+            "SINT_131::v01",
+            "SINT_094::v01",
+            "SINT_140::v01",
+            "SINT_197::v01",
+            "SINT_088::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "desayuno_avena_cereales",
+             "prevalence": 0.644,
+             "lift": null
+            },
+            {
+             "rule_id": "hidratos_primera_mitad_dia",
+             "prevalence": 0.866,
+             "lift": null
+            }
+           ]
+          }
+         }
+        ]
+       },
+       {
+        "position": 1,
+        "options": [
+         {
+          "food_id": 11,
+          "canonical_name": "yema de huevo",
+          "display_name": null,
+          "normalized_key": "yema de huevo",
+          "text": "1 unidad yema de huevo",
+          "quantity": 1.0,
+          "unit": "unidad",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.7143,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_226::v01",
+            "SINT_243::v01",
+            "SINT_184::v01",
+            "SINT_132::v01",
+            "SINT_131::v01",
+            "SINT_185::v01",
+            "SINT_094::v01",
+            "SINT_197::v01",
+            "SINT_088::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       },
+       {
+        "position": 2,
+        "options": [
+         {
+          "food_id": 34,
+          "canonical_name": "cereales integrales",
+          "display_name": null,
+          "normalized_key": "cereales integrales",
+          "text": "60 g cereales integrales",
+          "quantity": 60.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.5,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_226::v01",
+            "SINT_184::v01",
+            "SINT_132::v01",
+            "SINT_262::v01",
+            "SINT_300::v01",
+            "SINT_131::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "desayuno_avena_cereales",
+             "prevalence": 0.644,
+             "lift": null
+            },
+            {
+             "rule_id": "hidratos_primera_mitad_dia",
+             "prevalence": 0.866,
+             "lift": null
+            }
+           ]
+          }
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "slot": "MEDIA MAÑANA",
+      "groups": [
+       {
+        "position": 0,
+        "options": [
+         {
+          "food_id": 7,
+          "canonical_name": "pavo",
+          "display_name": null,
+          "normalized_key": "pavo",
+          "text": "140 g pavo",
+          "quantity": 140.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.8571,
+           "cases": [
+            "SINT_226::v01",
+            "SINT_184::v01",
+            "SINT_062::v01",
+            "SINT_132::v01",
+            "SINT_252::v01",
+            "SINT_300::v01",
+            "SINT_131::v01",
+            "SINT_094::v01",
+            "SINT_096::v01",
+            "SINT_197::v01",
+            "SINT_221::v01",
+            "SINT_045::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       },
+       {
+        "position": 1,
+        "options": [
+         {
+          "food_id": 2,
+          "canonical_name": "arroz",
+          "display_name": null,
+          "normalized_key": "arroz",
+          "text": "180 g arroz",
+          "quantity": 180.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.6429,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_184::v01",
+            "SINT_252::v01",
+            "SINT_300::v01",
+            "SINT_131::v01",
+            "SINT_096::v01",
+            "SINT_140::v01",
+            "SINT_197::v01",
+            "SINT_045::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "hidratos_primera_mitad_dia",
+             "prevalence": 0.866,
+             "lift": null
+            }
+           ]
+          }
+         }
+        ]
+       },
+       {
+        "position": 2,
+        "options": [
+         {
+          "food_id": 6,
+          "canonical_name": "almendras",
+          "display_name": null,
+          "normalized_key": "almendras",
+          "text": "20 g almendras",
+          "quantity": 20.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.6429,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_226::v01",
+            "SINT_184::v01",
+            "SINT_132::v01",
+            "SINT_300::v01",
+            "SINT_094::v01",
+            "SINT_140::v01",
+            "SINT_197::v01",
+            "SINT_221::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       },
+       {
+        "position": 3,
+        "options": [
+         {
+          "food_id": 1,
+          "canonical_name": "pollo",
+          "display_name": null,
+          "normalized_key": "pollo",
+          "text": "210 g pollo",
+          "quantity": 210.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.5714,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_226::v01",
+            "SINT_062::v01",
+            "SINT_132::v01",
+            "SINT_252::v01",
+            "SINT_094::v01",
+            "SINT_197::v01",
+            "SINT_221::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       },
+       {
+        "position": 4,
+        "options": [
+         {
+          "food_id": 25,
+          "canonical_name": "pan integral",
+          "display_name": null,
+          "normalized_key": "pan integral",
+          "text": "1.5 loncha pan integral",
+          "quantity": 1.5,
+          "unit": "loncha",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.3571,
+           "cases": [
+            "SINT_184::v01",
+            "SINT_132::v01",
+            "SINT_300::v01",
+            "SINT_131::v01",
+            "SINT_094::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "hidratos_primera_mitad_dia",
+             "prevalence": 0.866,
+             "lift": null
+            }
+           ]
+          }
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "slot": "COMIDA",
+      "groups": [
+       {
+        "position": 0,
+        "options": [
+         {
+          "food_id": 2,
+          "canonical_name": "arroz",
+          "display_name": null,
+          "normalized_key": "arroz",
+          "text": "170 g arroz",
+          "quantity": 170.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.9286,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_226::v01",
+            "SINT_184::v01",
+            "SINT_062::v01",
+            "SINT_132::v01",
+            "SINT_300::v01",
+            "SINT_131::v01",
+            "SINT_156::v01",
+            "SINT_185::v01",
+            "SINT_094::v01",
+            "SINT_197::v01",
+            "SINT_030::v01",
+            "SINT_088::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "hidratos_primera_mitad_dia",
+             "prevalence": 0.866,
+             "lift": null
+            }
+           ]
+          }
+         }
+        ]
+       },
+       {
+        "position": 1,
+        "options": [
+         {
+          "food_id": 1,
+          "canonical_name": "pollo",
+          "display_name": null,
+          "normalized_key": "pollo",
+          "text": "190 g pollo",
+          "quantity": 190.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.8571,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_226::v01",
+            "SINT_184::v01",
+            "SINT_062::v01",
+            "SINT_252::v01",
+            "SINT_300::v01",
+            "SINT_156::v01",
+            "SINT_185::v01",
+            "SINT_094::v01",
+            "SINT_197::v01",
+            "SINT_030::v01",
+            "SINT_088::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       },
+       {
+        "position": 2,
+        "options": [
+         {
+          "food_id": 14,
+          "canonical_name": "pasta integral",
+          "display_name": null,
+          "normalized_key": "pasta integral",
+          "text": "180 g pasta integral",
+          "quantity": 180.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.7143,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_184::v01",
+            "SINT_132::v01",
+            "SINT_252::v01",
+            "SINT_300::v01",
+            "SINT_131::v01",
+            "SINT_185::v01",
+            "SINT_197::v01",
+            "SINT_030::v01",
+            "SINT_088::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "hidratos_primera_mitad_dia",
+             "prevalence": 0.866,
+             "lift": null
+            }
+           ]
+          }
+         }
+        ]
+       },
+       {
+        "position": 3,
+        "options": [
+         {
+          "food_id": 26,
+          "canonical_name": "legumbres",
+          "display_name": null,
+          "normalized_key": "legumbres",
+          "text": "210 g legumbres",
+          "quantity": 210.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.5714,
+           "cases": [
+            "SINT_226::v01",
+            "SINT_184::v01",
+            "SINT_132::v01",
+            "SINT_131::v01",
+            "SINT_185::v01",
+            "SINT_094::v01",
+            "SINT_197::v01",
+            "SINT_088::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "hidratos_primera_mitad_dia",
+             "prevalence": 0.866,
+             "lift": null
+            }
+           ]
+          }
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "slot": "MEDIA TARDE",
+      "groups": [
+       {
+        "position": 0,
+        "options": [
+         {
+          "food_id": 1,
+          "canonical_name": "pollo",
+          "display_name": null,
+          "normalized_key": "pollo",
+          "text": "230 g pollo",
+          "quantity": 230.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 1.0,
+           "cases": [
+            "SINT_243::v01",
+            "SINT_062::v01",
+            "SINT_132::v01",
+            "SINT_156::v01",
+            "SINT_185::v01",
+            "SINT_096::v01",
+            "SINT_140::v01",
+            "SINT_221::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       },
+       {
+        "position": 1,
+        "options": [
+         {
+          "food_id": 7,
+          "canonical_name": "pavo",
+          "display_name": null,
+          "normalized_key": "pavo",
+          "text": "165 g pavo",
+          "quantity": 165.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.75,
+           "cases": [
+            "SINT_243::v01",
+            "SINT_156::v01",
+            "SINT_185::v01",
+            "SINT_096::v01",
+            "SINT_140::v01",
+            "SINT_221::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       },
+       {
+        "position": 2,
+        "options": [
+         {
+          "food_id": 2,
+          "canonical_name": "arroz",
+          "display_name": null,
+          "normalized_key": "arroz",
+          "text": "155 g arroz",
+          "quantity": 155.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.625,
+           "cases": [
+            "SINT_132::v01",
+            "SINT_156::v01",
+            "SINT_096::v01",
+            "SINT_140::v01",
+            "SINT_221::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       },
+       {
+        "position": 3,
+        "options": [
+         {
+          "food_id": 6,
+          "canonical_name": "almendras",
+          "display_name": null,
+          "normalized_key": "almendras",
+          "text": "20 g almendras",
+          "quantity": 20.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.5,
+           "cases": [
+            "SINT_243::v01",
+            "SINT_132::v01",
+            "SINT_140::v01",
+            "SINT_221::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       },
+       {
+        "position": 4,
+        "options": [
+         {
+          "food_id": 12,
+          "canonical_name": "atún",
+          "display_name": null,
+          "normalized_key": "atún",
+          "text": "2 lata atún",
+          "quantity": 2.0,
+          "unit": "lata",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.375,
+           "cases": [
+            "SINT_243::v01",
+            "SINT_156::v01",
+            "SINT_140::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "slot": "CENA",
+      "groups": [
+       {
+        "position": 0,
+        "options": [
+         {
+          "food_id": 5,
+          "canonical_name": "aceite de oliva virgen extra",
+          "display_name": null,
+          "normalized_key": "aceite de oliva virgen extra",
+          "text": "1 cucharada aceite de oliva virgen extra",
+          "quantity": 1.0,
+          "unit": "cucharada",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.8,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_243::v01",
+            "SINT_062::v01",
+            "SINT_252::v01",
+            "SINT_300::v01",
+            "SINT_131::v01",
+            "SINT_156::v01",
+            "SINT_096::v01",
+            "SINT_197::v01",
+            "SINT_221::v01",
+            "SINT_030::v01",
+            "SINT_045::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "cena_proteina_grasa_verdura",
+             "prevalence": 0.855,
+             "lift": null
+            }
+           ]
+          }
+         }
+        ]
+       },
+       {
+        "position": 1,
+        "options": [
+         {
+          "food_id": 9,
+          "canonical_name": "pescado blanco",
+          "display_name": null,
+          "normalized_key": "pescado blanco",
+          "text": "220 g pescado blanco",
+          "quantity": 220.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.8,
+           "cases": [
+            "SINT_226::v01",
+            "SINT_243::v01",
+            "SINT_062::v01",
+            "SINT_252::v01",
+            "SINT_262::v01",
+            "SINT_300::v01",
+            "SINT_131::v01",
+            "SINT_094::v01",
+            "SINT_096::v01",
+            "SINT_221::v01",
+            "SINT_030::v01",
+            "SINT_045::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "cena_proteina_grasa_verdura",
+             "prevalence": 0.855,
+             "lift": null
+            }
+           ]
+          }
+         }
+        ]
+       },
+       {
+        "position": 2,
+        "options": [
+         {
+          "food_id": 13,
+          "canonical_name": "ensalada",
+          "display_name": null,
+          "normalized_key": "ensalada",
+          "text": "130 g ensalada",
+          "quantity": 130.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.7333,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_062::v01",
+            "SINT_252::v01",
+            "SINT_262::v01",
+            "SINT_300::v01",
+            "SINT_131::v01",
+            "SINT_156::v01",
+            "SINT_096::v01",
+            "SINT_197::v01",
+            "SINT_221::v01",
+            "SINT_045::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "cena_proteina_grasa_verdura",
+             "prevalence": 0.855,
+             "lift": null
+            }
+           ]
+          }
+         }
+        ]
+       },
+       {
+        "position": 3,
+        "options": [
+         {
+          "food_id": 1,
+          "canonical_name": "pollo",
+          "display_name": null,
+          "normalized_key": "pollo",
+          "text": "205 g pollo",
+          "quantity": 205.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.6667,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_226::v01",
+            "SINT_243::v01",
+            "SINT_252::v01",
+            "SINT_262::v01",
+            "SINT_300::v01",
+            "SINT_131::v01",
+            "SINT_156::v01",
+            "SINT_096::v01",
+            "SINT_197::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "cena_proteina_grasa_verdura",
+             "prevalence": 0.855,
+             "lift": null
+            }
+           ]
+          }
+         }
+        ]
+       },
+       {
+        "position": 4,
+        "options": [
+         {
+          "food_id": 2,
+          "canonical_name": "arroz",
+          "display_name": null,
+          "normalized_key": "arroz",
+          "text": "150 g arroz",
+          "quantity": 150.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.6,
+           "cases": [
+            "SINT_226::v01",
+            "SINT_243::v01",
+            "SINT_062::v01",
+            "SINT_252::v01",
+            "SINT_300::v01",
+            "SINT_131::v01",
+            "SINT_156::v01",
+            "SINT_197::v01",
+            "SINT_221::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       },
+       {
+        "position": 5,
+        "options": [
+         {
+          "food_id": 8,
+          "canonical_name": "nueces",
+          "display_name": null,
+          "normalized_key": "nueces",
+          "text": "20 g nueces",
+          "quantity": 20.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.4667,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_226::v01",
+            "SINT_062::v01",
+            "SINT_131::v01",
+            "SINT_094::v01",
+            "SINT_197::v01",
+            "SINT_045::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "cena_proteina_grasa_verdura",
+             "prevalence": 0.855,
+             "lift": null
+            }
+           ]
+          }
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "slot": "ANTES DE DORMIR",
+      "groups": [
+       {
+        "position": 1,
+        "options": [
+         {
+          "food_id": 6,
+          "canonical_name": "almendras",
+          "display_name": null,
+          "normalized_key": "almendras",
+          "text": "20 g almendras",
+          "quantity": 20.0,
+          "unit": "g",
+          "alternative_group": "ANTES DE DORMIR-1",
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.875,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_132::v01",
+            "SINT_262::v01",
+            "SINT_156::v01",
+            "SINT_185::v01",
+            "SINT_045::v01",
+            "SINT_088::v01"
+           ],
+           "rules": []
+          }
+         },
+         {
+          "food_id": 8,
+          "canonical_name": "nueces",
+          "display_name": null,
+          "normalized_key": "nueces",
+          "text": "20 g nueces",
+          "quantity": 20.0,
+          "unit": "g",
+          "alternative_group": "ANTES DE DORMIR-1",
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.75,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_132::v01",
+            "SINT_262::v01",
+            "SINT_185::v01",
+            "SINT_045::v01",
+            "SINT_088::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       },
+       {
+        "position": 2,
+        "options": [
+         {
+          "food_id": 1,
+          "canonical_name": "pollo",
+          "display_name": null,
+          "normalized_key": "pollo",
+          "text": "230 g pollo",
+          "quantity": 230.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.75,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_262::v01",
+            "SINT_156::v01",
+            "SINT_185::v01",
+            "SINT_221::v01",
+            "SINT_045::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       },
+       {
+        "position": 3,
+        "options": [
+         {
+          "food_id": 7,
+          "canonical_name": "pavo",
+          "display_name": null,
+          "normalized_key": "pavo",
+          "text": "125 g pavo",
+          "quantity": 125.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.5,
+           "cases": [
+            "SINT_262::v01",
+            "SINT_185::v01",
+            "SINT_221::v01",
+            "SINT_045::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "slot": "ANTES DE ENTRENAR",
+      "groups": [
+       {
+        "position": 0,
+        "options": [
+         {
+          "food_id": 20,
+          "canonical_name": "piña",
+          "display_name": null,
+          "normalized_key": "piña",
+          "text": "2 loncha piña",
+          "quantity": 2.0,
+          "unit": "loncha",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.75,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_184::v01",
+            "SINT_132::v01",
+            "SINT_300::v01",
+            "SINT_156::v01",
+            "SINT_094::v01",
+            "SINT_096::v01",
+            "SINT_140::v01",
+            "SINT_197::v01"
+           ],
+           "rules": []
+          }
+         }
+        ]
+       },
+       {
+        "position": 1,
+        "options": [
+         {
+          "food_id": 27,
+          "canonical_name": "creatina",
+          "display_name": null,
+          "normalized_key": "creatina",
+          "text": "10 g creatina",
+          "quantity": 10.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.6667,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_226::v01",
+            "SINT_132::v01",
+            "SINT_156::v01",
+            "SINT_096::v01",
+            "SINT_140::v01",
+            "SINT_197::v01",
+            "SINT_045::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "suplementacion_pre_post",
+             "prevalence": 0.616,
+             "lift": 1.49
+            },
+            {
+             "rule_id": "hombres_suplementacion",
+             "prevalence": 0.46,
+             "lift": 2.86
+            }
+           ]
+          }
+         }
+        ]
+       },
+       {
+        "position": 3,
+        "options": [
+         {
+          "food_id": 47,
+          "canonical_name": "bcaa",
+          "display_name": null,
+          "normalized_key": "bcaa",
+          "text": "10 g bcaa",
+          "quantity": 10.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.4167,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_184::v01",
+            "SINT_131::v01",
+            "SINT_094::v01",
+            "SINT_140::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "suplementacion_pre_post",
+             "prevalence": 0.616,
+             "lift": 1.49
+            },
+            {
+             "rule_id": "hombres_suplementacion",
+             "prevalence": 0.46,
+             "lift": 2.86
+            }
+           ]
+          }
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "slot": "MITAD DE ENTRENAMIENTO",
+      "groups": [
+       {
+        "position": 0,
+        "options": [
+         {
+          "food_id": 16,
+          "canonical_name": "aminoácidos",
+          "display_name": null,
+          "normalized_key": "aminoácidos",
+          "text": "15 g aminoácidos",
+          "quantity": 15.0,
+          "unit": "g",
+          "alternative_group": null,
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 1.0,
+           "cases": [
+            "SINT_112::v01",
+            "SINT_226::v01",
+            "SINT_262::v01",
+            "SINT_131::v01",
+            "SINT_185::v01",
+            "SINT_094::v01",
+            "SINT_221::v01",
+            "SINT_045::v01",
+            "SINT_088::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "suplementacion_pre_post",
+             "prevalence": 0.616,
+             "lift": 1.49
+            },
+            {
+             "rule_id": "hombres_suplementacion",
+             "prevalence": 0.46,
+             "lift": 2.86
+            }
+           ]
+          }
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "slot": "DESPUES DE ENTRENAR",
+      "groups": [
+       {
+        "position": 0,
+        "options": [
+         {
+          "food_id": 27,
+          "canonical_name": "creatina",
+          "display_name": null,
+          "normalized_key": "creatina",
+          "text": "10 g creatina",
+          "quantity": 10.0,
+          "unit": "g",
+          "alternative_group": "DESPUES DE ENTRENAR-0",
+          "compound_group": null,
+          "note": null,
+          "evidence": {
+           "support": 0.875,
+           "cases": [
+            "SINT_226::v01",
+            "SINT_243::v01",
+            "SINT_184::v01",
+            "SINT_062::v01",
+            "SINT_132::v01",
+            "SINT_262::v01",
+            "SINT_300::v01",
+            "SINT_156::v01",
+            "SINT_094::v01",
+            "SINT_096::v01",
+            "SINT_140::v01",
+            "SINT_197::v01",
+            "SINT_030::v01",
+            "SINT_088::v01"
+           ],
+           "rules": [
+            {
+             "rule_id": "suplementacion_pre_post",
+             "prevalence": 0.616,
+             "lift": 1.49
+            },
+            {
+             "rule_id": "hombres_suplementacion",
+             "prevalence": 0.46,
+             "lift": 2.86
+            }
+           ]
+          }
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "notes": [
+     "ALGUNA VEZ EN LA CENA PUEDES SUSTITUIR EL PESCADO POR POLLO",
+     "No beber alcohol.",
+     "Puedes saltarte la dieta 3 comidas en Semana, siempre separadas entre al menos 5 o 6 comidas.",
+     "DEBE HABER AL MENOS 16 HORAS ENTRE LA ÚLTIMA COMIDA Y LA PRIMERA.",
+     "Prohibida la Soja y derivados.",
+     "Masticar bien los alimentos y comer despacio.",
+     "Puedes usar especias en la comida",
+     "EVITAR EL AZÚCAR.",
+     "Evitar las bebidas con sabor, con gas, azucaradas y zumos.",
+     "NO METER NADA DE SAL EN LAS COMIDAS"
+    ],
+    "validation": {
+     "compliance": 0.8888888888888888,
+     "rules": [
+      {
+       "rule_id": "agua_2.5L",
+       "applicable": true,
+       "satisfied": false,
+       "enforced": false
+      },
+      {
+       "rule_id": "comer_despacio",
+       "applicable": true,
+       "satisfied": true,
+       "enforced": false
+      },
+      {
+       "rule_id": "prohibido_azucar_procesados",
+       "applicable": true,
+       "satisfied": true,
+       "enforced": false
+      },
+      {
+       "rule_id": "suplementacion_pre_post",
+       "applicable": true,
+       "satisfied": true,
+       "enforced": false
+      },
+      {
+       "rule_id": "cena_proteina_grasa_verdura",
+       "applicable": true,
+       "satisfied": true,
+       "enforced": false
+      },
+      {
+       "rule_id": "desayuno_avena_cereales",
+       "applicable": true,
+       "satisfied": true,
+       "enforced": false
+      },
+      {
+       "rule_id": "fruta_no_en_cena",
+       "applicable": true,
+       "satisfied": true,
+       "enforced": false
+      },
+      {
+       "rule_id": "hidratos_primera_mitad_dia",
+       "applicable": true,
+       "satisfied": true,
+       "enforced": false
+      },
+      {
+       "rule_id": "hombres_suplementacion",
+       "applicable": true,
+       "satisfied": true,
+       "enforced": false
+      }
+     ],
+     "forced_changes": [
+      {
+       "slot": "RECIEN LEVANTADO",
+       "food_id": 3,
+       "canonical_name": "batido de proteínas",
+       "action": "removed",
+       "reason": "restriction:contains_lactose"
+      },
+      {
+       "slot": "ANTES DE DORMIR",
+       "food_id": 3,
+       "canonical_name": "batido de proteínas",
+       "action": "removed",
+       "reason": "restriction:contains_lactose"
+      },
+      {
+       "slot": "ANTES DE ENTRENAR",
+       "food_id": 3,
+       "canonical_name": "batido de proteínas",
+       "action": "removed",
+       "reason": "restriction:contains_lactose"
+      },
+      {
+       "slot": "DESPUES DE ENTRENAR",
+       "food_id": 3,
+       "canonical_name": "batido de proteínas",
+       "action": "removed",
+       "reason": "restriction:contains_lactose"
+      }
+     ],
+     "warnings": []
+    }
+   }
+  }
+ ]
+}

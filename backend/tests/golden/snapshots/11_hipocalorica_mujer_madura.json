@@ -1,0 +1,344 @@
+{
+ "compliance": 0.5555555555555556,
+ "forced_changes": [],
+ "k_effective": 1,
+ "meals": [
+  {
+   "groups": [
+    [
+     {
+      "food": "té",
+      "food_id": 58,
+      "quantity": null,
+      "unit": ""
+     },
+     {
+      "food": "café",
+      "food_id": 63,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "sacarina",
+      "food_id": 115,
+      "quantity": null,
+      "unit": ""
+     },
+     {
+      "food": "stevia",
+      "food_id": 165,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ]
+   ],
+   "slot": "RECIEN LEVANTADO"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "aceite de oliva virgen extra",
+      "food_id": 5,
+      "quantity": null,
+      "unit": ""
+     },
+     {
+      "food": "aceite de coco",
+      "food_id": 45,
+      "quantity": 10.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "pavo",
+      "food_id": 7,
+      "quantity": null,
+      "unit": ""
+     },
+     {
+      "food": "yema de huevo",
+      "food_id": 11,
+      "quantity": 1.0,
+      "unit": "unidad"
+     },
+     {
+      "food": "clara de huevo",
+      "food_id": 18,
+      "quantity": 3.0,
+      "unit": "unidad"
+     },
+     {
+      "food": "jamón serrano",
+      "food_id": 68,
+      "quantity": 40.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "pan integral",
+      "food_id": 26,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ]
+   ],
+   "slot": "DESAYUNO"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "almendras",
+      "food_id": 6,
+      "quantity": 15.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "fruta",
+      "food_id": 41,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ]
+   ],
+   "slot": "MEDIA MAÑANA"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "pollo",
+      "food_id": 1,
+      "quantity": 180.0,
+      "unit": "g"
+     },
+     {
+      "food": "ternera",
+      "food_id": 24,
+      "quantity": 220.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "arroz",
+      "food_id": 2,
+      "quantity": 130.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "aceite de oliva virgen extra",
+      "food_id": 5,
+      "quantity": 1.0,
+      "unit": "cucharada"
+     }
+    ],
+    [
+     {
+      "food": "ensalada",
+      "food_id": 13,
+      "quantity": 150.0,
+      "unit": "g"
+     },
+     {
+      "food": "verduras",
+      "food_id": 23,
+      "quantity": 160.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "COMIDA"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "pollo",
+      "food_id": 1,
+      "quantity": 90.0,
+      "unit": "g"
+     },
+     {
+      "food": "pavo",
+      "food_id": 7,
+      "quantity": 60.0,
+      "unit": "g"
+     },
+     {
+      "food": "jamón serrano",
+      "food_id": 68,
+      "quantity": 60.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "almendras",
+      "food_id": 6,
+      "quantity": 10.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "sándwich",
+      "food_id": 60,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ]
+   ],
+   "slot": "MERIENDA"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "pollo",
+      "food_id": 1,
+      "quantity": 180.0,
+      "unit": "g"
+     },
+     {
+      "food": "pescado blanco",
+      "food_id": 9,
+      "quantity": 200.0,
+      "unit": "g"
+     },
+     {
+      "food": "atún",
+      "food_id": 12,
+      "quantity": 200.0,
+      "unit": "g"
+     },
+     {
+      "food": "salmón",
+      "food_id": 87,
+      "quantity": 180.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "aceite de oliva virgen extra",
+      "food_id": 5,
+      "quantity": 1.0,
+      "unit": "cucharada"
+     }
+    ],
+    [
+     {
+      "food": "nueces",
+      "food_id": 8,
+      "quantity": 15.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "ensalada",
+      "food_id": 13,
+      "quantity": 140.0,
+      "unit": "g"
+     },
+     {
+      "food": "tomate",
+      "food_id": 17,
+      "quantity": 120.0,
+      "unit": "g"
+     },
+     {
+      "food": "pepino",
+      "food_id": 28,
+      "quantity": null,
+      "unit": ""
+     },
+     {
+      "food": "espinacas",
+      "food_id": 40,
+      "quantity": 120.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "algas",
+      "food_id": 110,
+      "quantity": 120.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "CENA"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "agua",
+      "food_id": 43,
+      "quantity": null,
+      "unit": ""
+     }
+    ],
+    [
+     {
+      "food": "té",
+      "food_id": 58,
+      "quantity": null,
+      "unit": ""
+     }
+    ],
+    [
+     {
+      "food": "sacarina",
+      "food_id": 115,
+      "quantity": null,
+      "unit": ""
+     },
+     {
+      "food": "stevia",
+      "food_id": 165,
+      "quantity": null,
+      "unit": ""
+     }
+    ]
+   ],
+   "slot": "DESPUES DE ENTRENAR"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "multivitamínico",
+      "food_id": 4,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "potasio",
+      "food_id": 10,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ]
+   ],
+   "slot": "SUPLEMENTOS"
+  }
+ ],
+ "notes": [],
+ "routing": "cold_start",
+ "strategy": "case_based_composer"
+}

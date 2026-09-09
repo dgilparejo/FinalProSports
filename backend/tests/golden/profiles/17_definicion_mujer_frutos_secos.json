@@ -1,0 +1,11 @@
+{
+ "sex": "F",
+ "age": 30,
+ "height_cm": 166,
+ "activity_level": 4,
+ "goal": "definicion_grasa",
+ "restrictions": [
+  "is_tree_nut",
+  "is_peanut"
+ ]
+}

@@ -1,0 +1,121 @@
+{
+ "diets_measured": 815,
+ "checks": {
+  "7b_alimento_repetido_entre_franjas": {
+   "diets": 720,
+   "rate": 0.8834355828220859
+  },
+  "7b_par_repetido_entre_franjas": {
+   "diets": 563,
+   "rate": 0.69079754601227
+  },
+  "4c_alternativas_de_distinto_papel": {
+   "diets": 532,
+   "rate": 0.652760736196319
+  },
+  "1_sin_nota_de_hidratacion": {
+   "diets": 470,
+   "rate": 0.5766871165644172
+  },
+  "13_total_diario_bajo": {
+   "diets": 455,
+   "rate": 0.558282208588957
+  },
+  "21_todo_mapeado": {
+   "diets": 405,
+   "rate": 0.49693251533742333
+  },
+  "7b_comida_cena_dos_alimentos": {
+   "diets": 397,
+   "rate": 0.48711656441717793
+  },
+  "17_franja_no_suya": {
+   "diets": 362,
+   "rate": 0.4441717791411043
+  },
+  "16_alimento_repetido_en_la_franja": {
+   "diets": 349,
+   "rate": 0.42822085889570555
+  },
+  "4b_alternativa_no_escrita": {
+   "diets": 340,
+   "rate": 0.4171779141104294
+  },
+  "4d_demasiadas_alternativas": {
+   "diets": 288,
+   "rate": 0.35337423312883437
+  },
+  "5_racion_incoherente": {
+   "diets": 287,
+   "rate": 0.3521472392638037
+  },
+  "2_suplemento_sin_cantidad": {
+   "diets": 285,
+   "rate": 0.3496932515337423
+  },
+  "14_sin_notas": {
+   "diets": 222,
+   "rate": 0.2723926380368098
+  },
+  "11_franja_de_entreno_vacia": {
+   "diets": 126,
+   "rate": 0.15460122699386503
+  },
+  "22_reparto_de_unidades": {
+   "diets": 108,
+   "rate": 0.1325153374233129
+  },
+  "20_sin_post_entreno": {
+   "diets": 82,
+   "rate": 0.10061349693251534
+  },
+  "23_reparto_por_macrogrupo": {
+   "diets": 72,
+   "rate": 0.08834355828220859
+  },
+  "19_objetivo_vacio": {
+   "diets": 52,
+   "rate": 0.0638036809815951
+  },
+  "1_hidratacion_sin_cantidad": {
+   "diets": 40,
+   "rate": 0.049079754601226995
+  },
+  "15_demasiados_grupos": {
+   "diets": 37,
+   "rate": 0.04539877300613497
+  },
+  "13_total_diario_alto": {
+   "diets": 35,
+   "rate": 0.04294478527607362
+  },
+  "6b_unidad_absurda": {
+   "diets": 32,
+   "rate": 0.0392638036809816
+  },
+  "15_pocos_grupos": {
+   "diets": 24,
+   "rate": 0.029447852760736196
+  }
+ },
+ "bands": {
+  "unmapped_median": 0.013888888888888888,
+  "unmapped_p05": 0.0,
+  "unit_tablespoon": [
+   0.0,
+   0.09375
+  ],
+  "unit_piece": [
+   0.13636363636363635,
+   0.47368421052631576
+  ],
+  "group_fruit": [
+   0.0,
+   0.12962962962962962
+  ],
+  "group_vegetable": [
+   0.0,
+   0.20930232558139536
+  ]
+ }
+}

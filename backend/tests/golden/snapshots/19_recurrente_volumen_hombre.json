@@ -1,0 +1,405 @@
+{
+ "compliance": 0.8888888888888888,
+ "forced_changes": [],
+ "k_effective": null,
+ "meals": [
+  {
+   "groups": [
+    [
+     {
+      "food": "batido de proteínas",
+      "food_id": 3,
+      "quantity": 40.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "RECIEN LEVANTADO"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "yema de huevo",
+      "food_id": 11,
+      "quantity": 2.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "batido de proteínas",
+      "food_id": 3,
+      "quantity": 40.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "muesli",
+      "food_id": 70,
+      "quantity": 70.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "tortitas de arroz",
+      "food_id": 50,
+      "quantity": 65.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "DESAYUNO"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "pavo",
+      "food_id": 7,
+      "quantity": 180.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "pollo",
+      "food_id": 1,
+      "quantity": 185.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "atún",
+      "food_id": 12,
+      "quantity": 2.0,
+      "unit": "lata"
+     }
+    ],
+    [
+     {
+      "food": "almendras",
+      "food_id": 6,
+      "quantity": 20.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "pan integral",
+      "food_id": 25,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "aceite de oliva virgen extra",
+      "food_id": 5,
+      "quantity": 1.0,
+      "unit": "cucharada"
+     }
+    ]
+   ],
+   "slot": "MEDIA MAÑANA"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "pollo",
+      "food_id": 1,
+      "quantity": 200.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "arroz",
+      "food_id": 2,
+      "quantity": 145.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "pasta al huevo",
+      "food_id": 131,
+      "quantity": 165.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "cerdo",
+      "food_id": 39,
+      "quantity": 250.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "guisantes",
+      "food_id": 101,
+      "quantity": 180.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "pavo",
+      "food_id": 7,
+      "quantity": 170.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "COMIDA"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "pollo",
+      "food_id": 1,
+      "quantity": 175.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "almendras",
+      "food_id": 6,
+      "quantity": 20.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "pavo",
+      "food_id": 7,
+      "quantity": 170.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "arroz",
+      "food_id": 2,
+      "quantity": 130.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "atún",
+      "food_id": 12,
+      "quantity": 2.0,
+      "unit": "lata"
+     }
+    ]
+   ],
+   "slot": "MEDIA TARDE"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "pescado blanco",
+      "food_id": 9,
+      "quantity": 225.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "pollo",
+      "food_id": 1,
+      "quantity": 220.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "aceite de oliva virgen extra",
+      "food_id": 5,
+      "quantity": 1.0,
+      "unit": "cucharada"
+     }
+    ],
+    [
+     {
+      "food": "tomate",
+      "food_id": 17,
+      "quantity": 130.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "arroz",
+      "food_id": 2,
+      "quantity": 155.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "nueces",
+      "food_id": 8,
+      "quantity": 20.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "CENA"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "almendras",
+      "food_id": 6,
+      "quantity": 20.0,
+      "unit": "g"
+     },
+     {
+      "food": "nueces",
+      "food_id": 8,
+      "quantity": 20.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "batido de proteínas",
+      "food_id": 3,
+      "quantity": 40.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "pollo",
+      "food_id": 1,
+      "quantity": 225.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "pavo",
+      "food_id": 7,
+      "quantity": 170.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "ANTES DE DORMIR"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "manzana",
+      "food_id": 30,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "creatina",
+      "food_id": 27,
+      "quantity": 10.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "batido de proteínas",
+      "food_id": 3,
+      "quantity": 40.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "quemagrasa",
+      "food_id": 32,
+      "quantity": 2.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "bcaa",
+      "food_id": 47,
+      "quantity": 10.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "ANTES DE ENTRENAR"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "aminoácidos",
+      "food_id": 16,
+      "quantity": 15.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "MITAD DE ENTRENAMIENTO"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "batido de proteínas",
+      "food_id": 3,
+      "quantity": 40.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "creatina",
+      "food_id": 27,
+      "quantity": 10.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "plátano",
+      "food_id": 46,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ]
+   ],
+   "slot": "DESPUES DE ENTRENAR"
+  }
+ ],
+ "notes": [
+  "EVITAR EL AZÚCAR.",
+  "Controlar la ingesta de agua que debe de ser de 2,5 a 3 litros y medio por día contando el agua de los batidos de proteínas. HAY QUE BEBER AUNQUE NO SE TENGA SED, PERO A TRAGOS PEQUEÑOS., Y ENTRE COMIDAS PRINCIPALMENTE.",
+  "ALGUNA VEZ EN LA CENA PUEDES SUSTITUIR EL PESCADO POR POLLO",
+  "No beber alcohol.",
+  "Evitar las bebidas con sabor, con gas, azucaradas y zumos.",
+  "Dormir de 7 a 8 horas.",
+  "Todos los alimentos que se puedan cocinar se deben cocinar mejor que tomarlos crudos en esta dieta, y si es posible, esperar a que se enfríen antes de comerlos, intentar no freír los alimentos con aceite, el aceite se debe consumir crudo aunque se el eche a la comida.",
+  "Prohibida la Soja y derivados.",
+  "NO METER NADA DE SAL EN LAS COMIDAS",
+  "Puedes usar especias en la comida"
+ ],
+ "routing": "same_goal",
+ "strategy": "rotation_composer"
+}

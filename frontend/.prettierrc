@@ -1,0 +1,9 @@
+{
+  "printWidth": 160,
+  "endOfLine": "lf",
+  "singleQuote": true,
+  "semi": true,
+  "trailingComma": "all",
+  "bracketSameLine": true,
+  "overrides": [{ "files": "*.html", "options": { "parser": "angular" } }]
+}

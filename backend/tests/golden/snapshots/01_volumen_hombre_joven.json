@@ -1,0 +1,362 @@
+{
+ "compliance": 0.8888888888888888,
+ "forced_changes": [],
+ "k_effective": 20,
+ "meals": [
+  {
+   "groups": [
+    [
+     {
+      "food": "batido de proteínas",
+      "food_id": 3,
+      "quantity": 40.0,
+      "unit": "g"
+     },
+     {
+      "food": "aminoácidos",
+      "food_id": 16,
+      "quantity": 15.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "bicarbonato",
+      "food_id": 75,
+      "quantity": 1.0,
+      "unit": "cucharadita"
+     }
+    ]
+   ],
+   "slot": "RECIEN LEVANTADO"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "yema de huevo",
+      "food_id": 11,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "batido de proteínas",
+      "food_id": 3,
+      "quantity": 40.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "avena",
+      "food_id": 21,
+      "quantity": 20.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "cereales integrales",
+      "food_id": 34,
+      "quantity": 65.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "arroz",
+      "food_id": 2,
+      "quantity": 110.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "multivitamínico",
+      "food_id": 4,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ]
+   ],
+   "slot": "DESAYUNO"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "pavo",
+      "food_id": 7,
+      "quantity": 180.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "pan integral",
+      "food_id": 25,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "almendras",
+      "food_id": 6,
+      "quantity": 20.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "atún",
+      "food_id": 12,
+      "quantity": 2.0,
+      "unit": "lata"
+     }
+    ],
+    [
+     {
+      "food": "pollo",
+      "food_id": 1,
+      "quantity": 170.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "MEDIA MAÑANA"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "pollo",
+      "food_id": 1,
+      "quantity": 200.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "arroz",
+      "food_id": 2,
+      "quantity": 145.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "ternera",
+      "food_id": 24,
+      "quantity": 250.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "pasta integral",
+      "food_id": 14,
+      "quantity": 155.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "legumbres",
+      "food_id": 26,
+      "quantity": 185.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "pavo",
+      "food_id": 7,
+      "quantity": 165.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "COMIDA"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "pollo",
+      "food_id": 1,
+      "quantity": 200.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "arroz",
+      "food_id": 2,
+      "quantity": 130.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "pavo",
+      "food_id": 7,
+      "quantity": 170.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "almendras",
+      "food_id": 6,
+      "quantity": 15.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "MEDIA TARDE"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "ensalada",
+      "food_id": 13,
+      "quantity": 135.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "aceite de oliva virgen extra",
+      "food_id": 5,
+      "quantity": 1.0,
+      "unit": "cucharada"
+     }
+    ],
+    [
+     {
+      "food": "pescado blanco",
+      "food_id": 9,
+      "quantity": 225.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "pollo",
+      "food_id": 1,
+      "quantity": 195.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "nueces",
+      "food_id": 8,
+      "quantity": 20.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "arroz",
+      "food_id": 2,
+      "quantity": 150.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "CENA"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "piña",
+      "food_id": 20,
+      "quantity": 2.0,
+      "unit": "loncha"
+     }
+    ],
+    [
+     {
+      "food": "batido de proteínas",
+      "food_id": 3,
+      "quantity": 40.0,
+      "unit": "g"
+     },
+     {
+      "food": "creatina",
+      "food_id": 27,
+      "quantity": 10.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "quemagrasa",
+      "food_id": 32,
+      "quantity": 2.0,
+      "unit": "unidad"
+     }
+    ]
+   ],
+   "slot": "ANTES DE ENTRENAR"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "aminoácidos",
+      "food_id": 16,
+      "quantity": 15.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "MITAD DE ENTRENAMIENTO"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "batido de proteínas",
+      "food_id": 3,
+      "quantity": 40.0,
+      "unit": "g"
+     },
+     {
+      "food": "creatina",
+      "food_id": 27,
+      "quantity": 10.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "piña",
+      "food_id": 20,
+      "quantity": 2.0,
+      "unit": "loncha"
+     }
+    ]
+   ],
+   "slot": "DESPUES DE ENTRENAR"
+  }
+ ],
+ "notes": [
+  "Dormir de 7 a 8 horas.",
+  "ALGUNA VEZ EN LA CENA PUEDES SUSTITUIR EL PESCADO POR POLLO",
+  "EVITAR EL AZÚCAR.",
+  "Controlar la ingesta de agua que debe de ser de 2,5 a 3 litros y medio por día contando el agua de los batidos de proteínas. HAY QUE BEBER AUNQUE NO SE TENGA SED, PERO A TRAGOS PEQUEÑOS., Y ENTRE COMIDAS PRINCIPALMENTE.",
+  "Todos los alimentos que se puedan cocinar se deben cocinar mejor que tomarlos crudos en esta dieta, y si es posible, esperar a que se enfríen antes de comerlos, intentar no freír los alimentos con aceite, el aceite se debe consumir crudo aunque se el eche a la comida.",
+  "Puedes usar especias en la comida",
+  "No beber alcohol.",
+  "Prohibida la Soja y derivados."
+ ],
+ "routing": "cold_start",
+ "strategy": "case_based_composer"
+}

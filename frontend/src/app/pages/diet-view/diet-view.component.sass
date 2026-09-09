@@ -1,0 +1,63 @@
+.code
+  font-size: 13px
+  font-weight: 400
+  margin-left: 8px
+
+.exports
+  display: flex
+  gap: 0.5rem
+
+.pdf
+  text-decoration: none
+
+h3
+  margin: 12px 0 4px
+
+.items
+  list-style: none
+  margin: 0
+  padding: 0
+  li
+    min-height: 28px
+    display: flex
+    align-items: center
+    gap: 4px
+    flex-wrap: wrap
+    border-bottom: 1px solid var(--border)
+    &:last-child
+      border-bottom: 0
+
+.note
+  margin: 2px 0
+
+.tiles
+  gap: 12px
+  margin-bottom: 8px
+
+.changes
+  list-style: none
+  margin: 0
+  padding: 0
+  li
+    padding: 2px 0
+
+.labs
+  list-style: none
+  margin: 0
+  padding: 0
+  li
+    display: grid
+    grid-template-columns: 1fr 120px 100px
+    gap: 8px
+    padding: 3px 0
+    border-bottom: 1px solid var(--border)
+
+@media (max-width: 720px)
+  .exports
+    flex-wrap: wrap
+    gap: 8px
+  // Marcador / valor / referencia dejan de ser tres columnas fijas: en 360 px la de la izquierda quedaba en dos
+  // caracteres por línea.
+  .labs li
+    grid-template-columns: 1fr auto
+    gap: 2px 8px

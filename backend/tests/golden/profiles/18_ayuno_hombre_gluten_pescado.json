@@ -1,0 +1,11 @@
+{
+ "sex": "M",
+ "age": 41,
+ "height_cm": 177,
+ "activity_level": 3,
+ "goal": "ayuno_intermitente",
+ "restrictions": [
+  "contains_gluten",
+  "contains_fish"
+ ]
+}

@@ -1,0 +1,222 @@
+{
+ "_doc": "Substances found in the source prescriptions that the diet assistant must be structurally unable to propose. Criterion (data owner): prescription drugs and any anabolic / hormonal product, or a commercial name that suggests one, are excluded from the food catalogue; vitamins, minerals, amino acids, proteins and herbal/botanical supplements are kept. Keys are normalised (build_food_catalog.normalize_key). `status`: excluded = confirmed; pending_review = excluded until the data owner decides otherwise. Brands with a legitimate generic function are NOT excluded: they map to the generic through brand_map.json (viggro -> amilopectina).",
+ "substances": [
+  {
+   "name": "tamoxifeno",
+   "keys": [
+    "tamoxifeno",
+    "tamox",
+    "liv tamoxifeno",
+    "nolvadex"
+   ],
+   "reason": "prescription drug (SERM), post-cycle therapy in gym context",
+   "status": "excluded"
+  },
+  {
+   "name": "anabol",
+   "keys": [
+    "anabol",
+    "anabolico",
+    "anabolicos"
+   ],
+   "reason": "commercial name suggests an anabolic product",
+   "status": "excluded"
+  },
+  {
+   "name": "testo best",
+   "keys": [
+    "testo best",
+    "testobest",
+    "testo",
+    "testo f200",
+    "precursor testosterona",
+    "precursor testo",
+    "subidor testosterona",
+    "testosterona",
+    "booster testosterona"
+   ],
+   "reason": "commercial name / description suggests a hormonal (testosterone) product",
+   "status": "excluded"
+  },
+  {
+   "name": "tiromel (T3)",
+   "keys": [
+    "tirom",
+    "tiromel",
+    "t3",
+    "liotironina",
+    "cytomel",
+    "c t2 t3 quemagrasa aumentar"
+   ],
+   "reason": "thyroid hormone (liothyronine), prescription drug",
+   "status": "excluded"
+  },
+  {
+   "name": "levotiroxina (T4)",
+   "keys": [
+    "t4",
+    "levotiroxina",
+    "eutirox"
+   ],
+   "reason": "thyroid hormone, prescription drug",
+   "status": "excluded"
+  },
+  {
+   "name": "yohimbina",
+   "keys": [
+    "yohimbina",
+    "yohimbe"
+   ],
+   "reason": "stimulant alkaloid, prescription-only in Spain, banned in EU food supplements, cardiovascular risk (data owner)",
+   "status": "excluded"
+  },
+  {
+   "name": "moratinol",
+   "keys": [
+    "moratinol"
+   ],
+   "reason": "unidentified commercial name (4 occurrences): excluded by precaution; may return if identified as harmless (data owner)",
+   "status": "excluded_precautionary"
+  },
+  {
+   "name": "aspartavar",
+   "keys": [
+    "aspartavar"
+   ],
+   "reason": "written as an alternative to an excluded substance (\"2 ASPARTAVAR o MORATINOL\", 19 occurrences): the same precautionary criterion applies to both sides of the alternative; may return if the trainer identifies it as harmless (data owner)",
+   "status": "excluded_precautionary"
+  },
+  {
+   "name": "clembuterol",
+   "keys": [
+    "clembuterol",
+    "clenbuterol",
+    "clen"
+   ],
+   "reason": "beta-agonist, prescription drug (not found in dataset-v1; listed as a guard)",
+   "status": "excluded"
+  },
+  {
+   "name": "efedrina",
+   "keys": [
+    "efedrina",
+    "ephedra",
+    "efedra"
+   ],
+   "reason": "stimulant, prescription drug (guard)",
+   "status": "excluded"
+  },
+  {
+   "name": "hormona de crecimiento",
+   "keys": [
+    "hgh",
+    "gh",
+    "hormona crecimiento",
+    "hcg",
+    "insulina"
+   ],
+   "reason": "hormones (guard)",
+   "status": "excluded"
+  },
+  {
+   "name": "dhea",
+   "keys": [
+    "dhea",
+    "pregnenolona",
+    "prohormona",
+    "prohormonas",
+    "androstenediona"
+   ],
+   "reason": "prohormones (guard)",
+   "status": "excluded"
+  },
+  {
+   "name": "esteroides anabolizantes",
+   "keys": [
+    "winstrol",
+    "estanozolol",
+    "dianabol",
+    "metandrostenolona",
+    "oxandrolona",
+    "anavar",
+    "primobolan",
+    "trembolona",
+    "nandrolona",
+    "deca durabolin",
+    "sustanon",
+    "boldenona",
+    "masteron",
+    "anadrol",
+    "oximetolona",
+    "turinabol",
+    "superdrol",
+    "epistane"
+   ],
+   "reason": "anabolic steroids (guard)",
+   "status": "excluded"
+  },
+  {
+   "name": "sarms",
+   "keys": [
+    "sarm",
+    "sarms",
+    "ostarine",
+    "ligandrol",
+    "cardarine",
+    "rad 140",
+    "mk 677",
+    "ibutamoren"
+   ],
+   "reason": "selective androgen receptor modulators (guard)",
+   "status": "excluded"
+  },
+  {
+   "name": "inhibidores de aromatasa y otros PCT",
+   "keys": [
+    "clomifeno",
+    "clomid",
+    "letrozol",
+    "anastrozol",
+    "arimidex",
+    "proviron",
+    "mesterolona"
+   ],
+   "reason": "prescription drugs used as post-cycle therapy (guard)",
+   "status": "excluded"
+  },
+  {
+   "name": "fármacos diversos",
+   "keys": [
+    "sibutramina",
+    "orlistat",
+    "metformina",
+    "ozempic",
+    "semaglutida",
+    "liraglutida",
+    "saxenda",
+    "furosemida",
+    "seguril",
+    "lasix",
+    "espironolactona",
+    "hidroclorotiazida",
+    "salbutamol",
+    "ventolin",
+    "dnp",
+    "sildenafil",
+    "viagra",
+    "cialis",
+    "tadalafil"
+   ],
+   "reason": "prescription drugs (guard)",
+   "status": "excluded"
+  },
+  {
+   "name": "test pump",
+   "keys": [
+    "test pump"
+   ],
+   "reason": "commercial name suggests a testosterone product; no legitimate generic (brand_map.json unmapped_brands)",
+   "status": "excluded_precautionary"
+  }
+ ]
+}

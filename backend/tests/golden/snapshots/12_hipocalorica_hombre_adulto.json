@@ -1,0 +1,392 @@
+{
+ "compliance": 0.8333333333333334,
+ "forced_changes": [
+  "CENA:pasas:rule:fruta_no_en_cena"
+ ],
+ "k_effective": 1,
+ "meals": [
+  {
+   "groups": [
+    [
+     {
+      "food": "pescado blanco",
+      "food_id": 9,
+      "quantity": null,
+      "unit": ""
+     }
+    ],
+    [
+     {
+      "food": "té",
+      "food_id": 58,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "naranja",
+      "food_id": 77,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "hierro",
+      "food_id": 88,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "vitamina c",
+      "food_id": 93,
+      "quantity": null,
+      "unit": ""
+     }
+    ]
+   ],
+   "slot": "RECIEN LEVANTADO"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "pollo",
+      "food_id": 1,
+      "quantity": 90.0,
+      "unit": "g"
+     },
+     {
+      "food": "pavo",
+      "food_id": 7,
+      "quantity": 60.0,
+      "unit": "g"
+     },
+     {
+      "food": "jamón serrano",
+      "food_id": 68,
+      "quantity": 60.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "multivitamínico",
+      "food_id": 4,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "pan integral",
+      "food_id": 26,
+      "quantity": 1.0,
+      "unit": "loncha"
+     }
+    ],
+    [
+     {
+      "food": "manzana",
+      "food_id": 30,
+      "quantity": 1.0,
+      "unit": "unidad"
+     },
+     {
+      "food": "pera",
+      "food_id": 152,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "electrolitos",
+      "food_id": 44,
+      "quantity": null,
+      "unit": ""
+     }
+    ],
+    [
+     {
+      "food": "café",
+      "food_id": 63,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "bebida de almendras",
+      "food_id": 94,
+      "quantity": 250.0,
+      "unit": "ml"
+     }
+    ],
+    [
+     {
+      "food": "centeno",
+      "food_id": 97,
+      "quantity": 1.0,
+      "unit": "loncha"
+     }
+    ]
+   ],
+   "slot": "MEDIA MAÑANA"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "pollo",
+      "food_id": 1,
+      "quantity": 160.0,
+      "unit": "g"
+     },
+     {
+      "food": "pescado azul",
+      "food_id": 48,
+      "quantity": 200.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "aceite de oliva virgen extra",
+      "food_id": 5,
+      "quantity": 1.0,
+      "unit": "cucharada"
+     }
+    ],
+    [
+     {
+      "food": "almendras",
+      "food_id": 6,
+      "quantity": 15.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "pasta integral",
+      "food_id": 14,
+      "quantity": 130.0,
+      "unit": "g"
+     },
+     {
+      "food": "legumbres",
+      "food_id": 25,
+      "quantity": 140.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "ajo",
+      "food_id": 37,
+      "quantity": 2.0,
+      "unit": "diente"
+     },
+     {
+      "food": "cúrcuma",
+      "food_id": 49,
+      "quantity": 0.5,
+      "unit": "g"
+     },
+     {
+      "food": "ajo en polvo",
+      "food_id": 85,
+      "quantity": 1.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "tofu",
+      "food_id": 135,
+      "quantity": 120.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "COMIDA"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "multivitamínico",
+      "food_id": 4,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "avena",
+      "food_id": 21,
+      "quantity": 30.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "electrolitos",
+      "food_id": 44,
+      "quantity": null,
+      "unit": ""
+     }
+    ],
+    [
+     {
+      "food": "eaa",
+      "food_id": 56,
+      "quantity": 5.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "yogur",
+      "food_id": 74,
+      "quantity": 250.0,
+      "unit": "ml"
+     }
+    ],
+    [
+     {
+      "food": "arándanos",
+      "food_id": 123,
+      "quantity": 40.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "MERIENDA"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "pollo",
+      "food_id": 1,
+      "quantity": 190.0,
+      "unit": "g"
+     },
+     {
+      "food": "pavo",
+      "food_id": 7,
+      "quantity": 145.0,
+      "unit": "g"
+     },
+     {
+      "food": "pescado blanco",
+      "food_id": 9,
+      "quantity": 210.0,
+      "unit": "g"
+     },
+     {
+      "food": "yema de huevo",
+      "food_id": 11,
+      "quantity": 2.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "arroz",
+      "food_id": 2,
+      "quantity": 80.0,
+      "unit": "g"
+     },
+     {
+      "food": "patata",
+      "food_id": 32,
+      "quantity": 80.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "aceite de oliva virgen extra",
+      "food_id": 5,
+      "quantity": 1.0,
+      "unit": "cucharada"
+     }
+    ],
+    [
+     {
+      "food": "ensalada",
+      "food_id": 13,
+      "quantity": 80.0,
+      "unit": "g"
+     },
+     {
+      "food": "tomate",
+      "food_id": 17,
+      "quantity": 90.0,
+      "unit": "g"
+     },
+     {
+      "food": "verduras",
+      "food_id": 23,
+      "quantity": 120.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "clara de huevo",
+      "food_id": 18,
+      "quantity": 3.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "ajo",
+      "food_id": 37,
+      "quantity": 3.0,
+      "unit": "diente"
+     }
+    ],
+    [
+     {
+      "food": "cebolla",
+      "food_id": 59,
+      "quantity": 20.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "CENA"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "quemagrasa",
+      "food_id": 31,
+      "quantity": 2.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "cafeína",
+      "food_id": 99,
+      "quantity": null,
+      "unit": ""
+     }
+    ]
+   ],
+   "slot": "ANTES DE ENTRENAR"
+  }
+ ],
+ "notes": [],
+ "routing": "cold_start",
+ "strategy": "case_based_composer"
+}

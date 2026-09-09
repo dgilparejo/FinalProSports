@@ -1,0 +1,158 @@
+# El nombre del PROYECTO, fijado. Por defecto Compose lo deriva del nombre del directorio, que aqui es `code`, y
+# entonces los volumenes se llamarian `code_pgdata` / `code_hf_models`. Los contenedores, en cambio, ya llevan
+# `container_name` fijo (`finalprosports-*`), asi que el proyecto y los nombres iban desacoplados: levantar el
+# stack desde otro directorio -- o desde donde vivia el compose antes de S0 -- chocaba con «container name
+# is already in use» y, peor, apuntaba a un volumen de datos DISTINTO Y VACIO mientras el corpus cargado seguia
+# en el otro. Con el nombre fijo, los contenedores y los volumenes se llaman siempre igual venga de donde venga.
+name: finalprosports
+
+services:
+  db:
+    image: pgvector/pgvector:pg16@sha256:ccc6e83d6e35e931dc7c5def2022729d5a6c370318d099181995567ff1fb4d6b   # PostgreSQL 16.15 + pgvector 0.8.6, pinned by digest
+    container_name: finalprosports-db
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-finalprosports}
+      POSTGRES_USER: ${POSTGRES_USER:-finalprosports}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-finalprosports}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-finalprosports} -d ${POSTGRES_DB:-finalprosports}"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+
+  # v2 — identity provider. Pinned by digest like the database.
+  # `--import-realm` reads keycloak/realm-fps.json on every start: a clean clone gets the realm,
+  # the `entrenador` role and both test users with no manual step, which is what keeps
+  # `make verify-clean-clone` meaningful.
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.7.2@sha256:9d1f1b2b7261ff53c66cb1092dfcdc34a5fb77e81f9e6a6e75b8b6a795de8067
+    container_name: finalprosports-keycloak
+    command: ["start-dev", "--import-realm", "--http-port=8080"]
+    environment:
+      KC_BOOTSTRAP_ADMIN_USERNAME: ${KEYCLOAK_ADMIN:-admin}          # local only; see README
+      KC_BOOTSTRAP_ADMIN_PASSWORD: ${KEYCLOAK_ADMIN_PASSWORD:-admin}
+      KC_HEALTH_ENABLED: "true"
+      KC_HTTP_ENABLED: "true"
+    ports:
+      - "${KEYCLOAK_PORT:-8080}:8080"
+    volumes:
+      # the realm as a FILE, not the directory: the import provider scans the folder it is given, and
+      # mounting ./keycloak whole would put themes/ inside it
+      - ./keycloak/realm-fps.json:/opt/keycloak/data/import/realm-fps.json:ro
+      - ./keycloak/themes:/opt/keycloak/themes:ro
+    healthcheck:
+      test: ["CMD-SHELL", "exec 3<>/dev/tcp/127.0.0.1/9000 && printf 'GET /health/ready HTTP/1.1\\r\\nHost: localhost\\r\\nConnection: close\\r\\n\\r\\n' >&3 && grep -q 'UP' <&3"]
+      interval: 5s
+      timeout: 5s
+      retries: 40
+      start_period: 20s
+
+  # ARRANQUE. Un servicio de un solo uso que deja la base de datos LISTA y termina: migraciones, corpus y clientes
+  # de demostracion (docker/bootstrap.py). Existe para que `docker compose up` sea DE VERDAD el unico comando:
+  # sin el, `make migrate`, `make load` y `make demo` hay que ejecutarlos a mano desde el host, y quien clona el
+  # repositorio se encuentra una aplicacion levantada y VACIA sin saber por que.
+  #
+  # Misma imagen que `api`, otro punto de entrada: el arranque no es otra aplicacion, y dos imagenes se
+  # desincronizarian. Es idempotente, asi que el segundo `up` no recarga nada.
+  bootstrap:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: finalprosports-bootstrap
+    restart: "no"
+    depends_on:
+      db:
+        condition: service_healthy
+    environment: &fps_env
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-finalprosports}:${POSTGRES_PASSWORD:-finalprosports}@db:5432/${POSTGRES_DB:-finalprosports}
+      PROFESSIONAL_ID: ${PROFESSIONAL_ID:-prof_001}
+      # `iss` se acuna con el host que uso el NAVEGADOR, asi que siempre es localhost:8080; el JWKS se pide de
+      # contenedor a contenedor, de ahi la segunda variable.
+      KEYCLOAK_ISSUER: ${KEYCLOAK_ISSUER:-http://localhost:8080/realms/fps}
+      KEYCLOAK_INTERNAL_ISSUER: http://keycloak:8080/realms/fps
+      KEYCLOAK_AUDIENCE: ${KEYCLOAK_AUDIENCE:-fps-backend}
+      KEYCLOAK_REQUIRED_ROLE: ${KEYCLOAK_REQUIRED_ROLE:-entrenador}
+      EMBEDDING_MODEL: ${EMBEDDING_MODEL:-intfloat/multilingual-e5-base}
+      EMBEDDING_MODEL_REVISION: ${EMBEDDING_MODEL_REVISION:-d128750597153bb5987e10b1c3493a34e5a4502a}
+      HF_HOME: /models
+      # El dataset tiene NOMBRE FIJO dentro del contenedor, asi que estas dos no repiten la ruta del host.
+      FPS_DATA_DIR: /data
+      FPS_DATASET_DIR: /dataset
+    volumes: &fps_volumes
+      - hf_models:/models
+      # El dataset, DE SOLO LECTURA. El arranque lo carga y la API lee de el cuatro artefactos
+      # (plausibility_envelope.json, canonical_notes.json, supplement_slots.json, rotation_analysis.json); sin
+      # ellos la plausibilidad, las notas canonicas y la rotacion se apagan EN SILENCIO y la aplicacion daria
+      # dietas peores sin decir por que. `:ro` porque ni el arranque ni la API escriben ahi: quien escribe en el
+      # dataset son los arneses de evaluacion, que corren en el host.
+      #
+      # Por defecto `./seed/dataset`, DENTRO del repositorio, para que un clon limpio arranque sin `.env` y sin
+      # ninguna ruta al arbol de datos escrita en el arbol de codigo (S0, lo comprueban
+      # `tests/architecture/test_no_legacy_paths.py` y la auditoria PII). En la maquina de desarrollo el `.env`
+      # apunta al dataset de trabajo y el mismo compose usa ese en su lugar.
+      - type: bind
+        source: ${FPS_DATA_DIR:-./seed/dataset}
+        target: /data
+        read_only: true
+      - type: bind
+        source: ${FPS_DATASET_DIR:-./seed/dataset}
+        target: /dataset
+        read_only: true
+    command: ["python", "/app/docker/bootstrap.py"]
+
+  api:
+    # Contexto = raiz del repositorio (ver backend/Dockerfile): la API lee en ejecucion
+    # pipeline/src/pipeline/data/*.json, que no esta dentro de backend/.
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: finalprosports-api
+    depends_on:
+      db:
+        condition: service_healthy
+      keycloak:
+        condition: service_healthy
+      # La API no arranca hasta que el arranque TERMINA BIEN. Sin esto hay una ventana en la que la aplicacion
+      # responde con el esquema a medio migrar, que es la clase de fallo que solo aparece en la maquina de otro.
+      bootstrap:
+        condition: service_completed_successfully
+    environment: *fps_env
+    volumes: *fps_volumes
+    ports:
+      - "${API_PORT:-8000}:8000"
+    command: ["uvicorn", "finalprosports.main:app", "--host", "0.0.0.0", "--port", "8000"]
+    healthcheck:
+      # `python -c` y no curl/wget: la imagen es python:3.13-slim y no trae ninguno de los dos. La ruta es
+      # /health, que existe fuera de /api/v1 y no pide token: si pidiera autenticacion, un healthcheck en fallo
+      # no distinguiria «la API esta caida» de «la API esta bien y me ha rechazado».
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3).status == 200 else 1)"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 20s
+
+
+  # El frontend, compilado y servido por nginx en el MISMO origen que la API (frontend/nginx.conf hace de proxy
+  # de /api/, /docs y /openapi.json hacia `api:8000`). Por eso el bundle se construye con la configuración
+  # `production`, donde `apiBaseUrl` es relativo: navegador y API comparten origen y no hay CORS de por medio.
+  #
+  # Publica en el 4200 A PROPÓSITO, aunque aquí dentro nginx escuche en el 80: `http://localhost:4200`
+  # es lo que el realm `fps` tiene declarado como `redirectUris` y `webOrigins` del cliente `fps-frontend`.
+  # Publicarlo en otro sitio obligaría a tocar keycloak/realm-fps.json, y el flujo PKCE fallaría con
+  # «Invalid parameter: redirect_uri» que es un error que no se parece en nada a su causa.
+  web:
+    build: ./frontend
+    container_name: finalprosports-web
+    depends_on:
+      api:
+        condition: service_healthy
+    ports:
+      - "${WEB_PORT:-4200}:80"
+
+volumes:
+  pgdata:
+  hf_models:

@@ -1,0 +1,41 @@
+# Superposición para GitHub Codespaces. Se usa SIEMPRE junto al compose principal:
+#
+#   docker compose -f docker-compose.yml -f docker-compose.codespaces.yml up -d --build
+#
+# Existe como fichero aparte y no como `if` dentro del principal por una razón concreta: `docker compose up` a secas
+# tiene que seguir levantando la aplicación en local exactamente como está documentado y verificado. Aquí solo se
+# cambia lo que el cambio de host obliga a cambiar, y se CIERRA lo que en una VM pública no debe estar abierto.
+services:
+  # Postgres y la API dejan de publicarse. En local se publican por comodidad (psql, /docs); en un Codespace con
+  # puertos públicos eso sería una base de datos con la contraseña de desarrollo abierta a internet. La aplicación
+  # no los necesita: db, api y web se hablan por la red interna de compose, y `/docs` sale por el nginx del 4200.
+  db:
+    ports: !override []
+  api:
+    ports: !override []
+
+  keycloak:
+    # `KC_HOSTNAME` y las cabeceras de proxy: el TLS lo termina el proxy de GitHub y a Keycloak le llega HTTP plano.
+    # Sin esto acuña sus URLs (redirecciones, `iss`, enlaces del formulario) como http://localhost:8080 y el login
+    # se rompe en medio del flujo, con un error que no se parece en nada a su causa.
+    environment:
+      KC_BOOTSTRAP_ADMIN_USERNAME: ${KEYCLOAK_ADMIN:-admin}
+      KC_BOOTSTRAP_ADMIN_PASSWORD: ${KEYCLOAK_ADMIN_PASSWORD:-admin}
+      KC_HEALTH_ENABLED: "true"
+      KC_HTTP_ENABLED: "true"
+      KC_HOSTNAME: ${CODESPACE_KEYCLOAK_URL}
+      KC_PROXY_HEADERS: xforwarded
+    volumes: !override
+      # El realm PARCHEADO por tools/codespaces_setup.sh, con el origen del Codespace en redirectUris y webOrigins.
+      # El del repositorio no se toca.
+      - ./.codespaces/realm-fps.json:/opt/keycloak/data/import/realm-fps.json:ro
+      - ./keycloak/themes:/opt/keycloak/themes:ro
+
+  web:
+    build:
+      context: ./frontend
+      args:
+        # `keycloakUrl` se hornea en el bundle: de esa URL no hace ninguna petición el contenedor, navega el
+        # navegador del cliente. `apiBaseUrl` no se toca porque ya es relativo y el nginx de esta misma imagen hace
+        # de proxy hacia la API.
+        KEYCLOAK_PUBLIC_URL: ${CODESPACE_KEYCLOAK_URL}

@@ -1,0 +1,134 @@
+@if (!diet()) {
+  <app-loading />
+} @else {
+  <div class="page-header">
+    <app-button variant="icon" icon="arrow_back" ariaLabel="volver" [routerLink]="['/clients', clientId()]" />
+    <h1>
+      {{ 'view.title' | translate }} <span class="muted">{{ clientName() }} · {{ version() }}</span>
+    </h1>
+    <div class="exports">
+      <app-button variant="primary" icon="picture_as_pdf" [disabled]="downloading() !== null" (clicked)="download('pdf')">{{
+        'view.pdf' | translate
+      }}</app-button>
+      <app-button variant="secondary" icon="description" [disabled]="downloading() !== null" (clicked)="download('odt')">{{
+        'view.odt' | translate
+      }}</app-button>
+    </div>
+  </div>
+
+  <div class="grid-3-2">
+    <div class="panel">
+      <div class="panel-title">
+        <h2>{{ goal() | goalLabel }}</h2>
+        <app-chips [chips]="routingChips()" />
+      </div>
+      @for (m of diet()!.meals; track m.slot) {
+        <h3>{{ m.slot | slotLabel }}</h3>
+        <ul class="items">
+          @for (g of m.groups; track g.position) {
+            <li>
+              @for (o of g.options; track $index; let i = $index) {
+                @if (i > 0) {
+                  <span class="faint"> / </span>
+                }
+                <span [class.num]="true">{{ o | quantity }}</span>
+                @if (o.evidence.support > 0) {
+                  <span class="faint small"> {{ pct(o.evidence.support) }}</span>
+                }
+              }
+            </li>
+          }
+        </ul>
+      }
+      <h3>{{ 'view.notes' | translate }}</h3>
+      @for (n of diet()!.notes; track $index) {
+        <p class="note">– {{ n }}</p>
+      }
+      @if (!diet()!.notes.length) {
+        <p class="muted small">—</p>
+      }
+    </div>
+
+    <div>
+      @if (diet()!.diff; as diff) {
+        <div class="panel">
+          <div class="panel-title">
+            <h2>{{ 'view.diff.title' | translate }}</h2>
+            <span class="muted small">{{ 'view.diff.hint' | translate }}</span>
+          </div>
+          <div class="row tiles">
+            <app-stat-tile
+              [label]="'view.diff.editRatio' | translate"
+              [value]="pct(diff.edit_ratio)"
+              [tone]="diff.edit_ratio > 0 ? 'warn' : 'ok'"
+              [hint]="diff.kept_unchanged + ' / ' + diff.proposed_items + ' ' + ('view.diff.kept' | translate)" />
+            <app-stat-tile [label]="'view.diff.added' | translate" [value]="diff.summary['added']" />
+            <app-stat-tile [label]="'view.diff.removed' | translate" [value]="diff.summary['removed']" />
+            <app-stat-tile [label]="'view.diff.changed' | translate" [value]="diff.summary['changed'] + diff.summary['moved']" />
+          </div>
+          <ul class="changes small">
+            @for (c of diff.items_added; track $index) {
+              <li class="tone-ok">+ {{ c.slot | slotLabel }}: {{ c.canonical_name }} ({{ c.after }})</li>
+            }
+            @for (c of diff.items_removed; track $index) {
+              <li class="tone-danger">− {{ c.slot | slotLabel }}: {{ c.canonical_name }} ({{ c.before }})</li>
+            }
+            @for (c of diff.items_changed; track $index) {
+              <li class="tone-warn">± {{ c.slot | slotLabel }}: {{ c.canonical_name }} {{ c.before }} → {{ c.after }}</li>
+            }
+            @for (c of diff.items_moved; track $index) {
+              <li class="tone-rotated">↷ {{ c.canonical_name }}: {{ c.before! | slotLabel }} → {{ c.after! | slotLabel }}</li>
+            }
+            @for (n of diff.notes_added; track $index) {
+              <li class="tone-ok">+ nota: {{ n }}</li>
+            }
+            @for (n of diff.notes_removed; track $index) {
+              <li class="tone-danger">− nota: {{ n }}</li>
+            }
+          </ul>
+        </div>
+      }
+
+      <div class="panel">
+        <div class="panel-title">
+          <h2>{{ 'view.validation' | translate }}</h2>
+          <span class="muted small"
+            >{{ 'view.compliance' | translate }} {{ pct(diet()!.validation?.compliance) }} · {{ diet()!.retrieved_case_ids.length }}
+            {{ 'view.cases' | translate }}</span
+          >
+        </div>
+        <p class="small">{{ diet()!.routing.label }}</p>
+        @if (diet()!.validation?.forced_changes?.length) {
+          <h3 class="tone-warn">{{ 'view.forced' | translate }}</h3>
+          @for (f of diet()!.validation!.forced_changes; track $index) {
+            <p class="small">
+              {{ f.slot | slotLabel }}: <strong>{{ f.canonical_name }}</strong> — {{ reasonLabel(f.reason) }}
+            </p>
+          }
+        }
+        <h3>{{ 'view.rules' | translate }}</h3>
+        <app-chips [chips]="ruleChips()" />
+      </div>
+
+      @if (diet()!.context?.lab_results; as labs) {
+        <div class="panel">
+          <div class="panel-title">
+            <h2>{{ 'view.labs' | translate }}</h2>
+            <span class="muted small">{{ labs.out_of_range }} {{ 'view.labsOut' | translate }}</span>
+          </div>
+          @if (!labs.results.length) {
+            <p class="muted small">—</p>
+          }
+          <ul class="labs small">
+            @for (r of labs.results; track r.id) {
+              <li [class]="r.status === 'alto' ? 'tone-danger' : r.status === 'bajo' ? 'tone-warn' : ''">
+                <span>{{ r.marker }}</span
+                ><span class="num">{{ r.value }} {{ r.unit }}</span> <span class="faint">{{ r.ref_low ?? '—' }} – {{ r.ref_high ?? '—' }}</span>
+              </li>
+            }
+          </ul>
+        </div>
+      }
+    </div>
+  </div>
+}

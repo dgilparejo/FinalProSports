@@ -1,0 +1,239 @@
+/* Final Pro Sports — sign-in skin.
+ *
+ * Same tokens as the application (frontend/src/styles.sass): almost-black surfaces, one acid-lime
+ * accent reserved for what is interactive, Barlow for text and Barlow Condensed for the wordmark.
+ * The point is continuity: the person signing in should not feel handed off to another product.
+ *
+ * Everything below is a skin over the keycloak.v2 templates. Nothing here changes behaviour. */
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap');
+
+:root {
+  --fps-bg: #0a0b0d;
+  --fps-surface: #14161a;
+  --fps-surface-alt: #1c1f24;
+  --fps-border: #2a2e35;
+  --fps-text: #f5f6f7;
+  --fps-text-muted: #a0a5ad;
+  --fps-accent: #c6f24e;
+  --fps-accent-ink: #0a0b0d;
+  --fps-danger: #f87171;
+  --fps-radius: 6px;
+  --fps-font: 'Barlow', 'Inter', system-ui, sans-serif;
+  --fps-font-brand: 'Barlow Condensed', 'Barlow', sans-serif;
+}
+
+/* ------------------------------------------------------------------ page */
+
+html,
+body,
+body.login-pf {
+  background: var(--fps-bg);
+  color: var(--fps-text);
+  font-family: var(--fps-font);
+}
+
+/* The stock background image is replaced by a flat surface with a faint lime bloom: the accent is
+   present without competing with the form, which is the only thing to look at on this page. */
+#keycloak-bg,
+.login-pf-page .login-pf-header,
+body.login-pf::before {
+  background: none !important;
+}
+
+#keycloak-bg {
+  background:
+    radial-gradient(60rem 32rem at 50% -12%, rgba(198, 242, 78, 0.09), transparent 70%),
+    var(--fps-bg) !important;
+}
+
+.pf-v5-c-login {
+  --pf-v5-c-login--BackgroundColor: transparent;
+  background: transparent;
+}
+
+/* PatternFly's login container becomes a TWO-COLUMN grid at wide viewports (header beside the card,
+   for products that put marketing copy there). This page has nothing to put in a second column, so it
+   is forced back to one centred column — otherwise the emblem floats off to the right of the form. */
+.pf-v5-c-login__container {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  grid-template-columns: none !important;
+  max-width: 30rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.pf-v5-c-login__container > * {
+  width: 100%;
+  grid-column: auto !important;
+}
+
+/* ---------------------------------------------------------------- header */
+
+#kc-header,
+.pf-v5-c-login__header {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+/* The complete brand logo. It already CONTAINS the wordmark, so the realm's displayName next to it
+   would repeat the same three words: the text is hidden visually and kept for screen readers and for
+   the case where the image fails to load. */
+#kc-header-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  /* visually hidden, still announced */
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+}
+
+#kc-header-wrapper::before {
+  content: '';
+  display: block;
+  width: min(300px, 72vw);
+  aspect-ratio: 1323 / 461;
+  background: url('../img/logo.png') center / contain no-repeat;
+}
+
+/* ------------------------------------------------------------------ card */
+
+.pf-v5-c-login__main {
+  background: var(--fps-surface);
+  border: 1px solid var(--fps-border);
+  border-radius: var(--fps-radius);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.55);
+  overflow: hidden;
+}
+
+/* The stock blue rule on top of the card becomes the accent line of the application. */
+.pf-v5-c-login__main-header {
+  border-top: 3px solid var(--fps-accent);
+  padding: 22px 28px 4px;
+}
+
+.pf-v5-c-login__main-body {
+  padding: 18px 28px 26px;
+}
+
+#kc-page-title,
+.pf-v5-c-title {
+  font-family: var(--fps-font);
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--fps-text);
+}
+
+/* ----------------------------------------------------------------- form */
+
+.pf-v5-c-form__label-text,
+.pf-v5-c-form__label {
+  color: var(--fps-text-muted);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.pf-v5-c-form-control,
+.pf-v5-c-form-control > input,
+input.pf-v5-c-form-control {
+  background: var(--fps-surface-alt);
+  border: 1px solid var(--fps-border);
+  border-radius: var(--fps-radius);
+  color: var(--fps-text);
+  font-family: var(--fps-font);
+  font-size: 14px;
+  /* PatternFly draws the focus ring as a bottom border on a pseudo-element; it is replaced below */
+  --pf-v5-c-form-control--BorderBottomColor: var(--fps-border);
+  --pf-v5-c-form-control--focus--BorderBottomColor: var(--fps-accent);
+}
+
+.pf-v5-c-form-control::after,
+.pf-v5-c-form-control::before {
+  border: 0 !important;
+}
+
+.pf-v5-c-form-control:focus-within,
+input.pf-v5-c-form-control:focus {
+  border-color: var(--fps-accent);
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(198, 242, 78, 0.16);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--fps-text);
+  -webkit-box-shadow: 0 0 0 1000px var(--fps-surface-alt) inset;
+}
+
+/* the eye that reveals the password */
+.pf-v5-c-button.pf-m-control {
+  background: var(--fps-surface-alt);
+  border: 1px solid var(--fps-border);
+  border-left: 0;
+  color: var(--fps-text-muted);
+}
+
+.pf-v5-c-button.pf-m-control:hover {
+  color: var(--fps-text);
+}
+
+/* ---------------------------------------------------------------- button */
+
+.pf-v5-c-button.pf-m-primary,
+#kc-login {
+  background: var(--fps-accent);
+  border: 0;
+  border-radius: var(--fps-radius);
+  color: var(--fps-accent-ink);
+  font-family: var(--fps-font);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 9px 16px;
+}
+
+.pf-v5-c-button.pf-m-primary:hover,
+#kc-login:hover {
+  background: #d4f76f;
+  color: var(--fps-accent-ink);
+}
+
+.pf-v5-c-button.pf-m-primary:focus-visible {
+  outline: 2px solid var(--fps-accent);
+  outline-offset: 2px;
+}
+
+/* ----------------------------------------------------------- messages */
+
+.pf-v5-c-alert,
+#input-error-container-username,
+#input-error-container-password,
+.pf-v5-c-helper-text__item.pf-m-error,
+.pf-v5-c-form__helper-text {
+  color: var(--fps-danger);
+  font-size: 13px;
+}
+
+.pf-v5-c-alert.pf-m-inline {
+  background: var(--fps-surface-alt);
+  border: 1px solid var(--fps-danger);
+  border-radius: var(--fps-radius);
+}
+
+/* the "we are sorry" pages (expired cookie, unknown error) keep the same skin */
+#kc-error-message p,
+.instruction {
+  color: var(--fps-text-muted);
+}
+
+a {
+  color: var(--fps-accent);
+}
+
+a:hover {
+  color: #d4f76f;
+}

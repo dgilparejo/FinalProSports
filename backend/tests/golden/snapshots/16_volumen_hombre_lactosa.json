@@ -1,0 +1,381 @@
+{
+ "compliance": 1.0,
+ "forced_changes": [
+  "RECIEN LEVANTADO:batido de proteínas:restriction:contains_lactose",
+  "DESAYUNO:batido de proteínas:restriction:contains_lactose",
+  "DESPUES DE ENTRENAR:batido de proteínas:restriction:contains_lactose"
+ ],
+ "k_effective": 20,
+ "meals": [
+  {
+   "groups": [
+    [
+     {
+      "food": "aminoácidos",
+      "food_id": 16,
+      "quantity": 15.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "RECIEN LEVANTADO"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "yema de huevo",
+      "food_id": 11,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "arroz",
+      "food_id": 2,
+      "quantity": 160.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "avena",
+      "food_id": 21,
+      "quantity": 65.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "multivitamínico",
+      "food_id": 4,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "manzana",
+      "food_id": 30,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "cereales integrales",
+      "food_id": 34,
+      "quantity": 70.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "DESAYUNO"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "pavo",
+      "food_id": 7,
+      "quantity": 180.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "almendras",
+      "food_id": 6,
+      "quantity": 20.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "pollo",
+      "food_id": 1,
+      "quantity": 185.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "pan integral",
+      "food_id": 25,
+      "quantity": 1.0,
+      "unit": "unidad"
+     }
+    ],
+    [
+     {
+      "food": "aceite de oliva virgen extra",
+      "food_id": 5,
+      "quantity": 1.0,
+      "unit": "cucharada"
+     }
+    ],
+    [
+     {
+      "food": "atún",
+      "food_id": 12,
+      "quantity": 2.0,
+      "unit": "lata"
+     }
+    ]
+   ],
+   "slot": "MEDIA MAÑANA"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "pollo",
+      "food_id": 1,
+      "quantity": 200.0,
+      "unit": "g"
+     },
+     {
+      "food": "pavo",
+      "food_id": 7,
+      "quantity": 170.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "arroz",
+      "food_id": 2,
+      "quantity": 150.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "pasta integral",
+      "food_id": 14,
+      "quantity": 170.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "legumbres",
+      "food_id": 26,
+      "quantity": 180.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "ternera",
+      "food_id": 24,
+      "quantity": 255.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "COMIDA"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "arroz",
+      "food_id": 2,
+      "quantity": 155.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "almendras",
+      "food_id": 6,
+      "quantity": 20.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "pollo",
+      "food_id": 1,
+      "quantity": 200.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "pavo",
+      "food_id": 7,
+      "quantity": 170.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "atún",
+      "food_id": 12,
+      "quantity": 2.0,
+      "unit": "lata"
+     }
+    ]
+   ],
+   "slot": "MEDIA TARDE"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "pescado blanco",
+      "food_id": 9,
+      "quantity": 220.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "aceite de oliva virgen extra",
+      "food_id": 5,
+      "quantity": 1.0,
+      "unit": "cucharada"
+     }
+    ],
+    [
+     {
+      "food": "nueces",
+      "food_id": 8,
+      "quantity": 15.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "ensalada",
+      "food_id": 13,
+      "quantity": 130.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "pollo",
+      "food_id": 1,
+      "quantity": 205.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "arroz",
+      "food_id": 2,
+      "quantity": 155.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "verduras",
+      "food_id": 23,
+      "quantity": 160.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "CENA"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "nueces",
+      "food_id": 8,
+      "quantity": 20.0,
+      "unit": "g"
+     },
+     {
+      "food": "almendras",
+      "food_id": 6,
+      "quantity": 20.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "ANTES DE DORMIR"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "piña",
+      "food_id": 20,
+      "quantity": 2.0,
+      "unit": "loncha"
+     }
+    ],
+    [
+     {
+      "food": "creatina",
+      "food_id": 27,
+      "quantity": 10.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "ANTES DE ENTRENAR"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "aminoácidos",
+      "food_id": 16,
+      "quantity": 15.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "bcaa",
+      "food_id": 47,
+      "quantity": 10.0,
+      "unit": "g"
+     }
+    ]
+   ],
+   "slot": "MITAD DE ENTRENAMIENTO"
+  },
+  {
+   "groups": [
+    [
+     {
+      "food": "creatina",
+      "food_id": 27,
+      "quantity": 10.0,
+      "unit": "g"
+     }
+    ],
+    [
+     {
+      "food": "piña",
+      "food_id": 20,
+      "quantity": 2.0,
+      "unit": "loncha"
+     }
+    ]
+   ],
+   "slot": "DESPUES DE ENTRENAR"
+  }
+ ],
+ "notes": [
+  "Evitar las bebidas con sabor, con gas, azucaradas y zumos.",
+  "ALGUNA VEZ EN LA CENA PUEDES SUSTITUIR EL PESCADO POR POLLO",
+  "EVITAR EL AZÚCAR.",
+  "Dormir de 7 a 8 horas.",
+  "Puedes saltarte la dieta 3 comidas en Semana, siempre separadas entre al menos 5 o 6 comidas.",
+  "Masticar bien los alimentos y comer despacio.",
+  "No beber alcohol.",
+  "Controlar la ingesta de agua que debe de ser de 2,5 a 3 litros y medio por día contando el agua de los batidos de proteínas. HAY QUE BEBER AUNQUE NO SE TENGA SED, PERO A TRAGOS PEQUEÑOS., Y ENTRE COMIDAS PRINCIPALMENTE."
+ ],
+ "routing": "cold_start",
+ "strategy": "case_based_composer"
+}

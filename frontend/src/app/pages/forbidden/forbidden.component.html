@@ -1,0 +1,6 @@
+<section class="forbidden">
+  <span class="material-icons icon">lock</span>
+  <h1>{{ 'auth.forbidden.title' | translate }}</h1>
+  <p class="muted">{{ 'auth.forbidden.body' | translate: { user: auth.displayName() } }}</p>
+  <button type="button" class="btn" (click)="auth.logout()">{{ 'auth.logout' | translate }}</button>
+</section>

@@ -1,0 +1,11 @@
+# Lo que NO entra en el contexto de build. Sin esto, `COPY . .` mete node_modules (~1 GB) y dist/ del host: el
+# build tarda minutos en subir el contexto y, peor, `npm ci` podría convivir con un node_modules construido en
+# Windows dentro de una imagen Alpine (binarios nativos de otra plataforma).
+node_modules
+dist
+.angular
+coverage
+.git
+Dockerfile
+.dockerignore
+*.log

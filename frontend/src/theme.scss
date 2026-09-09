@@ -1,0 +1,27 @@
+// Material M3 theme (S7): dark, compact, chartreuse as the seed of the accent; the exact palette is set on top with the system tokens.
+@use '@angular/material' as mat;
+
+html {
+  @include mat.theme((
+    color: (primary: mat.$chartreuse-palette, tertiary: mat.$violet-palette, theme-type: dark),
+    typography: (plain-family: Barlow, brand-family: Barlow, bold-weight: 600, medium-weight: 500, regular-weight: 400),
+    density: -2,
+  ));
+  --mat-sys-background: var(--bg);
+  --mat-sys-surface: var(--surface);
+  --mat-sys-surface-container: var(--surface-alt);
+  --mat-sys-surface-container-low: var(--surface);
+  --mat-sys-surface-container-high: var(--surface-alt);
+  --mat-sys-surface-container-highest: #23272d;
+  --mat-sys-on-surface: var(--text);
+  --mat-sys-on-surface-variant: var(--text-muted);
+  --mat-sys-outline: var(--border);
+  --mat-sys-outline-variant: var(--border);
+  --mat-sys-primary: var(--accent);
+  --mat-sys-on-primary: var(--accent-ink);
+  --mat-sys-primary-container: #2b3410;
+  --mat-sys-on-primary-container: var(--accent);
+  --mat-sys-error: var(--danger);
+  --mat-sys-tertiary: var(--rotated);
+  color-scheme: dark;
+}

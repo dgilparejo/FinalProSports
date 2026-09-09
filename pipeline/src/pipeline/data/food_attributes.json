@@ -1,0 +1,164 @@
+{
+ "_doc": "Reviewed attribute overrides by canonical name (E1.3, revised the same day). Priority over the keyword rules of enrich_catalog.py. FACT vs BEHAVIOUR: `contains_lactose` is a nutritional fact (whey concentrate, cheese, yogurt and curd DO contain lactose); how the trainer treats lactose-intolerant clients is a BEHAVIOUR recorded as a rule in validated_rules.json (section 8, empirical support n=17, low confidence), not as a food attribute. This lets the validator run in two modes: reproduce the professional's criterion, or apply the restriction strictly.",
+ "foods": {
+  "leche": {
+   "flags": {
+    "contains_lactose": true
+   },
+   "reason": "fact; empirically never given to the 17 declared-intolerant clients"
+  },
+  "leche sin lactosa": {
+   "flags": {
+    "contains_lactose": false
+   },
+   "reason": "lactose-free by definition"
+  },
+  "yogur": {
+   "flags": {
+    "contains_lactose": true
+   },
+   "reason": "fact (fermented, reduced but present)"
+  },
+  "yogur sin lactosa": {
+   "flags": {
+    "contains_lactose": false
+   },
+   "reason": "lactose-free by definition"
+  },
+  "queso fresco": {
+   "flags": {
+    "contains_lactose": true
+   },
+   "reason": "fact (fresh cheese keeps lactose)"
+  },
+  "requesón": {
+   "flags": {
+    "contains_lactose": true
+   },
+   "reason": "fact"
+  },
+  "queso": {
+   "flags": {
+    "contains_lactose": true
+   },
+   "reason": "fact (cured cheeses: trace amounts; kept true, declared)"
+  },
+  "kéfir": {
+   "flags": {
+    "contains_lactose": true
+   },
+   "reason": "fact (fermented, reduced but present)"
+  },
+  "mantequilla": {
+   "flags": {
+    "contains_lactose": true
+   },
+   "reason": "fact (trace amounts)"
+  },
+  "café con leche": {
+   "flags": {
+    "contains_lactose": true,
+    "is_fasting_compatible": false
+   },
+   "reason": "fact: milk is explicit"
+  },
+  "batido de proteínas": {
+   "flags": {
+    "contains_lactose": true
+   },
+   "reason": "fact: whey concentrate contains lactose; unknown brands -> true"
+  },
+  "proteína aislada": {
+   "flags": {
+    "contains_lactose": false
+   },
+   "reason": "fact: whey isolate is below the lactose threshold (defensible factually)"
+  },
+  "caseína": {
+   "flags": {
+    "contains_lactose": true
+   },
+   "reason": "milk protein; residual lactose -> conservative true"
+  },
+  "barrita proteica": {
+   "flags": {
+    "contains_lactose": true
+   },
+   "reason": "milk-protein based -> conservative true"
+  },
+  "postre o dulce": {
+   "flags": {
+    "contains_lactose": true
+   },
+   "reason": "natillas / flan / arroz con leche -> conservative true"
+  },
+  "miel": {
+   "flags": {
+    "is_processed_sugar": false
+   },
+   "reason": "honey is not processed sugar by the definition of the flag; the corpus evidence (3 items, 2 clients, 0 notes) is INSUFFICIENT to conclude whether the trainer allows or forbids it"
+  },
+  "refresco light": {
+   "flags": {
+    "is_processed_sugar": false,
+    "is_soft_drink": true
+   },
+   "reason": "no sugar; forbidden through the 'bebidas con gas / con sabor' clause (is_soft_drink)"
+  },
+  "seitán": {
+   "flags": {
+    "contains_gluten": true
+   },
+   "reason": "wheat gluten itself (safety)"
+  },
+  "embutido": {
+   "flags": {
+    "contains_gluten": true
+   },
+   "reason": "some contain gluten as filler; conservative, consistent with avena"
+  },
+  "avena": {
+   "flags": {
+    "contains_gluten": true
+   },
+   "reason": "explicit conservative decision: cross-contamination and avenin reactivity"
+  },
+  "legumbres": {
+   "secondary_group": "PROTEIN",
+   "reason": "CARB primary (trainer's dinner rule), PROTEIN secondary"
+  },
+  "infusión": {
+   "flags": {
+    "is_fasting_compatible": true
+   },
+   "reason": "herbal infusions do not break the fast"
+  },
+  "sinefrina": {
+   "flags": {
+    "is_stimulant": true
+   },
+   "reason": "stimulant supplement kept in the catalogue; flagged for the explainability panel"
+  },
+  "cafeína": {
+   "flags": {
+    "is_stimulant": true
+   },
+   "reason": "idem"
+  },
+  "melatonina": {
+   "reason": "kept as SUPPLEMENT (OTC <= 1.9 mg in Spain, not ergogenic); declared in the report"
+  },
+  "pan sin gluten": {
+   "flags": {
+    "contains_gluten": false
+   },
+   "reason": "gluten-free by definition, same criterion as «leche sin lactosa». El profesional prescribe «Pan Integral sin gluten» y «Pasta integral sin gluten» a sus celiacos: 17 componentes en 9 dietas. Con un unico canonico «pan integral» marcado con gluten, el validador se los quitaba -- correctamente, porque la restriccion dura no se relaja NUNCA -- y el cliente se quedaba sin la fuente de hidratos que su propio preparador le habia escrito. El defecto no estaba en la restriccion sino en el catalogo: el pan sin gluten es otro alimento."
+  },
+  "pasta sin gluten": {
+   "flags": {
+    "contains_gluten": false
+   },
+   "reason": "gluten-free by definition, same criterion as «leche sin lactosa». El profesional prescribe «Pan Integral sin gluten» y «Pasta integral sin gluten» a sus celiacos: 17 componentes en 9 dietas. Con un unico canonico «pan integral» marcado con gluten, el validador se los quitaba -- correctamente, porque la restriccion dura no se relaja NUNCA -- y el cliente se quedaba sin la fuente de hidratos que su propio preparador le habia escrito. El defecto no estaba en la restriccion sino en el catalogo: el pan sin gluten es otro alimento."
+  }
+ }
+}

@@ -1,0 +1,12143 @@
+{
+ "protocol": {
+  "pairs": "consecutive versions of the same client (v series, templates excluded)",
+  "anchor_threshold": 0.8,
+  "rotatory_threshold": 0.5,
+  "confidence": "high n>=30, medium 10-29, low <10 (not classified)",
+  "chance": "prevalence of the food among the diets of the same goal"
+ },
+ "summary": {
+  "pairs": 904,
+  "clients": 164,
+  "same_goal_pairs": 571,
+  "excluded_pairs": {
+   "empty_diet": 9
+  },
+  "version_gap_distribution": {
+   "1": 857,
+   "2": 43,
+   "3": 4
+  },
+  "renewal_dropped_same_goal": {
+   "n": 571,
+   "mean": 0.254,
+   "p50": 0.2381
+  },
+  "renewal_dropped_goal_change": {
+   "n": 333,
+   "mean": 0.4517,
+   "p50": 0.4583
+  },
+  "jaccard_consecutive_same_goal": {
+   "mean": 0.6275,
+   "p50": 0.625
+  },
+  "renewal_dropped": {
+   "mean": 0.3268,
+   "p10": 0.0,
+   "p25": 0.1375,
+   "p50": 0.3333,
+   "p75": 0.5,
+   "p90": 0.6176
+  },
+  "renewal_new": {
+   "mean": 0.3251,
+   "p50": 0.3333
+  },
+  "jaccard_consecutive": {
+   "mean": 0.538,
+   "p50": 0.4741,
+   "p10": 0.2444,
+   "p90": 0.9469
+  },
+  "foods_classified": 166,
+  "anchors": 11,
+  "rotatory": 89,
+  "intermediate": 66,
+  "foods_low_n": 55,
+  "weighted_persistence": 0.6622
+ },
+ "foods": [
+  {
+   "food_id": 2,
+   "canonical_name": "arroz",
+   "family": "arroz",
+   "n": 811,
+   "persistence": 0.896,
+   "chance_prevalence_same_goal": 0.891,
+   "lift": 1.01,
+   "confidence": "high",
+   "class": "ancla"
+  },
+  {
+   "food_id": 1,
+   "canonical_name": "pollo",
+   "family": "ave",
+   "n": 796,
+   "persistence": 0.901,
+   "chance_prevalence_same_goal": 0.878,
+   "lift": 1.03,
+   "confidence": "high",
+   "class": "ancla"
+  },
+  {
+   "food_id": 4,
+   "canonical_name": "multivitamínico",
+   "family": "vitamina",
+   "n": 788,
+   "persistence": 0.926,
+   "chance_prevalence_same_goal": 0.867,
+   "lift": 1.07,
+   "confidence": "high",
+   "class": "ancla"
+  },
+  {
+   "food_id": 5,
+   "canonical_name": "aceite de oliva virgen extra",
+   "family": "grasa",
+   "n": 769,
+   "persistence": 0.919,
+   "chance_prevalence_same_goal": 0.855,
+   "lift": 1.08,
+   "confidence": "high",
+   "class": "ancla"
+  },
+  {
+   "food_id": 8,
+   "canonical_name": "nueces",
+   "family": "fruto_seco",
+   "n": 738,
+   "persistence": 0.883,
+   "chance_prevalence_same_goal": 0.808,
+   "lift": 1.09,
+   "confidence": "high",
+   "class": "ancla"
+  },
+  {
+   "food_id": 6,
+   "canonical_name": "almendras",
+   "family": "fruto_seco",
+   "n": 732,
+   "persistence": 0.862,
+   "chance_prevalence_same_goal": 0.808,
+   "lift": 1.07,
+   "confidence": "high",
+   "class": "ancla"
+  },
+  {
+   "food_id": 9,
+   "canonical_name": "pescado blanco",
+   "family": "pescado_blanco",
+   "n": 722,
+   "persistence": 0.837,
+   "chance_prevalence_same_goal": 0.789,
+   "lift": 1.06,
+   "confidence": "high",
+   "class": "ancla"
+  },
+  {
+   "food_id": 11,
+   "canonical_name": "yema de huevo",
+   "family": "huevo",
+   "n": 719,
+   "persistence": 0.873,
+   "chance_prevalence_same_goal": 0.791,
+   "lift": 1.1,
+   "confidence": "high",
+   "class": "ancla"
+  },
+  {
+   "food_id": 7,
+   "canonical_name": "pavo",
+   "family": "ave",
+   "n": 653,
+   "persistence": 0.792,
+   "chance_prevalence_same_goal": 0.724,
+   "lift": 1.09,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 3,
+   "canonical_name": "batido de proteínas",
+   "family": "suplemento_proteina",
+   "n": 580,
+   "persistence": 0.828,
+   "chance_prevalence_same_goal": 0.644,
+   "lift": 1.28,
+   "confidence": "high",
+   "class": "ancla"
+  },
+  {
+   "food_id": 12,
+   "canonical_name": "atún",
+   "family": "pescado_azul",
+   "n": 564,
+   "persistence": 0.745,
+   "chance_prevalence_same_goal": 0.637,
+   "lift": 1.17,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 14,
+   "canonical_name": "pasta integral",
+   "family": "pasta",
+   "n": 532,
+   "persistence": 0.711,
+   "chance_prevalence_same_goal": 0.607,
+   "lift": 1.17,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 13,
+   "canonical_name": "ensalada",
+   "family": "verdura",
+   "n": 516,
+   "persistence": 0.702,
+   "chance_prevalence_same_goal": 0.574,
+   "lift": 1.22,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 10,
+   "canonical_name": "potasio",
+   "family": "mineral",
+   "n": 466,
+   "persistence": 0.779,
+   "chance_prevalence_same_goal": 0.513,
+   "lift": 1.52,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 18,
+   "canonical_name": "clara de huevo",
+   "family": "huevo",
+   "n": 438,
+   "persistence": 0.806,
+   "chance_prevalence_same_goal": 0.518,
+   "lift": 1.55,
+   "confidence": "high",
+   "class": "ancla"
+  },
+  {
+   "food_id": 20,
+   "canonical_name": "piña",
+   "family": "fruta",
+   "n": 436,
+   "persistence": 0.667,
+   "chance_prevalence_same_goal": 0.498,
+   "lift": 1.34,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 17,
+   "canonical_name": "tomate",
+   "family": "verdura",
+   "n": 435,
+   "persistence": 0.628,
+   "chance_prevalence_same_goal": 0.477,
+   "lift": 1.32,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 21,
+   "canonical_name": "avena",
+   "family": "cereal",
+   "n": 429,
+   "persistence": 0.66,
+   "chance_prevalence_same_goal": 0.478,
+   "lift": 1.38,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 19,
+   "canonical_name": "aguacate",
+   "family": "grasa",
+   "n": 415,
+   "persistence": 0.737,
+   "chance_prevalence_same_goal": 0.48,
+   "lift": 1.54,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 26,
+   "canonical_name": "legumbres",
+   "family": "legumbre",
+   "n": 411,
+   "persistence": 0.62,
+   "chance_prevalence_same_goal": 0.467,
+   "lift": 1.33,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 24,
+   "canonical_name": "ternera",
+   "family": "carne",
+   "n": 382,
+   "persistence": 0.639,
+   "chance_prevalence_same_goal": 0.447,
+   "lift": 1.43,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 23,
+   "canonical_name": "verduras",
+   "family": "verdura",
+   "n": 371,
+   "persistence": 0.633,
+   "chance_prevalence_same_goal": 0.427,
+   "lift": 1.48,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 30,
+   "canonical_name": "manzana",
+   "family": "fruta",
+   "n": 328,
+   "persistence": 0.564,
+   "chance_prevalence_same_goal": 0.379,
+   "lift": 1.49,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 15,
+   "canonical_name": "omega 3",
+   "family": "suplemento_otro",
+   "n": 323,
+   "persistence": 0.755,
+   "chance_prevalence_same_goal": 0.345,
+   "lift": 2.19,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 25,
+   "canonical_name": "pan integral",
+   "family": "pan",
+   "n": 308,
+   "persistence": 0.64,
+   "chance_prevalence_same_goal": 0.398,
+   "lift": 1.61,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 28,
+   "canonical_name": "pepino",
+   "family": "verdura",
+   "n": 307,
+   "persistence": 0.55,
+   "chance_prevalence_same_goal": 0.337,
+   "lift": 1.63,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 31,
+   "canonical_name": "patata",
+   "family": "tuberculo",
+   "n": 298,
+   "persistence": 0.554,
+   "chance_prevalence_same_goal": 0.364,
+   "lift": 1.52,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 29,
+   "canonical_name": "tortilla",
+   "family": "huevo",
+   "n": 294,
+   "persistence": 0.765,
+   "chance_prevalence_same_goal": 0.335,
+   "lift": 2.29,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 33,
+   "canonical_name": "magnesio",
+   "family": "mineral",
+   "n": 293,
+   "persistence": 0.73,
+   "chance_prevalence_same_goal": 0.307,
+   "lift": 2.38,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 35,
+   "canonical_name": "pechuga de pollo",
+   "family": "ave",
+   "n": 286,
+   "persistence": 0.65,
+   "chance_prevalence_same_goal": 0.323,
+   "lift": 2.01,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 16,
+   "canonical_name": "aminoácidos",
+   "family": "aminoacidos",
+   "n": 285,
+   "persistence": 0.772,
+   "chance_prevalence_same_goal": 0.307,
+   "lift": 2.52,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 34,
+   "canonical_name": "cereales integrales",
+   "family": "cereal",
+   "n": 285,
+   "persistence": 0.505,
+   "chance_prevalence_same_goal": 0.321,
+   "lift": 1.57,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 38,
+   "canonical_name": "calcio",
+   "family": "mineral",
+   "n": 270,
+   "persistence": 0.756,
+   "chance_prevalence_same_goal": 0.292,
+   "lift": 2.59,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 40,
+   "canonical_name": "espinacas",
+   "family": "verdura",
+   "n": 267,
+   "persistence": 0.502,
+   "chance_prevalence_same_goal": 0.291,
+   "lift": 1.73,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 32,
+   "canonical_name": "quemagrasa",
+   "family": "suplemento_otro",
+   "n": 250,
+   "persistence": 0.692,
+   "chance_prevalence_same_goal": 0.308,
+   "lift": 2.25,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 37,
+   "canonical_name": "ajo",
+   "family": "condimento",
+   "n": 245,
+   "persistence": 0.551,
+   "chance_prevalence_same_goal": 0.3,
+   "lift": 1.84,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 39,
+   "canonical_name": "cerdo",
+   "family": "carne",
+   "n": 234,
+   "persistence": 0.534,
+   "chance_prevalence_same_goal": 0.271,
+   "lift": 1.97,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 43,
+   "canonical_name": "agua",
+   "family": "bebida",
+   "n": 228,
+   "persistence": 0.614,
+   "chance_prevalence_same_goal": 0.247,
+   "lift": 2.49,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 36,
+   "canonical_name": "complejo zinc-magnesio",
+   "family": "mineral",
+   "n": 227,
+   "persistence": 0.639,
+   "chance_prevalence_same_goal": 0.262,
+   "lift": 2.44,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 41,
+   "canonical_name": "fruta",
+   "family": "fruta",
+   "n": 218,
+   "persistence": 0.628,
+   "chance_prevalence_same_goal": 0.251,
+   "lift": 2.51,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 22,
+   "canonical_name": "onagra",
+   "family": "suplemento_otro",
+   "n": 204,
+   "persistence": 0.76,
+   "chance_prevalence_same_goal": 0.224,
+   "lift": 3.39,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 46,
+   "canonical_name": "plátano",
+   "family": "fruta",
+   "n": 195,
+   "persistence": 0.538,
+   "chance_prevalence_same_goal": 0.281,
+   "lift": 1.92,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 27,
+   "canonical_name": "creatina",
+   "family": "aminoacidos",
+   "n": 192,
+   "persistence": 0.589,
+   "chance_prevalence_same_goal": 0.256,
+   "lift": 2.3,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 48,
+   "canonical_name": "pescado azul",
+   "family": "pescado_azul",
+   "n": 171,
+   "persistence": 0.509,
+   "chance_prevalence_same_goal": 0.239,
+   "lift": 2.13,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 49,
+   "canonical_name": "cúrcuma",
+   "family": "condimento",
+   "n": 171,
+   "persistence": 0.427,
+   "chance_prevalence_same_goal": 0.227,
+   "lift": 1.88,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 45,
+   "canonical_name": "aceite de coco",
+   "family": "grasa",
+   "n": 163,
+   "persistence": 0.436,
+   "chance_prevalence_same_goal": 0.185,
+   "lift": 2.36,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 52,
+   "canonical_name": "l-carnitina",
+   "family": "aminoacidos",
+   "n": 158,
+   "persistence": 0.627,
+   "chance_prevalence_same_goal": 0.165,
+   "lift": 3.8,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 51,
+   "canonical_name": "limón",
+   "family": "fruta",
+   "n": 150,
+   "persistence": 0.28,
+   "chance_prevalence_same_goal": 0.171,
+   "lift": 1.64,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 47,
+   "canonical_name": "bcaa",
+   "family": "aminoacidos",
+   "n": 143,
+   "persistence": 0.664,
+   "chance_prevalence_same_goal": 0.211,
+   "lift": 3.15,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 59,
+   "canonical_name": "cebolla",
+   "family": "verdura",
+   "n": 134,
+   "persistence": 0.328,
+   "chance_prevalence_same_goal": 0.161,
+   "lift": 2.04,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 50,
+   "canonical_name": "tortitas de arroz",
+   "family": "cereal",
+   "n": 129,
+   "persistence": 0.38,
+   "chance_prevalence_same_goal": 0.149,
+   "lift": 2.55,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 53,
+   "canonical_name": "proteína aislada",
+   "family": "suplemento_proteina",
+   "n": 126,
+   "persistence": 0.595,
+   "chance_prevalence_same_goal": 0.159,
+   "lift": 3.74,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 55,
+   "canonical_name": "cacahuetes",
+   "family": "fruto_seco",
+   "n": 126,
+   "persistence": 0.452,
+   "chance_prevalence_same_goal": 0.153,
+   "lift": 2.95,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 60,
+   "canonical_name": "sándwich",
+   "family": "pan",
+   "n": 118,
+   "persistence": 0.576,
+   "chance_prevalence_same_goal": 0.135,
+   "lift": 4.26,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 44,
+   "canonical_name": "electrolitos",
+   "family": "mineral",
+   "n": 115,
+   "persistence": 0.609,
+   "chance_prevalence_same_goal": 0.251,
+   "lift": 2.43,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 57,
+   "canonical_name": "zanahoria",
+   "family": "verdura",
+   "n": 113,
+   "persistence": 0.319,
+   "chance_prevalence_same_goal": 0.169,
+   "lift": 1.89,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 54,
+   "canonical_name": "amilopectina",
+   "family": "suplemento_carbohidrato",
+   "n": 107,
+   "persistence": 0.523,
+   "chance_prevalence_same_goal": 0.146,
+   "lift": 3.59,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 61,
+   "canonical_name": "guacamole",
+   "family": "grasa",
+   "n": 106,
+   "persistence": 0.481,
+   "chance_prevalence_same_goal": 0.135,
+   "lift": 3.57,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 69,
+   "canonical_name": "quinoa",
+   "family": "cereal",
+   "n": 103,
+   "persistence": 0.282,
+   "chance_prevalence_same_goal": 0.114,
+   "lift": 2.46,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 58,
+   "canonical_name": "té",
+   "family": "bebida",
+   "n": 101,
+   "persistence": 0.485,
+   "chance_prevalence_same_goal": 0.197,
+   "lift": 2.47,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 42,
+   "canonical_name": "merluza",
+   "family": "pescado_blanco",
+   "n": 99,
+   "persistence": 0.485,
+   "chance_prevalence_same_goal": 0.108,
+   "lift": 4.48,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 62,
+   "canonical_name": "queso fresco",
+   "family": "lacteo",
+   "n": 99,
+   "persistence": 0.313,
+   "chance_prevalence_same_goal": 0.13,
+   "lift": 2.42,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 64,
+   "canonical_name": "glutamina",
+   "family": "aminoacidos",
+   "n": 93,
+   "persistence": 0.624,
+   "chance_prevalence_same_goal": 0.137,
+   "lift": 4.55,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 70,
+   "canonical_name": "muesli",
+   "family": "cereal",
+   "n": 92,
+   "persistence": 0.326,
+   "chance_prevalence_same_goal": 0.133,
+   "lift": 2.45,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 72,
+   "canonical_name": "vitamina d",
+   "family": "vitamina",
+   "n": 90,
+   "persistence": 0.667,
+   "chance_prevalence_same_goal": 0.119,
+   "lift": 5.61,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 75,
+   "canonical_name": "bicarbonato",
+   "family": "condimento",
+   "n": 89,
+   "persistence": 0.191,
+   "chance_prevalence_same_goal": 0.105,
+   "lift": 1.81,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 68,
+   "canonical_name": "jamón serrano",
+   "family": "embutido",
+   "n": 88,
+   "persistence": 0.341,
+   "chance_prevalence_same_goal": 0.149,
+   "lift": 2.29,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 66,
+   "canonical_name": "boniato",
+   "family": "tuberculo",
+   "n": 88,
+   "persistence": 0.284,
+   "chance_prevalence_same_goal": 0.107,
+   "lift": 2.65,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 77,
+   "canonical_name": "naranja",
+   "family": "fruta",
+   "n": 87,
+   "persistence": 0.402,
+   "chance_prevalence_same_goal": 0.108,
+   "lift": 3.71,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 71,
+   "canonical_name": "vitamina b",
+   "family": "vitamina",
+   "n": 86,
+   "persistence": 0.535,
+   "chance_prevalence_same_goal": 0.107,
+   "lift": 4.99,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 78,
+   "canonical_name": "crema de cacahuete",
+   "family": "fruto_seco",
+   "n": 81,
+   "persistence": 0.346,
+   "chance_prevalence_same_goal": 0.11,
+   "lift": 3.15,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 56,
+   "canonical_name": "eaa",
+   "family": "aminoacidos",
+   "n": 79,
+   "persistence": 0.57,
+   "chance_prevalence_same_goal": 0.102,
+   "lift": 5.58,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 84,
+   "canonical_name": "harina de avena",
+   "family": "cereal",
+   "n": 79,
+   "persistence": 0.329,
+   "chance_prevalence_same_goal": 0.1,
+   "lift": 3.3,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 79,
+   "canonical_name": "vitamina k",
+   "family": "vitamina",
+   "n": 78,
+   "persistence": 0.679,
+   "chance_prevalence_same_goal": 0.102,
+   "lift": 6.68,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 65,
+   "canonical_name": "café",
+   "family": "bebida",
+   "n": 77,
+   "persistence": 0.571,
+   "chance_prevalence_same_goal": 0.184,
+   "lift": 3.1,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 82,
+   "canonical_name": "requesón",
+   "family": "lacteo",
+   "n": 76,
+   "persistence": 0.276,
+   "chance_prevalence_same_goal": 0.104,
+   "lift": 2.66,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 74,
+   "canonical_name": "yogur",
+   "family": "lacteo",
+   "n": 72,
+   "persistence": 0.472,
+   "chance_prevalence_same_goal": 0.11,
+   "lift": 4.28,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 80,
+   "canonical_name": "kiwi",
+   "family": "fruta",
+   "n": 72,
+   "persistence": 0.306,
+   "chance_prevalence_same_goal": 0.089,
+   "lift": 3.44,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 67,
+   "canonical_name": "minerales",
+   "family": "mineral",
+   "n": 69,
+   "persistence": 0.58,
+   "chance_prevalence_same_goal": 0.104,
+   "lift": 5.57,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 83,
+   "canonical_name": "pipas de calabaza",
+   "family": "semilla",
+   "n": 69,
+   "persistence": 0.29,
+   "chance_prevalence_same_goal": 0.105,
+   "lift": 2.77,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 89,
+   "canonical_name": "zumo",
+   "family": "bebida",
+   "n": 68,
+   "persistence": 0.485,
+   "chance_prevalence_same_goal": 0.094,
+   "lift": 5.16,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 85,
+   "canonical_name": "ajo en polvo",
+   "family": "condimento",
+   "n": 68,
+   "persistence": 0.412,
+   "chance_prevalence_same_goal": 0.155,
+   "lift": 2.66,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 88,
+   "canonical_name": "hierro",
+   "family": "mineral",
+   "n": 67,
+   "persistence": 0.522,
+   "chance_prevalence_same_goal": 0.143,
+   "lift": 3.65,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 63,
+   "canonical_name": "tribulus",
+   "family": "suplemento_otro",
+   "n": 66,
+   "persistence": 0.53,
+   "chance_prevalence_same_goal": 0.099,
+   "lift": 5.34,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 93,
+   "canonical_name": "vitamina c",
+   "family": "vitamina",
+   "n": 66,
+   "persistence": 0.47,
+   "chance_prevalence_same_goal": 0.101,
+   "lift": 4.65,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 76,
+   "canonical_name": "caballa",
+   "family": "pescado_azul",
+   "n": 66,
+   "persistence": 0.394,
+   "chance_prevalence_same_goal": 0.113,
+   "lift": 3.48,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 81,
+   "canonical_name": "chía",
+   "family": "semilla",
+   "n": 65,
+   "persistence": 0.292,
+   "chance_prevalence_same_goal": 0.087,
+   "lift": 3.35,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 87,
+   "canonical_name": "salmón",
+   "family": "pescado_azul",
+   "n": 65,
+   "persistence": 0.262,
+   "chance_prevalence_same_goal": 0.078,
+   "lift": 3.37,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 90,
+   "canonical_name": "espárragos",
+   "family": "verdura",
+   "n": 64,
+   "persistence": 0.297,
+   "chance_prevalence_same_goal": 0.117,
+   "lift": 2.54,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 95,
+   "canonical_name": "anacardos",
+   "family": "fruto_seco",
+   "n": 62,
+   "persistence": 0.274,
+   "chance_prevalence_same_goal": 0.077,
+   "lift": 3.58,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 102,
+   "canonical_name": "maíz",
+   "family": "verdura",
+   "n": 60,
+   "persistence": 0.133,
+   "chance_prevalence_same_goal": 0.072,
+   "lift": 1.85,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 73,
+   "canonical_name": "protector articular",
+   "family": "suplemento_otro",
+   "n": 58,
+   "persistence": 0.569,
+   "chance_prevalence_same_goal": 0.098,
+   "lift": 5.79,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 86,
+   "canonical_name": "huevo",
+   "family": "huevo",
+   "n": 58,
+   "persistence": 0.431,
+   "chance_prevalence_same_goal": 0.072,
+   "lift": 6.02,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 99,
+   "canonical_name": "cafeína",
+   "family": "suplemento_otro",
+   "n": 56,
+   "persistence": 0.571,
+   "chance_prevalence_same_goal": 0.223,
+   "lift": 2.56,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 94,
+   "canonical_name": "bebida de almendras",
+   "family": "bebida_vegetal",
+   "n": 56,
+   "persistence": 0.411,
+   "chance_prevalence_same_goal": 0.077,
+   "lift": 5.33,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 91,
+   "canonical_name": "brócoli",
+   "family": "verdura",
+   "n": 56,
+   "persistence": 0.268,
+   "chance_prevalence_same_goal": 0.087,
+   "lift": 3.08,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 101,
+   "canonical_name": "guisantes",
+   "family": "legumbre",
+   "n": 52,
+   "persistence": 0.288,
+   "chance_prevalence_same_goal": 0.068,
+   "lift": 4.26,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 96,
+   "canonical_name": "panga",
+   "family": "pescado_blanco",
+   "n": 51,
+   "persistence": 0.412,
+   "chance_prevalence_same_goal": 0.065,
+   "lift": 6.33,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 100,
+   "canonical_name": "leche vegetal",
+   "family": "bebida_vegetal",
+   "n": 50,
+   "persistence": 0.48,
+   "chance_prevalence_same_goal": 0.073,
+   "lift": 6.6,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 103,
+   "canonical_name": "espirulina",
+   "family": "suplemento_otro",
+   "n": 48,
+   "persistence": 0.458,
+   "chance_prevalence_same_goal": 0.057,
+   "lift": 8.1,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 92,
+   "canonical_name": "edulcorante",
+   "family": "condimento",
+   "n": 46,
+   "persistence": 0.435,
+   "chance_prevalence_same_goal": 0.151,
+   "lift": 2.88,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 97,
+   "canonical_name": "centeno",
+   "family": "cereal",
+   "n": 45,
+   "persistence": 0.289,
+   "chance_prevalence_same_goal": 0.079,
+   "lift": 3.65,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 110,
+   "canonical_name": "algas",
+   "family": "verdura",
+   "n": 45,
+   "persistence": 0.267,
+   "chance_prevalence_same_goal": 0.061,
+   "lift": 4.37,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 98,
+   "canonical_name": "lechuga",
+   "family": "verdura",
+   "n": 43,
+   "persistence": 0.442,
+   "chance_prevalence_same_goal": 0.055,
+   "lift": 8.03,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 104,
+   "canonical_name": "remolacha",
+   "family": "verdura",
+   "n": 42,
+   "persistence": 0.31,
+   "chance_prevalence_same_goal": 0.052,
+   "lift": 5.97,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 106,
+   "canonical_name": "crema de arroz",
+   "family": "cereal",
+   "n": 39,
+   "persistence": 0.41,
+   "chance_prevalence_same_goal": 0.082,
+   "lift": 5.0,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 105,
+   "canonical_name": "queso",
+   "family": "lacteo",
+   "n": 39,
+   "persistence": 0.333,
+   "chance_prevalence_same_goal": 0.147,
+   "lift": 2.27,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 108,
+   "canonical_name": "arginina",
+   "family": "aminoacidos",
+   "n": 38,
+   "persistence": 0.658,
+   "chance_prevalence_same_goal": 0.048,
+   "lift": 13.66,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 119,
+   "canonical_name": "apio",
+   "family": "verdura",
+   "n": 37,
+   "persistence": 0.243,
+   "chance_prevalence_same_goal": 0.059,
+   "lift": 4.13,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 116,
+   "canonical_name": "bebida de soja",
+   "family": "bebida_vegetal",
+   "n": 36,
+   "persistence": 0.444,
+   "chance_prevalence_same_goal": 0.047,
+   "lift": 9.5,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 112,
+   "canonical_name": "berberina",
+   "family": "suplemento_otro",
+   "n": 35,
+   "persistence": 0.571,
+   "chance_prevalence_same_goal": 0.042,
+   "lift": 13.49,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 107,
+   "canonical_name": "carne roja",
+   "family": "carne",
+   "n": 35,
+   "persistence": 0.429,
+   "chance_prevalence_same_goal": 0.049,
+   "lift": 8.81,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 117,
+   "canonical_name": "aceitunas",
+   "family": "verdura",
+   "n": 33,
+   "persistence": 0.273,
+   "chance_prevalence_same_goal": 0.116,
+   "lift": 2.35,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 118,
+   "canonical_name": "pepinillos",
+   "family": "verdura",
+   "n": 33,
+   "persistence": 0.121,
+   "chance_prevalence_same_goal": 0.058,
+   "lift": 2.07,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 123,
+   "canonical_name": "arándanos",
+   "family": "fruta",
+   "n": 29,
+   "persistence": 0.483,
+   "chance_prevalence_same_goal": 0.036,
+   "lift": 13.53,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 128,
+   "canonical_name": "barrita proteica",
+   "family": "suplemento_proteina",
+   "n": 28,
+   "persistence": 0.357,
+   "chance_prevalence_same_goal": 0.037,
+   "lift": 9.75,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 113,
+   "canonical_name": "probiótico",
+   "family": "suplemento_otro",
+   "n": 26,
+   "persistence": 0.692,
+   "chance_prevalence_same_goal": 0.096,
+   "lift": 7.18,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 125,
+   "canonical_name": "caseína",
+   "family": "suplemento_proteina",
+   "n": 26,
+   "persistence": 0.577,
+   "chance_prevalence_same_goal": 0.029,
+   "lift": 19.89,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 136,
+   "canonical_name": "support",
+   "family": "suplemento_otro",
+   "n": 25,
+   "persistence": 0.68,
+   "chance_prevalence_same_goal": 0.03,
+   "lift": 22.56,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 115,
+   "canonical_name": "sacarina",
+   "family": "condimento",
+   "n": 25,
+   "persistence": 0.64,
+   "chance_prevalence_same_goal": 0.042,
+   "lift": 15.42,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 126,
+   "canonical_name": "garbanzos",
+   "family": "legumbre",
+   "n": 25,
+   "persistence": 0.28,
+   "chance_prevalence_same_goal": 0.037,
+   "lift": 7.51,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 109,
+   "canonical_name": "champiñones",
+   "family": "verdura",
+   "n": 24,
+   "persistence": 0.417,
+   "chance_prevalence_same_goal": 0.153,
+   "lift": 2.72,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 135,
+   "canonical_name": "tofu",
+   "family": "legumbre",
+   "n": 24,
+   "persistence": 0.292,
+   "chance_prevalence_same_goal": 0.039,
+   "lift": 7.48,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 121,
+   "canonical_name": "avellanas",
+   "family": "fruto_seco",
+   "n": 23,
+   "persistence": 0.565,
+   "chance_prevalence_same_goal": 0.04,
+   "lift": 14.12,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 120,
+   "canonical_name": "puré de verduras",
+   "family": "verdura",
+   "n": 23,
+   "persistence": 0.391,
+   "chance_prevalence_same_goal": 0.039,
+   "lift": 9.99,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 131,
+   "canonical_name": "pasta al huevo",
+   "family": "pasta",
+   "n": 23,
+   "persistence": 0.261,
+   "chance_prevalence_same_goal": 0.038,
+   "lift": 6.83,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 133,
+   "canonical_name": "fresas",
+   "family": "fruta",
+   "n": 22,
+   "persistence": 0.591,
+   "chance_prevalence_same_goal": 0.034,
+   "lift": 17.21,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 122,
+   "canonical_name": "judías verdes",
+   "family": "verdura",
+   "n": 22,
+   "persistence": 0.273,
+   "chance_prevalence_same_goal": 0.044,
+   "lift": 6.16,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 111,
+   "canonical_name": "taurina",
+   "family": "aminoacidos",
+   "n": 22,
+   "persistence": 0.227,
+   "chance_prevalence_same_goal": 0.035,
+   "lift": 6.56,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 114,
+   "canonical_name": "calabacín",
+   "family": "verdura",
+   "n": 21,
+   "persistence": 0.429,
+   "chance_prevalence_same_goal": 0.031,
+   "lift": 13.79,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 127,
+   "canonical_name": "zinc",
+   "family": "mineral",
+   "n": 19,
+   "persistence": 0.579,
+   "chance_prevalence_same_goal": 0.025,
+   "lift": 23.2,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 124,
+   "canonical_name": "sardinas",
+   "family": "pescado_azul",
+   "n": 19,
+   "persistence": 0.316,
+   "chance_prevalence_same_goal": 0.027,
+   "lift": 11.57,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 152,
+   "canonical_name": "pera",
+   "family": "fruta",
+   "n": 19,
+   "persistence": 0.263,
+   "chance_prevalence_same_goal": 0.018,
+   "lift": 14.77,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 142,
+   "canonical_name": "vitamina e",
+   "family": "vitamina",
+   "n": 18,
+   "persistence": 0.5,
+   "chance_prevalence_same_goal": 0.017,
+   "lift": 30.05,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 134,
+   "canonical_name": "protector hepático",
+   "family": "suplemento_otro",
+   "n": 18,
+   "persistence": 0.5,
+   "chance_prevalence_same_goal": 0.019,
+   "lift": 25.83,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 132,
+   "canonical_name": "harina de trigo",
+   "family": "cereal",
+   "n": 18,
+   "persistence": 0.389,
+   "chance_prevalence_same_goal": 0.033,
+   "lift": 11.93,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 130,
+   "canonical_name": "especias",
+   "family": "condimento",
+   "n": 17,
+   "persistence": 0.294,
+   "chance_prevalence_same_goal": 0.026,
+   "lift": 11.32,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 138,
+   "canonical_name": "lentejas",
+   "family": "legumbre",
+   "n": 17,
+   "persistence": 0.235,
+   "chance_prevalence_same_goal": 0.025,
+   "lift": 9.56,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 157,
+   "canonical_name": "alcachofas",
+   "family": "verdura",
+   "n": 16,
+   "persistence": 0.312,
+   "chance_prevalence_same_goal": 0.038,
+   "lift": 8.17,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 129,
+   "canonical_name": "cla",
+   "family": "suplemento_otro",
+   "n": 15,
+   "persistence": 0.6,
+   "chance_prevalence_same_goal": 0.019,
+   "lift": 30.96,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 147,
+   "canonical_name": "pistachos",
+   "family": "fruto_seco",
+   "n": 15,
+   "persistence": 0.4,
+   "chance_prevalence_same_goal": 0.032,
+   "lift": 12.57,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 145,
+   "canonical_name": "sinefrina",
+   "family": "suplemento_otro",
+   "n": 14,
+   "persistence": 0.5,
+   "chance_prevalence_same_goal": 0.029,
+   "lift": 17.51,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 150,
+   "canonical_name": "pimiento",
+   "family": "verdura",
+   "n": 14,
+   "persistence": 0.143,
+   "chance_prevalence_same_goal": 0.024,
+   "lift": 5.9,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 141,
+   "canonical_name": "maltodextrina",
+   "family": "suplemento_carbohidrato",
+   "n": 13,
+   "persistence": 0.615,
+   "chance_prevalence_same_goal": 0.027,
+   "lift": 22.72,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 143,
+   "canonical_name": "tirosina",
+   "family": "aminoacidos",
+   "n": 13,
+   "persistence": 0.538,
+   "chance_prevalence_same_goal": 0.066,
+   "lift": 8.2,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 163,
+   "canonical_name": "café con leche",
+   "family": "bebida",
+   "n": 13,
+   "persistence": 0.385,
+   "chance_prevalence_same_goal": 0.015,
+   "lift": 26.02,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 140,
+   "canonical_name": "diurético",
+   "family": "suplemento_otro",
+   "n": 13,
+   "persistence": 0.308,
+   "chance_prevalence_same_goal": 0.017,
+   "lift": 17.9,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 137,
+   "canonical_name": "marisco",
+   "family": "marisco",
+   "n": 13,
+   "persistence": 0.231,
+   "chance_prevalence_same_goal": 0.038,
+   "lift": 6.08,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 171,
+   "canonical_name": "nac",
+   "family": "aminoacidos",
+   "n": 12,
+   "persistence": 0.75,
+   "chance_prevalence_same_goal": 0.028,
+   "lift": 26.94,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 155,
+   "canonical_name": "infusión",
+   "family": "bebida",
+   "n": 12,
+   "persistence": 0.5,
+   "chance_prevalence_same_goal": 0.016,
+   "lift": 30.5,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 174,
+   "canonical_name": "leche sin lactosa",
+   "family": "lacteo",
+   "n": 12,
+   "persistence": 0.417,
+   "chance_prevalence_same_goal": 0.013,
+   "lift": 32.18,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 154,
+   "canonical_name": "nuez de brasil",
+   "family": "fruto_seco",
+   "n": 12,
+   "persistence": 0.417,
+   "chance_prevalence_same_goal": 0.017,
+   "lift": 24.14,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 167,
+   "canonical_name": "seitán",
+   "family": "legumbre",
+   "n": 12,
+   "persistence": 0.333,
+   "chance_prevalence_same_goal": 0.022,
+   "lift": 15.5,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 169,
+   "canonical_name": "pre-entreno",
+   "family": "suplemento_otro",
+   "n": 12,
+   "persistence": 0.333,
+   "chance_prevalence_same_goal": 0.015,
+   "lift": 21.98,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 183,
+   "canonical_name": "ashwagandha",
+   "family": "suplemento_otro",
+   "n": 11,
+   "persistence": 0.818,
+   "chance_prevalence_same_goal": 0.02,
+   "lift": 41.21,
+   "confidence": "medium",
+   "class": "ancla"
+  },
+  {
+   "food_id": 156,
+   "canonical_name": "coenzima q10",
+   "family": "suplemento_otro",
+   "n": 11,
+   "persistence": 0.636,
+   "chance_prevalence_same_goal": 0.016,
+   "lift": 40.33,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 146,
+   "canonical_name": "hamburguesa",
+   "family": "plato_preparado",
+   "n": 11,
+   "persistence": 0.545,
+   "chance_prevalence_same_goal": 0.029,
+   "lift": 18.91,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "food_id": 144,
+   "canonical_name": "jamón cocido",
+   "family": "embutido",
+   "n": 11,
+   "persistence": 0.455,
+   "chance_prevalence_same_goal": 0.036,
+   "lift": 12.47,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 148,
+   "canonical_name": "mandarina",
+   "family": "fruta",
+   "n": 11,
+   "persistence": 0.273,
+   "chance_prevalence_same_goal": 0.023,
+   "lift": 11.89,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 166,
+   "canonical_name": "perejil",
+   "family": "condimento",
+   "n": 11,
+   "persistence": 0.273,
+   "chance_prevalence_same_goal": 0.015,
+   "lift": 17.64,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 149,
+   "canonical_name": "melón",
+   "family": "fruta",
+   "n": 11,
+   "persistence": 0.182,
+   "chance_prevalence_same_goal": 0.026,
+   "lift": 6.89,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 173,
+   "canonical_name": "yuca",
+   "family": "tuberculo",
+   "n": 11,
+   "persistence": 0.091,
+   "chance_prevalence_same_goal": 0.011,
+   "lift": 8.49,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 160,
+   "canonical_name": "harina sin gluten",
+   "family": "cereal",
+   "n": 10,
+   "persistence": 0.5,
+   "chance_prevalence_same_goal": 0.022,
+   "lift": 22.59,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 139,
+   "canonical_name": "sal",
+   "family": "condimento",
+   "n": 10,
+   "persistence": 0.2,
+   "chance_prevalence_same_goal": 0.04,
+   "lift": 5.02,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 162,
+   "canonical_name": "hígado",
+   "family": "carne",
+   "n": 10,
+   "persistence": 0.2,
+   "chance_prevalence_same_goal": 0.042,
+   "lift": 4.81,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 178,
+   "canonical_name": "alubias",
+   "family": "legumbre",
+   "n": 10,
+   "persistence": 0.1,
+   "chance_prevalence_same_goal": 0.012,
+   "lift": 8.64,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "food_id": 181,
+   "canonical_name": "sal del himalaya",
+   "family": "condimento",
+   "n": 9,
+   "persistence": 0.556,
+   "chance_prevalence_same_goal": 0.012,
+   "lift": 46.82,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 158,
+   "canonical_name": "colágeno",
+   "family": "suplemento_otro",
+   "n": 9,
+   "persistence": 0.444,
+   "chance_prevalence_same_goal": 0.009,
+   "lift": 51.7,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 188,
+   "canonical_name": "vinagre",
+   "family": "condimento",
+   "n": 9,
+   "persistence": 0.333,
+   "chance_prevalence_same_goal": 0.008,
+   "lift": 40.13,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 177,
+   "canonical_name": "sandía",
+   "family": "fruta",
+   "n": 9,
+   "persistence": 0.222,
+   "chance_prevalence_same_goal": 0.02,
+   "lift": 11.03,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 175,
+   "canonical_name": "solomillo",
+   "family": "carne",
+   "n": 9,
+   "persistence": 0.111,
+   "chance_prevalence_same_goal": 0.009,
+   "lift": 12.71,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 161,
+   "canonical_name": "hydroxiter",
+   "family": "suplemento_otro",
+   "n": 8,
+   "persistence": 0.625,
+   "chance_prevalence_same_goal": 0.01,
+   "lift": 62.26,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 165,
+   "canonical_name": "stevia",
+   "family": "condimento",
+   "n": 8,
+   "persistence": 0.5,
+   "chance_prevalence_same_goal": 0.015,
+   "lift": 33.16,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 151,
+   "canonical_name": "postre o dulce",
+   "family": "dulce",
+   "n": 8,
+   "persistence": 0.375,
+   "chance_prevalence_same_goal": 0.013,
+   "lift": 28.56,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 159,
+   "canonical_name": "frutos rojos",
+   "family": "fruta",
+   "n": 8,
+   "persistence": 0.375,
+   "chance_prevalence_same_goal": 0.017,
+   "lift": 21.74,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 184,
+   "canonical_name": "batido de carbohidratos (carga)",
+   "family": "suplemento_carbohidrato",
+   "n": 8,
+   "persistence": 0.375,
+   "chance_prevalence_same_goal": 0.036,
+   "lift": 10.29,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 170,
+   "canonical_name": "semillas",
+   "family": "semilla",
+   "n": 8,
+   "persistence": 0.25,
+   "chance_prevalence_same_goal": 0.015,
+   "lift": 16.19,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 176,
+   "canonical_name": "jengibre",
+   "family": "condimento",
+   "n": 8,
+   "persistence": 0.25,
+   "chance_prevalence_same_goal": 0.016,
+   "lift": 15.95,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 194,
+   "canonical_name": "acelgas",
+   "family": "verdura",
+   "n": 8,
+   "persistence": 0.125,
+   "chance_prevalence_same_goal": 0.009,
+   "lift": 13.62,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 190,
+   "canonical_name": "puerro",
+   "family": "verdura",
+   "n": 8,
+   "persistence": 0.125,
+   "chance_prevalence_same_goal": 0.005,
+   "lift": 24.66,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 187,
+   "canonical_name": "amaranto",
+   "family": "cereal",
+   "n": 8,
+   "persistence": 0.0,
+   "chance_prevalence_same_goal": 0.011,
+   "lift": 0.0,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 182,
+   "canonical_name": "aceite de linaza",
+   "family": "grasa",
+   "n": 7,
+   "persistence": 0.429,
+   "chance_prevalence_same_goal": 0.013,
+   "lift": 33.36,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 172,
+   "canonical_name": "leche",
+   "family": "lacteo",
+   "n": 7,
+   "persistence": 0.429,
+   "chance_prevalence_same_goal": 0.055,
+   "lift": 7.85,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 185,
+   "canonical_name": "pasas",
+   "family": "fruta",
+   "n": 7,
+   "persistence": 0.286,
+   "chance_prevalence_same_goal": 0.019,
+   "lift": 14.71,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 168,
+   "canonical_name": "frutos secos",
+   "family": "fruto_seco",
+   "n": 7,
+   "persistence": 0.143,
+   "chance_prevalence_same_goal": 0.008,
+   "lift": 18.4,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 195,
+   "canonical_name": "uvas",
+   "family": "fruta",
+   "n": 6,
+   "persistence": 0.833,
+   "chance_prevalence_same_goal": 0.012,
+   "lift": 66.71,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 180,
+   "canonical_name": "canela",
+   "family": "condimento",
+   "n": 6,
+   "persistence": 0.333,
+   "chance_prevalence_same_goal": 0.013,
+   "lift": 25.21,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 179,
+   "canonical_name": "embutido",
+   "family": "embutido",
+   "n": 6,
+   "persistence": 0.167,
+   "chance_prevalence_same_goal": 0.024,
+   "lift": 7.06,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 193,
+   "canonical_name": "lomo embuchado",
+   "family": "embutido",
+   "n": 6,
+   "persistence": 0.0,
+   "chance_prevalence_same_goal": 0.02,
+   "lift": 0.0,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 186,
+   "canonical_name": "maca",
+   "family": "suplemento_otro",
+   "n": 5,
+   "persistence": 0.6,
+   "chance_prevalence_same_goal": 0.033,
+   "lift": 18.28,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 192,
+   "canonical_name": "conejo",
+   "family": "carne",
+   "n": 5,
+   "persistence": 0.4,
+   "chance_prevalence_same_goal": 0.011,
+   "lift": 36.28,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 200,
+   "canonical_name": "nuez de macadamia",
+   "family": "fruto_seco",
+   "n": 5,
+   "persistence": 0.4,
+   "chance_prevalence_same_goal": 0.006,
+   "lift": 67.31,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 207,
+   "canonical_name": "gel energético",
+   "family": "suplemento_carbohidrato",
+   "n": 5,
+   "persistence": 0.4,
+   "chance_prevalence_same_goal": 0.18,
+   "lift": 2.22,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 198,
+   "canonical_name": "puré de patata",
+   "family": "tuberculo",
+   "n": 5,
+   "persistence": 0.2,
+   "chance_prevalence_same_goal": 0.006,
+   "lift": 33.66,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 197,
+   "canonical_name": "complejo de hierro",
+   "family": "mineral",
+   "n": 5,
+   "persistence": 0.0,
+   "chance_prevalence_same_goal": 0.006,
+   "lift": 0.0,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 164,
+   "canonical_name": "yogur vegetal",
+   "family": "bebida_vegetal",
+   "n": 4,
+   "persistence": 0.75,
+   "chance_prevalence_same_goal": 0.012,
+   "lift": 62.28,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 212,
+   "canonical_name": "melatonina",
+   "family": "suplemento_otro",
+   "n": 4,
+   "persistence": 0.5,
+   "chance_prevalence_same_goal": 0.005,
+   "lift": 110.67,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 201,
+   "canonical_name": "galletas",
+   "family": "cereal",
+   "n": 4,
+   "persistence": 0.25,
+   "chance_prevalence_same_goal": 0.005,
+   "lift": 46.42,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 211,
+   "canonical_name": "coliflor",
+   "family": "verdura",
+   "n": 4,
+   "persistence": 0.25,
+   "chance_prevalence_same_goal": 0.011,
+   "lift": 22.25,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 196,
+   "canonical_name": "bacalao",
+   "family": "pescado_blanco",
+   "n": 4,
+   "persistence": 0.0,
+   "chance_prevalence_same_goal": 0.009,
+   "lift": 0.0,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 153,
+   "canonical_name": "calabaza",
+   "family": "verdura",
+   "n": 3,
+   "persistence": 0.333,
+   "chance_prevalence_same_goal": 0.004,
+   "lift": 77.83,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 203,
+   "canonical_name": "chocolate negro",
+   "family": "dulce",
+   "n": 3,
+   "persistence": 0.333,
+   "chance_prevalence_same_goal": 0.004,
+   "lift": 83.0,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 209,
+   "canonical_name": "kéfir",
+   "family": "lacteo",
+   "n": 3,
+   "persistence": 0.333,
+   "chance_prevalence_same_goal": 0.005,
+   "lift": 70.47,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 205,
+   "canonical_name": "prebiótico",
+   "family": "suplemento_otro",
+   "n": 3,
+   "persistence": 0.333,
+   "chance_prevalence_same_goal": 0.004,
+   "lift": 83.0,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 214,
+   "canonical_name": "trigo sarraceno",
+   "family": "cereal",
+   "n": 2,
+   "persistence": 0.5,
+   "chance_prevalence_same_goal": 0.004,
+   "lift": 124.5,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 191,
+   "canonical_name": "bonito",
+   "family": "pescado_azul",
+   "n": 2,
+   "persistence": 0.5,
+   "chance_prevalence_same_goal": 0.029,
+   "lift": 17.25,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 219,
+   "canonical_name": "yogur sin lactosa",
+   "family": "lacteo",
+   "n": 2,
+   "persistence": 0.5,
+   "chance_prevalence_same_goal": 0.004,
+   "lift": 124.5,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 220,
+   "canonical_name": "miel",
+   "family": "condimento",
+   "n": 2,
+   "persistence": 0.5,
+   "chance_prevalence_same_goal": 0.002,
+   "lift": 233.5,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 189,
+   "canonical_name": "papaya",
+   "family": "fruta",
+   "n": 2,
+   "persistence": 0.0,
+   "chance_prevalence_same_goal": 0.002,
+   "lift": 0.0,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 210,
+   "canonical_name": "dátiles",
+   "family": "fruta",
+   "n": 2,
+   "persistence": 0.0,
+   "chance_prevalence_same_goal": 0.002,
+   "lift": 0.0,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 206,
+   "canonical_name": "grasas",
+   "family": "grasa",
+   "n": 2,
+   "persistence": 0.0,
+   "chance_prevalence_same_goal": 0.002,
+   "lift": 0.0,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 202,
+   "canonical_name": "caldo",
+   "family": "verdura",
+   "n": 1,
+   "persistence": 1.0,
+   "chance_prevalence_same_goal": 0.034,
+   "lift": 29.67,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 215,
+   "canonical_name": "pizza",
+   "family": "plato_preparado",
+   "n": 1,
+   "persistence": 1.0,
+   "chance_prevalence_same_goal": 0.034,
+   "lift": 29.67,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 199,
+   "canonical_name": "cacao puro",
+   "family": "condimento",
+   "n": 1,
+   "persistence": 1.0,
+   "chance_prevalence_same_goal": 0.004,
+   "lift": 233.5,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 208,
+   "canonical_name": "cromo",
+   "family": "mineral",
+   "n": 1,
+   "persistence": 1.0,
+   "chance_prevalence_same_goal": 0.022,
+   "lift": 44.5,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 218,
+   "canonical_name": "berenjena",
+   "family": "verdura",
+   "n": 1,
+   "persistence": 0.0,
+   "chance_prevalence_same_goal": 0.0,
+   "lift": null,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 226,
+   "canonical_name": "mantequilla",
+   "family": "lacteo",
+   "n": 1,
+   "persistence": 0.0,
+   "chance_prevalence_same_goal": 0.0,
+   "lift": null,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 204,
+   "canonical_name": "gelatina",
+   "family": "dulce",
+   "n": 1,
+   "persistence": 0.0,
+   "chance_prevalence_same_goal": 0.004,
+   "lift": 0.0,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 216,
+   "canonical_name": "cerezas",
+   "family": "fruta",
+   "n": 1,
+   "persistence": 0.0,
+   "chance_prevalence_same_goal": 0.002,
+   "lift": 0.0,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 217,
+   "canonical_name": "col",
+   "family": "verdura",
+   "n": 1,
+   "persistence": 0.0,
+   "chance_prevalence_same_goal": 0.0,
+   "lift": null,
+   "confidence": "low",
+   "class": "no_concluyente"
+  },
+  {
+   "food_id": 228,
+   "canonical_name": "mango",
+   "family": "fruta",
+   "n": 1,
+   "persistence": 0.0,
+   "chance_prevalence_same_goal": 0.002,
+   "lift": 0.0,
+   "confidence": "low",
+   "class": "no_concluyente"
+  }
+ ],
+ "families": [
+  {
+   "family": "verdura",
+   "n": 852,
+   "persistence": 0.959,
+   "confidence": "high",
+   "class": "ancla"
+  },
+  {
+   "family": "ave",
+   "n": 845,
+   "persistence": 0.948,
+   "confidence": "high",
+   "class": "ancla"
+  },
+  {
+   "family": "fruto_seco",
+   "n": 821,
+   "persistence": 0.942,
+   "confidence": "high",
+   "class": "ancla"
+  },
+  {
+   "family": "vitamina",
+   "n": 815,
+   "persistence": 0.942,
+   "confidence": "high",
+   "class": "ancla"
+  },
+  {
+   "family": "grasa",
+   "n": 812,
+   "persistence": 0.953,
+   "confidence": "high",
+   "class": "ancla"
+  },
+  {
+   "family": "arroz",
+   "n": 811,
+   "persistence": 0.896,
+   "confidence": "high",
+   "class": "ancla"
+  },
+  {
+   "family": "pescado_blanco",
+   "n": 803,
+   "persistence": 0.898,
+   "confidence": "high",
+   "class": "ancla"
+  },
+  {
+   "family": "huevo",
+   "n": 750,
+   "persistence": 0.905,
+   "confidence": "high",
+   "class": "ancla"
+  },
+  {
+   "family": "fruta",
+   "n": 705,
+   "persistence": 0.834,
+   "confidence": "high",
+   "class": "ancla"
+  },
+  {
+   "family": "suplemento_otro",
+   "n": 675,
+   "persistence": 0.836,
+   "confidence": "high",
+   "class": "ancla"
+  },
+  {
+   "family": "mineral",
+   "n": 665,
+   "persistence": 0.88,
+   "confidence": "high",
+   "class": "ancla"
+  },
+  {
+   "family": "cereal",
+   "n": 617,
+   "persistence": 0.77,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "family": "pescado_azul",
+   "n": 609,
+   "persistence": 0.795,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "family": "suplemento_proteina",
+   "n": 598,
+   "persistence": 0.849,
+   "confidence": "high",
+   "class": "ancla"
+  },
+  {
+   "family": "aminoacidos",
+   "n": 574,
+   "persistence": 0.824,
+   "confidence": "high",
+   "class": "ancla"
+  },
+  {
+   "family": "pasta",
+   "n": 548,
+   "persistence": 0.739,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "family": "carne",
+   "n": 487,
+   "persistence": 0.696,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "family": "legumbre",
+   "n": 454,
+   "persistence": 0.659,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "family": "condimento",
+   "n": 389,
+   "persistence": 0.656,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "family": "pan",
+   "n": 381,
+   "persistence": 0.685,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "family": "bebida",
+   "n": 370,
+   "persistence": 0.678,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "family": "tuberculo",
+   "n": 321,
+   "persistence": 0.564,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "family": "lacteo",
+   "n": 199,
+   "persistence": 0.533,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "family": "semilla",
+   "n": 134,
+   "persistence": 0.396,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "family": "bebida_vegetal",
+   "n": 133,
+   "persistence": 0.541,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "family": "suplemento_carbohidrato",
+   "n": 116,
+   "persistence": 0.534,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "family": "embutido",
+   "n": 103,
+   "persistence": 0.379,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "family": "marisco",
+   "n": 13,
+   "persistence": 0.231,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "family": "dulce",
+   "n": 12,
+   "persistence": 0.417,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "family": "plato_preparado",
+   "n": 11,
+   "persistence": 0.545,
+   "confidence": "medium",
+   "class": "intermedio"
+  }
+ ],
+ "slots": [
+  {
+   "slot": "DESAYUNO",
+   "n_food_occurrences": 2882,
+   "food_persistence": 0.463,
+   "pairs_with_slot": 411,
+   "renewal_dropped_mean": 0.368,
+   "renewal_dropped_p50": 0.3333
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "n_food_occurrences": 2979,
+   "food_persistence": 0.418,
+   "pairs_with_slot": 392,
+   "renewal_dropped_mean": 0.462,
+   "renewal_dropped_p50": 0.5
+  },
+  {
+   "slot": "ALMUERZO",
+   "n_food_occurrences": 76,
+   "food_persistence": 0.632,
+   "pairs_with_slot": 20,
+   "renewal_dropped_mean": 0.267,
+   "renewal_dropped_p50": 0.225
+  },
+  {
+   "slot": "COMIDA",
+   "n_food_occurrences": 7073,
+   "food_persistence": 0.539,
+   "pairs_with_slot": 841,
+   "renewal_dropped_mean": 0.387,
+   "renewal_dropped_p50": 0.4
+  },
+  {
+   "slot": "MERIENDA",
+   "n_food_occurrences": 1971,
+   "food_persistence": 0.331,
+   "pairs_with_slot": 211,
+   "renewal_dropped_mean": 0.569,
+   "renewal_dropped_p50": 0.6667
+  },
+  {
+   "slot": "ANTES DE ENTRENAR",
+   "n_food_occurrences": 1213,
+   "food_persistence": 0.556,
+   "pairs_with_slot": 410,
+   "renewal_dropped_mean": 0.269,
+   "renewal_dropped_p50": 0.0
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "n_food_occurrences": 1621,
+   "food_persistence": 0.548,
+   "pairs_with_slot": 447,
+   "renewal_dropped_mean": 0.283,
+   "renewal_dropped_p50": 0.0
+  },
+  {
+   "slot": "CENA",
+   "n_food_occurrences": 6551,
+   "food_persistence": 0.554,
+   "pairs_with_slot": 737,
+   "renewal_dropped_mean": 0.361,
+   "renewal_dropped_p50": 0.3333
+  },
+  {
+   "slot": "OTHER",
+   "n_food_occurrences": 1698,
+   "food_persistence": 0.407,
+   "pairs_with_slot": 259,
+   "renewal_dropped_mean": 0.318,
+   "renewal_dropped_p50": 0.0
+  }
+ ],
+ "slot_foods": [
+  {
+   "slot": "ALMUERZO",
+   "canonical_name": "arroz",
+   "n": 18,
+   "persistence": 0.778,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "ALMUERZO",
+   "canonical_name": "pollo",
+   "n": 11,
+   "persistence": 0.545,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "ALMUERZO",
+   "canonical_name": "fruta",
+   "n": 10,
+   "persistence": 0.7,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "ANTES DE DORMIR",
+   "canonical_name": "batido de proteínas",
+   "n": 158,
+   "persistence": 0.703,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "ANTES DE DORMIR",
+   "canonical_name": "nueces",
+   "n": 94,
+   "persistence": 0.66,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "ANTES DE DORMIR",
+   "canonical_name": "almendras",
+   "n": 71,
+   "persistence": 0.69,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "ANTES DE DORMIR",
+   "canonical_name": "pavo",
+   "n": 48,
+   "persistence": 0.667,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "ANTES DE DORMIR",
+   "canonical_name": "pollo",
+   "n": 47,
+   "persistence": 0.681,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "ANTES DE DORMIR",
+   "canonical_name": "caseína",
+   "n": 22,
+   "persistence": 0.591,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "ANTES DE DORMIR",
+   "canonical_name": "arginina",
+   "n": 17,
+   "persistence": 0.765,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "ANTES DE DORMIR",
+   "canonical_name": "aceite de oliva virgen extra",
+   "n": 15,
+   "persistence": 0.533,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "ANTES DE DORMIR",
+   "canonical_name": "ashwagandha",
+   "n": 10,
+   "persistence": 0.8,
+   "confidence": "medium",
+   "class": "ancla"
+  },
+  {
+   "slot": "ANTES DE ENTRENAR",
+   "canonical_name": "batido de proteínas",
+   "n": 165,
+   "persistence": 0.661,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "ANTES DE ENTRENAR",
+   "canonical_name": "quemagrasa",
+   "n": 162,
+   "persistence": 0.654,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "ANTES DE ENTRENAR",
+   "canonical_name": "piña",
+   "n": 120,
+   "persistence": 0.558,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "ANTES DE ENTRENAR",
+   "canonical_name": "aminoácidos",
+   "n": 106,
+   "persistence": 0.67,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "ANTES DE ENTRENAR",
+   "canonical_name": "creatina",
+   "n": 89,
+   "persistence": 0.528,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "ANTES DE ENTRENAR",
+   "canonical_name": "bcaa",
+   "n": 67,
+   "persistence": 0.642,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "ANTES DE ENTRENAR",
+   "canonical_name": "amilopectina",
+   "n": 51,
+   "persistence": 0.471,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "ANTES DE ENTRENAR",
+   "canonical_name": "l-carnitina",
+   "n": 49,
+   "persistence": 0.51,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "ANTES DE ENTRENAR",
+   "canonical_name": "cafeína",
+   "n": 45,
+   "persistence": 0.489,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "ANTES DE ENTRENAR",
+   "canonical_name": "proteína aislada",
+   "n": 39,
+   "persistence": 0.615,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "ANTES DE ENTRENAR",
+   "canonical_name": "glutamina",
+   "n": 37,
+   "persistence": 0.568,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "ANTES DE ENTRENAR",
+   "canonical_name": "vitamina b",
+   "n": 30,
+   "persistence": 0.5,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "ANTES DE ENTRENAR",
+   "canonical_name": "complejo zinc-magnesio",
+   "n": 22,
+   "persistence": 0.273,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "ANTES DE ENTRENAR",
+   "canonical_name": "arginina",
+   "n": 21,
+   "persistence": 0.571,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "ANTES DE ENTRENAR",
+   "canonical_name": "té",
+   "n": 18,
+   "persistence": 0.389,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "ANTES DE ENTRENAR",
+   "canonical_name": "café",
+   "n": 18,
+   "persistence": 0.444,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "ANTES DE ENTRENAR",
+   "canonical_name": "multivitamínico",
+   "n": 15,
+   "persistence": 0.467,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "ANTES DE ENTRENAR",
+   "canonical_name": "potasio",
+   "n": 12,
+   "persistence": 0.417,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "ANTES DE ENTRENAR",
+   "canonical_name": "manzana",
+   "n": 12,
+   "persistence": 0.5,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "ANTES DE ENTRENAR",
+   "canonical_name": "taurina",
+   "n": 10,
+   "persistence": 0.2,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "ANTES DE ENTRENAR",
+   "canonical_name": "pre-entreno",
+   "n": 10,
+   "persistence": 0.4,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "pescado blanco",
+   "n": 626,
+   "persistence": 0.786,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "aceite de oliva virgen extra",
+   "n": 589,
+   "persistence": 0.825,
+   "confidence": "high",
+   "class": "ancla"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "nueces",
+   "n": 511,
+   "persistence": 0.75,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "ensalada",
+   "n": 419,
+   "persistence": 0.654,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "pollo",
+   "n": 371,
+   "persistence": 0.698,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "verduras",
+   "n": 272,
+   "persistence": 0.574,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "arroz",
+   "n": 255,
+   "persistence": 0.584,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "yema de huevo",
+   "n": 223,
+   "persistence": 0.547,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "espinacas",
+   "n": 211,
+   "persistence": 0.464,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "tomate",
+   "n": 177,
+   "persistence": 0.441,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "atún",
+   "n": 169,
+   "persistence": 0.544,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "pechuga de pollo",
+   "n": 158,
+   "persistence": 0.513,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "clara de huevo",
+   "n": 142,
+   "persistence": 0.465,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "pepino",
+   "n": 138,
+   "persistence": 0.377,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "ajo",
+   "n": 137,
+   "persistence": 0.401,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "aguacate",
+   "n": 126,
+   "persistence": 0.444,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "pescado azul",
+   "n": 119,
+   "persistence": 0.437,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "pavo",
+   "n": 98,
+   "persistence": 0.541,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "cebolla",
+   "n": 88,
+   "persistence": 0.25,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "tortilla",
+   "n": 85,
+   "persistence": 0.682,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "almendras",
+   "n": 83,
+   "persistence": 0.373,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "potasio",
+   "n": 81,
+   "persistence": 0.506,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "vitamina d",
+   "n": 66,
+   "persistence": 0.682,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "zanahoria",
+   "n": 58,
+   "persistence": 0.362,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "merluza",
+   "n": 56,
+   "persistence": 0.357,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "vitamina k",
+   "n": 53,
+   "persistence": 0.698,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "espárragos",
+   "n": 50,
+   "persistence": 0.26,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "patata",
+   "n": 47,
+   "persistence": 0.362,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "salmón",
+   "n": 41,
+   "persistence": 0.293,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "complejo zinc-magnesio",
+   "n": 39,
+   "persistence": 0.462,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "multivitamínico",
+   "n": 39,
+   "persistence": 0.436,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "guacamole",
+   "n": 38,
+   "persistence": 0.368,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "brócoli",
+   "n": 36,
+   "persistence": 0.278,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "guisantes",
+   "n": 36,
+   "persistence": 0.278,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "algas",
+   "n": 36,
+   "persistence": 0.278,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "maíz",
+   "n": 31,
+   "persistence": 0.097,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "pepinillos",
+   "n": 30,
+   "persistence": 0.1,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "queso fresco",
+   "n": 30,
+   "persistence": 0.1,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "pasta integral",
+   "n": 30,
+   "persistence": 0.267,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "electrolitos",
+   "n": 27,
+   "persistence": 0.407,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "chía",
+   "n": 27,
+   "persistence": 0.185,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "magnesio",
+   "n": 26,
+   "persistence": 0.385,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "requesón",
+   "n": 24,
+   "persistence": 0.125,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "protector articular",
+   "n": 22,
+   "persistence": 0.545,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "creatina",
+   "n": 21,
+   "persistence": 0.619,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "aceitunas",
+   "n": 21,
+   "persistence": 0.238,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "pipas de calabaza",
+   "n": 20,
+   "persistence": 0.3,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "caballa",
+   "n": 19,
+   "persistence": 0.316,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "espirulina",
+   "n": 19,
+   "persistence": 0.105,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "remolacha",
+   "n": 19,
+   "persistence": 0.421,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "omega 3",
+   "n": 19,
+   "persistence": 0.211,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "calabacín",
+   "n": 18,
+   "persistence": 0.444,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "panga",
+   "n": 18,
+   "persistence": 0.444,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "judías verdes",
+   "n": 18,
+   "persistence": 0.278,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "puré de verduras",
+   "n": 17,
+   "persistence": 0.353,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "queso",
+   "n": 17,
+   "persistence": 0.235,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "quinoa",
+   "n": 16,
+   "persistence": 0.062,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "sardinas",
+   "n": 15,
+   "persistence": 0.2,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "champiñones",
+   "n": 15,
+   "persistence": 0.333,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "calcio",
+   "n": 14,
+   "persistence": 0.5,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "lechuga",
+   "n": 14,
+   "persistence": 0.214,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "cúrcuma",
+   "n": 13,
+   "persistence": 0.077,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "huevo",
+   "n": 13,
+   "persistence": 0.231,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "pan integral",
+   "n": 13,
+   "persistence": 0.308,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "onagra",
+   "n": 12,
+   "persistence": 0.333,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "batido de proteínas",
+   "n": 11,
+   "persistence": 0.455,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "CENA",
+   "canonical_name": "pimiento",
+   "n": 10,
+   "persistence": 0.0,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "pollo",
+   "n": 698,
+   "persistence": 0.824,
+   "confidence": "high",
+   "class": "ancla"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "arroz",
+   "n": 692,
+   "persistence": 0.795,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "pasta integral",
+   "n": 481,
+   "persistence": 0.659,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "legumbres",
+   "n": 395,
+   "persistence": 0.61,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "ternera",
+   "n": 365,
+   "persistence": 0.63,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "pavo",
+   "n": 362,
+   "persistence": 0.646,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "aceite de oliva virgen extra",
+   "n": 331,
+   "persistence": 0.683,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "almendras",
+   "n": 280,
+   "persistence": 0.529,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "multivitamínico",
+   "n": 196,
+   "persistence": 0.648,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "patata",
+   "n": 195,
+   "persistence": 0.477,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "cerdo",
+   "n": 171,
+   "persistence": 0.421,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "cúrcuma",
+   "n": 155,
+   "persistence": 0.413,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "pescado blanco",
+   "n": 153,
+   "persistence": 0.418,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "aguacate",
+   "n": 123,
+   "persistence": 0.415,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "ajo",
+   "n": 119,
+   "persistence": 0.412,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "verduras",
+   "n": 117,
+   "persistence": 0.333,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "ensalada",
+   "n": 99,
+   "persistence": 0.424,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "nueces",
+   "n": 91,
+   "persistence": 0.407,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "pechuga de pollo",
+   "n": 87,
+   "persistence": 0.448,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "yema de huevo",
+   "n": 85,
+   "persistence": 0.329,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "tomate",
+   "n": 75,
+   "persistence": 0.387,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "aceite de coco",
+   "n": 73,
+   "persistence": 0.233,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "clara de huevo",
+   "n": 67,
+   "persistence": 0.269,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "atún",
+   "n": 67,
+   "persistence": 0.299,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "pan integral",
+   "n": 61,
+   "persistence": 0.443,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "ajo en polvo",
+   "n": 60,
+   "persistence": 0.417,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "electrolitos",
+   "n": 52,
+   "persistence": 0.615,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "potasio",
+   "n": 52,
+   "persistence": 0.288,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "pepino",
+   "n": 51,
+   "persistence": 0.294,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "merluza",
+   "n": 50,
+   "persistence": 0.44,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "cacahuetes",
+   "n": 45,
+   "persistence": 0.378,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "manzana",
+   "n": 44,
+   "persistence": 0.409,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "pescado azul",
+   "n": 39,
+   "persistence": 0.359,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "minerales",
+   "n": 39,
+   "persistence": 0.436,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "batido de proteínas",
+   "n": 35,
+   "persistence": 0.371,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "boniato",
+   "n": 34,
+   "persistence": 0.118,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "piña",
+   "n": 31,
+   "persistence": 0.226,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "avena",
+   "n": 31,
+   "persistence": 0.419,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "limón",
+   "n": 30,
+   "persistence": 0.233,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "guacamole",
+   "n": 30,
+   "persistence": 0.267,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "espinacas",
+   "n": 29,
+   "persistence": 0.345,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "complejo zinc-magnesio",
+   "n": 28,
+   "persistence": 0.357,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "cebolla",
+   "n": 26,
+   "persistence": 0.269,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "carne roja",
+   "n": 25,
+   "persistence": 0.48,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "creatina",
+   "n": 25,
+   "persistence": 0.24,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "cereales integrales",
+   "n": 24,
+   "persistence": 0.375,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "quinoa",
+   "n": 23,
+   "persistence": 0.217,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "pasta al huevo",
+   "n": 23,
+   "persistence": 0.261,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "zanahoria",
+   "n": 22,
+   "persistence": 0.091,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "plátano",
+   "n": 22,
+   "persistence": 0.364,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "tortilla",
+   "n": 21,
+   "persistence": 0.381,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "protector articular",
+   "n": 20,
+   "persistence": 0.45,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "crema de arroz",
+   "n": 20,
+   "persistence": 0.4,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "vitamina d",
+   "n": 19,
+   "persistence": 0.526,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "espirulina",
+   "n": 19,
+   "persistence": 0.421,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "tofu",
+   "n": 18,
+   "persistence": 0.222,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "muesli",
+   "n": 18,
+   "persistence": 0.444,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "pipas de calabaza",
+   "n": 16,
+   "persistence": 0.125,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "fruta",
+   "n": 16,
+   "persistence": 0.438,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "panga",
+   "n": 14,
+   "persistence": 0.214,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "queso",
+   "n": 14,
+   "persistence": 0.143,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "tribulus",
+   "n": 14,
+   "persistence": 0.214,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "centeno",
+   "n": 14,
+   "persistence": 0.286,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "tortitas de arroz",
+   "n": 13,
+   "persistence": 0.231,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "vitamina k",
+   "n": 13,
+   "persistence": 0.538,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "harina de avena",
+   "n": 13,
+   "persistence": 0.231,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "remolacha",
+   "n": 12,
+   "persistence": 0.25,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "lentejas",
+   "n": 12,
+   "persistence": 0.25,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "queso fresco",
+   "n": 12,
+   "persistence": 0.25,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "eaa",
+   "n": 12,
+   "persistence": 0.167,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "chía",
+   "n": 12,
+   "persistence": 0.167,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "salmón",
+   "n": 11,
+   "persistence": 0.273,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "especias",
+   "n": 11,
+   "persistence": 0.182,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "magnesio",
+   "n": 10,
+   "persistence": 0.2,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "kiwi",
+   "n": 10,
+   "persistence": 0.1,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "jamón serrano",
+   "n": 10,
+   "persistence": 0.1,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "crema de cacahuete",
+   "n": 10,
+   "persistence": 0.0,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "COMIDA",
+   "canonical_name": "agua",
+   "n": 10,
+   "persistence": 0.6,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "avena",
+   "n": 318,
+   "persistence": 0.613,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "batido de proteínas",
+   "n": 254,
+   "persistence": 0.622,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "cereales integrales",
+   "n": 207,
+   "persistence": 0.469,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "yema de huevo",
+   "n": 197,
+   "persistence": 0.574,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "arroz",
+   "n": 154,
+   "persistence": 0.63,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "fruta",
+   "n": 109,
+   "persistence": 0.514,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "tortilla",
+   "n": 107,
+   "persistence": 0.645,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "multivitamínico",
+   "n": 101,
+   "persistence": 0.436,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "almendras",
+   "n": 94,
+   "persistence": 0.362,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "clara de huevo",
+   "n": 91,
+   "persistence": 0.462,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "manzana",
+   "n": 79,
+   "persistence": 0.367,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "agua",
+   "n": 68,
+   "persistence": 0.618,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "muesli",
+   "n": 67,
+   "persistence": 0.284,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "plátano",
+   "n": 60,
+   "persistence": 0.333,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "nueces",
+   "n": 58,
+   "persistence": 0.379,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "harina de avena",
+   "n": 50,
+   "persistence": 0.32,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "piña",
+   "n": 49,
+   "persistence": 0.367,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "zumo",
+   "n": 45,
+   "persistence": 0.511,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "creatina",
+   "n": 41,
+   "persistence": 0.463,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "aceite de coco",
+   "n": 40,
+   "persistence": 0.275,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "leche vegetal",
+   "n": 38,
+   "persistence": 0.421,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "pan integral",
+   "n": 38,
+   "persistence": 0.421,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "naranja",
+   "n": 34,
+   "persistence": 0.353,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "aceite de oliva virgen extra",
+   "n": 31,
+   "persistence": 0.161,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "atún",
+   "n": 21,
+   "persistence": 0.333,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "bebida de almendras",
+   "n": 20,
+   "persistence": 0.25,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "electrolitos",
+   "n": 20,
+   "persistence": 0.25,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "kiwi",
+   "n": 20,
+   "persistence": 0.15,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "bebida de soja",
+   "n": 20,
+   "persistence": 0.65,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "yogur",
+   "n": 18,
+   "persistence": 0.389,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "complejo zinc-magnesio",
+   "n": 17,
+   "persistence": 0.176,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "pasta integral",
+   "n": 17,
+   "persistence": 0.471,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "cacahuetes",
+   "n": 16,
+   "persistence": 0.188,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "eaa",
+   "n": 16,
+   "persistence": 0.562,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "potasio",
+   "n": 14,
+   "persistence": 0.0,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "café",
+   "n": 14,
+   "persistence": 0.214,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "té",
+   "n": 14,
+   "persistence": 0.357,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "proteína aislada",
+   "n": 13,
+   "persistence": 0.308,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "pavo",
+   "n": 12,
+   "persistence": 0.333,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "anacardos",
+   "n": 11,
+   "persistence": 0.091,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "tortitas de arroz",
+   "n": 11,
+   "persistence": 0.364,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "leche sin lactosa",
+   "n": 10,
+   "persistence": 0.5,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "merluza",
+   "n": 10,
+   "persistence": 0.5,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "pollo",
+   "n": 10,
+   "persistence": 0.5,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "amilopectina",
+   "n": 10,
+   "persistence": 0.6,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "DESAYUNO",
+   "canonical_name": "tomate",
+   "n": 10,
+   "persistence": 0.2,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "batido de proteínas",
+   "n": 379,
+   "persistence": 0.731,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "creatina",
+   "n": 141,
+   "persistence": 0.525,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "aminoácidos",
+   "n": 86,
+   "persistence": 0.523,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "piña",
+   "n": 77,
+   "persistence": 0.416,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "proteína aislada",
+   "n": 75,
+   "persistence": 0.613,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "bcaa",
+   "n": 50,
+   "persistence": 0.54,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "pavo",
+   "n": 46,
+   "persistence": 0.696,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "amilopectina",
+   "n": 44,
+   "persistence": 0.523,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "pechuga de pollo",
+   "n": 43,
+   "persistence": 0.721,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "multivitamínico",
+   "n": 40,
+   "persistence": 0.375,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "eaa",
+   "n": 40,
+   "persistence": 0.625,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "arroz",
+   "n": 39,
+   "persistence": 0.462,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "complejo zinc-magnesio",
+   "n": 38,
+   "persistence": 0.395,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "pescado blanco",
+   "n": 37,
+   "persistence": 0.649,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "pollo",
+   "n": 34,
+   "persistence": 0.618,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "manzana",
+   "n": 33,
+   "persistence": 0.394,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "agua",
+   "n": 30,
+   "persistence": 0.5,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "ensalada",
+   "n": 28,
+   "persistence": 0.643,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "glutamina",
+   "n": 23,
+   "persistence": 0.435,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "nueces",
+   "n": 22,
+   "persistence": 0.591,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "aceite de oliva virgen extra",
+   "n": 21,
+   "persistence": 0.619,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "almendras",
+   "n": 17,
+   "persistence": 0.588,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "vitamina b",
+   "n": 16,
+   "persistence": 0.375,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "potasio",
+   "n": 13,
+   "persistence": 0.308,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "quemagrasa",
+   "n": 11,
+   "persistence": 0.182,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "electrolitos",
+   "n": 11,
+   "persistence": 0.273,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "hierro",
+   "n": 10,
+   "persistence": 0.2,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "atún",
+   "n": 10,
+   "persistence": 0.8,
+   "confidence": "medium",
+   "class": "ancla"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "plátano",
+   "n": 10,
+   "persistence": 0.3,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "taurina",
+   "n": 10,
+   "persistence": 0.1,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "DESPUES DE ENTRENAR",
+   "canonical_name": "pepino",
+   "n": 10,
+   "persistence": 0.7,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "pavo",
+   "n": 201,
+   "persistence": 0.512,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "almendras",
+   "n": 184,
+   "persistence": 0.554,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "pollo",
+   "n": 176,
+   "persistence": 0.58,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "arroz",
+   "n": 163,
+   "persistence": 0.552,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "atún",
+   "n": 147,
+   "persistence": 0.422,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "pan integral",
+   "n": 136,
+   "persistence": 0.559,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "aceite de oliva virgen extra",
+   "n": 113,
+   "persistence": 0.469,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "yema de huevo",
+   "n": 112,
+   "persistence": 0.446,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "sándwich",
+   "n": 74,
+   "persistence": 0.459,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "aguacate",
+   "n": 64,
+   "persistence": 0.391,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "manzana",
+   "n": 63,
+   "persistence": 0.27,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "tortilla",
+   "n": 61,
+   "persistence": 0.475,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "tomate",
+   "n": 60,
+   "persistence": 0.433,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "aceite de coco",
+   "n": 60,
+   "persistence": 0.433,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "jamón serrano",
+   "n": 59,
+   "persistence": 0.356,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "multivitamínico",
+   "n": 54,
+   "persistence": 0.389,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "fruta",
+   "n": 53,
+   "persistence": 0.377,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "clara de huevo",
+   "n": 49,
+   "persistence": 0.347,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "nueces",
+   "n": 47,
+   "persistence": 0.34,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "cerdo",
+   "n": 45,
+   "persistence": 0.378,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "patata",
+   "n": 43,
+   "persistence": 0.233,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "batido de proteínas",
+   "n": 41,
+   "persistence": 0.317,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "piña",
+   "n": 38,
+   "persistence": 0.211,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "plátano",
+   "n": 37,
+   "persistence": 0.243,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "potasio",
+   "n": 34,
+   "persistence": 0.324,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "pepino",
+   "n": 33,
+   "persistence": 0.424,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "pasta integral",
+   "n": 32,
+   "persistence": 0.469,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "ensalada",
+   "n": 29,
+   "persistence": 0.448,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "té",
+   "n": 28,
+   "persistence": 0.571,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "cereales integrales",
+   "n": 28,
+   "persistence": 0.357,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "café",
+   "n": 27,
+   "persistence": 0.667,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "cacahuetes",
+   "n": 27,
+   "persistence": 0.259,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "boniato",
+   "n": 27,
+   "persistence": 0.222,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "electrolitos",
+   "n": 26,
+   "persistence": 0.346,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "guacamole",
+   "n": 22,
+   "persistence": 0.5,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "avena",
+   "n": 22,
+   "persistence": 0.273,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "merluza",
+   "n": 22,
+   "persistence": 0.545,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "magnesio",
+   "n": 22,
+   "persistence": 0.318,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "tortitas de arroz",
+   "n": 19,
+   "persistence": 0.421,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "quemagrasa",
+   "n": 18,
+   "persistence": 0.278,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "queso fresco",
+   "n": 18,
+   "persistence": 0.222,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "huevo",
+   "n": 18,
+   "persistence": 0.167,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "pescado blanco",
+   "n": 18,
+   "persistence": 0.444,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "centeno",
+   "n": 17,
+   "persistence": 0.235,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "zumo",
+   "n": 15,
+   "persistence": 0.333,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "creatina",
+   "n": 15,
+   "persistence": 0.267,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "edulcorante",
+   "n": 12,
+   "persistence": 0.417,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "crema de cacahuete",
+   "n": 12,
+   "persistence": 0.417,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "sacarina",
+   "n": 11,
+   "persistence": 0.545,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "agua",
+   "n": 10,
+   "persistence": 0.2,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "pipas de calabaza",
+   "n": 10,
+   "persistence": 0.1,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "complejo zinc-magnesio",
+   "n": 10,
+   "persistence": 0.1,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA MAÑANA",
+   "canonical_name": "bebida de almendras",
+   "n": 10,
+   "persistence": 0.3,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "pollo",
+   "n": 189,
+   "persistence": 0.582,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "almendras",
+   "n": 163,
+   "persistence": 0.454,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "arroz",
+   "n": 161,
+   "persistence": 0.578,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "pavo",
+   "n": 149,
+   "persistence": 0.483,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "atún",
+   "n": 126,
+   "persistence": 0.452,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "tomate",
+   "n": 92,
+   "persistence": 0.359,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "piña",
+   "n": 82,
+   "persistence": 0.415,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "pepino",
+   "n": 69,
+   "persistence": 0.406,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "nueces",
+   "n": 68,
+   "persistence": 0.368,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "aceite de oliva virgen extra",
+   "n": 67,
+   "persistence": 0.373,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "yema de huevo",
+   "n": 60,
+   "persistence": 0.233,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "batido de proteínas",
+   "n": 57,
+   "persistence": 0.614,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "pescado blanco",
+   "n": 51,
+   "persistence": 0.51,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "aguacate",
+   "n": 43,
+   "persistence": 0.279,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "tortitas de arroz",
+   "n": 39,
+   "persistence": 0.282,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "quinoa",
+   "n": 35,
+   "persistence": 0.343,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "manzana",
+   "n": 35,
+   "persistence": 0.229,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "ensalada",
+   "n": 35,
+   "persistence": 0.543,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "clara de huevo",
+   "n": 33,
+   "persistence": 0.121,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "fruta",
+   "n": 32,
+   "persistence": 0.375,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "plátano",
+   "n": 32,
+   "persistence": 0.219,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "pan integral",
+   "n": 27,
+   "persistence": 0.333,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "tortilla",
+   "n": 26,
+   "persistence": 0.346,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "patata",
+   "n": 23,
+   "persistence": 0.217,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "merluza",
+   "n": 23,
+   "persistence": 0.435,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "boniato",
+   "n": 22,
+   "persistence": 0.318,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "lechuga",
+   "n": 21,
+   "persistence": 0.619,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "naranja",
+   "n": 20,
+   "persistence": 0.3,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "requesón",
+   "n": 20,
+   "persistence": 0.3,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "sándwich",
+   "n": 19,
+   "persistence": 0.158,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "avena",
+   "n": 19,
+   "persistence": 0.158,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "multivitamínico",
+   "n": 18,
+   "persistence": 0.333,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "cacahuetes",
+   "n": 18,
+   "persistence": 0.222,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "avellanas",
+   "n": 18,
+   "persistence": 0.667,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "magnesio",
+   "n": 17,
+   "persistence": 0.294,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "complejo zinc-magnesio",
+   "n": 16,
+   "persistence": 0.25,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "pasta integral",
+   "n": 16,
+   "persistence": 0.312,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "potasio",
+   "n": 14,
+   "persistence": 0.143,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "crema de cacahuete",
+   "n": 14,
+   "persistence": 0.5,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "kiwi",
+   "n": 13,
+   "persistence": 0.231,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "cereales integrales",
+   "n": 12,
+   "persistence": 0.25,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MEDIA TARDE",
+   "canonical_name": "queso fresco",
+   "n": 12,
+   "persistence": 0.25,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "atún",
+   "n": 109,
+   "persistence": 0.413,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "almendras",
+   "n": 105,
+   "persistence": 0.514,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "aguacate",
+   "n": 84,
+   "persistence": 0.357,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "yema de huevo",
+   "n": 79,
+   "persistence": 0.316,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "clara de huevo",
+   "n": 77,
+   "persistence": 0.312,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "pavo",
+   "n": 70,
+   "persistence": 0.4,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "tomate",
+   "n": 68,
+   "persistence": 0.309,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "multivitamínico",
+   "n": 65,
+   "persistence": 0.431,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "nueces",
+   "n": 59,
+   "persistence": 0.39,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "manzana",
+   "n": 52,
+   "persistence": 0.327,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "aceite de oliva virgen extra",
+   "n": 51,
+   "persistence": 0.392,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "piña",
+   "n": 51,
+   "persistence": 0.333,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "pan integral",
+   "n": 50,
+   "persistence": 0.22,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "pollo",
+   "n": 49,
+   "persistence": 0.429,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "tortitas de arroz",
+   "n": 49,
+   "persistence": 0.204,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "batido de proteínas",
+   "n": 40,
+   "persistence": 0.5,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "yogur",
+   "n": 37,
+   "persistence": 0.378,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "avena",
+   "n": 37,
+   "persistence": 0.324,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "crema de cacahuete",
+   "n": 36,
+   "persistence": 0.306,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "arroz",
+   "n": 35,
+   "persistence": 0.314,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "electrolitos",
+   "n": 35,
+   "persistence": 0.4,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "pepino",
+   "n": 33,
+   "persistence": 0.273,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "caballa",
+   "n": 26,
+   "persistence": 0.346,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "anacardos",
+   "n": 24,
+   "persistence": 0.083,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "queso fresco",
+   "n": 23,
+   "persistence": 0.217,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "pipas de calabaza",
+   "n": 21,
+   "persistence": 0.048,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "arándanos",
+   "n": 21,
+   "persistence": 0.381,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "chía",
+   "n": 20,
+   "persistence": 0.15,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "zanahoria",
+   "n": 20,
+   "persistence": 0.35,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "plátano",
+   "n": 20,
+   "persistence": 0.25,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "cacahuetes",
+   "n": 18,
+   "persistence": 0.167,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "requesón",
+   "n": 18,
+   "persistence": 0.111,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "kiwi",
+   "n": 17,
+   "persistence": 0.294,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "cerdo",
+   "n": 17,
+   "persistence": 0.059,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "cereales integrales",
+   "n": 16,
+   "persistence": 0.375,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "quinoa",
+   "n": 16,
+   "persistence": 0.062,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "pescado blanco",
+   "n": 16,
+   "persistence": 0.188,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "centeno",
+   "n": 14,
+   "persistence": 0.143,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "creatina",
+   "n": 13,
+   "persistence": 0.154,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "aceite de coco",
+   "n": 12,
+   "persistence": 0.167,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "ensalada",
+   "n": 11,
+   "persistence": 0.545,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "bebida de almendras",
+   "n": 11,
+   "persistence": 0.727,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "fruta",
+   "n": 11,
+   "persistence": 0.273,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "minerales",
+   "n": 11,
+   "persistence": 0.545,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "potasio",
+   "n": 10,
+   "persistence": 0.2,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "eaa",
+   "n": 10,
+   "persistence": 0.4,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MERIENDA",
+   "canonical_name": "espirulina",
+   "n": 10,
+   "persistence": 0.2,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MITAD DE ENTRENAMIENTO",
+   "canonical_name": "aminoácidos",
+   "n": 134,
+   "persistence": 0.754,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "MITAD DE ENTRENAMIENTO",
+   "canonical_name": "bcaa",
+   "n": 22,
+   "persistence": 0.455,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MITAD DE ENTRENAMIENTO",
+   "canonical_name": "glutamina",
+   "n": 21,
+   "persistence": 0.333,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "MITAD DE ENTRENAMIENTO",
+   "canonical_name": "quemagrasa",
+   "n": 15,
+   "persistence": 0.533,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "batido de proteínas",
+   "n": 88,
+   "persistence": 0.591,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "aminoácidos",
+   "n": 79,
+   "persistence": 0.608,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "quemagrasa",
+   "n": 55,
+   "persistence": 0.636,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "limón",
+   "n": 51,
+   "persistence": 0.216,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "almendras",
+   "n": 50,
+   "persistence": 0.46,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "bcaa",
+   "n": 47,
+   "persistence": 0.66,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "pavo",
+   "n": 46,
+   "persistence": 0.413,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "l-carnitina",
+   "n": 45,
+   "persistence": 0.667,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "glutamina",
+   "n": 43,
+   "persistence": 0.674,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "pollo",
+   "n": 39,
+   "persistence": 0.513,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "multivitamínico",
+   "n": 34,
+   "persistence": 0.176,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "nueces",
+   "n": 34,
+   "persistence": 0.471,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "bicarbonato",
+   "n": 34,
+   "persistence": 0.176,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "atún",
+   "n": 33,
+   "persistence": 0.273,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "yema de huevo",
+   "n": 33,
+   "persistence": 0.364,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "berberina",
+   "n": 32,
+   "persistence": 0.5,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "piña",
+   "n": 31,
+   "persistence": 0.29,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "agua",
+   "n": 29,
+   "persistence": 0.414,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "arroz",
+   "n": 28,
+   "persistence": 0.536,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "tomate",
+   "n": 24,
+   "persistence": 0.333,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "potasio",
+   "n": 23,
+   "persistence": 0.391,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "pepino",
+   "n": 23,
+   "persistence": 0.261,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "manzana",
+   "n": 22,
+   "persistence": 0.409,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "pan integral",
+   "n": 20,
+   "persistence": 0.25,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "cereales integrales",
+   "n": 19,
+   "persistence": 0.316,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "tortilla",
+   "n": 19,
+   "persistence": 0.316,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "espinacas",
+   "n": 18,
+   "persistence": 0.333,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "aceite de oliva virgen extra",
+   "n": 18,
+   "persistence": 0.444,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "clara de huevo",
+   "n": 18,
+   "persistence": 0.389,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "apio",
+   "n": 17,
+   "persistence": 0.235,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "proteína aislada",
+   "n": 17,
+   "persistence": 0.647,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "fruta",
+   "n": 17,
+   "persistence": 0.471,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "avena",
+   "n": 17,
+   "persistence": 0.353,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "té",
+   "n": 16,
+   "persistence": 0.188,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "plátano",
+   "n": 16,
+   "persistence": 0.312,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "aguacate",
+   "n": 15,
+   "persistence": 0.267,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "amilopectina",
+   "n": 13,
+   "persistence": 0.231,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "complejo zinc-magnesio",
+   "n": 12,
+   "persistence": 0.5,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "cebolla",
+   "n": 12,
+   "persistence": 0.25,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "pescado blanco",
+   "n": 12,
+   "persistence": 0.583,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "merluza",
+   "n": 11,
+   "persistence": 0.273,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "caballa",
+   "n": 11,
+   "persistence": 0.273,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "cacahuetes",
+   "n": 11,
+   "persistence": 0.636,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "café",
+   "n": 11,
+   "persistence": 0.182,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "panga",
+   "n": 10,
+   "persistence": 0.3,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "sardinas",
+   "n": 10,
+   "persistence": 0.3,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "vitamina c",
+   "n": 10,
+   "persistence": 0.1,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "zanahoria",
+   "n": 10,
+   "persistence": 0.3,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "OTHER",
+   "canonical_name": "cafeína",
+   "n": 10,
+   "persistence": 0.7,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "RECIEN LEVANTADO",
+   "canonical_name": "batido de proteínas",
+   "n": 131,
+   "persistence": 0.58,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "RECIEN LEVANTADO",
+   "canonical_name": "aminoácidos",
+   "n": 110,
+   "persistence": 0.655,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "RECIEN LEVANTADO",
+   "canonical_name": "agua",
+   "n": 74,
+   "persistence": 0.473,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "RECIEN LEVANTADO",
+   "canonical_name": "quemagrasa",
+   "n": 72,
+   "persistence": 0.542,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "RECIEN LEVANTADO",
+   "canonical_name": "multivitamínico",
+   "n": 70,
+   "persistence": 0.357,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "RECIEN LEVANTADO",
+   "canonical_name": "l-carnitina",
+   "n": 66,
+   "persistence": 0.591,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "RECIEN LEVANTADO",
+   "canonical_name": "limón",
+   "n": 62,
+   "persistence": 0.161,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "RECIEN LEVANTADO",
+   "canonical_name": "bicarbonato",
+   "n": 53,
+   "persistence": 0.151,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "RECIEN LEVANTADO",
+   "canonical_name": "hierro",
+   "n": 45,
+   "persistence": 0.467,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "RECIEN LEVANTADO",
+   "canonical_name": "vitamina c",
+   "n": 37,
+   "persistence": 0.486,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "RECIEN LEVANTADO",
+   "canonical_name": "potasio",
+   "n": 36,
+   "persistence": 0.333,
+   "confidence": "high",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "RECIEN LEVANTADO",
+   "canonical_name": "té",
+   "n": 25,
+   "persistence": 0.24,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "RECIEN LEVANTADO",
+   "canonical_name": "creatina",
+   "n": 24,
+   "persistence": 0.167,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "RECIEN LEVANTADO",
+   "canonical_name": "complejo zinc-magnesio",
+   "n": 23,
+   "persistence": 0.348,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "RECIEN LEVANTADO",
+   "canonical_name": "tribulus",
+   "n": 22,
+   "persistence": 0.409,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "RECIEN LEVANTADO",
+   "canonical_name": "eaa",
+   "n": 21,
+   "persistence": 0.381,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "RECIEN LEVANTADO",
+   "canonical_name": "support",
+   "n": 21,
+   "persistence": 0.714,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "RECIEN LEVANTADO",
+   "canonical_name": "edulcorante",
+   "n": 17,
+   "persistence": 0.235,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "RECIEN LEVANTADO",
+   "canonical_name": "apio",
+   "n": 16,
+   "persistence": 0.25,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "RECIEN LEVANTADO",
+   "canonical_name": "proteína aislada",
+   "n": 14,
+   "persistence": 0.214,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "RECIEN LEVANTADO",
+   "canonical_name": "vitamina b",
+   "n": 14,
+   "persistence": 0.429,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "RECIEN LEVANTADO",
+   "canonical_name": "yema de huevo",
+   "n": 14,
+   "persistence": 0.571,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "RECIEN LEVANTADO",
+   "canonical_name": "tortilla",
+   "n": 13,
+   "persistence": 0.615,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "RECIEN LEVANTADO",
+   "canonical_name": "pescado blanco",
+   "n": 13,
+   "persistence": 0.231,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "RECIEN LEVANTADO",
+   "canonical_name": "arroz",
+   "n": 12,
+   "persistence": 0.333,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "RECIEN LEVANTADO",
+   "canonical_name": "minerales",
+   "n": 11,
+   "persistence": 0.364,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "RECIEN LEVANTADO",
+   "canonical_name": "protector articular",
+   "n": 10,
+   "persistence": 0.3,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "SUPLEMENTOS",
+   "canonical_name": "multivitamínico",
+   "n": 451,
+   "persistence": 0.838,
+   "confidence": "high",
+   "class": "ancla"
+  },
+  {
+   "slot": "SUPLEMENTOS",
+   "canonical_name": "potasio",
+   "n": 324,
+   "persistence": 0.772,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "SUPLEMENTOS",
+   "canonical_name": "omega 3",
+   "n": 298,
+   "persistence": 0.742,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "SUPLEMENTOS",
+   "canonical_name": "calcio",
+   "n": 242,
+   "persistence": 0.744,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "SUPLEMENTOS",
+   "canonical_name": "magnesio",
+   "n": 231,
+   "persistence": 0.723,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "SUPLEMENTOS",
+   "canonical_name": "onagra",
+   "n": 188,
+   "persistence": 0.777,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "SUPLEMENTOS",
+   "canonical_name": "complejo zinc-magnesio",
+   "n": 108,
+   "persistence": 0.602,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "SUPLEMENTOS",
+   "canonical_name": "aceite de oliva virgen extra",
+   "n": 48,
+   "persistence": 0.604,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "SUPLEMENTOS",
+   "canonical_name": "batido de proteínas",
+   "n": 33,
+   "persistence": 0.636,
+   "confidence": "high",
+   "class": "intermedio"
+  },
+  {
+   "slot": "SUPLEMENTOS",
+   "canonical_name": "vitamina b",
+   "n": 28,
+   "persistence": 0.393,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "SUPLEMENTOS",
+   "canonical_name": "tribulus",
+   "n": 24,
+   "persistence": 0.583,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "SUPLEMENTOS",
+   "canonical_name": "vitamina k",
+   "n": 18,
+   "persistence": 0.611,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "SUPLEMENTOS",
+   "canonical_name": "vitamina e",
+   "n": 12,
+   "persistence": 0.333,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "SUPLEMENTOS",
+   "canonical_name": "creatina",
+   "n": 12,
+   "persistence": 0.25,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "SUPLEMENTOS",
+   "canonical_name": "protector articular",
+   "n": 12,
+   "persistence": 0.417,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "SUPLEMENTOS",
+   "canonical_name": "pollo",
+   "n": 11,
+   "persistence": 0.273,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "SUPLEMENTOS",
+   "canonical_name": "cla",
+   "n": 11,
+   "persistence": 0.727,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "SUPLEMENTOS",
+   "canonical_name": "vitamina d",
+   "n": 11,
+   "persistence": 0.636,
+   "confidence": "medium",
+   "class": "intermedio"
+  },
+  {
+   "slot": "SUPLEMENTOS",
+   "canonical_name": "quemagrasa",
+   "n": 10,
+   "persistence": 0.3,
+   "confidence": "medium",
+   "class": "rotatorio"
+  },
+  {
+   "slot": "SUPLEMENTOS",
+   "canonical_name": "arroz",
+   "n": 10,
+   "persistence": 0.5,
+   "confidence": "medium",
+   "class": "rotatorio"
+  }
+ ],
+ "food_prevalence_same_goal": {
+  "1": 0.8783,
+  "2": 0.8907,
+  "3": 0.6443,
+  "4": 0.8668,
+  "5": 0.8549,
+  "6": 0.8079,
+  "7": 0.7243,
+  "8": 0.8082,
+  "9": 0.7895,
+  "11": 0.791,
+  "12": 0.6369,
+  "13": 0.5744,
+  "14": 0.6073,
+  "15": 0.3451,
+  "20": 0.4983,
+  "21": 0.4784,
+  "22": 0.2242,
+  "151": 0.0131,
+  "23": 0.4274,
+  "89": 0.0941,
+  "24": 0.4466,
+  "26": 0.4667,
+  "29": 0.3346,
+  "31": 0.3639,
+  "34": 0.3211,
+  "38": 0.2923,
+  "41": 0.2508,
+  "43": 0.247,
+  "60": 0.1354,
+  "17": 0.477,
+  "75": 0.1053,
+  "30": 0.3789,
+  "51": 0.171,
+  "119": 0.0589,
+  "80": 0.0889,
+  "18": 0.5183,
+  "83": 0.1046,
+  "19": 0.4796,
+  "150": 0.0242,
+  "28": 0.3369,
+  "37": 0.2995,
+  "39": 0.2715,
+  "45": 0.1849,
+  "48": 0.2385,
+  "49": 0.2269,
+  "118": 0.0584,
+  "90": 0.1169,
+  "102": 0.0721,
+  "32": 0.308,
+  "99": 0.2229,
+  "52": 0.1648,
+  "68": 0.1489,
+  "70": 0.1329,
+  "72": 0.1189,
+  "79": 0.1017,
+  "81": 0.0872,
+  "84": 0.0996,
+  "25": 0.3985,
+  "94": 0.077,
+  "97": 0.0792,
+  "35": 0.3234,
+  "10": 0.5128,
+  "27": 0.2558,
+  "36": 0.2617,
+  "50": 0.1491,
+  "57": 0.1687,
+  "66": 0.107,
+  "73": 0.0983,
+  "78": 0.1098,
+  "88": 0.1432,
+  "116": 0.0468,
+  "69": 0.1143,
+  "74": 0.1104,
+  "77": 0.1085,
+  "76": 0.1133,
+  "82": 0.1039,
+  "147": 0.0318,
+  "87": 0.0776,
+  "91": 0.087,
+  "121": 0.04,
+  "126": 0.0373,
+  "187": 0.011,
+  "124": 0.0273,
+  "62": 0.1296,
+  "152": 0.0178,
+  "92": 0.1509,
+  "96": 0.065,
+  "40": 0.2906,
+  "42": 0.1082,
+  "177": 0.0201,
+  "58": 0.1967,
+  "59": 0.1609,
+  "139": 0.0399,
+  "148": 0.0229,
+  "93": 0.101,
+  "54": 0.1458,
+  "44": 0.2507,
+  "100": 0.0727,
+  "101": 0.0677,
+  "104": 0.0519,
+  "67": 0.1041,
+  "65": 0.1844,
+  "140": 0.0172,
+  "143": 0.0657,
+  "145": 0.0286,
+  "98": 0.055,
+  "113": 0.0964,
+  "192": 0.011,
+  "71": 0.1072,
+  "107": 0.0487,
+  "53": 0.1592,
+  "55": 0.1535,
+  "85": 0.1547,
+  "109": 0.1531,
+  "120": 0.0392,
+  "122": 0.0443,
+  "64": 0.1371,
+  "33": 0.3072,
+  "174": 0.0129,
+  "47": 0.2106,
+  "198": 0.0059,
+  "106": 0.082,
+  "137": 0.0379,
+  "138": 0.0246,
+  "86": 0.0716,
+  "103": 0.0566,
+  "180": 0.0132,
+  "95": 0.0766,
+  "16": 0.3068,
+  "135": 0.039,
+  "167": 0.0215,
+  "56": 0.1021,
+  "46": 0.2812,
+  "132": 0.0326,
+  "146": 0.0288,
+  "61": 0.1346,
+  "125": 0.029,
+  "133": 0.0343,
+  "149": 0.0264,
+  "179": 0.0236,
+  "196": 0.0087,
+  "144": 0.0364,
+  "212": 0.0045,
+  "155": 0.0164,
+  "168": 0.0078,
+  "105": 0.1466,
+  "117": 0.116,
+  "131": 0.0382,
+  "130": 0.026,
+  "112": 0.0424,
+  "114": 0.0311,
+  "178": 0.0116,
+  "123": 0.0357,
+  "153": 0.0043,
+  "162": 0.0416,
+  "170": 0.0154,
+  "189": 0.0021,
+  "194": 0.0092,
+  "154": 0.0173,
+  "159": 0.0173,
+  "163": 0.0148,
+  "176": 0.0157,
+  "203": 0.004,
+  "209": 0.0047,
+  "214": 0.004,
+  "129": 0.0194,
+  "128": 0.0366,
+  "111": 0.0347,
+  "173": 0.0107,
+  "175": 0.0087,
+  "63": 0.0993,
+  "157": 0.0383,
+  "166": 0.0155,
+  "185": 0.0194,
+  "202": 0.0337,
+  "215": 0.0337,
+  "181": 0.0119,
+  "182": 0.0128,
+  "200": 0.0059,
+  "160": 0.0221,
+  "142": 0.0166,
+  "161": 0.01,
+  "184": 0.0365,
+  "110": 0.061,
+  "190": 0.0051,
+  "156": 0.0158,
+  "193": 0.0202,
+  "207": 0.18,
+  "164": 0.012,
+  "199": 0.0043,
+  "127": 0.025,
+  "141": 0.0271,
+  "186": 0.0328,
+  "108": 0.0482,
+  "172": 0.0546,
+  "218": 0.0,
+  "208": 0.0225,
+  "136": 0.0301,
+  "201": 0.0054,
+  "188": 0.0083,
+  "134": 0.0194,
+  "205": 0.004,
+  "197": 0.0057,
+  "169": 0.0152,
+  "165": 0.0151,
+  "115": 0.0415,
+  "158": 0.0086,
+  "171": 0.0278,
+  "210": 0.0021,
+  "191": 0.029,
+  "183": 0.0199,
+  "195": 0.0125,
+  "206": 0.002,
+  "226": 0.0,
+  "204": 0.004,
+  "219": 0.004,
+  "211": 0.0112,
+  "216": 0.002,
+  "217": 0.0,
+  "228": 0.002,
+  "220": 0.0021
+ },
+ "alternative_groups": {
+  "total": {
+   "goal": "todos",
+   "groups": 8047,
+   "mixed_family_share": 0.631,
+   "mixed_family_shared_macro_share": 0.663,
+   "no_common_macro_share": 0.213,
+   "confidence": "high"
+  },
+  "by_goal": [
+   {
+    "goal": "volumen_masa",
+    "groups": 3713,
+    "mixed_family_share": 0.64,
+    "mixed_family_shared_macro_share": 0.691,
+    "no_common_macro_share": 0.198,
+    "confidence": "high"
+   },
+   {
+    "goal": "definicion_grasa",
+    "groups": 3057,
+    "mixed_family_share": 0.593,
+    "mixed_family_shared_macro_share": 0.679,
+    "no_common_macro_share": 0.19,
+    "confidence": "high"
+   },
+   {
+    "goal": "ayuno_intermitente",
+    "groups": 537,
+    "mixed_family_share": 0.7,
+    "mixed_family_shared_macro_share": 0.54,
+    "no_common_macro_share": 0.322,
+    "confidence": "high"
+   },
+   {
+    "goal": "sin_clasificar",
+    "groups": 463,
+    "mixed_family_share": 0.674,
+    "mixed_family_shared_macro_share": 0.567,
+    "no_common_macro_share": 0.292,
+    "confidence": "high"
+   },
+   {
+    "goal": "cetosis_keto",
+    "groups": 160,
+    "mixed_family_share": 0.706,
+    "mixed_family_shared_macro_share": 0.513,
+    "no_common_macro_share": 0.344,
+    "confidence": "high"
+   },
+   {
+    "goal": "hipocalorica",
+    "groups": 60,
+    "mixed_family_share": 0.733,
+    "mixed_family_shared_macro_share": 0.545,
+    "no_common_macro_share": 0.35,
+    "confidence": "high"
+   },
+   {
+    "goal": "descarga_carga",
+    "groups": 57,
+    "mixed_family_share": 0.649,
+    "mixed_family_shared_macro_share": 0.757,
+    "no_common_macro_share": 0.158,
+    "confidence": "high"
+   }
+  ],
+  "top_family_pairs": [
+   {
+    "families": [
+     "ave",
+     "pescado_blanco"
+    ],
+    "n": 831,
+    "shared_macro_share": 0.989
+   },
+   {
+    "families": [
+     "arroz",
+     "pasta"
+    ],
+    "n": 718,
+    "shared_macro_share": 0.825
+   },
+   {
+    "families": [
+     "ave",
+     "carne"
+    ],
+    "n": 682,
+    "shared_macro_share": 0.96
+   },
+   {
+    "families": [
+     "ave",
+     "pescado_azul"
+    ],
+    "n": 563,
+    "shared_macro_share": 0.895
+   },
+   {
+    "families": [
+     "arroz",
+     "legumbre"
+    ],
+    "n": 512,
+    "shared_macro_share": 0.816
+   },
+   {
+    "families": [
+     "legumbre",
+     "pasta"
+    ],
+    "n": 453,
+    "shared_macro_share": 0.826
+   },
+   {
+    "families": [
+     "arroz",
+     "verdura"
+    ],
+    "n": 355,
+    "shared_macro_share": 0.0
+   },
+   {
+    "families": [
+     "ave",
+     "huevo"
+    ],
+    "n": 330,
+    "shared_macro_share": 0.894
+   },
+   {
+    "families": [
+     "arroz",
+     "tuberculo"
+    ],
+    "n": 312,
+    "shared_macro_share": 0.808
+   },
+   {
+    "families": [
+     "huevo",
+     "pescado_azul"
+    ],
+    "n": 272,
+    "shared_macro_share": 0.901
+   },
+   {
+    "families": [
+     "pescado_azul",
+     "pescado_blanco"
+    ],
+    "n": 250,
+    "shared_macro_share": 0.984
+   },
+   {
+    "families": [
+     "huevo",
+     "pescado_blanco"
+    ],
+    "n": 240,
+    "shared_macro_share": 0.971
+   },
+   {
+    "families": [
+     "pasta",
+     "tuberculo"
+    ],
+    "n": 204,
+    "shared_macro_share": 0.843
+   },
+   {
+    "families": [
+     "arroz",
+     "cereal"
+    ],
+    "n": 197,
+    "shared_macro_share": 0.812
+   },
+   {
+    "families": [
+     "cereal",
+     "pan"
+    ],
+    "n": 172,
+    "shared_macro_share": 0.715
+   }
+  ],
+  "interchangeable_foods": {
+   "min_times": 2,
+   "pairs": [
+    [
+     1,
+     2
+    ],
+    [
+     1,
+     3
+    ],
+    [
+     1,
+     5
+    ],
+    [
+     1,
+     6
+    ],
+    [
+     1,
+     7
+    ],
+    [
+     1,
+     8
+    ],
+    [
+     1,
+     9
+    ],
+    [
+     1,
+     11
+    ],
+    [
+     1,
+     12
+    ],
+    [
+     1,
+     14
+    ],
+    [
+     1,
+     17
+    ],
+    [
+     1,
+     18
+    ],
+    [
+     1,
+     23
+    ],
+    [
+     1,
+     24
+    ],
+    [
+     1,
+     26
+    ],
+    [
+     1,
+     29
+    ],
+    [
+     1,
+     30
+    ],
+    [
+     1,
+     31
+    ],
+    [
+     1,
+     34
+    ],
+    [
+     1,
+     35
+    ],
+    [
+     1,
+     37
+    ],
+    [
+     1,
+     39
+    ],
+    [
+     1,
+     40
+    ],
+    [
+     1,
+     41
+    ],
+    [
+     1,
+     42
+    ],
+    [
+     1,
+     48
+    ],
+    [
+     1,
+     49
+    ],
+    [
+     1,
+     57
+    ],
+    [
+     1,
+     60
+    ],
+    [
+     1,
+     68
+    ],
+    [
+     1,
+     69
+    ],
+    [
+     1,
+     76
+    ],
+    [
+     1,
+     78
+    ],
+    [
+     1,
+     86
+    ],
+    [
+     1,
+     87
+    ],
+    [
+     1,
+     96
+    ],
+    [
+     1,
+     107
+    ],
+    [
+     1,
+     114
+    ],
+    [
+     1,
+     120
+    ],
+    [
+     1,
+     124
+    ],
+    [
+     1,
+     130
+    ],
+    [
+     1,
+     137
+    ],
+    [
+     1,
+     144
+    ],
+    [
+     1,
+     146
+    ],
+    [
+     1,
+     162
+    ],
+    [
+     1,
+     175
+    ],
+    [
+     1,
+     179
+    ],
+    [
+     1,
+     185
+    ],
+    [
+     1,
+     192
+    ],
+    [
+     1,
+     196
+    ],
+    [
+     2,
+     3
+    ],
+    [
+     2,
+     5
+    ],
+    [
+     2,
+     7
+    ],
+    [
+     2,
+     9
+    ],
+    [
+     2,
+     12
+    ],
+    [
+     2,
+     13
+    ],
+    [
+     2,
+     14
+    ],
+    [
+     2,
+     17
+    ],
+    [
+     2,
+     19
+    ],
+    [
+     2,
+     21
+    ],
+    [
+     2,
+     23
+    ],
+    [
+     2,
+     25
+    ],
+    [
+     2,
+     26
+    ],
+    [
+     2,
+     28
+    ],
+    [
+     2,
+     30
+    ],
+    [
+     2,
+     31
+    ],
+    [
+     2,
+     34
+    ],
+    [
+     2,
+     35
+    ],
+    [
+     2,
+     40
+    ],
+    [
+     2,
+     46
+    ],
+    [
+     2,
+     50
+    ],
+    [
+     2,
+     53
+    ],
+    [
+     2,
+     54
+    ],
+    [
+     2,
+     57
+    ],
+    [
+     2,
+     59
+    ],
+    [
+     2,
+     66
+    ],
+    [
+     2,
+     69
+    ],
+    [
+     2,
+     70
+    ],
+    [
+     2,
+     84
+    ],
+    [
+     2,
+     86
+    ],
+    [
+     2,
+     90
+    ],
+    [
+     2,
+     91
+    ],
+    [
+     2,
+     97
+    ],
+    [
+     2,
+     100
+    ],
+    [
+     2,
+     101
+    ],
+    [
+     2,
+     102
+    ],
+    [
+     2,
+     105
+    ],
+    [
+     2,
+     106
+    ],
+    [
+     2,
+     109
+    ],
+    [
+     2,
+     114
+    ],
+    [
+     2,
+     120
+    ],
+    [
+     2,
+     122
+    ],
+    [
+     2,
+     126
+    ],
+    [
+     2,
+     131
+    ],
+    [
+     2,
+     132
+    ],
+    [
+     2,
+     137
+    ],
+    [
+     2,
+     138
+    ],
+    [
+     2,
+     153
+    ],
+    [
+     2,
+     160
+    ],
+    [
+     2,
+     173
+    ],
+    [
+     2,
+     178
+    ],
+    [
+     2,
+     181
+    ],
+    [
+     2,
+     187
+    ],
+    [
+     3,
+     4
+    ],
+    [
+     3,
+     6
+    ],
+    [
+     3,
+     7
+    ],
+    [
+     3,
+     8
+    ],
+    [
+     3,
+     9
+    ],
+    [
+     3,
+     11
+    ],
+    [
+     3,
+     12
+    ],
+    [
+     3,
+     16
+    ],
+    [
+     3,
+     18
+    ],
+    [
+     3,
+     20
+    ],
+    [
+     3,
+     21
+    ],
+    [
+     3,
+     27
+    ],
+    [
+     3,
+     29
+    ],
+    [
+     3,
+     30
+    ],
+    [
+     3,
+     33
+    ],
+    [
+     3,
+     35
+    ],
+    [
+     3,
+     36
+    ],
+    [
+     3,
+     39
+    ],
+    [
+     3,
+     43
+    ],
+    [
+     3,
+     47
+    ],
+    [
+     3,
+     53
+    ],
+    [
+     3,
+     54
+    ],
+    [
+     3,
+     56
+    ],
+    [
+     3,
+     64
+    ],
+    [
+     3,
+     74
+    ],
+    [
+     3,
+     76
+    ],
+    [
+     3,
+     84
+    ],
+    [
+     3,
+     86
+    ],
+    [
+     3,
+     94
+    ],
+    [
+     3,
+     100
+    ],
+    [
+     3,
+     106
+    ],
+    [
+     3,
+     111
+    ],
+    [
+     3,
+     116
+    ],
+    [
+     3,
+     125
+    ],
+    [
+     3,
+     128
+    ],
+    [
+     3,
+     132
+    ],
+    [
+     3,
+     141
+    ],
+    [
+     3,
+     172
+    ],
+    [
+     3,
+     174
+    ],
+    [
+     4,
+     27
+    ],
+    [
+     4,
+     30
+    ],
+    [
+     5,
+     6
+    ],
+    [
+     5,
+     7
+    ],
+    [
+     5,
+     8
+    ],
+    [
+     5,
+     11
+    ],
+    [
+     5,
+     12
+    ],
+    [
+     5,
+     13
+    ],
+    [
+     5,
+     15
+    ],
+    [
+     5,
+     17
+    ],
+    [
+     5,
+     18
+    ],
+    [
+     5,
+     19
+    ],
+    [
+     5,
+     22
+    ],
+    [
+     5,
+     23
+    ],
+    [
+     5,
+     25
+    ],
+    [
+     5,
+     28
+    ],
+    [
+     5,
+     29
+    ],
+    [
+     5,
+     31
+    ],
+    [
+     5,
+     34
+    ],
+    [
+     5,
+     40
+    ],
+    [
+     5,
+     41
+    ],
+    [
+     5,
+     45
+    ],
+    [
+     5,
+     49
+    ],
+    [
+     5,
+     60
+    ],
+    [
+     5,
+     68
+    ],
+    [
+     5,
+     69
+    ],
+    [
+     5,
+     78
+    ],
+    [
+     5,
+     85
+    ],
+    [
+     5,
+     87
+    ],
+    [
+     5,
+     90
+    ],
+    [
+     5,
+     144
+    ],
+    [
+     5,
+     176
+    ],
+    [
+     5,
+     182
+    ],
+    [
+     6,
+     7
+    ],
+    [
+     6,
+     8
+    ],
+    [
+     6,
+     11
+    ],
+    [
+     6,
+     12
+    ],
+    [
+     6,
+     17
+    ],
+    [
+     6,
+     18
+    ],
+    [
+     6,
+     19
+    ],
+    [
+     6,
+     30
+    ],
+    [
+     6,
+     55
+    ],
+    [
+     6,
+     60
+    ],
+    [
+     6,
+     61
+    ],
+    [
+     6,
+     62
+    ],
+    [
+     6,
+     74
+    ],
+    [
+     6,
+     78
+    ],
+    [
+     6,
+     83
+    ],
+    [
+     6,
+     95
+    ],
+    [
+     6,
+     100
+    ],
+    [
+     6,
+     116
+    ],
+    [
+     6,
+     121
+    ],
+    [
+     6,
+     154
+    ],
+    [
+     6,
+     210
+    ],
+    [
+     7,
+     8
+    ],
+    [
+     7,
+     9
+    ],
+    [
+     7,
+     11
+    ],
+    [
+     7,
+     12
+    ],
+    [
+     7,
+     13
+    ],
+    [
+     7,
+     14
+    ],
+    [
+     7,
+     17
+    ],
+    [
+     7,
+     18
+    ],
+    [
+     7,
+     19
+    ],
+    [
+     7,
+     21
+    ],
+    [
+     7,
+     24
+    ],
+    [
+     7,
+     25
+    ],
+    [
+     7,
+     26
+    ],
+    [
+     7,
+     29
+    ],
+    [
+     7,
+     30
+    ],
+    [
+     7,
+     31
+    ],
+    [
+     7,
+     34
+    ],
+    [
+     7,
+     35
+    ],
+    [
+     7,
+     39
+    ],
+    [
+     7,
+     42
+    ],
+    [
+     7,
+     45
+    ],
+    [
+     7,
+     48
+    ],
+    [
+     7,
+     49
+    ],
+    [
+     7,
+     60
+    ],
+    [
+     7,
+     61
+    ],
+    [
+     7,
+     62
+    ],
+    [
+     7,
+     68
+    ],
+    [
+     7,
+     76
+    ],
+    [
+     7,
+     78
+    ],
+    [
+     7,
+     82
+    ],
+    [
+     7,
+     86
+    ],
+    [
+     7,
+     87
+    ],
+    [
+     7,
+     90
+    ],
+    [
+     7,
+     96
+    ],
+    [
+     7,
+     107
+    ],
+    [
+     7,
+     124
+    ],
+    [
+     7,
+     137
+    ],
+    [
+     7,
+     144
+    ],
+    [
+     7,
+     146
+    ],
+    [
+     7,
+     162
+    ],
+    [
+     7,
+     192
+    ],
+    [
+     7,
+     193
+    ],
+    [
+     7,
+     196
+    ],
+    [
+     8,
+     12
+    ],
+    [
+     8,
+     18
+    ],
+    [
+     8,
+     19
+    ],
+    [
+     8,
+     28
+    ],
+    [
+     8,
+     55
+    ],
+    [
+     8,
+     57
+    ],
+    [
+     8,
+     60
+    ],
+    [
+     8,
+     82
+    ],
+    [
+     8,
+     83
+    ],
+    [
+     8,
+     86
+    ],
+    [
+     8,
+     87
+    ],
+    [
+     8,
+     95
+    ],
+    [
+     8,
+     114
+    ],
+    [
+     8,
+     121
+    ],
+    [
+     8,
+     125
+    ],
+    [
+     8,
+     200
+    ],
+    [
+     9,
+     11
+    ],
+    [
+     9,
+     12
+    ],
+    [
+     9,
+     18
+    ],
+    [
+     9,
+     24
+    ],
+    [
+     9,
+     28
+    ],
+    [
+     9,
+     29
+    ],
+    [
+     9,
+     35
+    ],
+    [
+     9,
+     37
+    ],
+    [
+     9,
+     39
+    ],
+    [
+     9,
+     40
+    ],
+    [
+     9,
+     42
+    ],
+    [
+     9,
+     48
+    ],
+    [
+     9,
+     49
+    ],
+    [
+     9,
+     51
+    ],
+    [
+     9,
+     57
+    ],
+    [
+     9,
+     58
+    ],
+    [
+     9,
+     59
+    ],
+    [
+     9,
+     65
+    ],
+    [
+     9,
+     68
+    ],
+    [
+     9,
+     75
+    ],
+    [
+     9,
+     76
+    ],
+    [
+     9,
+     77
+    ],
+    [
+     9,
+     83
+    ],
+    [
+     9,
+     86
+    ],
+    [
+     9,
+     87
+    ],
+    [
+     9,
+     90
+    ],
+    [
+     9,
+     91
+    ],
+    [
+     9,
+     92
+    ],
+    [
+     9,
+     107
+    ],
+    [
+     9,
+     109
+    ],
+    [
+     9,
+     137
+    ],
+    [
+     9,
+     146
+    ],
+    [
+     9,
+     148
+    ],
+    [
+     9,
+     162
+    ],
+    [
+     9,
+     166
+    ],
+    [
+     9,
+     179
+    ],
+    [
+     9,
+     191
+    ],
+    [
+     9,
+     192
+    ],
+    [
+     9,
+     202
+    ],
+    [
+     10,
+     20
+    ],
+    [
+     10,
+     27
+    ],
+    [
+     10,
+     30
+    ],
+    [
+     10,
+     33
+    ],
+    [
+     10,
+     36
+    ],
+    [
+     10,
+     54
+    ],
+    [
+     10,
+     63
+    ],
+    [
+     10,
+     71
+    ],
+    [
+     11,
+     12
+    ],
+    [
+     11,
+     17
+    ],
+    [
+     11,
+     18
+    ],
+    [
+     11,
+     21
+    ],
+    [
+     11,
+     24
+    ],
+    [
+     11,
+     25
+    ],
+    [
+     11,
+     29
+    ],
+    [
+     11,
+     34
+    ],
+    [
+     11,
+     35
+    ],
+    [
+     11,
+     39
+    ],
+    [
+     11,
+     42
+    ],
+    [
+     11,
+     48
+    ],
+    [
+     11,
+     60
+    ],
+    [
+     11,
+     68
+    ],
+    [
+     11,
+     76
+    ],
+    [
+     11,
+     78
+    ],
+    [
+     11,
+     86
+    ],
+    [
+     11,
+     87
+    ],
+    [
+     11,
+     96
+    ],
+    [
+     11,
+     124
+    ],
+    [
+     11,
+     137
+    ],
+    [
+     11,
+     144
+    ],
+    [
+     11,
+     162
+    ],
+    [
+     11,
+     191
+    ],
+    [
+     12,
+     17
+    ],
+    [
+     12,
+     18
+    ],
+    [
+     12,
+     19
+    ],
+    [
+     12,
+     24
+    ],
+    [
+     12,
+     25
+    ],
+    [
+     12,
+     29
+    ],
+    [
+     12,
+     31
+    ],
+    [
+     12,
+     35
+    ],
+    [
+     12,
+     39
+    ],
+    [
+     12,
+     40
+    ],
+    [
+     12,
+     42
+    ],
+    [
+     12,
+     48
+    ],
+    [
+     12,
+     50
+    ],
+    [
+     12,
+     55
+    ],
+    [
+     12,
+     60
+    ],
+    [
+     12,
+     62
+    ],
+    [
+     12,
+     68
+    ],
+    [
+     12,
+     76
+    ],
+    [
+     12,
+     78
+    ],
+    [
+     12,
+     86
+    ],
+    [
+     12,
+     87
+    ],
+    [
+     12,
+     90
+    ],
+    [
+     12,
+     95
+    ],
+    [
+     12,
+     96
+    ],
+    [
+     12,
+     105
+    ],
+    [
+     12,
+     107
+    ],
+    [
+     12,
+     124
+    ],
+    [
+     12,
+     137
+    ],
+    [
+     12,
+     144
+    ],
+    [
+     12,
+     162
+    ],
+    [
+     12,
+     179
+    ],
+    [
+     12,
+     191
+    ],
+    [
+     12,
+     196
+    ],
+    [
+     13,
+     14
+    ],
+    [
+     13,
+     17
+    ],
+    [
+     13,
+     19
+    ],
+    [
+     13,
+     23
+    ],
+    [
+     13,
+     25
+    ],
+    [
+     13,
+     26
+    ],
+    [
+     13,
+     28
+    ],
+    [
+     13,
+     31
+    ],
+    [
+     13,
+     40
+    ],
+    [
+     13,
+     41
+    ],
+    [
+     13,
+     57
+    ],
+    [
+     13,
+     59
+    ],
+    [
+     13,
+     66
+    ],
+    [
+     13,
+     69
+    ],
+    [
+     13,
+     74
+    ],
+    [
+     13,
+     90
+    ],
+    [
+     13,
+     91
+    ],
+    [
+     13,
+     101
+    ],
+    [
+     13,
+     102
+    ],
+    [
+     13,
+     104
+    ],
+    [
+     13,
+     105
+    ],
+    [
+     13,
+     109
+    ],
+    [
+     13,
+     110
+    ],
+    [
+     13,
+     114
+    ],
+    [
+     13,
+     116
+    ],
+    [
+     13,
+     120
+    ],
+    [
+     13,
+     122
+    ],
+    [
+     13,
+     126
+    ],
+    [
+     13,
+     146
+    ],
+    [
+     13,
+     157
+    ],
+    [
+     13,
+     178
+    ],
+    [
+     13,
+     194
+    ],
+    [
+     13,
+     211
+    ],
+    [
+     14,
+     17
+    ],
+    [
+     14,
+     19
+    ],
+    [
+     14,
+     23
+    ],
+    [
+     14,
+     24
+    ],
+    [
+     14,
+     25
+    ],
+    [
+     14,
+     26
+    ],
+    [
+     14,
+     28
+    ],
+    [
+     14,
+     31
+    ],
+    [
+     14,
+     34
+    ],
+    [
+     14,
+     40
+    ],
+    [
+     14,
+     41
+    ],
+    [
+     14,
+     54
+    ],
+    [
+     14,
+     66
+    ],
+    [
+     14,
+     69
+    ],
+    [
+     14,
+     74
+    ],
+    [
+     14,
+     86
+    ],
+    [
+     14,
+     101
+    ],
+    [
+     14,
+     109
+    ],
+    [
+     14,
+     114
+    ],
+    [
+     14,
+     120
+    ],
+    [
+     14,
+     126
+    ],
+    [
+     14,
+     131
+    ],
+    [
+     14,
+     135
+    ],
+    [
+     14,
+     138
+    ],
+    [
+     14,
+     153
+    ],
+    [
+     14,
+     173
+    ],
+    [
+     14,
+     178
+    ],
+    [
+     15,
+     22
+    ],
+    [
+     15,
+     38
+    ],
+    [
+     16,
+     20
+    ],
+    [
+     16,
+     32
+    ],
+    [
+     16,
+     43
+    ],
+    [
+     16,
+     52
+    ],
+    [
+     16,
+     74
+    ],
+    [
+     16,
+     158
+    ],
+    [
+     17,
+     18
+    ],
+    [
+     17,
+     19
+    ],
+    [
+     17,
+     20
+    ],
+    [
+     17,
+     21
+    ],
+    [
+     17,
+     23
+    ],
+    [
+     17,
+     24
+    ],
+    [
+     17,
+     25
+    ],
+    [
+     17,
+     28
+    ],
+    [
+     17,
+     30
+    ],
+    [
+     17,
+     31
+    ],
+    [
+     17,
+     39
+    ],
+    [
+     17,
+     40
+    ],
+    [
+     17,
+     41
+    ],
+    [
+     17,
+     50
+    ],
+    [
+     17,
+     55
+    ],
+    [
+     17,
+     57
+    ],
+    [
+     17,
+     59
+    ],
+    [
+     17,
+     61
+    ],
+    [
+     17,
+     62
+    ],
+    [
+     17,
+     68
+    ],
+    [
+     17,
+     69
+    ],
+    [
+     17,
+     78
+    ],
+    [
+     17,
+     90
+    ],
+    [
+     17,
+     91
+    ],
+    [
+     17,
+     97
+    ],
+    [
+     17,
+     98
+    ],
+    [
+     17,
+     101
+    ],
+    [
+     17,
+     102
+    ],
+    [
+     17,
+     104
+    ],
+    [
+     17,
+     110
+    ],
+    [
+     17,
+     114
+    ],
+    [
+     17,
+     116
+    ],
+    [
+     17,
+     118
+    ],
+    [
+     17,
+     120
+    ],
+    [
+     17,
+     122
+    ],
+    [
+     17,
+     123
+    ],
+    [
+     17,
+     133
+    ],
+    [
+     17,
+     150
+    ],
+    [
+     17,
+     159
+    ],
+    [
+     17,
+     173
+    ],
+    [
+     17,
+     181
+    ],
+    [
+     17,
+     190
+    ],
+    [
+     17,
+     201
+    ],
+    [
+     17,
+     215
+    ],
+    [
+     18,
+     21
+    ],
+    [
+     18,
+     24
+    ],
+    [
+     18,
+     25
+    ],
+    [
+     18,
+     28
+    ],
+    [
+     18,
+     35
+    ],
+    [
+     18,
+     39
+    ],
+    [
+     18,
+     40
+    ],
+    [
+     18,
+     42
+    ],
+    [
+     18,
+     48
+    ],
+    [
+     18,
+     68
+    ],
+    [
+     18,
+     76
+    ],
+    [
+     18,
+     78
+    ],
+    [
+     18,
+     83
+    ],
+    [
+     18,
+     86
+    ],
+    [
+     18,
+     87
+    ],
+    [
+     18,
+     96
+    ],
+    [
+     18,
+     114
+    ],
+    [
+     18,
+     124
+    ],
+    [
+     18,
+     137
+    ],
+    [
+     18,
+     144
+    ],
+    [
+     18,
+     154
+    ],
+    [
+     18,
+     162
+    ],
+    [
+     18,
+     191
+    ],
+    [
+     19,
+     20
+    ],
+    [
+     19,
+     21
+    ],
+    [
+     19,
+     23
+    ],
+    [
+     19,
+     25
+    ],
+    [
+     19,
+     28
+    ],
+    [
+     19,
+     30
+    ],
+    [
+     19,
+     31
+    ],
+    [
+     19,
+     40
+    ],
+    [
+     19,
+     41
+    ],
+    [
+     19,
+     50
+    ],
+    [
+     19,
+     57
+    ],
+    [
+     19,
+     59
+    ],
+    [
+     19,
+     60
+    ],
+    [
+     19,
+     61
+    ],
+    [
+     19,
+     62
+    ],
+    [
+     19,
+     74
+    ],
+    [
+     19,
+     78
+    ],
+    [
+     19,
+     81
+    ],
+    [
+     19,
+     82
+    ],
+    [
+     19,
+     86
+    ],
+    [
+     19,
+     90
+    ],
+    [
+     19,
+     91
+    ],
+    [
+     19,
+     101
+    ],
+    [
+     19,
+     102
+    ],
+    [
+     19,
+     104
+    ],
+    [
+     19,
+     105
+    ],
+    [
+     19,
+     109
+    ],
+    [
+     19,
+     114
+    ],
+    [
+     19,
+     116
+    ],
+    [
+     19,
+     150
+    ],
+    [
+     19,
+     154
+    ],
+    [
+     19,
+     157
+    ],
+    [
+     20,
+     25
+    ],
+    [
+     20,
+     27
+    ],
+    [
+     20,
+     28
+    ],
+    [
+     20,
+     29
+    ],
+    [
+     20,
+     30
+    ],
+    [
+     20,
+     31
+    ],
+    [
+     20,
+     36
+    ],
+    [
+     20,
+     37
+    ],
+    [
+     20,
+     40
+    ],
+    [
+     20,
+     41
+    ],
+    [
+     20,
+     46
+    ],
+    [
+     20,
+     47
+    ],
+    [
+     20,
+     50
+    ],
+    [
+     20,
+     53
+    ],
+    [
+     20,
+     54
+    ],
+    [
+     20,
+     59
+    ],
+    [
+     20,
+     63
+    ],
+    [
+     20,
+     64
+    ],
+    [
+     20,
+     66
+    ],
+    [
+     20,
+     71
+    ],
+    [
+     20,
+     77
+    ],
+    [
+     20,
+     80
+    ],
+    [
+     20,
+     89
+    ],
+    [
+     20,
+     101
+    ],
+    [
+     20,
+     123
+    ],
+    [
+     20,
+     133
+    ],
+    [
+     20,
+     137
+    ],
+    [
+     20,
+     148
+    ],
+    [
+     20,
+     149
+    ],
+    [
+     20,
+     152
+    ],
+    [
+     20,
+     157
+    ],
+    [
+     20,
+     159
+    ],
+    [
+     20,
+     166
+    ],
+    [
+     20,
+     177
+    ],
+    [
+     20,
+     195
+    ],
+    [
+     21,
+     25
+    ],
+    [
+     21,
+     34
+    ],
+    [
+     21,
+     35
+    ],
+    [
+     21,
+     54
+    ],
+    [
+     21,
+     68
+    ],
+    [
+     21,
+     70
+    ],
+    [
+     21,
+     81
+    ],
+    [
+     21,
+     84
+    ],
+    [
+     21,
+     106
+    ],
+    [
+     21,
+     116
+    ],
+    [
+     21,
+     132
+    ],
+    [
+     21,
+     144
+    ],
+    [
+     21,
+     160
+    ],
+    [
+     21,
+     172
+    ],
+    [
+     22,
+     38
+    ],
+    [
+     23,
+     25
+    ],
+    [
+     23,
+     26
+    ],
+    [
+     23,
+     28
+    ],
+    [
+     23,
+     30
+    ],
+    [
+     23,
+     31
+    ],
+    [
+     23,
+     34
+    ],
+    [
+     23,
+     39
+    ],
+    [
+     23,
+     40
+    ],
+    [
+     23,
+     41
+    ],
+    [
+     23,
+     57
+    ],
+    [
+     23,
+     66
+    ],
+    [
+     23,
+     69
+    ],
+    [
+     23,
+     74
+    ],
+    [
+     23,
+     86
+    ],
+    [
+     23,
+     90
+    ],
+    [
+     23,
+     91
+    ],
+    [
+     23,
+     101
+    ],
+    [
+     23,
+     102
+    ],
+    [
+     23,
+     105
+    ],
+    [
+     23,
+     109
+    ],
+    [
+     23,
+     110
+    ],
+    [
+     23,
+     120
+    ],
+    [
+     23,
+     126
+    ],
+    [
+     23,
+     131
+    ],
+    [
+     23,
+     135
+    ],
+    [
+     23,
+     138
+    ],
+    [
+     23,
+     150
+    ],
+    [
+     23,
+     157
+    ],
+    [
+     23,
+     172
+    ],
+    [
+     23,
+     185
+    ],
+    [
+     23,
+     187
+    ],
+    [
+     23,
+     190
+    ],
+    [
+     23,
+     192
+    ],
+    [
+     23,
+     214
+    ],
+    [
+     23,
+     215
+    ],
+    [
+     24,
+     26
+    ],
+    [
+     24,
+     35
+    ],
+    [
+     24,
+     37
+    ],
+    [
+     24,
+     39
+    ],
+    [
+     24,
+     41
+    ],
+    [
+     24,
+     48
+    ],
+    [
+     24,
+     68
+    ],
+    [
+     24,
+     87
+    ],
+    [
+     24,
+     107
+    ],
+    [
+     24,
+     120
+    ],
+    [
+     24,
+     146
+    ],
+    [
+     24,
+     162
+    ],
+    [
+     24,
+     175
+    ],
+    [
+     24,
+     192
+    ],
+    [
+     25,
+     26
+    ],
+    [
+     25,
+     28
+    ],
+    [
+     25,
+     29
+    ],
+    [
+     25,
+     30
+    ],
+    [
+     25,
+     31
+    ],
+    [
+     25,
+     34
+    ],
+    [
+     25,
+     40
+    ],
+    [
+     25,
+     41
+    ],
+    [
+     25,
+     46
+    ],
+    [
+     25,
+     50
+    ],
+    [
+     25,
+     55
+    ],
+    [
+     25,
+     59
+    ],
+    [
+     25,
+     60
+    ],
+    [
+     25,
+     62
+    ],
+    [
+     25,
+     66
+    ],
+    [
+     25,
+     68
+    ],
+    [
+     25,
+     74
+    ],
+    [
+     25,
+     78
+    ],
+    [
+     25,
+     82
+    ],
+    [
+     25,
+     83
+    ],
+    [
+     25,
+     86
+    ],
+    [
+     25,
+     90
+    ],
+    [
+     25,
+     97
+    ],
+    [
+     25,
+     102
+    ],
+    [
+     25,
+     133
+    ],
+    [
+     25,
+     144
+    ],
+    [
+     25,
+     149
+    ],
+    [
+     25,
+     150
+    ],
+    [
+     25,
+     154
+    ],
+    [
+     25,
+     201
+    ],
+    [
+     26,
+     31
+    ],
+    [
+     26,
+     66
+    ],
+    [
+     26,
+     69
+    ],
+    [
+     26,
+     101
+    ],
+    [
+     26,
+     131
+    ],
+    [
+     26,
+     135
+    ],
+    [
+     26,
+     173
+    ],
+    [
+     27,
+     30
+    ],
+    [
+     27,
+     33
+    ],
+    [
+     27,
+     36
+    ],
+    [
+     27,
+     46
+    ],
+    [
+     27,
+     47
+    ],
+    [
+     27,
+     53
+    ],
+    [
+     27,
+     54
+    ],
+    [
+     27,
+     56
+    ],
+    [
+     27,
+     63
+    ],
+    [
+     27,
+     64
+    ],
+    [
+     27,
+     71
+    ],
+    [
+     27,
+     111
+    ],
+    [
+     27,
+     141
+    ],
+    [
+     28,
+     30
+    ],
+    [
+     28,
+     31
+    ],
+    [
+     28,
+     40
+    ],
+    [
+     28,
+     41
+    ],
+    [
+     28,
+     50
+    ],
+    [
+     28,
+     57
+    ],
+    [
+     28,
+     59
+    ],
+    [
+     28,
+     69
+    ],
+    [
+     28,
+     86
+    ],
+    [
+     28,
+     90
+    ],
+    [
+     28,
+     91
+    ],
+    [
+     28,
+     97
+    ],
+    [
+     28,
+     98
+    ],
+    [
+     28,
+     101
+    ],
+    [
+     28,
+     102
+    ],
+    [
+     28,
+     110
+    ],
+    [
+     28,
+     114
+    ],
+    [
+     28,
+     116
+    ],
+    [
+     28,
+     118
+    ],
+    [
+     28,
+     122
+    ],
+    [
+     28,
+     123
+    ],
+    [
+     28,
+     133
+    ],
+    [
+     28,
+     150
+    ],
+    [
+     28,
+     153
+    ],
+    [
+     28,
+     159
+    ],
+    [
+     28,
+     173
+    ],
+    [
+     28,
+     189
+    ],
+    [
+     29,
+     34
+    ],
+    [
+     29,
+     37
+    ],
+    [
+     29,
+     48
+    ],
+    [
+     29,
+     60
+    ],
+    [
+     29,
+     86
+    ],
+    [
+     29,
+     101
+    ],
+    [
+     29,
+     137
+    ],
+    [
+     29,
+     144
+    ],
+    [
+     29,
+     150
+    ],
+    [
+     29,
+     154
+    ],
+    [
+     29,
+     157
+    ],
+    [
+     29,
+     166
+    ],
+    [
+     30,
+     31
+    ],
+    [
+     30,
+     35
+    ],
+    [
+     30,
+     36
+    ],
+    [
+     30,
+     40
+    ],
+    [
+     30,
+     46
+    ],
+    [
+     30,
+     47
+    ],
+    [
+     30,
+     50
+    ],
+    [
+     30,
+     53
+    ],
+    [
+     30,
+     54
+    ],
+    [
+     30,
+     59
+    ],
+    [
+     30,
+     62
+    ],
+    [
+     30,
+     63
+    ],
+    [
+     30,
+     64
+    ],
+    [
+     30,
+     66
+    ],
+    [
+     30,
+     69
+    ],
+    [
+     30,
+     71
+    ],
+    [
+     30,
+     77
+    ],
+    [
+     30,
+     80
+    ],
+    [
+     30,
+     82
+    ],
+    [
+     30,
+     89
+    ],
+    [
+     30,
+     97
+    ],
+    [
+     30,
+     123
+    ],
+    [
+     30,
+     133
+    ],
+    [
+     30,
+     148
+    ],
+    [
+     30,
+     149
+    ],
+    [
+     30,
+     152
+    ],
+    [
+     30,
+     159
+    ],
+    [
+     30,
+     185
+    ],
+    [
+     30,
+     192
+    ],
+    [
+     30,
+     195
+    ],
+    [
+     31,
+     34
+    ],
+    [
+     31,
+     40
+    ],
+    [
+     31,
+     46
+    ],
+    [
+     31,
+     54
+    ],
+    [
+     31,
+     57
+    ],
+    [
+     31,
+     59
+    ],
+    [
+     31,
+     66
+    ],
+    [
+     31,
+     69
+    ],
+    [
+     31,
+     101
+    ],
+    [
+     31,
+     109
+    ],
+    [
+     31,
+     120
+    ],
+    [
+     31,
+     122
+    ],
+    [
+     31,
+     126
+    ],
+    [
+     31,
+     131
+    ],
+    [
+     31,
+     138
+    ],
+    [
+     31,
+     173
+    ],
+    [
+     31,
+     185
+    ],
+    [
+     31,
+     192
+    ],
+    [
+     32,
+     52
+    ],
+    [
+     32,
+     58
+    ],
+    [
+     32,
+     65
+    ],
+    [
+     32,
+     92
+    ],
+    [
+     32,
+     99
+    ],
+    [
+     32,
+     111
+    ],
+    [
+     32,
+     115
+    ],
+    [
+     32,
+     143
+    ],
+    [
+     32,
+     145
+    ],
+    [
+     32,
+     169
+    ],
+    [
+     33,
+     36
+    ],
+    [
+     33,
+     38
+    ],
+    [
+     33,
+     127
+    ],
+    [
+     34,
+     41
+    ],
+    [
+     34,
+     50
+    ],
+    [
+     34,
+     54
+    ],
+    [
+     34,
+     60
+    ],
+    [
+     34,
+     61
+    ],
+    [
+     34,
+     70
+    ],
+    [
+     34,
+     74
+    ],
+    [
+     34,
+     86
+    ],
+    [
+     34,
+     97
+    ],
+    [
+     34,
+     102
+    ],
+    [
+     34,
+     106
+    ],
+    [
+     34,
+     116
+    ],
+    [
+     34,
+     132
+    ],
+    [
+     34,
+     160
+    ],
+    [
+     35,
+     37
+    ],
+    [
+     35,
+     39
+    ],
+    [
+     35,
+     42
+    ],
+    [
+     35,
+     48
+    ],
+    [
+     35,
+     68
+    ],
+    [
+     35,
+     76
+    ],
+    [
+     35,
+     87
+    ],
+    [
+     35,
+     96
+    ],
+    [
+     35,
+     107
+    ],
+    [
+     35,
+     124
+    ],
+    [
+     35,
+     130
+    ],
+    [
+     35,
+     137
+    ],
+    [
+     35,
+     162
+    ],
+    [
+     35,
+     166
+    ],
+    [
+     35,
+     175
+    ],
+    [
+     36,
+     38
+    ],
+    [
+     36,
+     46
+    ],
+    [
+     36,
+     47
+    ],
+    [
+     36,
+     53
+    ],
+    [
+     36,
+     54
+    ],
+    [
+     36,
+     63
+    ],
+    [
+     36,
+     64
+    ],
+    [
+     36,
+     71
+    ],
+    [
+     36,
+     141
+    ],
+    [
+     37,
+     49
+    ],
+    [
+     37,
+     57
+    ],
+    [
+     37,
+     59
+    ],
+    [
+     37,
+     81
+    ],
+    [
+     37,
+     85
+    ],
+    [
+     37,
+     101
+    ],
+    [
+     37,
+     104
+    ],
+    [
+     37,
+     130
+    ],
+    [
+     37,
+     137
+    ],
+    [
+     37,
+     157
+    ],
+    [
+     37,
+     166
+    ],
+    [
+     39,
+     41
+    ],
+    [
+     39,
+     48
+    ],
+    [
+     39,
+     60
+    ],
+    [
+     39,
+     62
+    ],
+    [
+     39,
+     68
+    ],
+    [
+     39,
+     126
+    ],
+    [
+     39,
+     138
+    ],
+    [
+     39,
+     146
+    ],
+    [
+     39,
+     150
+    ],
+    [
+     39,
+     162
+    ],
+    [
+     39,
+     175
+    ],
+    [
+     40,
+     57
+    ],
+    [
+     40,
+     59
+    ],
+    [
+     40,
+     62
+    ],
+    [
+     40,
+     69
+    ],
+    [
+     40,
+     86
+    ],
+    [
+     40,
+     90
+    ],
+    [
+     40,
+     91
+    ],
+    [
+     40,
+     98
+    ],
+    [
+     40,
+     101
+    ],
+    [
+     40,
+     102
+    ],
+    [
+     40,
+     109
+    ],
+    [
+     40,
+     110
+    ],
+    [
+     40,
+     114
+    ],
+    [
+     40,
+     116
+    ],
+    [
+     40,
+     118
+    ],
+    [
+     40,
+     120
+    ],
+    [
+     40,
+     122
+    ],
+    [
+     40,
+     126
+    ],
+    [
+     40,
+     154
+    ],
+    [
+     40,
+     157
+    ],
+    [
+     40,
+     178
+    ],
+    [
+     40,
+     185
+    ],
+    [
+     40,
+     190
+    ],
+    [
+     40,
+     192
+    ],
+    [
+     40,
+     194
+    ],
+    [
+     40,
+     211
+    ],
+    [
+     41,
+     45
+    ],
+    [
+     41,
+     46
+    ],
+    [
+     41,
+     50
+    ],
+    [
+     41,
+     69
+    ],
+    [
+     41,
+     74
+    ],
+    [
+     41,
+     77
+    ],
+    [
+     41,
+     80
+    ],
+    [
+     41,
+     86
+    ],
+    [
+     41,
+     89
+    ],
+    [
+     41,
+     90
+    ],
+    [
+     41,
+     102
+    ],
+    [
+     41,
+     104
+    ],
+    [
+     41,
+     109
+    ],
+    [
+     41,
+     118
+    ],
+    [
+     41,
+     120
+    ],
+    [
+     41,
+     126
+    ],
+    [
+     41,
+     128
+    ],
+    [
+     41,
+     138
+    ],
+    [
+     41,
+     146
+    ],
+    [
+     41,
+     150
+    ],
+    [
+     41,
+     184
+    ],
+    [
+     42,
+     51
+    ],
+    [
+     42,
+     59
+    ],
+    [
+     42,
+     76
+    ],
+    [
+     42,
+     77
+    ],
+    [
+     42,
+     86
+    ],
+    [
+     42,
+     87
+    ],
+    [
+     42,
+     96
+    ],
+    [
+     42,
+     114
+    ],
+    [
+     42,
+     124
+    ],
+    [
+     42,
+     135
+    ],
+    [
+     42,
+     148
+    ],
+    [
+     42,
+     153
+    ],
+    [
+     42,
+     166
+    ],
+    [
+     42,
+     167
+    ],
+    [
+     42,
+     202
+    ],
+    [
+     43,
+     74
+    ],
+    [
+     43,
+     94
+    ],
+    [
+     43,
+     100
+    ],
+    [
+     46,
+     50
+    ],
+    [
+     46,
+     59
+    ],
+    [
+     46,
+     66
+    ],
+    [
+     46,
+     77
+    ],
+    [
+     46,
+     80
+    ],
+    [
+     46,
+     123
+    ],
+    [
+     46,
+     133
+    ],
+    [
+     46,
+     148
+    ],
+    [
+     46,
+     149
+    ],
+    [
+     47,
+     54
+    ],
+    [
+     47,
+     56
+    ],
+    [
+     47,
+     63
+    ],
+    [
+     47,
+     64
+    ],
+    [
+     47,
+     111
+    ],
+    [
+     48,
+     49
+    ],
+    [
+     48,
+     76
+    ],
+    [
+     48,
+     77
+    ],
+    [
+     48,
+     86
+    ],
+    [
+     48,
+     87
+    ],
+    [
+     48,
+     107
+    ],
+    [
+     48,
+     114
+    ],
+    [
+     48,
+     120
+    ],
+    [
+     48,
+     137
+    ],
+    [
+     48,
+     146
+    ],
+    [
+     48,
+     162
+    ],
+    [
+     48,
+     191
+    ],
+    [
+     49,
+     59
+    ],
+    [
+     49,
+     81
+    ],
+    [
+     49,
+     85
+    ],
+    [
+     49,
+     130
+    ],
+    [
+     49,
+     176
+    ],
+    [
+     49,
+     180
+    ],
+    [
+     50,
+     69
+    ],
+    [
+     50,
+     77
+    ],
+    [
+     50,
+     78
+    ],
+    [
+     50,
+     80
+    ],
+    [
+     50,
+     102
+    ],
+    [
+     51,
+     58
+    ],
+    [
+     51,
+     75
+    ],
+    [
+     51,
+     77
+    ],
+    [
+     51,
+     92
+    ],
+    [
+     51,
+     148
+    ],
+    [
+     51,
+     166
+    ],
+    [
+     51,
+     202
+    ],
+    [
+     52,
+     58
+    ],
+    [
+     52,
+     99
+    ],
+    [
+     52,
+     111
+    ],
+    [
+     52,
+     143
+    ],
+    [
+     52,
+     145
+    ],
+    [
+     53,
+     54
+    ],
+    [
+     53,
+     56
+    ],
+    [
+     53,
+     63
+    ],
+    [
+     53,
+     80
+    ],
+    [
+     53,
+     100
+    ],
+    [
+     53,
+     141
+    ],
+    [
+     54,
+     56
+    ],
+    [
+     54,
+     63
+    ],
+    [
+     54,
+     66
+    ],
+    [
+     54,
+     84
+    ],
+    [
+     54,
+     141
+    ],
+    [
+     55,
+     61
+    ],
+    [
+     55,
+     78
+    ],
+    [
+     55,
+     83
+    ],
+    [
+     55,
+     95
+    ],
+    [
+     56,
+     64
+    ],
+    [
+     56,
+     111
+    ],
+    [
+     56,
+     141
+    ],
+    [
+     57,
+     59
+    ],
+    [
+     57,
+     61
+    ],
+    [
+     57,
+     66
+    ],
+    [
+     57,
+     69
+    ],
+    [
+     57,
+     76
+    ],
+    [
+     57,
+     82
+    ],
+    [
+     57,
+     86
+    ],
+    [
+     57,
+     90
+    ],
+    [
+     57,
+     91
+    ],
+    [
+     57,
+     101
+    ],
+    [
+     57,
+     102
+    ],
+    [
+     57,
+     104
+    ],
+    [
+     57,
+     105
+    ],
+    [
+     57,
+     109
+    ],
+    [
+     57,
+     114
+    ],
+    [
+     57,
+     117
+    ],
+    [
+     57,
+     118
+    ],
+    [
+     57,
+     122
+    ],
+    [
+     57,
+     153
+    ],
+    [
+     57,
+     189
+    ],
+    [
+     58,
+     65
+    ],
+    [
+     58,
+     75
+    ],
+    [
+     58,
+     92
+    ],
+    [
+     58,
+     94
+    ],
+    [
+     58,
+     99
+    ],
+    [
+     58,
+     115
+    ],
+    [
+     58,
+     155
+    ],
+    [
+     58,
+     163
+    ],
+    [
+     58,
+     165
+    ],
+    [
+     58,
+     174
+    ],
+    [
+     59,
+     66
+    ],
+    [
+     59,
+     85
+    ],
+    [
+     59,
+     90
+    ],
+    [
+     59,
+     91
+    ],
+    [
+     59,
+     98
+    ],
+    [
+     59,
+     101
+    ],
+    [
+     59,
+     102
+    ],
+    [
+     59,
+     104
+    ],
+    [
+     59,
+     110
+    ],
+    [
+     59,
+     114
+    ],
+    [
+     59,
+     116
+    ],
+    [
+     59,
+     122
+    ],
+    [
+     59,
+     150
+    ],
+    [
+     59,
+     166
+    ],
+    [
+     60,
+     61
+    ],
+    [
+     60,
+     68
+    ],
+    [
+     60,
+     78
+    ],
+    [
+     60,
+     86
+    ],
+    [
+     60,
+     90
+    ],
+    [
+     60,
+     144
+    ],
+    [
+     61,
+     62
+    ],
+    [
+     61,
+     78
+    ],
+    [
+     61,
+     81
+    ],
+    [
+     61,
+     82
+    ],
+    [
+     61,
+     105
+    ],
+    [
+     61,
+     109
+    ],
+    [
+     62,
+     68
+    ],
+    [
+     62,
+     74
+    ],
+    [
+     62,
+     80
+    ],
+    [
+     62,
+     82
+    ],
+    [
+     62,
+     109
+    ],
+    [
+     62,
+     219
+    ],
+    [
+     63,
+     64
+    ],
+    [
+     63,
+     71
+    ],
+    [
+     63,
+     141
+    ],
+    [
+     64,
+     111
+    ],
+    [
+     65,
+     89
+    ],
+    [
+     65,
+     92
+    ],
+    [
+     65,
+     94
+    ],
+    [
+     65,
+     99
+    ],
+    [
+     65,
+     100
+    ],
+    [
+     65,
+     115
+    ],
+    [
+     65,
+     155
+    ],
+    [
+     65,
+     165
+    ],
+    [
+     65,
+     172
+    ],
+    [
+     65,
+     174
+    ],
+    [
+     66,
+     69
+    ],
+    [
+     66,
+     114
+    ],
+    [
+     66,
+     126
+    ],
+    [
+     66,
+     135
+    ],
+    [
+     66,
+     138
+    ],
+    [
+     66,
+     153
+    ],
+    [
+     66,
+     173
+    ],
+    [
+     68,
+     144
+    ],
+    [
+     68,
+     193
+    ],
+    [
+     69,
+     91
+    ],
+    [
+     69,
+     102
+    ],
+    [
+     69,
+     110
+    ],
+    [
+     69,
+     114
+    ],
+    [
+     69,
+     118
+    ],
+    [
+     69,
+     120
+    ],
+    [
+     69,
+     126
+    ],
+    [
+     69,
+     138
+    ],
+    [
+     69,
+     214
+    ],
+    [
+     70,
+     74
+    ],
+    [
+     70,
+     84
+    ],
+    [
+     70,
+     97
+    ],
+    [
+     70,
+     102
+    ],
+    [
+     70,
+     106
+    ],
+    [
+     70,
+     132
+    ],
+    [
+     72,
+     79
+    ],
+    [
+     74,
+     82
+    ],
+    [
+     74,
+     86
+    ],
+    [
+     74,
+     90
+    ],
+    [
+     74,
+     94
+    ],
+    [
+     74,
+     100
+    ],
+    [
+     74,
+     104
+    ],
+    [
+     74,
+     109
+    ],
+    [
+     74,
+     123
+    ],
+    [
+     74,
+     146
+    ],
+    [
+     74,
+     203
+    ],
+    [
+     74,
+     209
+    ],
+    [
+     75,
+     92
+    ],
+    [
+     76,
+     78
+    ],
+    [
+     76,
+     86
+    ],
+    [
+     76,
+     87
+    ],
+    [
+     76,
+     95
+    ],
+    [
+     76,
+     96
+    ],
+    [
+     76,
+     107
+    ],
+    [
+     76,
+     124
+    ],
+    [
+     76,
+     179
+    ],
+    [
+     76,
+     191
+    ],
+    [
+     77,
+     80
+    ],
+    [
+     77,
+     89
+    ],
+    [
+     77,
+     114
+    ],
+    [
+     77,
+     120
+    ],
+    [
+     77,
+     148
+    ],
+    [
+     77,
+     152
+    ],
+    [
+     77,
+     166
+    ],
+    [
+     77,
+     202
+    ],
+    [
+     78,
+     144
+    ],
+    [
+     80,
+     82
+    ],
+    [
+     80,
+     123
+    ],
+    [
+     80,
+     133
+    ],
+    [
+     80,
+     148
+    ],
+    [
+     80,
+     195
+    ],
+    [
+     81,
+     85
+    ],
+    [
+     81,
+     170
+    ],
+    [
+     83,
+     86
+    ],
+    [
+     83,
+     95
+    ],
+    [
+     83,
+     114
+    ],
+    [
+     83,
+     147
+    ],
+    [
+     83,
+     153
+    ],
+    [
+     85,
+     130
+    ],
+    [
+     85,
+     176
+    ],
+    [
+     85,
+     180
+    ],
+    [
+     86,
+     87
+    ],
+    [
+     86,
+     101
+    ],
+    [
+     86,
+     109
+    ],
+    [
+     86,
+     114
+    ],
+    [
+     86,
+     116
+    ],
+    [
+     86,
+     122
+    ],
+    [
+     86,
+     124
+    ],
+    [
+     86,
+     150
+    ],
+    [
+     86,
+     153
+    ],
+    [
+     86,
+     154
+    ],
+    [
+     86,
+     172
+    ],
+    [
+     87,
+     96
+    ],
+    [
+     87,
+     114
+    ],
+    [
+     87,
+     124
+    ],
+    [
+     87,
+     135
+    ],
+    [
+     87,
+     137
+    ],
+    [
+     87,
+     167
+    ],
+    [
+     87,
+     196
+    ],
+    [
+     88,
+     93
+    ],
+    [
+     88,
+     113
+    ],
+    [
+     89,
+     115
+    ],
+    [
+     90,
+     91
+    ],
+    [
+     90,
+     101
+    ],
+    [
+     90,
+     104
+    ],
+    [
+     90,
+     109
+    ],
+    [
+     90,
+     114
+    ],
+    [
+     90,
+     118
+    ],
+    [
+     90,
+     120
+    ],
+    [
+     90,
+     137
+    ],
+    [
+     90,
+     146
+    ],
+    [
+     91,
+     102
+    ],
+    [
+     91,
+     104
+    ],
+    [
+     91,
+     105
+    ],
+    [
+     91,
+     109
+    ],
+    [
+     91,
+     114
+    ],
+    [
+     91,
+     116
+    ],
+    [
+     91,
+     118
+    ],
+    [
+     92,
+     99
+    ],
+    [
+     92,
+     155
+    ],
+    [
+     92,
+     172
+    ],
+    [
+     93,
+     113
+    ],
+    [
+     94,
+     116
+    ],
+    [
+     94,
+     125
+    ],
+    [
+     95,
+     154
+    ],
+    [
+     96,
+     124
+    ],
+    [
+     97,
+     106
+    ],
+    [
+     97,
+     132
+    ],
+    [
+     99,
+     111
+    ],
+    [
+     99,
+     143
+    ],
+    [
+     99,
+     145
+    ],
+    [
+     99,
+     169
+    ],
+    [
+     100,
+     164
+    ],
+    [
+     101,
+     102
+    ],
+    [
+     101,
+     104
+    ],
+    [
+     101,
+     109
+    ],
+    [
+     101,
+     122
+    ],
+    [
+     101,
+     126
+    ],
+    [
+     101,
+     137
+    ],
+    [
+     101,
+     138
+    ],
+    [
+     101,
+     157
+    ],
+    [
+     101,
+     166
+    ],
+    [
+     101,
+     178
+    ],
+    [
+     102,
+     104
+    ],
+    [
+     102,
+     116
+    ],
+    [
+     104,
+     146
+    ],
+    [
+     105,
+     117
+    ],
+    [
+     106,
+     132
+    ],
+    [
+     106,
+     198
+    ],
+    [
+     107,
+     192
+    ],
+    [
+     109,
+     114
+    ],
+    [
+     109,
+     122
+    ],
+    [
+     109,
+     153
+    ],
+    [
+     109,
+     154
+    ],
+    [
+     110,
+     157
+    ],
+    [
+     110,
+     190
+    ],
+    [
+     111,
+     143
+    ],
+    [
+     111,
+     145
+    ],
+    [
+     114,
+     118
+    ],
+    [
+     114,
+     120
+    ],
+    [
+     114,
+     153
+    ],
+    [
+     114,
+     189
+    ],
+    [
+     115,
+     163
+    ],
+    [
+     115,
+     165
+    ],
+    [
+     115,
+     174
+    ],
+    [
+     116,
+     172
+    ],
+    [
+     116,
+     174
+    ],
+    [
+     118,
+     150
+    ],
+    [
+     118,
+     153
+    ],
+    [
+     118,
+     189
+    ],
+    [
+     120,
+     126
+    ],
+    [
+     120,
+     178
+    ],
+    [
+     120,
+     214
+    ],
+    [
+     121,
+     147
+    ],
+    [
+     123,
+     133
+    ],
+    [
+     123,
+     159
+    ],
+    [
+     123,
+     195
+    ],
+    [
+     126,
+     138
+    ],
+    [
+     126,
+     150
+    ],
+    [
+     126,
+     178
+    ],
+    [
+     126,
+     187
+    ],
+    [
+     128,
+     184
+    ],
+    [
+     130,
+     166
+    ],
+    [
+     133,
+     149
+    ],
+    [
+     133,
+     152
+    ],
+    [
+     133,
+     159
+    ],
+    [
+     135,
+     167
+    ],
+    [
+     137,
+     157
+    ],
+    [
+     137,
+     166
+    ],
+    [
+     138,
+     150
+    ],
+    [
+     138,
+     178
+    ],
+    [
+     143,
+     145
+    ],
+    [
+     146,
+     179
+    ],
+    [
+     148,
+     166
+    ],
+    [
+     148,
+     202
+    ],
+    [
+     149,
+     152
+    ],
+    [
+     149,
+     177
+    ],
+    [
+     150,
+     154
+    ],
+    [
+     152,
+     159
+    ],
+    [
+     152,
+     177
+    ],
+    [
+     153,
+     189
+    ],
+    [
+     155,
+     163
+    ],
+    [
+     155,
+     212
+    ],
+    [
+     157,
+     166
+    ],
+    [
+     157,
+     190
+    ],
+    [
+     163,
+     165
+    ],
+    [
+     166,
+     202
+    ],
+    [
+     185,
+     192
+    ],
+    [
+     194,
+     211
+    ],
+    [
+     203,
+     209
+    ]
+   ]
+  }
+ }
+}

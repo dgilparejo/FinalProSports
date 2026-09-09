@@ -1,0 +1,47 @@
+{
+ "tag": "dataset-v3",
+ "status": "ACTIVE — this is the dataset the application loads and the one that travels in the repository",
+ "built_utc": "2026-08-28T21:17:05+00:00",
+ "activated": "2026-08-29",
+ "code_commit": "429e3f8",
+ "built_by": "build_all.py",
+ "supersedes": "dataset-v2 (_dataset), frozen and untouched as the historical reference of everything published before 2026-08-29",
+ "ships_as": "seed/dataset — 19 files copied by a whitelist (pipeline/src/data_tools/export_seed_dataset.py); _private/ never leaves this directory",
+ "sources": {
+  "root": "PREPARACIONES",
+  "input_units": 2889,
+  "clients": 301,
+  "conversion_failures": 9
+ },
+ "contents": {
+  "_doc": "Two stages, two sets of figures, and they are NOT interchangeable: `extraction` is what build_all.py read out of the professional's documents, `normalized` is what the E1 chain (parse_items, build_food_catalog, normalize_diets) leaves behind and what the application actually loads. Quoting an extraction figure next to a normalized one is what makes the counts look as if 92 diets went missing.",
+  "extraction": {
+   "clients": 301,
+   "diets": 1295,
+   "meals": 9511,
+   "items": 40025,
+   "notes": 3149,
+   "body_measurements": 1338,
+   "lab_reports": 254,
+   "training_plans": 763
+  },
+  "normalized": {
+   "_doc": "Measured on this directory on 2026-09-08. These are the figures the loaded application reports.",
+   "clients": 301,
+   "diets": 1203,
+   "meals": 8837,
+   "diet_items": 49906,
+   "notes": 4836,
+   "foods": 228,
+   "body_measurements": 1338,
+   "body_measurements_followup": 5,
+   "lab_results": 254
+  }
+ },
+ "resolved_defects": [
+  "build_food_catalog promoted ~10 instruction strings to canonical foods once the AGUA slot was read. CORRECTED before activation, in the code (build_food_catalog.looks_like_a_food_name), and this directory is built with the fix: the catalogue holds 228 canonical foods and none has the shape of a sentence (the check in V3_ACTIVATION.md section 0 prints an empty list). Rebuilding the v2 catalogue with and without the guard yields the same file, so the fix does not touch what was published from dataset-v2. The ten canonical foods the v3 adds over the v2 are listed one by one in docs/data/V2_VS_V3.md section 5."
+ ],
+ "known_defects": "none open",
+ "activation": "V3_ACTIVATION.md",
+ "comparison": "V2_VS_V3.md"
+}

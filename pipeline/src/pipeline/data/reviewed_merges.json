@@ -1,0 +1,2519 @@
+{
+ "_doc": "Merges across different head nouns present in food_synonyms.json, reviewed by the data owner (Task A). compound_names_allowed: multi-word food NAMES whose tokens are foods of different families but denote ONE food.",
+ "merges": [
+  {
+   "canonical": "carne roja",
+   "key": "potro",
+   "family": "carne"
+  },
+  {
+   "canonical": "ternera",
+   "key": "entrecot",
+   "family": "carne"
+  },
+  {
+   "canonical": "ternera",
+   "key": "buey",
+   "family": "carne"
+  },
+  {
+   "canonical": "ternera",
+   "key": "vaca",
+   "family": "carne"
+  },
+  {
+   "canonical": "ternera",
+   "key": "chuleton",
+   "family": "carne"
+  },
+  {
+   "canonical": "cerdo",
+   "key": "lomo",
+   "family": "carne"
+  },
+  {
+   "canonical": "cerdo",
+   "key": "cinta lomo",
+   "family": "carne"
+  },
+  {
+   "canonical": "cerdo",
+   "key": "lomo",
+   "family": "carne"
+  },
+  {
+   "canonical": "cerdo",
+   "key": "secreto iberico",
+   "family": "carne"
+  },
+  {
+   "canonical": "cerdo",
+   "key": "pluma iberica",
+   "family": "carne"
+  },
+  {
+   "canonical": "cerdo",
+   "key": "costilla",
+   "family": "carne"
+  },
+  {
+   "canonical": "cerdo",
+   "key": "lomo iberico",
+   "family": "carne"
+  },
+  {
+   "canonical": "cerdo",
+   "key": "presa iberica",
+   "family": "carne"
+  },
+  {
+   "canonical": "pollo",
+   "key": "contra muslo",
+   "family": "ave"
+  },
+  {
+   "canonical": "pollo",
+   "key": "contramuslo",
+   "family": "ave"
+  },
+  {
+   "canonical": "pollo",
+   "key": "muslo",
+   "family": "ave"
+  },
+  {
+   "canonical": "pavo",
+   "key": "pa vo",
+   "family": "ave"
+  },
+  {
+   "canonical": "jamón serrano",
+   "key": "paleta",
+   "family": "embutido"
+  },
+  {
+   "canonical": "jamón cocido",
+   "key": "york",
+   "family": "embutido"
+  },
+  {
+   "canonical": "jamón cocido",
+   "key": "fiambre",
+   "family": "embutido"
+  },
+  {
+   "canonical": "jamón cocido",
+   "key": "fiambre pavo",
+   "family": "embutido"
+  },
+  {
+   "canonical": "jamón cocido",
+   "key": "fiambre pollo",
+   "family": "embutido"
+  },
+  {
+   "canonical": "jamón cocido",
+   "key": "lacon",
+   "family": "embutido"
+  },
+  {
+   "canonical": "embutido",
+   "key": "chorizo",
+   "family": "embutido"
+  },
+  {
+   "canonical": "embutido",
+   "key": "salchichon",
+   "family": "embutido"
+  },
+  {
+   "canonical": "embutido",
+   "key": "fuet",
+   "family": "embutido"
+  },
+  {
+   "canonical": "embutido",
+   "key": "mortadela",
+   "family": "embutido"
+  },
+  {
+   "canonical": "embutido",
+   "key": "salchicha",
+   "family": "embutido"
+  },
+  {
+   "canonical": "embutido",
+   "key": "salchicha",
+   "family": "embutido"
+  },
+  {
+   "canonical": "embutido",
+   "key": "salchicha pavo",
+   "family": "embutido"
+  },
+  {
+   "canonical": "embutido",
+   "key": "salchicha pollo",
+   "family": "embutido"
+  },
+  {
+   "canonical": "embutido",
+   "key": "bacon",
+   "family": "embutido"
+  },
+  {
+   "canonical": "embutido",
+   "key": "beicon",
+   "family": "embutido"
+  },
+  {
+   "canonical": "embutido",
+   "key": "panceta",
+   "family": "embutido"
+  },
+  {
+   "canonical": "embutido",
+   "key": "cecina",
+   "family": "embutido"
+  },
+  {
+   "canonical": "pescado blanco",
+   "key": "blanco",
+   "family": "pescado_blanco"
+  },
+  {
+   "canonical": "pescado blanco",
+   "key": "blanco",
+   "family": "pescado_blanco"
+  },
+  {
+   "canonical": "pescado blanco",
+   "key": "lenguado",
+   "family": "pescado_blanco"
+  },
+  {
+   "canonical": "pescado blanco",
+   "key": "lubina",
+   "family": "pescado_blanco"
+  },
+  {
+   "canonical": "pescado blanco",
+   "key": "dorada",
+   "family": "pescado_blanco"
+  },
+  {
+   "canonical": "pescado blanco",
+   "key": "rape",
+   "family": "pescado_blanco"
+  },
+  {
+   "canonical": "pescado blanco",
+   "key": "rodaballo",
+   "family": "pescado_blanco"
+  },
+  {
+   "canonical": "pescado blanco",
+   "key": "gallo",
+   "family": "pescado_blanco"
+  },
+  {
+   "canonical": "pescado blanco",
+   "key": "pescadilla",
+   "family": "pescado_blanco"
+  },
+  {
+   "canonical": "pescado blanco",
+   "key": "mero",
+   "family": "pescado_blanco"
+  },
+  {
+   "canonical": "pescado blanco",
+   "key": "corvina",
+   "family": "pescado_blanco"
+  },
+  {
+   "canonical": "pescado blanco",
+   "key": "tilapia",
+   "family": "pescado_blanco"
+  },
+  {
+   "canonical": "pescado blanco",
+   "key": "abadejo",
+   "family": "pescado_blanco"
+  },
+  {
+   "canonical": "pescado blanco",
+   "key": "halibut",
+   "family": "pescado_blanco"
+  },
+  {
+   "canonical": "pescado blanco",
+   "key": "besugo",
+   "family": "pescado_blanco"
+  },
+  {
+   "canonical": "pescado blanco",
+   "key": "perca",
+   "family": "pescado_blanco"
+  },
+  {
+   "canonical": "pescado blanco",
+   "key": "rosada",
+   "family": "pescado_blanco"
+  },
+  {
+   "canonical": "merluza",
+   "key": "merluja",
+   "family": "pescado_blanco"
+  },
+  {
+   "canonical": "pescado azul",
+   "key": "azul",
+   "family": "pescado_azul"
+  },
+  {
+   "canonical": "pescado azul",
+   "key": "azul",
+   "family": "pescado_azul"
+  },
+  {
+   "canonical": "pescado azul",
+   "key": "trucha",
+   "family": "pescado_azul"
+  },
+  {
+   "canonical": "pescado azul",
+   "key": "jurel",
+   "family": "pescado_azul"
+  },
+  {
+   "canonical": "pescado azul",
+   "key": "emperador",
+   "family": "pescado_azul"
+  },
+  {
+   "canonical": "pescado azul",
+   "key": "pez espada",
+   "family": "pescado_azul"
+  },
+  {
+   "canonical": "pescado azul",
+   "key": "boqueron",
+   "family": "pescado_azul"
+  },
+  {
+   "canonical": "pescado azul",
+   "key": "boqueron",
+   "family": "pescado_azul"
+  },
+  {
+   "canonical": "pescado azul",
+   "key": "anchoa",
+   "family": "pescado_azul"
+  },
+  {
+   "canonical": "pescado azul",
+   "key": "anchoa",
+   "family": "pescado_azul"
+  },
+  {
+   "canonical": "pescado azul",
+   "key": "arenque",
+   "family": "pescado_azul"
+  },
+  {
+   "canonical": "sardinas",
+   "key": "sardinilla",
+   "family": "pescado_azul"
+  },
+  {
+   "canonical": "sardinas",
+   "key": "sardinilla",
+   "family": "pescado_azul"
+  },
+  {
+   "canonical": "marisco",
+   "key": "gamba",
+   "family": "marisco"
+  },
+  {
+   "canonical": "marisco",
+   "key": "gamba",
+   "family": "marisco"
+  },
+  {
+   "canonical": "marisco",
+   "key": "langostino",
+   "family": "marisco"
+  },
+  {
+   "canonical": "marisco",
+   "key": "langostino",
+   "family": "marisco"
+  },
+  {
+   "canonical": "marisco",
+   "key": "mejillon",
+   "family": "marisco"
+  },
+  {
+   "canonical": "marisco",
+   "key": "mejillon",
+   "family": "marisco"
+  },
+  {
+   "canonical": "marisco",
+   "key": "almeja",
+   "family": "marisco"
+  },
+  {
+   "canonical": "marisco",
+   "key": "almeja",
+   "family": "marisco"
+  },
+  {
+   "canonical": "marisco",
+   "key": "berberecho",
+   "family": "marisco"
+  },
+  {
+   "canonical": "marisco",
+   "key": "berberecho",
+   "family": "marisco"
+  },
+  {
+   "canonical": "marisco",
+   "key": "calamar",
+   "family": "marisco"
+  },
+  {
+   "canonical": "marisco",
+   "key": "calamar",
+   "family": "marisco"
+  },
+  {
+   "canonical": "marisco",
+   "key": "sepia",
+   "family": "marisco"
+  },
+  {
+   "canonical": "marisco",
+   "key": "pulpo",
+   "family": "marisco"
+  },
+  {
+   "canonical": "marisco",
+   "key": "cigala",
+   "family": "marisco"
+  },
+  {
+   "canonical": "marisco",
+   "key": "cigala",
+   "family": "marisco"
+  },
+  {
+   "canonical": "marisco",
+   "key": "navaja",
+   "family": "marisco"
+  },
+  {
+   "canonical": "marisco",
+   "key": "navaja",
+   "family": "marisco"
+  },
+  {
+   "canonical": "marisco",
+   "key": "vieira",
+   "family": "marisco"
+  },
+  {
+   "canonical": "marisco",
+   "key": "zamburina",
+   "family": "marisco"
+  },
+  {
+   "canonical": "marisco",
+   "key": "gambon",
+   "family": "marisco"
+  },
+  {
+   "canonical": "marisco",
+   "key": "chipiron",
+   "family": "marisco"
+  },
+  {
+   "canonical": "marisco",
+   "key": "surimi",
+   "family": "marisco"
+  },
+  {
+   "canonical": "marisco",
+   "key": "palito cangrejo",
+   "family": "marisco"
+  },
+  {
+   "canonical": "clara de huevo",
+   "key": "clarta",
+   "family": "huevo"
+  },
+  {
+   "canonical": "yogur",
+   "key": "yogurt",
+   "family": "lacteo"
+  },
+  {
+   "canonical": "yogur",
+   "key": "yogurt griego",
+   "family": "lacteo"
+  },
+  {
+   "canonical": "yogur",
+   "key": "yogurt proteina",
+   "family": "lacteo"
+  },
+  {
+   "canonical": "yogur",
+   "key": "yogurt_batido",
+   "family": "lacteo"
+  },
+  {
+   "canonical": "yogur",
+   "key": "yogurt leche",
+   "family": "lacteo"
+  },
+  {
+   "canonical": "yogur sin lactosa",
+   "key": "yogurt sin_lactosa",
+   "family": "lacteo"
+  },
+  {
+   "canonical": "queso fresco",
+   "key": "quark",
+   "family": "lacteo"
+  },
+  {
+   "canonical": "queso fresco",
+   "key": "skyr",
+   "family": "lacteo"
+  },
+  {
+   "canonical": "queso fresco",
+   "key": "cottage",
+   "family": "lacteo"
+  },
+  {
+   "canonical": "requesón",
+   "key": "requesson",
+   "family": "lacteo"
+  },
+  {
+   "canonical": "queso",
+   "key": "mozzarella",
+   "family": "lacteo"
+  },
+  {
+   "canonical": "queso",
+   "key": "parmesano",
+   "family": "lacteo"
+  },
+  {
+   "canonical": "queso",
+   "key": "feta",
+   "family": "lacteo"
+  },
+  {
+   "canonical": "mantequilla",
+   "key": "ghee",
+   "family": "lacteo"
+  },
+  {
+   "canonical": "leche vegetal",
+   "key": "bebida avena",
+   "family": "bebida_vegetal"
+  },
+  {
+   "canonical": "leche vegetal",
+   "key": "bebida vegetal",
+   "family": "bebida_vegetal"
+  },
+  {
+   "canonical": "leche vegetal",
+   "key": "bebida arroz",
+   "family": "bebida_vegetal"
+  },
+  {
+   "canonical": "bebida de almendras",
+   "key": "leche almendra",
+   "family": "bebida_vegetal"
+  },
+  {
+   "canonical": "bebida de almendras",
+   "key": "leche almendra",
+   "family": "bebida_vegetal"
+  },
+  {
+   "canonical": "bebida de soja",
+   "key": "leche soja",
+   "family": "bebida_vegetal"
+  },
+  {
+   "canonical": "bebida de soja",
+   "key": "yogur soja",
+   "family": "bebida_vegetal"
+  },
+  {
+   "canonical": "bebida de soja",
+   "key": "yogurt soja",
+   "family": "bebida_vegetal"
+  },
+  {
+   "canonical": "bebida de soja",
+   "key": "soja",
+   "family": "bebida_vegetal"
+  },
+  {
+   "canonical": "leche de coco",
+   "key": "bebida coco",
+   "family": "bebida_vegetal"
+  },
+  {
+   "canonical": "yogur vegetal",
+   "key": "yogurt vegetal",
+   "family": "bebida_vegetal"
+  },
+  {
+   "canonical": "yogur vegetal",
+   "key": "yogurt coco",
+   "family": "bebida_vegetal"
+  },
+  {
+   "canonical": "cereales integrales",
+   "key": "granola",
+   "family": "cereal"
+  },
+  {
+   "canonical": "cereales integrales",
+   "key": "cornflakes",
+   "family": "cereal"
+  },
+  {
+   "canonical": "cereales integrales",
+   "key": "copo maiz",
+   "family": "cereal"
+  },
+  {
+   "canonical": "cereales integrales",
+   "key": "corn flak",
+   "family": "cereal"
+  },
+  {
+   "canonical": "cereales integrales",
+   "key": "all bran",
+   "family": "cereal"
+  },
+  {
+   "canonical": "cereales integrales",
+   "key": "salvado trigo",
+   "family": "cereal"
+  },
+  {
+   "canonical": "cereales integrales",
+   "key": "salvado",
+   "family": "cereal"
+  },
+  {
+   "canonical": "cereales integrales",
+   "key": "espelta",
+   "family": "cereal"
+  },
+  {
+   "canonical": "cereales integrales",
+   "key": "cuscu",
+   "family": "cereal"
+  },
+  {
+   "canonical": "cereales integrales",
+   "key": "cus cus",
+   "family": "cereal"
+  },
+  {
+   "canonical": "cereales integrales",
+   "key": "bulgur",
+   "family": "cereal"
+  },
+  {
+   "canonical": "quinoa",
+   "key": "quinua",
+   "family": "cereal"
+  },
+  {
+   "canonical": "tortitas de avena",
+   "key": "pancake",
+   "family": "cereal"
+  },
+  {
+   "canonical": "tortitas de avena",
+   "key": "pancak",
+   "family": "cereal"
+  },
+  {
+   "canonical": "tortitas de avena",
+   "key": "crepe",
+   "family": "cereal"
+  },
+  {
+   "canonical": "tortitas de avena",
+   "key": "crep",
+   "family": "cereal"
+  },
+  {
+   "canonical": "tortitas de avena",
+   "key": "gofre",
+   "family": "cereal"
+  },
+  {
+   "canonical": "tortitas de avena",
+   "key": "gofr",
+   "family": "cereal"
+  },
+  {
+   "canonical": "tortitas de avena",
+   "key": "creps",
+   "family": "cereal"
+  },
+  {
+   "canonical": "trigo sarraceno",
+   "key": "alforfon",
+   "family": "cereal"
+  },
+  {
+   "canonical": "pan integral",
+   "key": "integral",
+   "family": "pan"
+  },
+  {
+   "canonical": "pan integral",
+   "key": "biscote",
+   "family": "pan"
+  },
+  {
+   "canonical": "pan integral",
+   "key": "biscot",
+   "family": "pan"
+  },
+  {
+   "canonical": "pan integral",
+   "key": "biscote integral",
+   "family": "pan"
+  },
+  {
+   "canonical": "pan integral",
+   "key": "tostada",
+   "family": "pan"
+  },
+  {
+   "canonical": "pan integral",
+   "key": "tostada",
+   "family": "pan"
+  },
+  {
+   "canonical": "pan integral",
+   "key": "tostada integral",
+   "family": "pan"
+  },
+  {
+   "canonical": "sándwich",
+   "key": "bocadillo",
+   "family": "pan"
+  },
+  {
+   "canonical": "sándwich",
+   "key": "bocata",
+   "family": "pan"
+  },
+  {
+   "canonical": "sándwich",
+   "key": "wrap",
+   "family": "pan"
+  },
+  {
+   "canonical": "sándwich",
+   "key": "wraps",
+   "family": "pan"
+  },
+  {
+   "canonical": "sándwich",
+   "key": "montadito",
+   "family": "pan"
+  },
+  {
+   "canonical": "pan blanco",
+   "key": "baguette",
+   "family": "pan"
+  },
+  {
+   "canonical": "pasta integral",
+   "key": "macarron",
+   "family": "pasta"
+  },
+  {
+   "canonical": "pasta integral",
+   "key": "macarron",
+   "family": "pasta"
+  },
+  {
+   "canonical": "pasta integral",
+   "key": "espagueti",
+   "family": "pasta"
+  },
+  {
+   "canonical": "pasta integral",
+   "key": "espagueti",
+   "family": "pasta"
+  },
+  {
+   "canonical": "pasta integral",
+   "key": "fideo",
+   "family": "pasta"
+  },
+  {
+   "canonical": "pasta integral",
+   "key": "fideo",
+   "family": "pasta"
+  },
+  {
+   "canonical": "pasta integral",
+   "key": "tallarin",
+   "family": "pasta"
+  },
+  {
+   "canonical": "pasta integral",
+   "key": "macarron blanco",
+   "family": "pasta"
+  },
+  {
+   "canonical": "pasta integral",
+   "key": "noodl",
+   "family": "pasta"
+  },
+  {
+   "canonical": "patata",
+   "key": "papa",
+   "family": "tuberculo"
+  },
+  {
+   "canonical": "boniato",
+   "key": "batata",
+   "family": "tuberculo"
+  },
+  {
+   "canonical": "boniato",
+   "key": "camote",
+   "family": "tuberculo"
+  },
+  {
+   "canonical": "yuca",
+   "key": "mandioca",
+   "family": "tuberculo"
+  },
+  {
+   "canonical": "yuca",
+   "key": "tapioca",
+   "family": "tuberculo"
+  },
+  {
+   "canonical": "garbanzos",
+   "key": "hummu",
+   "family": "legumbre"
+  },
+  {
+   "canonical": "alubias",
+   "key": "judia blanca",
+   "family": "legumbre"
+  },
+  {
+   "canonical": "alubias",
+   "key": "judia pinta",
+   "family": "legumbre"
+  },
+  {
+   "canonical": "alubias",
+   "key": "frijol",
+   "family": "legumbre"
+  },
+  {
+   "canonical": "alubias",
+   "key": "habichuela",
+   "family": "legumbre"
+  },
+  {
+   "canonical": "edamame",
+   "key": "haba soja",
+   "family": "legumbre"
+  },
+  {
+   "canonical": "soja texturizada",
+   "key": "heura",
+   "family": "legumbre"
+  },
+  {
+   "canonical": "soja texturizada",
+   "key": "tempeh",
+   "family": "legumbre"
+  },
+  {
+   "canonical": "verduras",
+   "key": "vegetal",
+   "family": "verdura"
+  },
+  {
+   "canonical": "verduras",
+   "key": "vegetal",
+   "family": "verdura"
+  },
+  {
+   "canonical": "verduras",
+   "key": "hortaliza",
+   "family": "verdura"
+  },
+  {
+   "canonical": "verduras",
+   "key": "hortaliza",
+   "family": "verdura"
+  },
+  {
+   "canonical": "verduras",
+   "key": "menestra",
+   "family": "verdura"
+  },
+  {
+   "canonical": "verduras",
+   "key": "pisto",
+   "family": "verdura"
+  },
+  {
+   "canonical": "tomate",
+   "key": "tomat",
+   "family": "verdura"
+  },
+  {
+   "canonical": "tomate",
+   "key": "tomat cherry",
+   "family": "verdura"
+  },
+  {
+   "canonical": "lechuga",
+   "key": "cogollo",
+   "family": "verdura"
+  },
+  {
+   "canonical": "lechuga",
+   "key": "cogollo",
+   "family": "verdura"
+  },
+  {
+   "canonical": "lechuga",
+   "key": "canonigo",
+   "family": "verdura"
+  },
+  {
+   "canonical": "lechuga",
+   "key": "canonigo",
+   "family": "verdura"
+  },
+  {
+   "canonical": "lechuga",
+   "key": "rucula",
+   "family": "verdura"
+  },
+  {
+   "canonical": "lechuga",
+   "key": "brote",
+   "family": "verdura"
+  },
+  {
+   "canonical": "lechuga",
+   "key": "brote tierno",
+   "family": "verdura"
+  },
+  {
+   "canonical": "lechuga",
+   "key": "escarola",
+   "family": "verdura"
+  },
+  {
+   "canonical": "lechuga",
+   "key": "endibia",
+   "family": "verdura"
+  },
+  {
+   "canonical": "lechuga",
+   "key": "endibia",
+   "family": "verdura"
+  },
+  {
+   "canonical": "brócoli",
+   "key": "brecol",
+   "family": "verdura"
+  },
+  {
+   "canonical": "cebolla",
+   "key": "cebolleta",
+   "family": "verdura"
+  },
+  {
+   "canonical": "champiñones",
+   "key": "seta",
+   "family": "verdura"
+  },
+  {
+   "canonical": "champiñones",
+   "key": "seta",
+   "family": "verdura"
+  },
+  {
+   "canonical": "champiñones",
+   "key": "hongo",
+   "family": "verdura"
+  },
+  {
+   "canonical": "champiñones",
+   "key": "shiitake",
+   "family": "verdura"
+  },
+  {
+   "canonical": "espárragos",
+   "key": "triguero",
+   "family": "verdura"
+  },
+  {
+   "canonical": "judías verdes",
+   "key": "judia",
+   "family": "verdura"
+  },
+  {
+   "canonical": "judías verdes",
+   "key": "judia",
+   "family": "verdura"
+  },
+  {
+   "canonical": "judías verdes",
+   "key": "judia plana",
+   "family": "verdura"
+  },
+  {
+   "canonical": "col",
+   "key": "repollo",
+   "family": "verdura"
+  },
+  {
+   "canonical": "col",
+   "key": "lombarda",
+   "family": "verdura"
+  },
+  {
+   "canonical": "col",
+   "key": "kale",
+   "family": "verdura"
+  },
+  {
+   "canonical": "puré de verduras",
+   "key": "crema verdura",
+   "family": "verdura"
+  },
+  {
+   "canonical": "puré de verduras",
+   "key": "crema verdura",
+   "family": "verdura"
+  },
+  {
+   "canonical": "puré de verduras",
+   "key": "crema calabacin",
+   "family": "verdura"
+  },
+  {
+   "canonical": "puré de verduras",
+   "key": "crema calabaza",
+   "family": "verdura"
+  },
+  {
+   "canonical": "puré de verduras",
+   "key": "gazpacho",
+   "family": "verdura"
+  },
+  {
+   "canonical": "puré de verduras",
+   "key": "salmorejo",
+   "family": "verdura"
+  },
+  {
+   "canonical": "puré de verduras",
+   "key": "puree",
+   "family": "verdura"
+  },
+  {
+   "canonical": "caldo",
+   "key": "consome",
+   "family": "verdura"
+  },
+  {
+   "canonical": "caldo",
+   "key": "sopa",
+   "family": "verdura"
+  },
+  {
+   "canonical": "caldo",
+   "key": "sopa verdura",
+   "family": "verdura"
+  },
+  {
+   "canonical": "caldo",
+   "key": "sopa calabaza",
+   "family": "verdura"
+  },
+  {
+   "canonical": "caldo",
+   "key": "sopa verdura",
+   "family": "verdura"
+  },
+  {
+   "canonical": "caldo",
+   "key": "sopa miso",
+   "family": "verdura"
+  },
+  {
+   "canonical": "caldo",
+   "key": "sopa cebolla",
+   "family": "verdura"
+  },
+  {
+   "canonical": "pepinillos",
+   "key": "encurtido",
+   "family": "verdura"
+  },
+  {
+   "canonical": "pepinillos",
+   "key": "encurtido",
+   "family": "verdura"
+  },
+  {
+   "canonical": "algas",
+   "key": "chlorella",
+   "family": "verdura"
+  },
+  {
+   "canonical": "algas",
+   "key": "espirulina chlorella",
+   "family": "verdura"
+  },
+  {
+   "canonical": "algas",
+   "key": "nori",
+   "family": "verdura"
+  },
+  {
+   "canonical": "algas",
+   "key": "wakame",
+   "family": "verdura"
+  },
+  {
+   "canonical": "plátano",
+   "key": "banana",
+   "family": "fruta"
+  },
+  {
+   "canonical": "plátano",
+   "key": "banana",
+   "family": "fruta"
+  },
+  {
+   "canonical": "fresas",
+   "key": "freson",
+   "family": "fruta"
+  },
+  {
+   "canonical": "fresas",
+   "key": "freson",
+   "family": "fruta"
+  },
+  {
+   "canonical": "frutos rojos",
+   "key": "frambuesa",
+   "family": "fruta"
+  },
+  {
+   "canonical": "frutos rojos",
+   "key": "frambuesa",
+   "family": "fruta"
+  },
+  {
+   "canonical": "frutos rojos",
+   "key": "mora",
+   "family": "fruta"
+  },
+  {
+   "canonical": "frutos rojos",
+   "key": "mora",
+   "family": "fruta"
+  },
+  {
+   "canonical": "frutos rojos",
+   "key": "fruta roja",
+   "family": "fruta"
+  },
+  {
+   "canonical": "frutos rojos",
+   "key": "fruta roja",
+   "family": "fruta"
+  },
+  {
+   "canonical": "frutos rojos",
+   "key": "baya",
+   "family": "fruta"
+  },
+  {
+   "canonical": "melocotón",
+   "key": "nectarina",
+   "family": "fruta"
+  },
+  {
+   "canonical": "melocotón",
+   "key": "paraguayo",
+   "family": "fruta"
+  },
+  {
+   "canonical": "cerezas",
+   "key": "picota",
+   "family": "fruta"
+  },
+  {
+   "canonical": "cerezas",
+   "key": "picota",
+   "family": "fruta"
+  },
+  {
+   "canonical": "limón",
+   "key": "lima",
+   "family": "fruta"
+  },
+  {
+   "canonical": "pasas",
+   "key": "orejon",
+   "family": "fruta"
+  },
+  {
+   "canonical": "pasas",
+   "key": "higo",
+   "family": "fruta"
+  },
+  {
+   "canonical": "frutos secos",
+   "key": "fruto_seco",
+   "family": "fruto_seco"
+  },
+  {
+   "canonical": "almendras",
+   "key": "almendras_tostadas",
+   "family": "fruto_seco"
+  },
+  {
+   "canonical": "cacahuetes",
+   "key": "cachuete",
+   "family": "fruto_seco"
+  },
+  {
+   "canonical": "cacahuetes",
+   "key": "mani",
+   "family": "fruto_seco"
+  },
+  {
+   "canonical": "crema de cacahuete",
+   "key": "manteca cacahuete",
+   "family": "fruto_seco"
+  },
+  {
+   "canonical": "crema de cacahuete",
+   "key": "mantequilla cacahuete",
+   "family": "fruto_seco"
+  },
+  {
+   "canonical": "nuez de macadamia",
+   "key": "macadamia",
+   "family": "fruto_seco"
+  },
+  {
+   "canonical": "semillas",
+   "key": "lino",
+   "family": "semilla"
+  },
+  {
+   "canonical": "semillas",
+   "key": "sesamo",
+   "family": "semilla"
+  },
+  {
+   "canonical": "semillas",
+   "key": "pipa girasol",
+   "family": "semilla"
+  },
+  {
+   "canonical": "semillas",
+   "key": "pipa",
+   "family": "semilla"
+  },
+  {
+   "canonical": "semillas",
+   "key": "lino",
+   "family": "semilla"
+  },
+  {
+   "canonical": "pipas de calabaza",
+   "key": "semilla calabaza",
+   "family": "semilla"
+  },
+  {
+   "canonical": "pipas de calabaza",
+   "key": "semilla calabaza",
+   "family": "semilla"
+  },
+  {
+   "canonical": "tahini",
+   "key": "tahin",
+   "family": "semilla"
+  },
+  {
+   "canonical": "tahini",
+   "key": "crema sesamo",
+   "family": "semilla"
+  },
+  {
+   "canonical": "aceite de oliva virgen extra",
+   "key": "aove",
+   "family": "grasa"
+  },
+  {
+   "canonical": "aceite de oliva virgen extra",
+   "key": "oliva virgen",
+   "family": "grasa"
+  },
+  {
+   "canonical": "aceite de oliva virgen extra",
+   "key": "oliva virgen",
+   "family": "grasa"
+  },
+  {
+   "canonical": "aceite de oliva virgen extra",
+   "key": "oliva",
+   "family": "grasa"
+  },
+  {
+   "canonical": "aceite de coco",
+   "key": "coco",
+   "family": "grasa"
+  },
+  {
+   "canonical": "aceite de coco",
+   "key": "coco",
+   "family": "grasa"
+  },
+  {
+   "canonical": "aguacate",
+   "key": "aguacat",
+   "family": "grasa"
+  },
+  {
+   "canonical": "aceite de linaza",
+   "key": "linaza",
+   "family": "grasa"
+  },
+  {
+   "canonical": "batido de proteínas",
+   "key": "proteina",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "batido de proteínas",
+   "key": "proteina",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "batido de proteínas",
+   "key": "proteina whey",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "batido de proteínas",
+   "key": "whey",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "batido de proteínas",
+   "key": "whey protein",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "batido de proteínas",
+   "key": "proteina suero",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "batido de proteínas",
+   "key": "trimatrix",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "batido de proteínas",
+   "key": "proteina trimatrix",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "batido de proteínas",
+   "key": "proteina polvo",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "batido de proteínas",
+   "key": "progresiva",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "batido de proteínas",
+   "key": "factor",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "batido de proteínas",
+   "key": "factor",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "batido de proteínas",
+   "key": "v factor",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "batido de proteínas",
+   "key": "whey cell",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "batido de proteínas",
+   "key": "proteina whey cell",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "batido de proteínas",
+   "key": "porteina",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "proteína aislada",
+   "key": "isolate",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "proteína aislada",
+   "key": "iso",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "proteína aislada",
+   "key": "aislado",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "proteína aislada",
+   "key": "batido isolate",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "proteína aislada",
+   "key": "aislado suero",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "caseína",
+   "key": "caseinato",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "barrita proteica",
+   "key": "barra proteica",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "bebida de proteínas",
+   "key": "batido proteico",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "bebida de proteínas",
+   "key": "batido proteico",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "bebida de proteínas",
+   "key": "leche proteica",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "amilopectina",
+   "key": "amilopeptina",
+   "family": "suplemento_carbohidrato"
+  },
+  {
+   "canonical": "amilopectina",
+   "key": "amilopeptina",
+   "family": "suplemento_carbohidrato"
+  },
+  {
+   "canonical": "amilopectina",
+   "key": "amylopeptin",
+   "family": "suplemento_carbohidrato"
+  },
+  {
+   "canonical": "amilopectina",
+   "key": "ciclodextrina",
+   "family": "suplemento_carbohidrato"
+  },
+  {
+   "canonical": "amilopectina",
+   "key": "vitargo",
+   "family": "suplemento_carbohidrato"
+  },
+  {
+   "canonical": "amilopectina",
+   "key": "almidon",
+   "family": "suplemento_carbohidrato"
+  },
+  {
+   "canonical": "maltodextrina",
+   "key": "dextrosa",
+   "family": "suplemento_carbohidrato"
+  },
+  {
+   "canonical": "batido de carbohidratos (carga)",
+   "key": "carga",
+   "family": "suplemento_carbohidrato"
+  },
+  {
+   "canonical": "batido de carbohidratos (carga)",
+   "key": "carbo",
+   "family": "suplemento_carbohidrato"
+  },
+  {
+   "canonical": "batido de carbohidratos (carga)",
+   "key": "carbo",
+   "family": "suplemento_carbohidrato"
+  },
+  {
+   "canonical": "batido de carbohidratos (carga)",
+   "key": "hidrato",
+   "family": "suplemento_carbohidrato"
+  },
+  {
+   "canonical": "batido de carbohidratos (carga)",
+   "key": "hidrato carbono",
+   "family": "suplemento_carbohidrato"
+  },
+  {
+   "canonical": "batido de carbohidratos (carga)",
+   "key": "carbohidrato",
+   "family": "suplemento_carbohidrato"
+  },
+  {
+   "canonical": "batido de carbohidratos (carga)",
+   "key": "carbohidrato",
+   "family": "suplemento_carbohidrato"
+  },
+  {
+   "canonical": "batido de carbohidratos (carga)",
+   "key": "hidrato",
+   "family": "suplemento_carbohidrato"
+  },
+  {
+   "canonical": "batido de carbohidratos (carga)",
+   "key": "cho",
+   "family": "suplemento_carbohidrato"
+  },
+  {
+   "canonical": "batido de carbohidratos (carga)",
+   "key": "hc",
+   "family": "suplemento_carbohidrato"
+  },
+  {
+   "canonical": "bcaa",
+   "key": "bcaas",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "bcaa",
+   "key": "bcca",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "bcaa",
+   "key": "bcca",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "bcaa",
+   "key": "aminoacido ramificado",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "bcaa",
+   "key": "aminoacido bcaas",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "bcaa",
+   "key": "hcaa",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "eaa",
+   "key": "eaas",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "eaa",
+   "key": "map",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "eaa",
+   "key": "esencial",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "eaa",
+   "key": "esencial",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "eaa",
+   "key": "aminoacido esencial",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "eaa",
+   "key": "aminoacido esencial",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "aminoácidos",
+   "key": "amino power",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "aminoácidos",
+   "key": "amino",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "aminoácidos",
+   "key": "aminos",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "aminoácidos",
+   "key": "amino acido",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "aminoácidos",
+   "key": "aa",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "creatina",
+   "key": "creatine",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "creatina",
+   "key": "kreaklyn",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "creatina",
+   "key": "kre alkalyn",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "l-carnitina",
+   "key": "carnitina",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "l-carnitina",
+   "key": "carnitine",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "l-carnitina",
+   "key": "acetil carnitina",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "l-carnitina",
+   "key": "carnitina tartrato",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "arginina",
+   "key": "citrulina",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "arginina",
+   "key": "precursor oxido nitrico",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "arginina",
+   "key": "oxido nitrico",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "tirosina",
+   "key": "tyrosine",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "tirosina",
+   "key": "tirosine",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "nac",
+   "key": "n acetil cisteina",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "multivitamínico",
+   "key": "multivitamina",
+   "family": "vitamina"
+  },
+  {
+   "canonical": "multivitamínico",
+   "key": "polivitaminico",
+   "family": "vitamina"
+  },
+  {
+   "canonical": "multivitamínico",
+   "key": "polivitaminico",
+   "family": "vitamina"
+  },
+  {
+   "canonical": "multivitamínico",
+   "key": "vitamina",
+   "family": "vitamina"
+  },
+  {
+   "canonical": "multivitamínico",
+   "key": "vitamina",
+   "family": "vitamina"
+  },
+  {
+   "canonical": "multivitamínico",
+   "key": "complejo vitaminico",
+   "family": "vitamina"
+  },
+  {
+   "canonical": "multivitamínico",
+   "key": "multivitamina",
+   "family": "vitamina"
+  },
+  {
+   "canonical": "multivitamínico",
+   "key": "multi vitamina",
+   "family": "vitamina"
+  },
+  {
+   "canonical": "multivitamínico",
+   "key": "multi vitamina",
+   "family": "vitamina"
+  },
+  {
+   "canonical": "multivitamínico",
+   "key": "vitamina mineral",
+   "family": "vitamina"
+  },
+  {
+   "canonical": "multivitamínico",
+   "key": "vitamina mineral",
+   "family": "vitamina"
+  },
+  {
+   "canonical": "multivitamínico",
+   "key": "multivitamico",
+   "family": "vitamina"
+  },
+  {
+   "canonical": "multivitamínico",
+   "key": "omnivit",
+   "family": "vitamina"
+  },
+  {
+   "canonical": "vitamina c",
+   "key": "vit c",
+   "family": "vitamina"
+  },
+  {
+   "canonical": "vitamina d",
+   "key": "d3",
+   "family": "vitamina"
+  },
+  {
+   "canonical": "vitamina d",
+   "key": "vit d",
+   "family": "vitamina"
+  },
+  {
+   "canonical": "vitamina d",
+   "key": "d3 k2",
+   "family": "vitamina"
+  },
+  {
+   "canonical": "vitamina d",
+   "key": "d3k2",
+   "family": "vitamina"
+  },
+  {
+   "canonical": "vitamina k",
+   "key": "k2",
+   "family": "vitamina"
+  },
+  {
+   "canonical": "vitamina k",
+   "key": "k",
+   "family": "vitamina"
+  },
+  {
+   "canonical": "vitamina b",
+   "key": "vit b",
+   "family": "vitamina"
+  },
+  {
+   "canonical": "vitamina b",
+   "key": "complejo b",
+   "family": "vitamina"
+  },
+  {
+   "canonical": "vitamina b",
+   "key": "b12",
+   "family": "vitamina"
+  },
+  {
+   "canonical": "potasio",
+   "key": "potasion",
+   "family": "mineral"
+  },
+  {
+   "canonical": "magnesio",
+   "key": "zmb",
+   "family": "mineral"
+  },
+  {
+   "canonical": "magnesio",
+   "key": "zmb6",
+   "family": "mineral"
+  },
+  {
+   "canonical": "minerales",
+   "key": "multimineral",
+   "family": "mineral"
+  },
+  {
+   "canonical": "electrolitos",
+   "key": "sal mineral",
+   "family": "mineral"
+  },
+  {
+   "canonical": "electrolitos",
+   "key": "sal mineral",
+   "family": "mineral"
+  },
+  {
+   "canonical": "electrolitos",
+   "key": "isotonico",
+   "family": "mineral"
+  },
+  {
+   "canonical": "electrolitos",
+   "key": "bebida isotonica",
+   "family": "mineral"
+  },
+  {
+   "canonical": "cromo",
+   "key": "cromium picolinato",
+   "family": "mineral"
+  },
+  {
+   "canonical": "quemagrasa",
+   "key": "termogenico",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "quemagrasa",
+   "key": "fat burner",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "quemagrasa",
+   "key": "lipo",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "pre-entreno",
+   "key": "preentreno",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "pre-entreno",
+   "key": "preworkout",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "tribulus",
+   "key": "tribu",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "tribulus",
+   "key": "t90",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "omega 3",
+   "key": "omegas",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "omega 3",
+   "key": "aceite pescado",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "omega 3",
+   "key": "omega3",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "onagra",
+   "key": "onagro",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "coenzima q10",
+   "key": "q10",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "coenzima q10",
+   "key": "coq10",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "protector articular",
+   "key": "articular",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "protector articular",
+   "key": "condroitina",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "protector articular",
+   "key": "glucosamina",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "protector articular",
+   "key": "oseo",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "protector articular",
+   "key": "colageno articular",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "protector articular",
+   "key": "oseocart",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "protector articular",
+   "key": "osteocart",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "protector articular",
+   "key": "msm",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "espirulina",
+   "key": "spirulina",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "probiótico",
+   "key": "probiotic",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "ashwagandha",
+   "key": "aswaganda",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "protector hepático",
+   "key": "protector hepatico",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "protector hepático",
+   "key": "cardo_mariano",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "protector hepático",
+   "key": "silimarina",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "diurético",
+   "key": "water out",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "diurético",
+   "key": "drenante",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "diurético",
+   "key": "linfatico drenante",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "prebiótico",
+   "key": "inulina",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "prebiótico",
+   "key": "fibra prebiotica",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "sinefrina",
+   "key": "synephrine",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "agua",
+   "key": "litro",
+   "family": "bebida"
+  },
+  {
+   "canonical": "agua",
+   "key": "litro",
+   "family": "bebida"
+  },
+  {
+   "canonical": "café",
+   "key": "descafeinado",
+   "family": "bebida"
+  },
+  {
+   "canonical": "té",
+   "key": "matcha",
+   "family": "bebida"
+  },
+  {
+   "canonical": "té",
+   "key": "rooibo",
+   "family": "bebida"
+  },
+  {
+   "canonical": "té",
+   "key": "fucu",
+   "family": "bebida"
+  },
+  {
+   "canonical": "infusión",
+   "key": "manzanilla",
+   "family": "bebida"
+  },
+  {
+   "canonical": "infusión",
+   "key": "poleo",
+   "family": "bebida"
+  },
+  {
+   "canonical": "infusión",
+   "key": "poleo menta",
+   "family": "bebida"
+  },
+  {
+   "canonical": "infusión",
+   "key": "menta poleo",
+   "family": "bebida"
+  },
+  {
+   "canonical": "infusión",
+   "key": "tila",
+   "family": "bebida"
+  },
+  {
+   "canonical": "infusión",
+   "key": "hierbabuena",
+   "family": "bebida"
+  },
+  {
+   "canonical": "infusión",
+   "key": "cola caballo",
+   "family": "bebida"
+  },
+  {
+   "canonical": "zumo",
+   "key": "smoothie",
+   "family": "bebida"
+  },
+  {
+   "canonical": "zumo",
+   "key": "nectar",
+   "family": "bebida"
+  },
+  {
+   "canonical": "zumo",
+   "key": "batido fruta",
+   "family": "bebida"
+  },
+  {
+   "canonical": "refresco light",
+   "key": "coca cola zero",
+   "family": "bebida"
+  },
+  {
+   "canonical": "refresco light",
+   "key": "cocacola zero",
+   "family": "bebida"
+  },
+  {
+   "canonical": "refresco light",
+   "key": "coca cola",
+   "family": "bebida"
+  },
+  {
+   "canonical": "refresco light",
+   "key": "bebida zero",
+   "family": "bebida"
+  },
+  {
+   "canonical": "refresco light",
+   "key": "bebida",
+   "family": "bebida"
+  },
+  {
+   "canonical": "cerveza",
+   "key": "cana",
+   "family": "bebida"
+  },
+  {
+   "canonical": "bebida energética",
+   "key": "monster",
+   "family": "bebida"
+  },
+  {
+   "canonical": "bebida energética",
+   "key": "red bull",
+   "family": "bebida"
+  },
+  {
+   "canonical": "bebida energética",
+   "key": "redbull",
+   "family": "bebida"
+  },
+  {
+   "canonical": "sal del himalaya",
+   "key": "himalaya",
+   "family": "condimento"
+  },
+  {
+   "canonical": "especias",
+   "key": "hierba",
+   "family": "condimento"
+  },
+  {
+   "canonical": "especias",
+   "key": "hierba aromatica",
+   "family": "condimento"
+  },
+  {
+   "canonical": "especias",
+   "key": "pimienta",
+   "family": "condimento"
+  },
+  {
+   "canonical": "especias",
+   "key": "pimienta negra",
+   "family": "condimento"
+  },
+  {
+   "canonical": "especias",
+   "key": "curry",
+   "family": "condimento"
+  },
+  {
+   "canonical": "especias",
+   "key": "oregano",
+   "family": "condimento"
+  },
+  {
+   "canonical": "especias",
+   "key": "pimenton",
+   "family": "condimento"
+  },
+  {
+   "canonical": "especias",
+   "key": "comino",
+   "family": "condimento"
+  },
+  {
+   "canonical": "especias",
+   "key": "cebolla polvo",
+   "family": "condimento"
+  },
+  {
+   "canonical": "especias",
+   "key": "hierba provenzal",
+   "family": "condimento"
+  },
+  {
+   "canonical": "especias",
+   "key": "albahaca",
+   "family": "condimento"
+  },
+  {
+   "canonical": "especias",
+   "key": "tomillo",
+   "family": "condimento"
+  },
+  {
+   "canonical": "especias",
+   "key": "romero",
+   "family": "condimento"
+  },
+  {
+   "canonical": "especias",
+   "key": "jengibre polvo",
+   "family": "condimento"
+  },
+  {
+   "canonical": "especias",
+   "key": "condimento",
+   "family": "condimento"
+  },
+  {
+   "canonical": "especias",
+   "key": "condimento",
+   "family": "condimento"
+  },
+  {
+   "canonical": "especias",
+   "key": "eneldo",
+   "family": "condimento"
+  },
+  {
+   "canonical": "especias",
+   "key": "laurel",
+   "family": "condimento"
+  },
+  {
+   "canonical": "especias",
+   "key": "nuez moscada",
+   "family": "condimento"
+  },
+  {
+   "canonical": "especias",
+   "key": "clavo",
+   "family": "condimento"
+  },
+  {
+   "canonical": "especias",
+   "key": "cilantro",
+   "family": "condimento"
+  },
+  {
+   "canonical": "especias",
+   "key": "menta",
+   "family": "condimento"
+  },
+  {
+   "canonical": "edulcorante",
+   "key": "edulcorant",
+   "family": "condimento"
+  },
+  {
+   "canonical": "edulcorante",
+   "key": "sucralosa",
+   "family": "condimento"
+  },
+  {
+   "canonical": "edulcorante",
+   "key": "eritritol",
+   "family": "condimento"
+  },
+  {
+   "canonical": "edulcorante",
+   "key": "sirope agave",
+   "family": "condimento"
+  },
+  {
+   "canonical": "edulcorante",
+   "key": "agave",
+   "family": "condimento"
+  },
+  {
+   "canonical": "stevia",
+   "key": "estevia",
+   "family": "condimento"
+  },
+  {
+   "canonical": "postre o dulce",
+   "key": "natilla",
+   "family": "dulce"
+  },
+  {
+   "canonical": "postre o dulce",
+   "key": "flan",
+   "family": "dulce"
+  },
+  {
+   "canonical": "postre o dulce",
+   "key": "flan huevo",
+   "family": "dulce"
+  },
+  {
+   "canonical": "postre o dulce",
+   "key": "cuajada",
+   "family": "dulce"
+  },
+  {
+   "canonical": "postre o dulce",
+   "key": "arroz leche",
+   "family": "dulce"
+  },
+  {
+   "canonical": "postre o dulce",
+   "key": "helado",
+   "family": "dulce"
+  },
+  {
+   "canonical": "postre o dulce",
+   "key": "helado proteico",
+   "family": "dulce"
+  },
+  {
+   "canonical": "postre o dulce",
+   "key": "mousse",
+   "family": "dulce"
+  },
+  {
+   "canonical": "postre o dulce",
+   "key": "dulce",
+   "family": "dulce"
+  },
+  {
+   "canonical": "postre o dulce",
+   "key": "dulce",
+   "family": "dulce"
+  },
+  {
+   "canonical": "postre o dulce",
+   "key": "bolleria",
+   "family": "dulce"
+  },
+  {
+   "canonical": "postre o dulce",
+   "key": "pastel",
+   "family": "dulce"
+  },
+  {
+   "canonical": "postre o dulce",
+   "key": "pastel",
+   "family": "dulce"
+  },
+  {
+   "canonical": "postre o dulce",
+   "key": "tarta",
+   "family": "dulce"
+  },
+  {
+   "canonical": "postre o dulce",
+   "key": "galleta chocolate",
+   "family": "dulce"
+  },
+  {
+   "canonical": "hamburguesa",
+   "key": "albondiga",
+   "family": "plato_preparado"
+  },
+  {
+   "canonical": "hamburguesa",
+   "key": "albondiga",
+   "family": "plato_preparado"
+  },
+  {
+   "canonical": "sushi",
+   "key": "poke",
+   "family": "plato_preparado"
+  },
+  {
+   "canonical": "sushi",
+   "key": "poke bowl",
+   "family": "plato_preparado"
+  },
+  {
+   "canonical": "amilopectina",
+   "key": "amylopectin",
+   "family": "suplemento_carbohidrato"
+  },
+  {
+   "canonical": "arginina",
+   "key": "nitric oxide",
+   "family": "aminoacidos"
+  },
+  {
+   "canonical": "complejo zinc-magnesio",
+   "key": "zinc magnesio",
+   "family": "mineral"
+  },
+  {
+   "canonical": "complejo zinc-magnesio",
+   "key": "zinc magnesio b6",
+   "family": "mineral"
+  },
+  {
+   "canonical": "protector hepático",
+   "key": "hepatico",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "batido de proteínas",
+   "key": "protes",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "batido de proteínas",
+   "key": "prote",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "batido de proteínas",
+   "key": "prot whey",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "batido de proteínas",
+   "key": "prot",
+   "family": "suplemento_proteina"
+  },
+  {
+   "canonical": "support",
+   "key": "support",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "hydroxiter",
+   "key": "hydroxiter",
+   "family": "suplemento_otro"
+  },
+  {
+   "canonical": "hydroxiter",
+   "key": "hidroxiter",
+   "family": "suplemento_otro"
+  }
+ ],
+ "compound_names_allowed": [
+  "aceite esencial omega",
+  "agua limon",
+  "arroz almidon",
+  "atun agua",
+  "bebida almendra",
+  "bebida arroz",
+  "bebida avena",
+  "bebida coco",
+  "bebida soja",
+  "bebida vegetal",
+  "cafe leche sacarina",
+  "caldo pollo",
+  "cana lomo",
+  "espirulina chlorella",
+  "fiambre pavo",
+  "fiambre pollo",
+  "flan huevo",
+  "galleta arroz",
+  "galleta chocolate",
+  "hamburguesa pavo",
+  "hamburguesa pollo",
+  "hamburguesa soja",
+  "hamburguesa ternera",
+  "hamburguesa vegetal",
+  "higado pollo",
+  "huevo pollo",
+  "infusion jengibre",
+  "infusion melatonina",
+  "jamon cerdo",
+  "jamon pavo",
+  "kefir vaca",
+  "maiz dulce",
+  "mantequilla cacahuete",
+  "menta poleo",
+  "pasta arroz",
+  "pasta garbanzo",
+  "pasta huevo",
+  "pasta lenteja",
+  "pasta vegetal",
+  "pipa calabaza",
+  "pizza avena",
+  "poleo menta",
+  "pollo fiambre",
+  "pure boniato",
+  "pure patata",
+  "salchicha pavo",
+  "salchicha pollo",
+  "sandwich atun",
+  "sandwich jamon",
+  "sandwich pan centeno",
+  "sandwich pavo",
+  "sandwich pollo",
+  "semilla calabaza",
+  "te_limon",
+  "tomate pera",
+  "tortilla atun",
+  "tortilla avena",
+  "tortilla avena clara",
+  "tortilla champinon",
+  "tortilla espinaca",
+  "tortilla francesa atun",
+  "tortita arroz",
+  "tortita arroz integral",
+  "tortita arroz maiz",
+  "tortita arroz sodio",
+  "tortita avena clara",
+  "tortita maiz",
+  "vinagre manzana",
+  "vinagre vino",
+  "yogurt coco",
+  "yogurt soja",
+  "yogurt vegetal"
+ ]
+}

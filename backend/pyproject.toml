@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "finalprosports"
+version = "0.1.0"
+description = "Case-based diet composition assistant reproducing a fitness coach's prescribing style (TFM UNIR)"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+  # Exact pins (2026-08-26): the full transitive closure is in requirements.lock; justification in docs/tech_stack.md
+  "fastapi==0.141.1",
+  "uvicorn[standard]==0.52.4",
+  "pydantic==2.13.4",
+  "pydantic-settings==2.15.0",
+  "sqlalchemy==2.0.52",
+  "alembic==1.19.1",
+  "psycopg[binary]==3.3.4",
+  "pgvector==0.5.0",
+  "sentence-transformers==6.0.0",
+  "transformers==5.15.1",
+  "torch==2.13.0",
+  "numpy==2.5.2",
+  # v2 — JWT validation against Keycloak's JWKS (docs/security.md)
+  "PyJWT[crypto]==2.13.0",
+  # El PDF que el profesional le entrega al cliente se dibuja con matplotlib (S6, pdf_diet_exporter_adapter).
+  # Estuvo declarado como extra `eval` hasta el 31-08-2026, y ahi no pintaba nada: las figuras del informe SI son
+  # de evaluacion, pero el documento del cliente es EL producto. El error no se veia porque el venv de desarrollo
+  # y `verify_clean_clone` instalan `backend[dev,eval]`; salio al levantar la API en un contenedor, que instala
+  # solo lo declarado, y «Exportar PDF» devolvia 500 ModuleNotFoundError.
+  "matplotlib==3.11.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1", "httpx==0.28.1", "import-linter==2.13"]
+eval = []                              # las figuras del informe (E5.7) usan matplotlib, que ahora es dependencia base porque el PDF del cliente la necesita; scipy viene con sentence-transformers
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = ["infrastructure: needs the Postgres container (docker compose up)",
+           "security: v2 — needs a real Keycloak and a running API; excluded with -m 'not security'",
+           "e2e_real: whole path with a real client's data, pseudonymised (needs the loaded corpus)"]

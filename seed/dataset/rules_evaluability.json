@@ -1,0 +1,250 @@
+[
+ {
+  "id": "agua_2.5L",
+  "status": "kept",
+  "confidence": "high",
+  "evaluable": true,
+  "level": "item",
+  "attributes": "canonical == 'agua' with quantity, or note text"
+ },
+ {
+  "id": "prohibido_azucar_procesados",
+  "status": "kept",
+  "confidence": "high",
+  "evaluable": true,
+  "level": "item",
+  "attributes": "flags is_processed_sugar OR is_soft_drink"
+ },
+ {
+  "id": "comer_despacio",
+  "status": "kept",
+  "confidence": "medium",
+  "evaluable": true,
+  "level": "note",
+  "attributes": "text of notes"
+ },
+ {
+  "id": "cafe_te_permitidos",
+  "status": "retired",
+  "confidence": "low",
+  "evaluable": true,
+  "level": "item",
+  "attributes": "flag is_fasting_compatible"
+ },
+ {
+  "id": "ayuno_16h",
+  "status": "kept",
+  "confidence": "high",
+  "evaluable": true,
+  "level": "note",
+  "attributes": "text of notes / meal slots present"
+ },
+ {
+  "id": "comida_tarde_cena_temprano",
+  "status": "kept",
+  "confidence": "medium",
+  "evaluable": true,
+  "level": "note",
+  "attributes": "text of notes"
+ },
+ {
+  "id": "sustituir_pescado_por_pollo",
+  "status": "kept",
+  "confidence": "high",
+  "evaluable": true,
+  "level": "item",
+  "attributes": "contains_fish -> family ave in CENA"
+ },
+ {
+  "id": "sal_himalaya",
+  "status": "kept",
+  "confidence": "medium",
+  "evaluable": true,
+  "level": "item",
+  "attributes": "canonical 'sal del himalaya' vs 'sal' (both is_salt)"
+ },
+ {
+  "id": "sin_hidratos_cena",
+  "status": "kept",
+  "confidence": "medium",
+  "evaluable": true,
+  "level": "item",
+  "attributes": "group CARB absent in CENA"
+ },
+ {
+  "id": "grasas_base",
+  "status": "retired",
+  "confidence": "low",
+  "evaluable": true,
+  "level": "item",
+  "attributes": "group FAT share of items"
+ },
+ {
+  "id": "hidratos_en_cena",
+  "status": "retired",
+  "confidence": "low",
+  "evaluable": true,
+  "level": "item",
+  "attributes": "group CARB present in CENA"
+ },
+ {
+  "id": "suplementacion_pre_post",
+  "status": "kept",
+  "confidence": "medium",
+  "evaluable": true,
+  "level": "item",
+  "attributes": "group SUPPLEMENT / families aminoacidos, suplemento_proteina in ANTES/DESPUES DE ENTRENAR"
+ },
+ {
+  "id": "refuerzo_fibra",
+  "status": "descriptive",
+  "confidence": "low",
+  "evaluable": true,
+  "level": "note",
+  "attributes": "text (label is circular)"
+ },
+ {
+  "id": "saltarse_comidas_fibra",
+  "status": "retired",
+  "confidence": "low",
+  "evaluable": true,
+  "level": "note",
+  "attributes": "text of notes"
+ },
+ {
+  "id": "hidratos_primera_mitad_dia",
+  "status": "kept",
+  "confidence": "high",
+  "evaluable": true,
+  "level": "item",
+  "attributes": "group CARB by meal slot"
+ },
+ {
+  "id": "fruta_no_en_cena",
+  "status": "kept",
+  "confidence": "high",
+  "evaluable": true,
+  "level": "item",
+  "attributes": "group FRUIT absent in CENA"
+ },
+ {
+  "id": "cena_proteina_grasa_verdura",
+  "status": "kept",
+  "confidence": "high",
+  "evaluable": true,
+  "level": "item",
+  "attributes": "groups PROTEIN + FAT + VEGETABLE in CENA"
+ },
+ {
+  "id": "desayuno_avena_cereales",
+  "status": "kept",
+  "confidence": "high",
+  "evaluable": true,
+  "level": "item",
+  "attributes": "canonical avena / family cereal in DESAYUNO"
+ },
+ {
+  "id": "saltarse_comidas_fases_tempranas",
+  "status": "kept",
+  "confidence": "medium",
+  "evaluable": true,
+  "level": "note",
+  "attributes": "text of notes"
+ },
+ {
+  "id": "ayuno_estable_por_fase",
+  "status": "kept",
+  "confidence": "high",
+  "evaluable": true,
+  "level": "note",
+  "attributes": "text of notes"
+ },
+ {
+  "id": "alta_fibra_fases_tempranas",
+  "status": "retired",
+  "confidence": "low",
+  "evaluable": true,
+  "level": "note",
+  "attributes": "text (retired)"
+ },
+ {
+  "id": "pescado_pollo_v1",
+  "status": "retired",
+  "confidence": "low",
+  "evaluable": true,
+  "level": "item",
+  "attributes": "contains_fish / family ave (retired)"
+ },
+ {
+  "id": "suplementacion_v5",
+  "status": "retired",
+  "confidence": "low",
+  "evaluable": true,
+  "level": "item",
+  "attributes": "group SUPPLEMENT (retired)"
+ },
+ {
+  "id": "mujeres_prohibicion_azucar",
+  "status": "kept",
+  "confidence": "medium",
+  "evaluable": true,
+  "level": "item",
+  "attributes": "flags is_processed_sugar / is_soft_drink + profile sex"
+ },
+ {
+  "id": "mujeres_sal_himalaya",
+  "status": "kept",
+  "confidence": "high",
+  "evaluable": true,
+  "level": "item",
+  "attributes": "canonical sal del himalaya + profile sex"
+ },
+ {
+  "id": "mujeres_chocolate_gelatina",
+  "status": "kept",
+  "confidence": "high",
+  "evaluable": true,
+  "level": "item",
+  "attributes": "canonical chocolate negro / gelatina + profile sex"
+ },
+ {
+  "id": "mujeres_alta_fibra",
+  "status": "retired",
+  "confidence": "low",
+  "evaluable": true,
+  "level": "note",
+  "attributes": "text (retired)"
+ },
+ {
+  "id": "hombres_suplementacion",
+  "status": "kept",
+  "confidence": "high",
+  "evaluable": true,
+  "level": "item",
+  "attributes": "group SUPPLEMENT + profile sex"
+ },
+ {
+  "id": "ansiedad_chocolate_o_gelatina",
+  "status": "kept",
+  "confidence": "high",
+  "evaluable": true,
+  "level": "item",
+  "attributes": "canonical chocolate negro / gelatina by goal"
+ },
+ {
+  "id": "soja_prohibida",
+  "status": "descriptive",
+  "confidence": "low",
+  "evaluable": true,
+  "level": "item",
+  "attributes": "flag contains_soy"
+ },
+ {
+  "id": "respetar_intolerancias_alergias",
+  "status": "policy",
+  "confidence": null,
+  "evaluable": true,
+  "level": "item",
+  "attributes": "contains_* / is_peanut / is_tree_nut vs profile has_allergies / has_intolerances"
+ }
+]

@@ -1,0 +1,1059 @@
+{
+ "source": "diets.jsonl",
+ "base_n": 1203,
+ "tenured_diets": 865,
+ "min_tenure": 5,
+ "criteria": {
+  "MIN_N": 15,
+  "STRONG_N": 30,
+  "weak_band": [
+   0.8,
+   1.25
+  ],
+  "prescriptive": "kept (o policy) y seguida en la mayoría de su grupo: prevalencia ≥ 0.50 (patrón evitado ≤ 0.50 en reglas de evitación); el resto de las reglas son descriptivas: se informan y explican, no se exigen a cada propuesta",
+  "low": "n_support < 15, o lift en [0.8, 1.25], o el efecto ajustado cae en [0.8, 1.25] (confundido)",
+  "high": "n_support ≥ 30 y lift ≥ 1.5 (≤ 0.5 en reglas de evitación) que se mantiene tras el ajuste",
+  "medium": "resto",
+  "global_high": "prevalencia ≥ 50 % y n ≥ 30",
+  "global_medium": "prevalencia ≥ 25 %"
+ },
+ "nature_split": {
+  "majority_prevalence": 0.5,
+  "prescriptive": [
+   "agua_2.5L",
+   "ayuno_16h",
+   "cena_proteina_grasa_verdura",
+   "desayuno_avena_cereales",
+   "fruta_no_en_cena",
+   "hidratos_primera_mitad_dia",
+   "mujeres_prohibicion_azucar",
+   "prohibido_azucar_procesados",
+   "respetar_intolerancias_alergias",
+   "sin_hidratos_cena",
+   "suplementacion_pre_post"
+  ],
+  "descriptive_kept": [
+   "ansiedad_chocolate_o_gelatina",
+   "ayuno_estable_por_fase",
+   "comer_despacio",
+   "comida_tarde_cena_temprano",
+   "hombres_suplementacion",
+   "mujeres_chocolate_gelatina",
+   "mujeres_sal_himalaya",
+   "sal_himalaya",
+   "saltarse_comidas_fases_tempranas",
+   "sustituir_pescado_por_pollo"
+  ],
+  "descriptive_other": [
+   "alta_fibra_fases_tempranas",
+   "cafe_te_permitidos",
+   "grasas_base",
+   "hidratos_en_cena",
+   "mujeres_alta_fibra",
+   "pescado_pollo_v1",
+   "refuerzo_fibra",
+   "saltarse_comidas_fibra",
+   "soja_prohibida",
+   "suplementacion_v5"
+  ]
+ },
+ "rules": [
+  {
+   "id": "agua_2.5L",
+   "section": "1. Reglas GLOBALES",
+   "kind": "global",
+   "statement": "Hidratación ~2,5 L de agua al día, a tragos pequeños y entre comidas.",
+   "condition": null,
+   "n_group": 1203,
+   "n_support": 834,
+   "prevalence_in_group": 0.693,
+   "prevalence_global": 0.693,
+   "lift": null,
+   "adjusted": null,
+   "adjusted_method": null,
+   "confidence": "high",
+   "status": "kept",
+   "criteria": "prevalencia ≥ 50 %",
+   "avoid": false,
+   "nature": "prescriptive"
+  },
+  {
+   "id": "prohibido_azucar_procesados",
+   "section": "1. Reglas GLOBALES",
+   "kind": "global",
+   "statement": "Azúcares y procesados prohibidos (azúcar, postres, harinas blancas, refrescos, zumos, alcohol).",
+   "condition": null,
+   "n_group": 1203,
+   "n_support": 887,
+   "prevalence_in_group": 0.737,
+   "prevalence_global": 0.737,
+   "lift": null,
+   "adjusted": null,
+   "adjusted_method": null,
+   "confidence": "high",
+   "status": "kept",
+   "criteria": "prevalencia ≥ 50 %",
+   "avoid": false,
+   "nature": "prescriptive"
+  },
+  {
+   "id": "comer_despacio",
+   "section": "1. Reglas GLOBALES",
+   "kind": "global",
+   "statement": "Comer despacio y masticar bien.",
+   "condition": null,
+   "n_group": 1203,
+   "n_support": 330,
+   "prevalence_in_group": 0.274,
+   "prevalence_global": 0.274,
+   "lift": null,
+   "adjusted": null,
+   "adjusted_method": null,
+   "confidence": "medium",
+   "status": "kept",
+   "criteria": "prevalencia ≥ 25 %",
+   "avoid": false,
+   "nature": "descriptive"
+  },
+  {
+   "id": "cafe_te_permitidos",
+   "section": "1. Reglas GLOBALES",
+   "kind": "global",
+   "statement": "Café solo, té e infusiones sin azúcar permitidos.",
+   "condition": null,
+   "n_group": 1203,
+   "n_support": 292,
+   "prevalence_in_group": 0.243,
+   "prevalence_global": 0.243,
+   "lift": null,
+   "adjusted": null,
+   "adjusted_method": null,
+   "confidence": "low",
+   "status": "retired",
+   "criteria": "prevalencia < 25 %",
+   "avoid": false,
+   "nature": "descriptive"
+  },
+  {
+   "id": "ayuno_16h",
+   "section": "2. CONDICIONALES por OBJETIVO",
+   "kind": "goal",
+   "statement": "Ayuno ≥16 h entre la última y la primera comida.",
+   "condition": [
+    "ayuno_intermitente",
+    "cetosis_keto"
+   ],
+   "n_group": 261,
+   "n_match": 152,
+   "n_support": 152,
+   "prevalence_in_group": 0.582,
+   "prevalence_global": 0.133,
+   "lift": 4.38,
+   "adjusted": 59.46,
+   "adjusted_method": "Mantel-Haenszel grupo/resto estratificado por sexo",
+   "confidence": "high",
+   "status": "kept",
+   "criteria": "n_support ≥ 30, lift ≥ 1.5 y se mantiene ajustado",
+   "avoid": false,
+   "nature": "prescriptive"
+  },
+  {
+   "id": "comida_tarde_cena_temprano",
+   "section": "2. CONDICIONALES por OBJETIVO",
+   "kind": "goal",
+   "statement": "Comida lo más tarde posible / cena lo más temprano posible.",
+   "condition": [
+    "ayuno_intermitente",
+    "cetosis_keto"
+   ],
+   "n_group": 261,
+   "n_match": 18,
+   "n_support": 18,
+   "prevalence_in_group": 0.069,
+   "prevalence_global": 0.028,
+   "lift": 2.44,
+   "adjusted": 3.25,
+   "adjusted_method": "Mantel-Haenszel grupo/resto estratificado por sexo",
+   "confidence": "medium",
+   "status": "kept",
+   "criteria": "efecto presente pero moderado o muestra intermedia",
+   "avoid": false,
+   "nature": "descriptive"
+  },
+  {
+   "id": "sustituir_pescado_por_pollo",
+   "section": "2. CONDICIONALES por OBJETIVO",
+   "kind": "goal",
+   "statement": "Sustitución pescado/huevo → pollo permitida en la cena.",
+   "condition": [
+    "ayuno_intermitente",
+    "cetosis_keto"
+   ],
+   "n_group": 261,
+   "n_match": 47,
+   "n_support": 47,
+   "prevalence_in_group": 0.18,
+   "prevalence_global": 0.042,
+   "lift": 4.25,
+   "adjusted": 34.91,
+   "adjusted_method": "Mantel-Haenszel grupo/resto estratificado por sexo",
+   "confidence": "high",
+   "status": "kept",
+   "criteria": "n_support ≥ 30, lift ≥ 1.5 y se mantiene ajustado",
+   "avoid": false,
+   "nature": "descriptive"
+  },
+  {
+   "id": "sal_himalaya",
+   "section": "2. CONDICIONALES por OBJETIVO",
+   "kind": "goal",
+   "statement": "Sal del Himalaya como única sal permitida.",
+   "condition": [
+    "cetosis_keto"
+   ],
+   "n_group": 54,
+   "n_match": 27,
+   "n_support": 27,
+   "prevalence_in_group": 0.5,
+   "prevalence_global": 0.199,
+   "lift": 2.52,
+   "adjusted": 2.26,
+   "adjusted_method": "Mantel-Haenszel grupo/resto estratificado por sexo",
+   "confidence": "medium",
+   "status": "kept",
+   "criteria": "efecto presente pero moderado o muestra intermedia",
+   "avoid": false,
+   "nature": "descriptive"
+  },
+  {
+   "id": "sin_hidratos_cena",
+   "section": "2. CONDICIONALES por OBJETIVO",
+   "kind": "goal",
+   "statement": "Sin hidratos en la cena (el patrón «hidratos en cena» debe ser raro en el grupo).",
+   "condition": [
+    "cetosis_keto",
+    "ayuno_intermitente"
+   ],
+   "n_group": 261,
+   "n_match": 5,
+   "n_support": 256,
+   "prevalence_in_group": 0.019,
+   "prevalence_global": 0.025,
+   "lift": 0.77,
+   "adjusted": 0.59,
+   "adjusted_method": "Mantel-Haenszel grupo/resto estratificado por sexo",
+   "confidence": "medium",
+   "status": "kept",
+   "criteria": "efecto presente pero moderado o muestra intermedia",
+   "avoid": true,
+   "nature": "prescriptive"
+  },
+  {
+   "id": "grasas_base",
+   "section": "2. CONDICIONALES por OBJETIVO",
+   "kind": "goal",
+   "statement": "Grasas saludables como base (aguacate, frutos secos, AOVE, aceite de coco).",
+   "condition": [
+    "cetosis_keto"
+   ],
+   "n_group": 54,
+   "n_match": 51,
+   "n_support": 51,
+   "prevalence_in_group": 0.944,
+   "prevalence_global": 0.825,
+   "lift": 1.14,
+   "adjusted": 1.12,
+   "adjusted_method": "Mantel-Haenszel grupo/resto estratificado por sexo",
+   "confidence": "low",
+   "status": "retired",
+   "criteria": "lift débil (0.8–1.25)",
+   "avoid": false,
+   "nature": "descriptive"
+  },
+  {
+   "id": "hidratos_en_cena",
+   "section": "2. CONDICIONALES por OBJETIVO",
+   "kind": "goal",
+   "statement": "Hidratos SÍ en la cena (arroz, avena, patata, boniato).",
+   "condition": [
+    "volumen_masa",
+    "descarga_carga",
+    "mantenimiento",
+    "hipocalorica"
+   ],
+   "n_group": 528,
+   "n_match": 12,
+   "n_support": 12,
+   "prevalence_in_group": 0.023,
+   "prevalence_global": 0.025,
+   "lift": 0.91,
+   "adjusted": 1.08,
+   "adjusted_method": "Mantel-Haenszel grupo/resto estratificado por sexo",
+   "by_group": {
+    "volumen_masa": {
+     "n_group": 482,
+     "n_support": 11,
+     "prevalence": 0.023,
+     "lift": 0.92
+    },
+    "descarga_carga": {
+     "n_group": 9,
+     "n_support": 0,
+     "prevalence": 0.0,
+     "lift": 0.0
+    },
+    "mantenimiento": {
+     "n_group": 0,
+     "n_support": 0,
+     "prevalence": null,
+     "lift": null
+    },
+    "hipocalorica": {
+     "n_group": 6,
+     "n_support": 1,
+     "prevalence": 0.167,
+     "lift": 6.68
+    }
+   },
+   "confidence": "low",
+   "status": "retired",
+   "criteria": "n_support < 15; lift débil (0.8–1.25)",
+   "avoid": false,
+   "nature": "descriptive"
+  },
+  {
+   "id": "suplementacion_pre_post",
+   "section": "2. CONDICIONALES por OBJETIVO",
+   "kind": "goal",
+   "statement": "Suplementación pre/post entreno (BCAAs, glutamina, creatina, amilopectinas, proteína aislada).",
+   "condition": [
+    "volumen_masa"
+   ],
+   "n_group": 482,
+   "n_match": 297,
+   "n_support": 297,
+   "prevalence_in_group": 0.616,
+   "prevalence_global": 0.413,
+   "lift": 1.49,
+   "adjusted": 2.22,
+   "adjusted_method": "Mantel-Haenszel grupo/resto estratificado por sexo",
+   "confidence": "medium",
+   "status": "kept",
+   "criteria": "efecto presente pero moderado o muestra intermedia",
+   "avoid": false,
+   "nature": "prescriptive"
+  },
+  {
+   "id": "refuerzo_fibra",
+   "section": "2. CONDICIONALES por OBJETIVO",
+   "kind": "goal",
+   "statement": "Refuerzo de fibra en dietas «alta en fibra».",
+   "condition": [
+    "alta_en_fibra"
+   ],
+   "n_group": 3,
+   "n_match": 2,
+   "n_support": 2,
+   "prevalence_in_group": 0.667,
+   "prevalence_global": 0.016,
+   "lift": 42.21,
+   "adjusted": 28.83,
+   "adjusted_method": "Mantel-Haenszel grupo/resto estratificado por sexo",
+   "confidence": "low",
+   "status": "descriptive",
+   "criteria": "circular: la etiqueta de objetivo se asignó con el mismo patrón («fibra»)",
+   "avoid": false,
+   "nature": "descriptive"
+  },
+  {
+   "id": "saltarse_comidas_fibra",
+   "section": "2. CONDICIONALES por OBJETIVO",
+   "kind": "goal",
+   "statement": "Mayor frecuencia de «saltarse 1 comida / hacer 2 comidas» en alta en fibra.",
+   "condition": [
+    "alta_en_fibra"
+   ],
+   "n_group": 3,
+   "n_match": 0,
+   "n_support": 0,
+   "prevalence_in_group": 0.0,
+   "prevalence_global": 0.174,
+   "lift": 0.0,
+   "adjusted": 0.0,
+   "adjusted_method": "Mantel-Haenszel grupo/resto estratificado por sexo",
+   "confidence": "low",
+   "status": "retired",
+   "criteria": "n_support < 15; el efecto desaparece al estratificar (confundido)",
+   "avoid": false,
+   "nature": "descriptive"
+  },
+  {
+   "id": "hidratos_primera_mitad_dia",
+   "section": "3. COLOCACIÓN por franja",
+   "kind": "placement",
+   "statement": "Cuando hay hidratos, aparecen en la primera mitad del día (desayuno / media mañana / comida / merienda).",
+   "condition": null,
+   "n_group": 685,
+   "n_support": 593,
+   "prevalence_in_group": 0.866,
+   "prevalence_global": 0.866,
+   "lift": null,
+   "adjusted": null,
+   "adjusted_method": null,
+   "confidence": "high",
+   "status": "kept",
+   "criteria": "prevalencia ≥ 50 %",
+   "avoid": false,
+   "nature": "prescriptive"
+  },
+  {
+   "id": "fruta_no_en_cena",
+   "section": "3. COLOCACIÓN por franja",
+   "kind": "avoid_placement",
+   "statement": "Evitar fruta en la cena.",
+   "condition": null,
+   "n_group": 1021,
+   "n_support": 17,
+   "prevalence_in_group": 0.017,
+   "prevalence_global": 0.017,
+   "lift": null,
+   "adjusted": null,
+   "adjusted_method": null,
+   "confidence": "high",
+   "status": "kept",
+   "criteria": "patrón evitado en ≤ 10 % de las dietas",
+   "avoid": true,
+   "nature": "prescriptive"
+  },
+  {
+   "id": "cena_proteina_grasa_verdura",
+   "section": "3. COLOCACIÓN por franja",
+   "kind": "placement",
+   "statement": "Cena tipo: proteína (pescado/huevo/pollo) + verdura (+ grasa).",
+   "condition": null,
+   "n_group": 1020,
+   "n_support": 872,
+   "prevalence_in_group": 0.855,
+   "prevalence_global": 0.855,
+   "lift": null,
+   "adjusted": null,
+   "adjusted_method": null,
+   "confidence": "high",
+   "status": "kept",
+   "criteria": "prevalencia ≥ 50 %",
+   "avoid": false,
+   "nature": "prescriptive"
+  },
+  {
+   "id": "desayuno_avena_cereales",
+   "section": "3. COLOCACIÓN por franja",
+   "kind": "placement",
+   "statement": "Desayuno tipo: avena / cereales sin azúcar (+ frutos secos, proteína si volumen).",
+   "condition": null,
+   "n_group": 706,
+   "n_support": 455,
+   "prevalence_in_group": 0.644,
+   "prevalence_global": 0.644,
+   "lift": null,
+   "adjusted": null,
+   "adjusted_method": null,
+   "confidence": "high",
+   "status": "kept",
+   "criteria": "prevalencia ≥ 50 %",
+   "avoid": false,
+   "nature": "prescriptive"
+  },
+  {
+   "id": "saltarse_comidas_fases_tempranas",
+   "section": "4. CONDICIONALES por FASE",
+   "kind": "phase",
+   "statement": "Fases tempranas (v1–v4): más «saltarse 1 comida / hacer 2 comidas».",
+   "condition": [
+    "v1",
+    "v2-4"
+   ],
+   "n_support_adjusted": 69,
+   "n_group_adjusted": 284,
+   "n_group": 619,
+   "n_match": 148,
+   "n_support": 148,
+   "prevalence_in_group": 0.239,
+   "prevalence_global": 0.174,
+   "lift": 1.38,
+   "adjusted": 1.62,
+   "adjusted_method": "lift recalculado dentro de clientes con ≥5 dietas",
+   "confidence": "medium",
+   "status": "kept",
+   "criteria": "efecto presente pero moderado o muestra intermedia",
+   "avoid": false,
+   "nature": "descriptive"
+  },
+  {
+   "id": "ayuno_estable_por_fase",
+   "section": "4. CONDICIONALES por FASE",
+   "kind": "phase",
+   "statement": "El ayuno se mantiene estable en todas las fases (se espera lift ≈ 1).",
+   "condition": [
+    "v1",
+    "v2-4"
+   ],
+   "n_support_adjusted": 33,
+   "n_group_adjusted": 284,
+   "n_group": 619,
+   "n_match": 91,
+   "n_support": 91,
+   "prevalence_in_group": 0.147,
+   "prevalence_global": 0.133,
+   "lift": 1.11,
+   "adjusted": 0.99,
+   "adjusted_method": "lift recalculado dentro de clientes con ≥5 dietas",
+   "confidence": "high",
+   "status": "kept",
+   "criteria": "se esperaba ausencia de efecto: lift y ajustado dentro de [0.67, 1.5]",
+   "avoid": false,
+   "nature": "descriptive"
+  },
+  {
+   "id": "alta_fibra_fases_tempranas",
+   "section": "4. CONDICIONALES por FASE",
+   "kind": "phase",
+   "statement": "Enfoque alta en fibra en fases tempranas (v1).",
+   "condition": [
+    "v1"
+   ],
+   "n_support_adjusted": 1,
+   "n_group_adjusted": 69,
+   "n_group": 255,
+   "n_match": 6,
+   "n_support": 6,
+   "prevalence_in_group": 0.024,
+   "prevalence_global": 0.016,
+   "lift": 1.49,
+   "adjusted": 1.14,
+   "adjusted_method": "lift recalculado dentro de clientes con ≥5 dietas",
+   "confidence": "low",
+   "status": "retired",
+   "criteria": "n_support < 15; el efecto desaparece al estratificar (confundido); muestra intra-cliente insuficiente (n < 15)",
+   "avoid": false,
+   "nature": "descriptive"
+  },
+  {
+   "id": "pescado_pollo_v1",
+   "section": "4. CONDICIONALES por FASE",
+   "kind": "phase",
+   "statement": "Sustitución pescado→pollo sobre todo en v1.",
+   "condition": [
+    "v1"
+   ],
+   "n_support_adjusted": 5,
+   "n_group_adjusted": 69,
+   "n_group": 255,
+   "n_match": 17,
+   "n_support": 17,
+   "prevalence_in_group": 0.067,
+   "prevalence_global": 0.042,
+   "lift": 1.57,
+   "adjusted": 1.9,
+   "adjusted_method": "lift recalculado dentro de clientes con ≥5 dietas",
+   "confidence": "low",
+   "status": "retired",
+   "criteria": "muestra intra-cliente insuficiente (n < 15)",
+   "avoid": false,
+   "nature": "descriptive"
+  },
+  {
+   "id": "suplementacion_v5",
+   "section": "4. CONDICIONALES por FASE",
+   "kind": "phase",
+   "statement": "Fases avanzadas (v5+): mayor suplementación pre/post entreno.",
+   "condition": [
+    "v5+"
+   ],
+   "n_support_adjusted": 272,
+   "n_group_adjusted": 581,
+   "n_group": 584,
+   "n_match": 272,
+   "n_support": 272,
+   "prevalence_in_group": 0.466,
+   "prevalence_global": 0.413,
+   "lift": 1.13,
+   "adjusted": 1.0,
+   "adjusted_method": "lift recalculado dentro de clientes con ≥5 dietas",
+   "confidence": "low",
+   "status": "retired",
+   "criteria": "lift débil (0.8–1.25)",
+   "avoid": false,
+   "nature": "descriptive"
+  },
+  {
+   "id": "mujeres_prohibicion_azucar",
+   "section": "5. CONDICIONALES por SEXO",
+   "kind": "sex",
+   "statement": "En mujeres es más frecuente la prohibición explícita de azúcar.",
+   "condition": [
+    "F"
+   ],
+   "n_group": 174,
+   "n_match": 154,
+   "n_support": 154,
+   "prevalence_in_group": 0.885,
+   "prevalence_global": 0.689,
+   "lift": 1.29,
+   "adjusted": 1.26,
+   "adjusted_method": "Mantel-Haenszel F/M estratificado por objetivo",
+   "confidence": "medium",
+   "status": "kept",
+   "criteria": "efecto presente pero moderado o muestra intermedia",
+   "avoid": false,
+   "nature": "prescriptive"
+  },
+  {
+   "id": "mujeres_sal_himalaya",
+   "section": "5. CONDICIONALES por SEXO",
+   "kind": "sex",
+   "statement": "En mujeres es más frecuente la sal del Himalaya.",
+   "condition": [
+    "F"
+   ],
+   "n_group": 174,
+   "n_match": 64,
+   "n_support": 64,
+   "prevalence_in_group": 0.368,
+   "prevalence_global": 0.192,
+   "lift": 1.92,
+   "adjusted": 1.91,
+   "adjusted_method": "Mantel-Haenszel F/M estratificado por objetivo",
+   "confidence": "high",
+   "status": "kept",
+   "criteria": "n_support ≥ 30, lift ≥ 1.5 y se mantiene ajustado",
+   "avoid": false,
+   "nature": "descriptive"
+  },
+  {
+   "id": "mujeres_chocolate_gelatina",
+   "section": "5. CONDICIONALES por SEXO",
+   "kind": "sex",
+   "statement": "En mujeres es más frecuente el recurso al chocolate negro / gelatina para la ansiedad.",
+   "condition": [
+    "F"
+   ],
+   "n_group": 174,
+   "n_match": 40,
+   "n_support": 40,
+   "prevalence_in_group": 0.23,
+   "prevalence_global": 0.089,
+   "lift": 2.59,
+   "adjusted": 2.15,
+   "adjusted_method": "Mantel-Haenszel F/M estratificado por objetivo",
+   "confidence": "high",
+   "status": "kept",
+   "criteria": "n_support ≥ 30, lift ≥ 1.5 y se mantiene ajustado",
+   "avoid": false,
+   "nature": "descriptive"
+  },
+  {
+   "id": "mujeres_alta_fibra",
+   "section": "5. CONDICIONALES por SEXO",
+   "kind": "sex",
+   "statement": "En mujeres es más frecuente la alta en fibra.",
+   "condition": [
+    "F"
+   ],
+   "n_group": 174,
+   "n_match": 7,
+   "n_support": 7,
+   "prevalence_in_group": 0.04,
+   "prevalence_global": 0.011,
+   "lift": 3.54,
+   "adjusted": 4.19,
+   "adjusted_method": "Mantel-Haenszel F/M estratificado por objetivo",
+   "confidence": "low",
+   "status": "retired",
+   "criteria": "n_support < 15",
+   "avoid": false,
+   "nature": "descriptive"
+  },
+  {
+   "id": "hombres_suplementacion",
+   "section": "5. CONDICIONALES por SEXO",
+   "kind": "sex",
+   "statement": "Suplementación pre-entreno mucho más frecuente en hombres que en mujeres.",
+   "condition": [
+    "M"
+   ],
+   "n_group": 880,
+   "n_match": 405,
+   "n_support": 405,
+   "prevalence_in_group": 0.46,
+   "prevalence_global": 0.161,
+   "lift": 2.86,
+   "adjusted": 2.48,
+   "adjusted_method": "Mantel-Haenszel M/F estratificado por objetivo",
+   "confidence": "high",
+   "status": "kept",
+   "criteria": "n_support ≥ 30, lift ≥ 1.5 y se mantiene ajustado",
+   "avoid": false,
+   "nature": "descriptive"
+  },
+  {
+   "id": "ansiedad_chocolate_o_gelatina",
+   "section": "6. Gestión de la ANSIEDAD",
+   "kind": "goal",
+   "statement": "En dietas restrictivas, chocolate negro o gelatina sin azúcar ante ansiedad; nunca hidratos/azúcares.",
+   "condition": [
+    "cetosis_keto",
+    "hipocalorica",
+    "ayuno_intermitente"
+   ],
+   "n_group": 267,
+   "n_match": 86,
+   "n_support": 86,
+   "prevalence_in_group": 0.322,
+   "prevalence_global": 0.102,
+   "lift": 3.15,
+   "adjusted": 6.1,
+   "adjusted_method": "Mantel-Haenszel grupo/resto estratificado por sexo",
+   "by_group": {
+    "cetosis_keto": {
+     "n_group": 24,
+     "n_support": 19,
+     "prevalence": 0.792,
+     "lift": 7.74
+    },
+    "hipocalorica": {
+     "n_group": 6,
+     "n_support": 0,
+     "prevalence": 0.0,
+     "lift": 0.0
+    },
+    "ayuno_intermitente": {
+     "n_group": 72,
+     "n_support": 33,
+     "prevalence": 0.458,
+     "lift": 4.48
+    }
+   },
+   "confidence": "high",
+   "status": "kept",
+   "criteria": "n_support ≥ 30, lift ≥ 1.5 y se mantiene ajustado",
+   "avoid": false,
+   "nature": "descriptive"
+  },
+  {
+   "id": "soja_prohibida",
+   "section": "7. Restricciones puntuales",
+   "kind": "global",
+   "statement": "Soja y derivados prohibidos en una fracción de dietas (preferencia/intolerancia del cliente).",
+   "condition": null,
+   "n_group": 1203,
+   "n_support": 115,
+   "prevalence_in_group": 0.096,
+   "prevalence_global": 0.096,
+   "lift": null,
+   "adjusted": null,
+   "adjusted_method": null,
+   "confidence": "low",
+   "status": "descriptive",
+   "criteria": "regla descriptiva: prevalencia baja, condicionada al perfil",
+   "avoid": false,
+   "nature": "descriptive"
+  },
+  {
+   "id": "respetar_intolerancias_alergias",
+   "section": "7. Restricciones puntuales",
+   "kind": "policy",
+   "statement": "Respetar intolerancias/alergias del perfil por encima de cualquier regla general (no medible en el corpus).",
+   "condition": null,
+   "n_group": null,
+   "n_support": null,
+   "prevalence_in_group": null,
+   "lift": null,
+   "adjusted": null,
+   "adjusted_method": null,
+   "confidence": null,
+   "status": "policy",
+   "criteria": "regla de política, no medible",
+   "avoid": false,
+   "nature": "prescriptive"
+  }
+ ],
+ "machine_readable": {
+  "globales": [
+   {
+    "id": "agua_2.5L",
+    "n": 834,
+    "lift": null,
+    "adjusted": null,
+    "confidence": "high"
+   },
+   {
+    "id": "prohibido_azucar_procesados",
+    "n": 887,
+    "lift": null,
+    "adjusted": null,
+    "confidence": "high"
+   },
+   {
+    "id": "comer_despacio",
+    "n": 330,
+    "lift": null,
+    "adjusted": null,
+    "confidence": "medium"
+   },
+   {
+    "id": "soja_prohibida",
+    "n": 115,
+    "lift": null,
+    "adjusted": null,
+    "confidence": "low"
+   }
+  ],
+  "condicionales_objetivo": {
+   "ayuno_intermitente": [
+    {
+     "id": "ayuno_16h",
+     "n": 152,
+     "lift": 4.38,
+     "adjusted": 59.46,
+     "confidence": "high"
+    },
+    {
+     "id": "comida_tarde_cena_temprano",
+     "n": 18,
+     "lift": 2.44,
+     "adjusted": 3.25,
+     "confidence": "medium"
+    },
+    {
+     "id": "sustituir_pescado_por_pollo",
+     "n": 47,
+     "lift": 4.25,
+     "adjusted": 34.91,
+     "confidence": "high"
+    },
+    {
+     "id": "sin_hidratos_cena",
+     "n": 256,
+     "lift": 0.77,
+     "adjusted": 0.59,
+     "confidence": "medium"
+    }
+   ],
+   "cetosis_keto": [
+    {
+     "id": "ayuno_16h",
+     "n": 152,
+     "lift": 4.38,
+     "adjusted": 59.46,
+     "confidence": "high"
+    },
+    {
+     "id": "comida_tarde_cena_temprano",
+     "n": 18,
+     "lift": 2.44,
+     "adjusted": 3.25,
+     "confidence": "medium"
+    },
+    {
+     "id": "sustituir_pescado_por_pollo",
+     "n": 47,
+     "lift": 4.25,
+     "adjusted": 34.91,
+     "confidence": "high"
+    },
+    {
+     "id": "sal_himalaya",
+     "n": 27,
+     "lift": 2.52,
+     "adjusted": 2.26,
+     "confidence": "medium"
+    },
+    {
+     "id": "sin_hidratos_cena",
+     "n": 256,
+     "lift": 0.77,
+     "adjusted": 0.59,
+     "confidence": "medium"
+    }
+   ],
+   "volumen_masa": [
+    {
+     "id": "suplementacion_pre_post",
+     "n": 297,
+     "lift": 1.49,
+     "adjusted": 2.22,
+     "confidence": "medium"
+    }
+   ],
+   "alta_en_fibra": [
+    {
+     "id": "refuerzo_fibra",
+     "n": 2,
+     "lift": 42.21,
+     "adjusted": 28.83,
+     "confidence": "low"
+    }
+   ]
+  },
+  "colocacion": [
+   {
+    "id": "hidratos_primera_mitad_dia",
+    "n": 593,
+    "lift": null,
+    "adjusted": null,
+    "confidence": "high"
+   },
+   {
+    "id": "fruta_no_en_cena",
+    "n": 17,
+    "lift": null,
+    "adjusted": null,
+    "confidence": "high"
+   },
+   {
+    "id": "cena_proteina_grasa_verdura",
+    "n": 872,
+    "lift": null,
+    "adjusted": null,
+    "confidence": "high"
+   },
+   {
+    "id": "desayuno_avena_cereales",
+    "n": 455,
+    "lift": null,
+    "adjusted": null,
+    "confidence": "high"
+   }
+  ],
+  "por_fase": {
+   "v1_v2-4": [
+    {
+     "id": "saltarse_comidas_fases_tempranas",
+     "n": 148,
+     "lift": 1.38,
+     "adjusted": 1.62,
+     "confidence": "medium"
+    },
+    {
+     "id": "ayuno_estable_por_fase",
+     "n": 91,
+     "lift": 1.11,
+     "adjusted": 0.99,
+     "confidence": "high"
+    }
+   ]
+  },
+  "por_sexo": {
+   "F": [
+    {
+     "id": "mujeres_prohibicion_azucar",
+     "n": 154,
+     "lift": 1.29,
+     "adjusted": 1.26,
+     "confidence": "medium"
+    },
+    {
+     "id": "mujeres_sal_himalaya",
+     "n": 64,
+     "lift": 1.92,
+     "adjusted": 1.91,
+     "confidence": "high"
+    },
+    {
+     "id": "mujeres_chocolate_gelatina",
+     "n": 40,
+     "lift": 2.59,
+     "adjusted": 2.15,
+     "confidence": "high"
+    }
+   ],
+   "M": [
+    {
+     "id": "hombres_suplementacion",
+     "n": 405,
+     "lift": 2.86,
+     "adjusted": 2.48,
+     "confidence": "high"
+    }
+   ]
+  },
+  "ansiedad": [
+   {
+    "id": "ansiedad_chocolate_o_gelatina",
+    "n": 86,
+    "lift": 3.15,
+    "adjusted": 6.1,
+    "confidence": "high"
+   }
+  ],
+  "prioridad_maxima": [
+   "respetar_intolerancias_alergias"
+  ],
+  "retiradas": [
+   {
+    "id": "cafe_te_permitidos",
+    "n": 292,
+    "lift": null,
+    "adjusted": null,
+    "confidence": "low",
+    "criteria": "prevalencia < 25 %"
+   },
+   {
+    "id": "grasas_base",
+    "n": 51,
+    "lift": 1.14,
+    "adjusted": 1.12,
+    "confidence": "low",
+    "criteria": "lift débil (0.8–1.25)"
+   },
+   {
+    "id": "hidratos_en_cena",
+    "n": 12,
+    "lift": 0.91,
+    "adjusted": 1.08,
+    "confidence": "low",
+    "criteria": "n_support < 15; lift débil (0.8–1.25)"
+   },
+   {
+    "id": "saltarse_comidas_fibra",
+    "n": 0,
+    "lift": 0.0,
+    "adjusted": 0.0,
+    "confidence": "low",
+    "criteria": "n_support < 15; el efecto desaparece al estratificar (confundido)"
+   },
+   {
+    "id": "alta_fibra_fases_tempranas",
+    "n": 6,
+    "lift": 1.49,
+    "adjusted": 1.14,
+    "confidence": "low",
+    "criteria": "n_support < 15; el efecto desaparece al estratificar (confundido); muestra intra-cliente insuficiente (n < 15)"
+   },
+   {
+    "id": "pescado_pollo_v1",
+    "n": 17,
+    "lift": 1.57,
+    "adjusted": 1.9,
+    "confidence": "low",
+    "criteria": "muestra intra-cliente insuficiente (n < 15)"
+   },
+   {
+    "id": "suplementacion_v5",
+    "n": 272,
+    "lift": 1.13,
+    "adjusted": 1.0,
+    "confidence": "low",
+    "criteria": "lift débil (0.8–1.25)"
+   },
+   {
+    "id": "mujeres_alta_fibra",
+    "n": 7,
+    "lift": 3.54,
+    "adjusted": 4.19,
+    "confidence": "low",
+    "criteria": "n_support < 15"
+   }
+  ]
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "generated_by": "synthesize_case_base.py",
+ "seed": 20260909,
+ "clients": 300,
+ "reference_day": "2026-09-01",
+ "params": "synthetic_params.json",
+ "what_this_is": "Base de casos INVENTADA con la forma del corpus. Ninguna persona real, ninguna fecha real. Los criterios (reglas, catálogo, bandas de cantidad, notas) SÍ son los medidos del profesional; los casos no son suyos, así que las cifras de fidelidad de la memoria no se reproducen desde aquí.",
+ "counts": {
+  "profiles": 300,
+  "diets": 830,
+  "meals": 4635,
+  "items": 20987,
+  "scale_readings": 1479,
+  "lab_reports": 298,
+  "archetypes": 38
+ }
+}

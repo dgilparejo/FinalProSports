@@ -1,0 +1,4061 @@
+{
+ "source": "diet_items.jsonl (dataset-v3, E1 catalogue)",
+ "min_n": 10,
+ "summary": {
+  "diets": 1203,
+  "components": 49906,
+  "food_unit_pairs_total": 411,
+  "food_unit_pairs_with_envelope": 223,
+  "slots_with_envelope": 15
+ },
+ "quantities": {
+  "1|g": {
+   "food_id": 1,
+   "canonical_name": "pollo",
+   "unit": "g",
+   "n": 2063,
+   "p05": 90.0,
+   "p50": 200.0,
+   "p95": 300.0,
+   "min": 30.0,
+   "max": 380.0
+  },
+  "1|unidad": {
+   "food_id": 1,
+   "canonical_name": "pollo",
+   "unit": "unidad",
+   "n": 94,
+   "p05": 1.0,
+   "p50": 200.0,
+   "p95": 300.0,
+   "min": 1.0,
+   "max": 300.0
+  },
+  "2|g": {
+   "food_id": 2,
+   "canonical_name": "arroz",
+   "unit": "g",
+   "n": 2181,
+   "p05": 50.0,
+   "p50": 150.0,
+   "p95": 250.0,
+   "min": 20.0,
+   "max": 420.0
+  },
+  "2|unidad": {
+   "food_id": 2,
+   "canonical_name": "arroz",
+   "unit": "unidad",
+   "n": 65,
+   "p05": 1.0,
+   "p50": 150.0,
+   "p95": 250.0,
+   "min": 1.0,
+   "max": 250.0
+  },
+  "3|cazo": {
+   "food_id": 3,
+   "canonical_name": "batido de proteínas",
+   "unit": "cazo",
+   "n": 11,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 2.0,
+   "min": 1.0,
+   "max": 2.0
+  },
+  "3|g": {
+   "food_id": 3,
+   "canonical_name": "batido de proteínas",
+   "unit": "g",
+   "n": 382,
+   "p05": 20.0,
+   "p50": 40.0,
+   "p95": 70.0,
+   "min": 10.0,
+   "max": 150.0
+  },
+  "3|unidad": {
+   "food_id": 3,
+   "canonical_name": "batido de proteínas",
+   "unit": "unidad",
+   "n": 1509,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 0.0,
+   "max": 30.0
+  },
+  "4|unidad": {
+   "food_id": 4,
+   "canonical_name": "multivitamínico",
+   "unit": "unidad",
+   "n": 1954,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 2.0,
+   "min": 1.0,
+   "max": 4.0
+  },
+  "5|cucharada": {
+   "food_id": 5,
+   "canonical_name": "aceite de oliva virgen extra",
+   "unit": "cucharada",
+   "n": 1448,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 2.0
+  },
+  "5|cucharadita": {
+   "food_id": 5,
+   "canonical_name": "aceite de oliva virgen extra",
+   "unit": "cucharadita",
+   "n": 226,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "5|unidad": {
+   "food_id": 5,
+   "canonical_name": "aceite de oliva virgen extra",
+   "unit": "unidad",
+   "n": 38,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.15,
+   "min": 1.0,
+   "max": 3.0
+  },
+  "6|g": {
+   "food_id": 6,
+   "canonical_name": "almendras",
+   "unit": "g",
+   "n": 1451,
+   "p05": 10.0,
+   "p50": 15.0,
+   "p95": 30.0,
+   "min": 5.0,
+   "max": 80.0
+  },
+  "6|unidad": {
+   "food_id": 6,
+   "canonical_name": "almendras",
+   "unit": "unidad",
+   "n": 29,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 15.0,
+   "min": 1.0,
+   "max": 20.0
+  },
+  "7|g": {
+   "food_id": 7,
+   "canonical_name": "pavo",
+   "unit": "g",
+   "n": 1181,
+   "p05": 50.0,
+   "p50": 160.0,
+   "p95": 280.0,
+   "min": 6.0,
+   "max": 340.0
+  },
+  "7|unidad": {
+   "food_id": 7,
+   "canonical_name": "pavo",
+   "unit": "unidad",
+   "n": 128,
+   "p05": 1.0,
+   "p50": 2.0,
+   "p95": 280.0,
+   "min": 1.0,
+   "max": 300.0
+  },
+  "8|g": {
+   "food_id": 8,
+   "canonical_name": "nueces",
+   "unit": "g",
+   "n": 1337,
+   "p05": 10.0,
+   "p50": 15.0,
+   "p95": 30.0,
+   "min": 5.0,
+   "max": 40.0
+  },
+  "8|unidad": {
+   "food_id": 8,
+   "canonical_name": "nueces",
+   "unit": "unidad",
+   "n": 14,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 15.0,
+   "min": 1.0,
+   "max": 15.0
+  },
+  "9|g": {
+   "food_id": 9,
+   "canonical_name": "pescado blanco",
+   "unit": "g",
+   "n": 1155,
+   "p05": 130.0,
+   "p50": 230.0,
+   "p95": 300.0,
+   "min": 20.0,
+   "max": 450.0
+  },
+  "9|unidad": {
+   "food_id": 9,
+   "canonical_name": "pescado blanco",
+   "unit": "unidad",
+   "n": 137,
+   "p05": 2.0,
+   "p50": 4.0,
+   "p95": 280.0,
+   "min": 1.0,
+   "max": 300.0
+  },
+  "10|unidad": {
+   "food_id": 10,
+   "canonical_name": "potasio",
+   "unit": "unidad",
+   "n": 1312,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 2.0
+  },
+  "11|unidad": {
+   "food_id": 11,
+   "canonical_name": "yema de huevo",
+   "unit": "unidad",
+   "n": 1108,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 2.0,
+   "min": 1.0,
+   "max": 3.0
+  },
+  "12|g": {
+   "food_id": 12,
+   "canonical_name": "atún",
+   "unit": "g",
+   "n": 166,
+   "p05": 80.0,
+   "p50": 180.0,
+   "p95": 250.0,
+   "min": 30.0,
+   "max": 350.0
+  },
+  "12|lata": {
+   "food_id": 12,
+   "canonical_name": "atún",
+   "unit": "lata",
+   "n": 675,
+   "p05": 1.0,
+   "p50": 2.0,
+   "p95": 3.0,
+   "min": 0.5,
+   "max": 4.0
+  },
+  "12|unidad": {
+   "food_id": 12,
+   "canonical_name": "atún",
+   "unit": "unidad",
+   "n": 29,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 3.6,
+   "min": 1.0,
+   "max": 280.0
+  },
+  "13|g": {
+   "food_id": 13,
+   "canonical_name": "ensalada",
+   "unit": "g",
+   "n": 844,
+   "p05": 50.0,
+   "p50": 130.0,
+   "p95": 210.0,
+   "min": 15.0,
+   "max": 700.0
+  },
+  "13|unidad": {
+   "food_id": 13,
+   "canonical_name": "ensalada",
+   "unit": "unidad",
+   "n": 23,
+   "p05": 57.0,
+   "p50": 120.0,
+   "p95": 160.0,
+   "min": 5.0,
+   "max": 190.0
+  },
+  "14|g": {
+   "food_id": 14,
+   "canonical_name": "pasta integral",
+   "unit": "g",
+   "n": 762,
+   "p05": 100.0,
+   "p50": 160.0,
+   "p95": 280.0,
+   "min": 40.0,
+   "max": 420.0
+  },
+  "14|unidad": {
+   "food_id": 14,
+   "canonical_name": "pasta integral",
+   "unit": "unidad",
+   "n": 24,
+   "p05": 120.0,
+   "p50": 180.0,
+   "p95": 314.0,
+   "min": 30.0,
+   "max": 320.0
+  },
+  "15|unidad": {
+   "food_id": 15,
+   "canonical_name": "omega 3",
+   "unit": "unidad",
+   "n": 786,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 2.0
+  },
+  "16|cazo": {
+   "food_id": 16,
+   "canonical_name": "aminoácidos",
+   "unit": "cazo",
+   "n": 25,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.8,
+   "min": 1.0,
+   "max": 2.0
+  },
+  "16|cucharada": {
+   "food_id": 16,
+   "canonical_name": "aminoácidos",
+   "unit": "cucharada",
+   "n": 121,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 2.0,
+   "min": 1.0,
+   "max": 15.0
+  },
+  "16|g": {
+   "food_id": 16,
+   "canonical_name": "aminoácidos",
+   "unit": "g",
+   "n": 534,
+   "p05": 10.0,
+   "p50": 15.0,
+   "p95": 20.0,
+   "min": 5.0,
+   "max": 30.0
+  },
+  "16|unidad": {
+   "food_id": 16,
+   "canonical_name": "aminoácidos",
+   "unit": "unidad",
+   "n": 15,
+   "p05": 0.0,
+   "p50": 1.0,
+   "p95": 5.9,
+   "min": 0.0,
+   "max": 15.0
+  },
+  "17|g": {
+   "food_id": 17,
+   "canonical_name": "tomate",
+   "unit": "g",
+   "n": 552,
+   "p05": 40.0,
+   "p50": 100.0,
+   "p95": 180.0,
+   "min": 20.0,
+   "max": 200.0
+  },
+  "17|unidad": {
+   "food_id": 17,
+   "canonical_name": "tomate",
+   "unit": "unidad",
+   "n": 15,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 66.0,
+   "min": 1.0,
+   "max": 80.0
+  },
+  "18|unidad": {
+   "food_id": 18,
+   "canonical_name": "clara de huevo",
+   "unit": "unidad",
+   "n": 655,
+   "p05": 2.0,
+   "p50": 3.0,
+   "p95": 5.0,
+   "min": 2.0,
+   "max": 6.5
+  },
+  "19|g": {
+   "food_id": 19,
+   "canonical_name": "aguacate",
+   "unit": "g",
+   "n": 524,
+   "p05": 30.0,
+   "p50": 50.0,
+   "p95": 100.0,
+   "min": 0.5,
+   "max": 180.0
+  },
+  "19|unidad": {
+   "food_id": 19,
+   "canonical_name": "aguacate",
+   "unit": "unidad",
+   "n": 97,
+   "p05": 0.5,
+   "p50": 0.5,
+   "p95": 1.0,
+   "min": 0.5,
+   "max": 80.0
+  },
+  "20|loncha": {
+   "food_id": 20,
+   "canonical_name": "piña",
+   "unit": "loncha",
+   "n": 642,
+   "p05": 2.0,
+   "p50": 2.0,
+   "p95": 3.0,
+   "min": 1.0,
+   "max": 12.0
+  },
+  "21|g": {
+   "food_id": 21,
+   "canonical_name": "avena",
+   "unit": "g",
+   "n": 581,
+   "p05": 20.0,
+   "p50": 30.0,
+   "p95": 150.0,
+   "min": 10.0,
+   "max": 300.0
+  },
+  "21|unidad": {
+   "food_id": 21,
+   "canonical_name": "avena",
+   "unit": "unidad",
+   "n": 20,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 50.0,
+   "min": 1.0,
+   "max": 50.0
+  },
+  "22|cápsula": {
+   "food_id": 22,
+   "canonical_name": "onagra",
+   "unit": "cápsula",
+   "n": 14,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "22|unidad": {
+   "food_id": 22,
+   "canonical_name": "onagra",
+   "unit": "unidad",
+   "n": 591,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 2.0
+  },
+  "23|g": {
+   "food_id": 23,
+   "canonical_name": "verduras",
+   "unit": "g",
+   "n": 530,
+   "p05": 80.0,
+   "p50": 150.0,
+   "p95": 230.0,
+   "min": 30.0,
+   "max": 350.0
+  },
+  "24|g": {
+   "food_id": 24,
+   "canonical_name": "ternera",
+   "unit": "g",
+   "n": 474,
+   "p05": 130.0,
+   "p50": 250.0,
+   "p95": 320.0,
+   "min": 100.0,
+   "max": 400.0
+  },
+  "24|unidad": {
+   "food_id": 24,
+   "canonical_name": "ternera",
+   "unit": "unidad",
+   "n": 53,
+   "p05": 1.6,
+   "p50": 250.0,
+   "p95": 308.0,
+   "min": 1.0,
+   "max": 350.0
+  },
+  "25|g": {
+   "food_id": 25,
+   "canonical_name": "pan integral",
+   "unit": "g",
+   "n": 177,
+   "p05": 50.0,
+   "p50": 100.0,
+   "p95": 160.0,
+   "min": 25.0,
+   "max": 230.0
+  },
+  "25|loncha": {
+   "food_id": 25,
+   "canonical_name": "pan integral",
+   "unit": "loncha",
+   "n": 238,
+   "p05": 1.0,
+   "p50": 2.0,
+   "p95": 3.0,
+   "min": 0.5,
+   "max": 4.0
+  },
+  "25|unidad": {
+   "food_id": 25,
+   "canonical_name": "pan integral",
+   "unit": "unidad",
+   "n": 99,
+   "p05": 0.5,
+   "p50": 1.0,
+   "p95": 2.0,
+   "min": 0.0,
+   "max": 20.0
+  },
+  "26|g": {
+   "food_id": 26,
+   "canonical_name": "legumbres",
+   "unit": "g",
+   "n": 497,
+   "p05": 100.0,
+   "p50": 160.0,
+   "p95": 280.0,
+   "min": 13.0,
+   "max": 420.0
+  },
+  "26|unidad": {
+   "food_id": 26,
+   "canonical_name": "legumbres",
+   "unit": "unidad",
+   "n": 19,
+   "p05": 120.0,
+   "p50": 160.0,
+   "p95": 280.0,
+   "min": 120.0,
+   "max": 280.0
+  },
+  "27|g": {
+   "food_id": 27,
+   "canonical_name": "creatina",
+   "unit": "g",
+   "n": 498,
+   "p05": 3.0,
+   "p50": 8.0,
+   "p95": 20.0,
+   "min": 2.0,
+   "max": 40.0
+  },
+  "27|unidad": {
+   "food_id": 27,
+   "canonical_name": "creatina",
+   "unit": "unidad",
+   "n": 19,
+   "p05": 2.0,
+   "p50": 2.5,
+   "p95": 5.0,
+   "min": 2.0,
+   "max": 5.0
+  },
+  "28|g": {
+   "food_id": 28,
+   "canonical_name": "pepino",
+   "unit": "g",
+   "n": 229,
+   "p05": 30.0,
+   "p50": 60.0,
+   "p95": 112.0,
+   "min": 20.0,
+   "max": 180.0
+  },
+  "29|unidad": {
+   "food_id": 29,
+   "canonical_name": "tortilla",
+   "unit": "unidad",
+   "n": 411,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 15.0
+  },
+  "30|unidad": {
+   "food_id": 30,
+   "canonical_name": "manzana",
+   "unit": "unidad",
+   "n": 454,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 2.0,
+   "min": 1.0,
+   "max": 2.0
+  },
+  "31|g": {
+   "food_id": 31,
+   "canonical_name": "patata",
+   "unit": "g",
+   "n": 418,
+   "p05": 80.0,
+   "p50": 170.0,
+   "p95": 300.0,
+   "min": 80.0,
+   "max": 420.0
+  },
+  "31|unidad": {
+   "food_id": 31,
+   "canonical_name": "patata",
+   "unit": "unidad",
+   "n": 25,
+   "p05": 200.0,
+   "p50": 200.0,
+   "p95": 350.0,
+   "min": 160.0,
+   "max": 350.0
+  },
+  "32|cápsula": {
+   "food_id": 32,
+   "canonical_name": "quemagrasa",
+   "unit": "cápsula",
+   "n": 42,
+   "p05": 2.0,
+   "p50": 2.25,
+   "p95": 3.0,
+   "min": 2.0,
+   "max": 3.0
+  },
+  "32|unidad": {
+   "food_id": 32,
+   "canonical_name": "quemagrasa",
+   "unit": "unidad",
+   "n": 406,
+   "p05": 1.0,
+   "p50": 2.0,
+   "p95": 3.0,
+   "min": 1.0,
+   "max": 4.0
+  },
+  "33|unidad": {
+   "food_id": 33,
+   "canonical_name": "magnesio",
+   "unit": "unidad",
+   "n": 257,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 2.0
+  },
+  "34|g": {
+   "food_id": 34,
+   "canonical_name": "cereales integrales",
+   "unit": "g",
+   "n": 349,
+   "p05": 30.0,
+   "p50": 60.0,
+   "p95": 140.0,
+   "min": 20.0,
+   "max": 500.0
+  },
+  "34|loncha": {
+   "food_id": 34,
+   "canonical_name": "cereales integrales",
+   "unit": "loncha",
+   "n": 22,
+   "p05": 1.0,
+   "p50": 2.0,
+   "p95": 4.0,
+   "min": 1.0,
+   "max": 4.0
+  },
+  "35|g": {
+   "food_id": 35,
+   "canonical_name": "pechuga de pollo",
+   "unit": "g",
+   "n": 433,
+   "p05": 130.0,
+   "p50": 200.0,
+   "p95": 300.0,
+   "min": 80.0,
+   "max": 350.0
+  },
+  "36|unidad": {
+   "food_id": 36,
+   "canonical_name": "complejo zinc-magnesio",
+   "unit": "unidad",
+   "n": 394,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 2.0
+  },
+  "37|diente": {
+   "food_id": 37,
+   "canonical_name": "ajo",
+   "unit": "diente",
+   "n": 323,
+   "p05": 1.0,
+   "p50": 2.0,
+   "p95": 4.0,
+   "min": 1.0,
+   "max": 5.0
+  },
+  "37|g": {
+   "food_id": 37,
+   "canonical_name": "ajo",
+   "unit": "g",
+   "n": 50,
+   "p05": 1.0,
+   "p50": 10.0,
+   "p95": 180.0,
+   "min": 0.5,
+   "max": 230.0
+  },
+  "38|unidad": {
+   "food_id": 38,
+   "canonical_name": "calcio",
+   "unit": "unidad",
+   "n": 378,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 2.0
+  },
+  "39|g": {
+   "food_id": 39,
+   "canonical_name": "cerdo",
+   "unit": "g",
+   "n": 342,
+   "p05": 50.0,
+   "p50": 160.0,
+   "p95": 279.5,
+   "min": 1.0,
+   "max": 350.0
+  },
+  "39|unidad": {
+   "food_id": 39,
+   "canonical_name": "cerdo",
+   "unit": "unidad",
+   "n": 17,
+   "p05": 1.0,
+   "p50": 180.0,
+   "p95": 240.0,
+   "min": 1.0,
+   "max": 280.0
+  },
+  "40|g": {
+   "food_id": 40,
+   "canonical_name": "espinacas",
+   "unit": "g",
+   "n": 332,
+   "p05": 45.5,
+   "p50": 130.0,
+   "p95": 200.0,
+   "min": 15.0,
+   "max": 250.0
+  },
+  "41|g": {
+   "food_id": 41,
+   "canonical_name": "fruta",
+   "unit": "g",
+   "n": 14,
+   "p05": 53.0,
+   "p50": 90.0,
+   "p95": 207.0,
+   "min": 40.0,
+   "max": 220.0
+  },
+  "41|unidad": {
+   "food_id": 41,
+   "canonical_name": "fruta",
+   "unit": "unidad",
+   "n": 325,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 2.0
+  },
+  "42|g": {
+   "food_id": 42,
+   "canonical_name": "merluza",
+   "unit": "g",
+   "n": 308,
+   "p05": 100.0,
+   "p50": 200.0,
+   "p95": 300.0,
+   "min": 50.0,
+   "max": 370.0
+  },
+  "43|ml": {
+   "food_id": 43,
+   "canonical_name": "agua",
+   "unit": "ml",
+   "n": 158,
+   "p05": 200.0,
+   "p50": 250.0,
+   "p95": 5000.0,
+   "min": 100.0,
+   "max": 5000.0
+  },
+  "43|unidad": {
+   "food_id": 43,
+   "canonical_name": "agua",
+   "unit": "unidad",
+   "n": 10,
+   "p05": 3.0,
+   "p50": 5.0,
+   "p95": 5.0,
+   "min": 3.0,
+   "max": 5.0
+  },
+  "44|unidad": {
+   "food_id": 44,
+   "canonical_name": "electrolitos",
+   "unit": "unidad",
+   "n": 15,
+   "p05": 1.0,
+   "p50": 1.5,
+   "p95": 2.0,
+   "min": 1.0,
+   "max": 2.0
+  },
+  "45|cucharada": {
+   "food_id": 45,
+   "canonical_name": "aceite de coco",
+   "unit": "cucharada",
+   "n": 199,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "45|cucharadita": {
+   "food_id": 45,
+   "canonical_name": "aceite de coco",
+   "unit": "cucharadita",
+   "n": 44,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "45|g": {
+   "food_id": 45,
+   "canonical_name": "aceite de coco",
+   "unit": "g",
+   "n": 40,
+   "p05": 10.0,
+   "p50": 30.0,
+   "p95": 61.0,
+   "min": 10.0,
+   "max": 80.0
+  },
+  "46|unidad": {
+   "food_id": 46,
+   "canonical_name": "plátano",
+   "unit": "unidad",
+   "n": 278,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 0.5,
+   "max": 2.0
+  },
+  "47|cucharada": {
+   "food_id": 47,
+   "canonical_name": "bcaa",
+   "unit": "cucharada",
+   "n": 33,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "47|g": {
+   "food_id": 47,
+   "canonical_name": "bcaa",
+   "unit": "g",
+   "n": 128,
+   "p05": 5.0,
+   "p50": 10.0,
+   "p95": 20.0,
+   "min": 2.0,
+   "max": 20.0
+  },
+  "48|g": {
+   "food_id": 48,
+   "canonical_name": "pescado azul",
+   "unit": "g",
+   "n": 237,
+   "p05": 120.0,
+   "p50": 220.0,
+   "p95": 300.0,
+   "min": 80.0,
+   "max": 320.0
+  },
+  "48|unidad": {
+   "food_id": 48,
+   "canonical_name": "pescado azul",
+   "unit": "unidad",
+   "n": 15,
+   "p05": 1.0,
+   "p50": 3.0,
+   "p95": 3.0,
+   "min": 1.0,
+   "max": 3.0
+  },
+  "49|g": {
+   "food_id": 49,
+   "canonical_name": "cúrcuma",
+   "unit": "g",
+   "n": 225,
+   "p05": 0.5,
+   "p50": 1.0,
+   "p95": 1.4,
+   "min": 0.25,
+   "max": 10.0
+  },
+  "50|g": {
+   "food_id": 50,
+   "canonical_name": "tortitas de arroz",
+   "unit": "g",
+   "n": 22,
+   "p05": 60.0,
+   "p50": 70.0,
+   "p95": 128.5,
+   "min": 60.0,
+   "max": 130.0
+  },
+  "50|unidad": {
+   "food_id": 50,
+   "canonical_name": "tortitas de arroz",
+   "unit": "unidad",
+   "n": 166,
+   "p05": 3.0,
+   "p50": 4.0,
+   "p95": 9.5,
+   "min": 2.0,
+   "max": 12.0
+  },
+  "51|unidad": {
+   "food_id": 51,
+   "canonical_name": "limón",
+   "unit": "unidad",
+   "n": 182,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 0.5,
+   "max": 2.0
+  },
+  "52|g": {
+   "food_id": 52,
+   "canonical_name": "l-carnitina",
+   "unit": "g",
+   "n": 17,
+   "p05": 15.0,
+   "p50": 15.0,
+   "p95": 18.0,
+   "min": 15.0,
+   "max": 20.0
+  },
+  "52|unidad": {
+   "food_id": 52,
+   "canonical_name": "l-carnitina",
+   "unit": "unidad",
+   "n": 132,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 2.0,
+   "min": 1.0,
+   "max": 3.0
+  },
+  "53|g": {
+   "food_id": 53,
+   "canonical_name": "proteína aislada",
+   "unit": "g",
+   "n": 147,
+   "p05": 26.5,
+   "p50": 45.0,
+   "p95": 60.0,
+   "min": 20.0,
+   "max": 80.0
+  },
+  "54|cazo": {
+   "food_id": 54,
+   "canonical_name": "amilopectina",
+   "unit": "cazo",
+   "n": 12,
+   "p05": 1.0,
+   "p50": 2.0,
+   "p95": 2.0,
+   "min": 1.0,
+   "max": 2.0
+  },
+  "54|g": {
+   "food_id": 54,
+   "canonical_name": "amilopectina",
+   "unit": "g",
+   "n": 151,
+   "p05": 10.0,
+   "p50": 40.0,
+   "p95": 80.0,
+   "min": 10.0,
+   "max": 100.0
+  },
+  "55|g": {
+   "food_id": 55,
+   "canonical_name": "cacahuetes",
+   "unit": "g",
+   "n": 198,
+   "p05": 15.0,
+   "p50": 20.0,
+   "p95": 50.0,
+   "min": 5.0,
+   "max": 60.0
+  },
+  "56|cápsula": {
+   "food_id": 56,
+   "canonical_name": "eaa",
+   "unit": "cápsula",
+   "n": 11,
+   "p05": 2.0,
+   "p50": 2.0,
+   "p95": 4.0,
+   "min": 2.0,
+   "max": 4.0
+  },
+  "56|g": {
+   "food_id": 56,
+   "canonical_name": "eaa",
+   "unit": "g",
+   "n": 163,
+   "p05": 3.0,
+   "p50": 5.0,
+   "p95": 15.0,
+   "min": 2.0,
+   "max": 25.0
+  },
+  "56|unidad": {
+   "food_id": 56,
+   "canonical_name": "eaa",
+   "unit": "unidad",
+   "n": 21,
+   "p05": 1.0,
+   "p50": 4.0,
+   "p95": 5.0,
+   "min": 1.0,
+   "max": 5.0
+  },
+  "57|g": {
+   "food_id": 57,
+   "canonical_name": "zanahoria",
+   "unit": "g",
+   "n": 165,
+   "p05": 30.0,
+   "p50": 50.0,
+   "p95": 120.0,
+   "min": 15.0,
+   "max": 200.0
+  },
+  "58|unidad": {
+   "food_id": 58,
+   "canonical_name": "té",
+   "unit": "unidad",
+   "n": 154,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 2.0
+  },
+  "59|g": {
+   "food_id": 59,
+   "canonical_name": "cebolla",
+   "unit": "g",
+   "n": 149,
+   "p05": 12.0,
+   "p50": 20.0,
+   "p95": 50.0,
+   "min": 10.0,
+   "max": 370.0
+  },
+  "60|unidad": {
+   "food_id": 60,
+   "canonical_name": "sándwich",
+   "unit": "unidad",
+   "n": 148,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 2.0,
+   "min": 1.0,
+   "max": 20.0
+  },
+  "61|g": {
+   "food_id": 61,
+   "canonical_name": "guacamole",
+   "unit": "g",
+   "n": 155,
+   "p05": 20.0,
+   "p50": 30.0,
+   "p95": 60.0,
+   "min": 15.0,
+   "max": 160.0
+  },
+  "62|g": {
+   "food_id": 62,
+   "canonical_name": "queso fresco",
+   "unit": "g",
+   "n": 138,
+   "p05": 24.25,
+   "p50": 60.0,
+   "p95": 80.0,
+   "min": 15.0,
+   "max": 150.0
+  },
+  "63|unidad": {
+   "food_id": 63,
+   "canonical_name": "tribulus",
+   "unit": "unidad",
+   "n": 129,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 2.0,
+   "min": 1.0,
+   "max": 2.0
+  },
+  "64|g": {
+   "food_id": 64,
+   "canonical_name": "glutamina",
+   "unit": "g",
+   "n": 54,
+   "p05": 10.0,
+   "p50": 15.0,
+   "p95": 20.0,
+   "min": 5.0,
+   "max": 20.0
+  },
+  "65|unidad": {
+   "food_id": 65,
+   "canonical_name": "café",
+   "unit": "unidad",
+   "n": 107,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 2.0
+  },
+  "66|g": {
+   "food_id": 66,
+   "canonical_name": "boniato",
+   "unit": "g",
+   "n": 145,
+   "p05": 100.0,
+   "p50": 160.0,
+   "p95": 250.0,
+   "min": 50.0,
+   "max": 300.0
+  },
+  "67|unidad": {
+   "food_id": 67,
+   "canonical_name": "minerales",
+   "unit": "unidad",
+   "n": 13,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "68|g": {
+   "food_id": 68,
+   "canonical_name": "jamón serrano",
+   "unit": "g",
+   "n": 121,
+   "p05": 30.0,
+   "p50": 80.0,
+   "p95": 130.0,
+   "min": 30.0,
+   "max": 220.0
+  },
+  "69|g": {
+   "food_id": 69,
+   "canonical_name": "quinoa",
+   "unit": "g",
+   "n": 107,
+   "p05": 50.0,
+   "p50": 100.0,
+   "p95": 235.0,
+   "min": 40.0,
+   "max": 350.0
+  },
+  "70|g": {
+   "food_id": 70,
+   "canonical_name": "muesli",
+   "unit": "g",
+   "n": 138,
+   "p05": 30.0,
+   "p50": 60.0,
+   "p95": 100.0,
+   "min": 20.0,
+   "max": 150.0
+  },
+  "71|unidad": {
+   "food_id": 71,
+   "canonical_name": "vitamina b",
+   "unit": "unidad",
+   "n": 141,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "72|unidad": {
+   "food_id": 72,
+   "canonical_name": "vitamina d",
+   "unit": "unidad",
+   "n": 136,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "73|unidad": {
+   "food_id": 73,
+   "canonical_name": "protector articular",
+   "unit": "unidad",
+   "n": 119,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 2.0,
+   "min": 1.0,
+   "max": 2.0
+  },
+  "74|ml": {
+   "food_id": 74,
+   "canonical_name": "yogur",
+   "unit": "ml",
+   "n": 74,
+   "p05": 156.5,
+   "p50": 262.5,
+   "p95": 350.0,
+   "min": 100.0,
+   "max": 450.0
+  },
+  "74|unidad": {
+   "food_id": 74,
+   "canonical_name": "yogur",
+   "unit": "unidad",
+   "n": 37,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.2,
+   "min": 1.0,
+   "max": 2.0
+  },
+  "75|cucharada": {
+   "food_id": 75,
+   "canonical_name": "bicarbonato",
+   "unit": "cucharada",
+   "n": 26,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "75|cucharadita": {
+   "food_id": 75,
+   "canonical_name": "bicarbonato",
+   "unit": "cucharadita",
+   "n": 78,
+   "p05": 0.5,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 0.5,
+   "max": 1.0
+  },
+  "76|g": {
+   "food_id": 76,
+   "canonical_name": "caballa",
+   "unit": "g",
+   "n": 20,
+   "p05": 150.0,
+   "p50": 165.0,
+   "p95": 202.5,
+   "min": 150.0,
+   "max": 250.0
+  },
+  "76|lata": {
+   "food_id": 76,
+   "canonical_name": "caballa",
+   "unit": "lata",
+   "n": 66,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 3.0,
+   "min": 1.0,
+   "max": 3.0
+  },
+  "76|unidad": {
+   "food_id": 76,
+   "canonical_name": "caballa",
+   "unit": "unidad",
+   "n": 24,
+   "p05": 1.0,
+   "p50": 2.0,
+   "p95": 4.0,
+   "min": 1.0,
+   "max": 5.0
+  },
+  "77|unidad": {
+   "food_id": 77,
+   "canonical_name": "naranja",
+   "unit": "unidad",
+   "n": 113,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 30.0
+  },
+  "78|g": {
+   "food_id": 78,
+   "canonical_name": "crema de cacahuete",
+   "unit": "g",
+   "n": 91,
+   "p05": 17.5,
+   "p50": 30.0,
+   "p95": 55.0,
+   "min": 15.0,
+   "max": 80.0
+  },
+  "78|unidad": {
+   "food_id": 78,
+   "canonical_name": "crema de cacahuete",
+   "unit": "unidad",
+   "n": 13,
+   "p05": 0.5,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 0.5,
+   "max": 1.0
+  },
+  "79|unidad": {
+   "food_id": 79,
+   "canonical_name": "vitamina k",
+   "unit": "unidad",
+   "n": 68,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "80|unidad": {
+   "food_id": 80,
+   "canonical_name": "kiwi",
+   "unit": "unidad",
+   "n": 108,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 2.0,
+   "min": 0.5,
+   "max": 2.0
+  },
+  "81|g": {
+   "food_id": 81,
+   "canonical_name": "chía",
+   "unit": "g",
+   "n": 107,
+   "p05": 1.0,
+   "p50": 3.0,
+   "p95": 10.0,
+   "min": 0.5,
+   "max": 25.0
+  },
+  "82|g": {
+   "food_id": 82,
+   "canonical_name": "requesón",
+   "unit": "g",
+   "n": 103,
+   "p05": 30.0,
+   "p50": 60.0,
+   "p95": 98.0,
+   "min": 20.0,
+   "max": 120.0
+  },
+  "83|g": {
+   "food_id": 83,
+   "canonical_name": "pipas de calabaza",
+   "unit": "g",
+   "n": 104,
+   "p05": 10.0,
+   "p50": 15.0,
+   "p95": 30.0,
+   "min": 10.0,
+   "max": 40.0
+  },
+  "84|g": {
+   "food_id": 84,
+   "canonical_name": "harina de avena",
+   "unit": "g",
+   "n": 105,
+   "p05": 20.0,
+   "p50": 40.0,
+   "p95": 80.0,
+   "min": 15.0,
+   "max": 150.0
+  },
+  "85|g": {
+   "food_id": 85,
+   "canonical_name": "ajo en polvo",
+   "unit": "g",
+   "n": 102,
+   "p05": 0.5,
+   "p50": 1.0,
+   "p95": 2.0,
+   "min": 0.5,
+   "max": 10.0
+  },
+  "86|unidad": {
+   "food_id": 86,
+   "canonical_name": "huevo",
+   "unit": "unidad",
+   "n": 80,
+   "p05": 1.0,
+   "p50": 2.0,
+   "p95": 3.05,
+   "min": 1.0,
+   "max": 5.0
+  },
+  "87|g": {
+   "food_id": 87,
+   "canonical_name": "salmón",
+   "unit": "g",
+   "n": 92,
+   "p05": 80.0,
+   "p50": 160.0,
+   "p95": 250.0,
+   "min": 30.0,
+   "max": 320.0
+  },
+  "88|unidad": {
+   "food_id": 88,
+   "canonical_name": "hierro",
+   "unit": "unidad",
+   "n": 99,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "89|unidad": {
+   "food_id": 89,
+   "canonical_name": "zumo",
+   "unit": "unidad",
+   "n": 86,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "90|g": {
+   "food_id": 90,
+   "canonical_name": "espárragos",
+   "unit": "g",
+   "n": 78,
+   "p05": 30.0,
+   "p50": 80.0,
+   "p95": 121.5,
+   "min": 20.0,
+   "max": 160.0
+  },
+  "91|g": {
+   "food_id": 91,
+   "canonical_name": "brócoli",
+   "unit": "g",
+   "n": 77,
+   "p05": 40.0,
+   "p50": 60.0,
+   "p95": 124.0,
+   "min": 30.0,
+   "max": 190.0
+  },
+  "93|unidad": {
+   "food_id": 93,
+   "canonical_name": "vitamina c",
+   "unit": "unidad",
+   "n": 23,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "94|ml": {
+   "food_id": 94,
+   "canonical_name": "bebida de almendras",
+   "unit": "ml",
+   "n": 76,
+   "p05": 137.5,
+   "p50": 250.0,
+   "p95": 350.0,
+   "min": 100.0,
+   "max": 450.0
+  },
+  "95|g": {
+   "food_id": 95,
+   "canonical_name": "anacardos",
+   "unit": "g",
+   "n": 85,
+   "p05": 15.0,
+   "p50": 20.0,
+   "p95": 30.0,
+   "min": 10.0,
+   "max": 30.0
+  },
+  "96|g": {
+   "food_id": 96,
+   "canonical_name": "panga",
+   "unit": "g",
+   "n": 69,
+   "p05": 100.0,
+   "p50": 200.0,
+   "p95": 300.0,
+   "min": 80.0,
+   "max": 320.0
+  },
+  "97|g": {
+   "food_id": 97,
+   "canonical_name": "centeno",
+   "unit": "g",
+   "n": 51,
+   "p05": 50.0,
+   "p50": 100.0,
+   "p95": 150.0,
+   "min": 50.0,
+   "max": 230.0
+  },
+  "97|loncha": {
+   "food_id": 97,
+   "canonical_name": "centeno",
+   "unit": "loncha",
+   "n": 31,
+   "p05": 1.0,
+   "p50": 2.0,
+   "p95": 2.0,
+   "min": 0.5,
+   "max": 2.0
+  },
+  "98|g": {
+   "food_id": 98,
+   "canonical_name": "lechuga",
+   "unit": "g",
+   "n": 31,
+   "p05": 30.0,
+   "p50": 50.0,
+   "p95": 155.0,
+   "min": 20.0,
+   "max": 180.0
+  },
+  "99|unidad": {
+   "food_id": 99,
+   "canonical_name": "cafeína",
+   "unit": "unidad",
+   "n": 28,
+   "p05": 1.0,
+   "p50": 100.0,
+   "p95": 200.0,
+   "min": 1.0,
+   "max": 200.0
+  },
+  "100|ml": {
+   "food_id": 100,
+   "canonical_name": "leche vegetal",
+   "unit": "ml",
+   "n": 66,
+   "p05": 250.0,
+   "p50": 250.0,
+   "p95": 350.0,
+   "min": 165.0,
+   "max": 400.0
+  },
+  "101|g": {
+   "food_id": 101,
+   "canonical_name": "guisantes",
+   "unit": "g",
+   "n": 73,
+   "p05": 50.0,
+   "p50": 150.0,
+   "p95": 300.0,
+   "min": 50.0,
+   "max": 350.0
+  },
+  "102|g": {
+   "food_id": 102,
+   "canonical_name": "maíz",
+   "unit": "g",
+   "n": 48,
+   "p05": 25.0,
+   "p50": 50.0,
+   "p95": 76.5,
+   "min": 20.0,
+   "max": 100.0
+  },
+  "103|unidad": {
+   "food_id": 103,
+   "canonical_name": "espirulina",
+   "unit": "unidad",
+   "n": 68,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "104|g": {
+   "food_id": 104,
+   "canonical_name": "remolacha",
+   "unit": "g",
+   "n": 65,
+   "p05": 10.0,
+   "p50": 30.0,
+   "p95": 40.0,
+   "min": 10.0,
+   "max": 60.0
+  },
+  "105|g": {
+   "food_id": 105,
+   "canonical_name": "queso",
+   "unit": "g",
+   "n": 62,
+   "p05": 30.0,
+   "p50": 50.0,
+   "p95": 79.5,
+   "min": 30.0,
+   "max": 120.0
+  },
+  "106|g": {
+   "food_id": 106,
+   "canonical_name": "crema de arroz",
+   "unit": "g",
+   "n": 61,
+   "p05": 30.0,
+   "p50": 80.0,
+   "p95": 200.0,
+   "min": 30.0,
+   "max": 200.0
+  },
+  "107|g": {
+   "food_id": 107,
+   "canonical_name": "carne roja",
+   "unit": "g",
+   "n": 58,
+   "p05": 150.0,
+   "p50": 260.0,
+   "p95": 350.0,
+   "min": 130.0,
+   "max": 350.0
+  },
+  "108|unidad": {
+   "food_id": 108,
+   "canonical_name": "arginina",
+   "unit": "unidad",
+   "n": 43,
+   "p05": 1.0,
+   "p50": 2.0,
+   "p95": 4.0,
+   "min": 1.0,
+   "max": 15.0
+  },
+  "109|g": {
+   "food_id": 109,
+   "canonical_name": "champiñones",
+   "unit": "g",
+   "n": 45,
+   "p05": 26.0,
+   "p50": 45.0,
+   "p95": 150.0,
+   "min": 20.0,
+   "max": 190.0
+  },
+  "110|g": {
+   "food_id": 110,
+   "canonical_name": "algas",
+   "unit": "g",
+   "n": 49,
+   "p05": 58.0,
+   "p50": 120.0,
+   "p95": 200.0,
+   "min": 30.0,
+   "max": 250.0
+  },
+  "111|unidad": {
+   "food_id": 111,
+   "canonical_name": "taurina",
+   "unit": "unidad",
+   "n": 55,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "112|unidad": {
+   "food_id": 112,
+   "canonical_name": "berberina",
+   "unit": "unidad",
+   "n": 54,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 2.0
+  },
+  "113|unidad": {
+   "food_id": 113,
+   "canonical_name": "probiótico",
+   "unit": "unidad",
+   "n": 55,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "114|g": {
+   "food_id": 114,
+   "canonical_name": "calabacín",
+   "unit": "g",
+   "n": 31,
+   "p05": 80.0,
+   "p50": 120.0,
+   "p95": 180.0,
+   "min": 60.0,
+   "max": 230.0
+  },
+  "116|g": {
+   "food_id": 116,
+   "canonical_name": "bebida de soja",
+   "unit": "g",
+   "n": 10,
+   "p05": 14.5,
+   "p50": 65.0,
+   "p95": 85.5,
+   "min": 10.0,
+   "max": 90.0
+  },
+  "116|ml": {
+   "food_id": 116,
+   "canonical_name": "bebida de soja",
+   "unit": "ml",
+   "n": 17,
+   "p05": 140.0,
+   "p50": 200.0,
+   "p95": 300.0,
+   "min": 100.0,
+   "max": 400.0
+  },
+  "117|g": {
+   "food_id": 117,
+   "canonical_name": "aceitunas",
+   "unit": "g",
+   "n": 46,
+   "p05": 20.0,
+   "p50": 20.0,
+   "p95": 37.5,
+   "min": 20.0,
+   "max": 50.0
+  },
+  "118|g": {
+   "food_id": 118,
+   "canonical_name": "pepinillos",
+   "unit": "g",
+   "n": 35,
+   "p05": 30.0,
+   "p50": 50.0,
+   "p95": 120.0,
+   "min": 30.0,
+   "max": 120.0
+  },
+  "119|unidad": {
+   "food_id": 119,
+   "canonical_name": "apio",
+   "unit": "unidad",
+   "n": 27,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "120|g": {
+   "food_id": 120,
+   "canonical_name": "puré de verduras",
+   "unit": "g",
+   "n": 32,
+   "p05": 100.0,
+   "p50": 130.0,
+   "p95": 189.0,
+   "min": 80.0,
+   "max": 230.0
+  },
+  "121|g": {
+   "food_id": 121,
+   "canonical_name": "avellanas",
+   "unit": "g",
+   "n": 38,
+   "p05": 10.0,
+   "p50": 15.0,
+   "p95": 20.75,
+   "min": 10.0,
+   "max": 30.0
+  },
+  "122|g": {
+   "food_id": 122,
+   "canonical_name": "judías verdes",
+   "unit": "g",
+   "n": 35,
+   "p05": 127.0,
+   "p50": 180.0,
+   "p95": 200.0,
+   "min": 60.0,
+   "max": 200.0
+  },
+  "123|g": {
+   "food_id": 123,
+   "canonical_name": "arándanos",
+   "unit": "g",
+   "n": 34,
+   "p05": 15.0,
+   "p50": 40.0,
+   "p95": 100.0,
+   "min": 10.0,
+   "max": 120.0
+  },
+  "124|g": {
+   "food_id": 124,
+   "canonical_name": "sardinas",
+   "unit": "g",
+   "n": 21,
+   "p05": 150.0,
+   "p50": 170.0,
+   "p95": 200.0,
+   "min": 150.0,
+   "max": 250.0
+  },
+  "125|unidad": {
+   "food_id": 125,
+   "canonical_name": "caseína",
+   "unit": "unidad",
+   "n": 26,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "126|g": {
+   "food_id": 126,
+   "canonical_name": "garbanzos",
+   "unit": "g",
+   "n": 27,
+   "p05": 46.0,
+   "p50": 140.0,
+   "p95": 259.0,
+   "min": 40.0,
+   "max": 280.0
+  },
+  "127|unidad": {
+   "food_id": 127,
+   "canonical_name": "zinc",
+   "unit": "unidad",
+   "n": 20,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "128|unidad": {
+   "food_id": 128,
+   "canonical_name": "barrita proteica",
+   "unit": "unidad",
+   "n": 25,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 2.0
+  },
+  "129|unidad": {
+   "food_id": 129,
+   "canonical_name": "cla",
+   "unit": "unidad",
+   "n": 35,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "130|g": {
+   "food_id": 130,
+   "canonical_name": "especias",
+   "unit": "g",
+   "n": 15,
+   "p05": 1.0,
+   "p50": 3.0,
+   "p95": 215.0,
+   "min": 1.0,
+   "max": 250.0
+  },
+  "131|g": {
+   "food_id": 131,
+   "canonical_name": "pasta al huevo",
+   "unit": "g",
+   "n": 26,
+   "p05": 130.0,
+   "p50": 192.5,
+   "p95": 310.0,
+   "min": 120.0,
+   "max": 400.0
+  },
+  "132|g": {
+   "food_id": 132,
+   "canonical_name": "harina de trigo",
+   "unit": "g",
+   "n": 34,
+   "p05": 25.0,
+   "p50": 30.0,
+   "p95": 80.0,
+   "min": 20.0,
+   "max": 80.0
+  },
+  "133|g": {
+   "food_id": 133,
+   "canonical_name": "fresas",
+   "unit": "g",
+   "n": 10,
+   "p05": 30.0,
+   "p50": 40.0,
+   "p95": 85.5,
+   "min": 30.0,
+   "max": 90.0
+  },
+  "133|unidad": {
+   "food_id": 133,
+   "canonical_name": "fresas",
+   "unit": "unidad",
+   "n": 20,
+   "p05": 3.0,
+   "p50": 5.0,
+   "p95": 6.1,
+   "min": 3.0,
+   "max": 8.0
+  },
+  "134|unidad": {
+   "food_id": 134,
+   "canonical_name": "protector hepático",
+   "unit": "unidad",
+   "n": 22,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "135|g": {
+   "food_id": 135,
+   "canonical_name": "tofu",
+   "unit": "g",
+   "n": 28,
+   "p05": 67.0,
+   "p50": 170.0,
+   "p95": 219.5,
+   "min": 60.0,
+   "max": 230.0
+  },
+  "136|unidad": {
+   "food_id": 136,
+   "canonical_name": "support",
+   "unit": "unidad",
+   "n": 10,
+   "p05": 1.0,
+   "p50": 3.0,
+   "p95": 5.0,
+   "min": 1.0,
+   "max": 5.0
+  },
+  "137|g": {
+   "food_id": 137,
+   "canonical_name": "marisco",
+   "unit": "g",
+   "n": 16,
+   "p05": 90.0,
+   "p50": 145.0,
+   "p95": 272.5,
+   "min": 90.0,
+   "max": 280.0
+  },
+  "138|g": {
+   "food_id": 138,
+   "canonical_name": "lentejas",
+   "unit": "g",
+   "n": 17,
+   "p05": 120.0,
+   "p50": 160.0,
+   "p95": 172.0,
+   "min": 120.0,
+   "max": 180.0
+  },
+  "140|unidad": {
+   "food_id": 140,
+   "canonical_name": "diurético",
+   "unit": "unidad",
+   "n": 28,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.5
+  },
+  "141|g": {
+   "food_id": 141,
+   "canonical_name": "maltodextrina",
+   "unit": "g",
+   "n": 23,
+   "p05": 3.0,
+   "p50": 30.0,
+   "p95": 80.0,
+   "min": 3.0,
+   "max": 90.0
+  },
+  "142|unidad": {
+   "food_id": 142,
+   "canonical_name": "vitamina e",
+   "unit": "unidad",
+   "n": 27,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "143|unidad": {
+   "food_id": 143,
+   "canonical_name": "tirosina",
+   "unit": "unidad",
+   "n": 27,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 2.0,
+   "min": 1.0,
+   "max": 2.0
+  },
+  "144|g": {
+   "food_id": 144,
+   "canonical_name": "jamón cocido",
+   "unit": "g",
+   "n": 15,
+   "p05": 30.0,
+   "p50": 60.0,
+   "p95": 106.0,
+   "min": 30.0,
+   "max": 120.0
+  },
+  "145|unidad": {
+   "food_id": 145,
+   "canonical_name": "sinefrina",
+   "unit": "unidad",
+   "n": 15,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 2.3,
+   "min": 1.0,
+   "max": 3.0
+  },
+  "146|g": {
+   "food_id": 146,
+   "canonical_name": "hamburguesa",
+   "unit": "g",
+   "n": 12,
+   "p05": 127.5,
+   "p50": 160.0,
+   "p95": 300.0,
+   "min": 100.0,
+   "max": 300.0
+  },
+  "146|unidad": {
+   "food_id": 146,
+   "canonical_name": "hamburguesa",
+   "unit": "unidad",
+   "n": 11,
+   "p05": 1.0,
+   "p50": 2.0,
+   "p95": 3.0,
+   "min": 1.0,
+   "max": 3.0
+  },
+  "147|g": {
+   "food_id": 147,
+   "canonical_name": "pistachos",
+   "unit": "g",
+   "n": 18,
+   "p05": 15.0,
+   "p50": 15.0,
+   "p95": 21.5,
+   "min": 15.0,
+   "max": 30.0
+  },
+  "148|unidad": {
+   "food_id": 148,
+   "canonical_name": "mandarina",
+   "unit": "unidad",
+   "n": 21,
+   "p05": 2.0,
+   "p50": 2.0,
+   "p95": 2.0,
+   "min": 1.0,
+   "max": 2.0
+  },
+  "149|loncha": {
+   "food_id": 149,
+   "canonical_name": "melón",
+   "unit": "loncha",
+   "n": 16,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 2.0,
+   "min": 1.0,
+   "max": 2.0
+  },
+  "150|g": {
+   "food_id": 150,
+   "canonical_name": "pimiento",
+   "unit": "g",
+   "n": 15,
+   "p05": 50.0,
+   "p50": 50.0,
+   "p95": 60.0,
+   "min": 50.0,
+   "max": 60.0
+  },
+  "151|unidad": {
+   "food_id": 151,
+   "canonical_name": "postre o dulce",
+   "unit": "unidad",
+   "n": 18,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 3.0,
+   "min": 1.0,
+   "max": 3.0
+  },
+  "152|unidad": {
+   "food_id": 152,
+   "canonical_name": "pera",
+   "unit": "unidad",
+   "n": 19,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 2.0,
+   "min": 1.0,
+   "max": 2.0
+  },
+  "153|g": {
+   "food_id": 153,
+   "canonical_name": "calabaza",
+   "unit": "g",
+   "n": 14,
+   "p05": 100.0,
+   "p50": 120.0,
+   "p95": 150.0,
+   "min": 100.0,
+   "max": 150.0
+  },
+  "154|g": {
+   "food_id": 154,
+   "canonical_name": "nuez de brasil",
+   "unit": "g",
+   "n": 14,
+   "p05": 13.25,
+   "p50": 21.5,
+   "p95": 30.0,
+   "min": 10.0,
+   "max": 30.0
+  },
+  "155|unidad": {
+   "food_id": 155,
+   "canonical_name": "infusión",
+   "unit": "unidad",
+   "n": 11,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "157|g": {
+   "food_id": 157,
+   "canonical_name": "alcachofas",
+   "unit": "g",
+   "n": 11,
+   "p05": 70.0,
+   "p50": 150.0,
+   "p95": 200.0,
+   "min": 60.0,
+   "max": 200.0
+  },
+  "158|g": {
+   "food_id": 158,
+   "canonical_name": "colágeno",
+   "unit": "g",
+   "n": 18,
+   "p05": 3.0,
+   "p50": 15.0,
+   "p95": 20.0,
+   "min": 3.0,
+   "max": 20.0
+  },
+  "160|g": {
+   "food_id": 160,
+   "canonical_name": "harina sin gluten",
+   "unit": "g",
+   "n": 20,
+   "p05": 49.0,
+   "p50": 65.0,
+   "p95": 201.5,
+   "min": 30.0,
+   "max": 230.0
+  },
+  "161|cápsula": {
+   "food_id": 161,
+   "canonical_name": "hydroxiter",
+   "unit": "cápsula",
+   "n": 12,
+   "p05": 2.0,
+   "p50": 2.0,
+   "p95": 3.0,
+   "min": 2.0,
+   "max": 3.0
+  },
+  "162|g": {
+   "food_id": 162,
+   "canonical_name": "hígado",
+   "unit": "g",
+   "n": 20,
+   "p05": 119.0,
+   "p50": 130.0,
+   "p95": 160.0,
+   "min": 100.0,
+   "max": 160.0
+  },
+  "163|unidad": {
+   "food_id": 163,
+   "canonical_name": "café con leche",
+   "unit": "unidad",
+   "n": 20,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "165|unidad": {
+   "food_id": 165,
+   "canonical_name": "stevia",
+   "unit": "unidad",
+   "n": 15,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "167|g": {
+   "food_id": 167,
+   "canonical_name": "seitán",
+   "unit": "g",
+   "n": 15,
+   "p05": 74.0,
+   "p50": 190.0,
+   "p95": 230.0,
+   "min": 60.0,
+   "max": 230.0
+  },
+  "168|g": {
+   "food_id": 168,
+   "canonical_name": "frutos secos",
+   "unit": "g",
+   "n": 12,
+   "p05": 15.0,
+   "p50": 20.0,
+   "p95": 30.0,
+   "min": 15.0,
+   "max": 30.0
+  },
+  "171|unidad": {
+   "food_id": 171,
+   "canonical_name": "nac",
+   "unit": "unidad",
+   "n": 16,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "172|ml": {
+   "food_id": 172,
+   "canonical_name": "leche",
+   "unit": "ml",
+   "n": 10,
+   "p05": 200.0,
+   "p50": 250.0,
+   "p95": 288.75,
+   "min": 200.0,
+   "max": 300.0
+  },
+  "173|g": {
+   "food_id": 173,
+   "canonical_name": "yuca",
+   "unit": "g",
+   "n": 15,
+   "p05": 80.0,
+   "p50": 150.0,
+   "p95": 186.0,
+   "min": 80.0,
+   "max": 200.0
+  },
+  "174|ml": {
+   "food_id": 174,
+   "canonical_name": "leche sin lactosa",
+   "unit": "ml",
+   "n": 12,
+   "p05": 200.0,
+   "p50": 200.0,
+   "p95": 272.5,
+   "min": 200.0,
+   "max": 300.0
+  },
+  "175|g": {
+   "food_id": 175,
+   "canonical_name": "solomillo",
+   "unit": "g",
+   "n": 13,
+   "p05": 112.0,
+   "p50": 150.0,
+   "p95": 224.0,
+   "min": 100.0,
+   "max": 230.0
+  },
+  "177|loncha": {
+   "food_id": 177,
+   "canonical_name": "sandía",
+   "unit": "loncha",
+   "n": 12,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 2.0,
+   "min": 1.0,
+   "max": 2.0
+  },
+  "178|g": {
+   "food_id": 178,
+   "canonical_name": "alubias",
+   "unit": "g",
+   "n": 10,
+   "p05": 100.0,
+   "p50": 135.0,
+   "p95": 280.0,
+   "min": 100.0,
+   "max": 280.0
+  },
+  "183|unidad": {
+   "food_id": 183,
+   "canonical_name": "ashwagandha",
+   "unit": "unidad",
+   "n": 12,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 1.0,
+   "min": 1.0,
+   "max": 1.0
+  },
+  "186|unidad": {
+   "food_id": 186,
+   "canonical_name": "maca",
+   "unit": "unidad",
+   "n": 11,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 2.0,
+   "min": 1.0,
+   "max": 2.0
+  },
+  "187|g": {
+   "food_id": 187,
+   "canonical_name": "amaranto",
+   "unit": "g",
+   "n": 10,
+   "p05": 9.55,
+   "p50": 80.0,
+   "p95": 100.0,
+   "min": 1.0,
+   "max": 100.0
+  },
+  "191|lata": {
+   "food_id": 191,
+   "canonical_name": "bonito",
+   "unit": "lata",
+   "n": 10,
+   "p05": 1.0,
+   "p50": 3.0,
+   "p95": 3.0,
+   "min": 1.0,
+   "max": 3.0
+  }
+ },
+ "items_per_slot": {
+  "ALMUERZO": {
+   "n": 26,
+   "p05": 2.0,
+   "p50": 3.0,
+   "p95": 5.0,
+   "min": 1.0,
+   "max": 17.0
+  },
+  "ANTES DE DORMIR": {
+   "n": 254,
+   "p05": 1.0,
+   "p50": 3.0,
+   "p95": 6.0,
+   "min": 1.0,
+   "max": 10.0
+  },
+  "ANTES DE ENTRENAR": {
+   "n": 638,
+   "p05": 1.0,
+   "p50": 2.0,
+   "p95": 5.0,
+   "min": 1.0,
+   "max": 9.0
+  },
+  "CENA": {
+   "n": 1020,
+   "p05": 3.0,
+   "p50": 8.0,
+   "p95": 15.0,
+   "min": 1.0,
+   "max": 22.0
+  },
+  "COMIDA": {
+   "n": 1133,
+   "p05": 3.0,
+   "p50": 7.0,
+   "p95": 21.0,
+   "min": 1.0,
+   "max": 43.0
+  },
+  "DESAYUNO": {
+   "n": 675,
+   "p05": 2.0,
+   "p50": 5.0,
+   "p95": 11.0,
+   "min": 1.0,
+   "max": 18.0
+  },
+  "DESPUES DE ENTRENAR": {
+   "n": 684,
+   "p05": 1.0,
+   "p50": 2.5,
+   "p95": 7.0,
+   "min": 1.0,
+   "max": 13.0
+  },
+  "MEDIA MAÑANA": {
+   "n": 659,
+   "p05": 2.0,
+   "p50": 5.0,
+   "p95": 11.0,
+   "min": 1.0,
+   "max": 22.0
+  },
+  "MEDIA TARDE": {
+   "n": 550,
+   "p05": 2.0,
+   "p50": 5.0,
+   "p95": 10.0,
+   "min": 1.0,
+   "max": 24.0
+  },
+  "MERIENDA": {
+   "n": 387,
+   "p05": 3.0,
+   "p50": 6.0,
+   "p95": 18.7,
+   "min": 1.0,
+   "max": 29.0
+  },
+  "MITAD DE ENTRENAMIENTO": {
+   "n": 221,
+   "p05": 1.0,
+   "p50": 1.0,
+   "p95": 2.0,
+   "min": 1.0,
+   "max": 4.0
+  },
+  "OTHER": {
+   "n": 501,
+   "p05": 1.0,
+   "p50": 2.0,
+   "p95": 15.0,
+   "min": 1.0,
+   "max": 47.0
+  },
+  "RECENA": {
+   "n": 17,
+   "p05": 2.0,
+   "p50": 3.0,
+   "p95": 4.0,
+   "min": 2.0,
+   "max": 4.0
+  },
+  "RECIEN LEVANTADO": {
+   "n": 595,
+   "p05": 1.0,
+   "p50": 2.0,
+   "p95": 6.0,
+   "min": 1.0,
+   "max": 10.0
+  },
+  "SUPLEMENTOS": {
+   "n": 589,
+   "p05": 1.0,
+   "p50": 4.0,
+   "p95": 10.0,
+   "min": 1.0,
+   "max": 17.0
+  }
+ },
+ "slots_per_diet": {
+  "n": 1203,
+  "p05": 3.0,
+  "p50": 7.0,
+  "p95": 11.0,
+  "min": 1.0,
+  "max": 12.0
+ },
+ "alternative_groups": {
+  "groups": 8047,
+  "mixed_macro_share": 0.213,
+  "family_differs_share": 0.631,
+  "per_diet_mixed_macro_share": {
+   "n": 1161,
+   "p05": 0.0,
+   "p50": 0.17,
+   "p95": 0.5,
+   "min": 0.0,
+   "max": 1.0
+  },
+  "per_goal_mixed_macro_share": {
+   "ayuno_intermitente": {
+    "n": 71,
+    "p05": 0.0,
+    "p50": 0.33,
+    "p95": 0.56,
+    "min": 0.0,
+    "max": 0.75
+   },
+   "cetosis_keto": {
+    "n": 24,
+    "p05": 0.0,
+    "p50": 0.38,
+    "p95": 0.56,
+    "min": 0.0,
+    "max": 0.5714285714285714
+   },
+   "definicion_grasa": {
+    "n": 496,
+    "p05": 0.0,
+    "p50": 0.15,
+    "p95": 0.5,
+    "min": 0.0,
+    "max": 1.0
+   },
+   "sin_clasificar": {
+    "n": 81,
+    "p05": 0.0,
+    "p50": 0.17,
+    "p95": 1.0,
+    "min": 0.0,
+    "max": 1.0
+   },
+   "volumen_masa": {
+    "n": 474,
+    "p05": 0.0,
+    "p50": 0.17,
+    "p95": 0.5,
+    "min": 0.0,
+    "max": 0.8333333333333334
+   }
+  },
+  "fallback_p95": 1.0
+ },
+ "repeats_per_slot": {
+  "ALMUERZO": {
+   "n": 26,
+   "p05": 0.0,
+   "p50": 0.0,
+   "p95": 0.0,
+   "min": 0.0,
+   "max": 6.0
+  },
+  "ANTES DE DORMIR": {
+   "n": 254,
+   "p05": 0.0,
+   "p50": 0.0,
+   "p95": 1.35,
+   "min": 0.0,
+   "max": 7.0
+  },
+  "ANTES DE ENTRENAR": {
+   "n": 638,
+   "p05": 0.0,
+   "p50": 0.0,
+   "p95": 1.0,
+   "min": 0.0,
+   "max": 6.0
+  },
+  "CENA": {
+   "n": 1020,
+   "p05": 0.0,
+   "p50": 0.0,
+   "p95": 2.0,
+   "min": 0.0,
+   "max": 23.0
+  },
+  "COMIDA": {
+   "n": 1133,
+   "p05": 0.0,
+   "p50": 0.0,
+   "p95": 7.0,
+   "min": 0.0,
+   "max": 24.0
+  },
+  "DESAYUNO": {
+   "n": 675,
+   "p05": 0.0,
+   "p50": 0.0,
+   "p95": 2.0,
+   "min": 0.0,
+   "max": 30.0
+  },
+  "DESPUES DE ENTRENAR": {
+   "n": 684,
+   "p05": 0.0,
+   "p50": 0.0,
+   "p95": 1.0,
+   "min": 0.0,
+   "max": 11.0
+  },
+  "MEDIA MAÑANA": {
+   "n": 659,
+   "p05": 0.0,
+   "p50": 0.0,
+   "p95": 1.0,
+   "min": 0.0,
+   "max": 11.0
+  },
+  "MEDIA TARDE": {
+   "n": 550,
+   "p05": 0.0,
+   "p50": 0.0,
+   "p95": 1.0,
+   "min": 0.0,
+   "max": 7.0
+  },
+  "MERIENDA": {
+   "n": 387,
+   "p05": 0.0,
+   "p50": 0.0,
+   "p95": 1.0,
+   "min": 0.0,
+   "max": 11.0
+  },
+  "MITAD DE ENTRENAMIENTO": {
+   "n": 221,
+   "p05": 0.0,
+   "p50": 0.0,
+   "p95": 1.0,
+   "min": 0.0,
+   "max": 8.0
+  },
+  "OTHER": {
+   "n": 501,
+   "p05": 0.0,
+   "p50": 0.0,
+   "p95": 3.0,
+   "min": 0.0,
+   "max": 40.0
+  },
+  "RECENA": {
+   "n": 17,
+   "p05": 0.0,
+   "p50": 0.0,
+   "p95": 0.0,
+   "min": 0.0,
+   "max": 0.0
+  },
+  "RECIEN LEVANTADO": {
+   "n": 595,
+   "p05": 0.0,
+   "p50": 0.0,
+   "p95": 1.0,
+   "min": 0.0,
+   "max": 7.0
+  },
+  "SUPLEMENTOS": {
+   "n": 589,
+   "p05": 0.0,
+   "p50": 3.0,
+   "p95": 8.0,
+   "min": 0.0,
+   "max": 31.0
+  }
+ },
+ "repeats_per_slot_by_goal": {
+  "ayuno_intermitente": {
+   "ANTES DE ENTRENAR": {
+    "n": 30,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "CENA": {
+    "n": 62,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 1.0,
+    "min": 0.0,
+    "max": 2.0
+   },
+   "COMIDA": {
+    "n": 71,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 1.5,
+    "min": 0.0,
+    "max": 10.0
+   },
+   "DESPUES DE ENTRENAR": {
+    "n": 17,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "MEDIA MAÑANA": {
+    "n": 25,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 1.0,
+    "min": 0.0,
+    "max": 1.0
+   },
+   "MERIENDA": {
+    "n": 49,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 1.0,
+    "min": 0.0,
+    "max": 2.0
+   },
+   "OTHER": {
+    "n": 15,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 1.0,
+    "min": 0.0,
+    "max": 1.0
+   },
+   "RECIEN LEVANTADO": {
+    "n": 35,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 0.0,
+    "min": 0.0,
+    "max": 1.0
+   }
+  },
+  "cetosis_keto": {
+   "ANTES DE ENTRENAR": {
+    "n": 11,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "CENA": {
+    "n": 23,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 1.0,
+    "min": 0.0,
+    "max": 4.0
+   },
+   "COMIDA": {
+    "n": 24,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 1.85,
+    "min": 0.0,
+    "max": 2.0
+   },
+   "MERIENDA": {
+    "n": 21,
+    "p05": 0.0,
+    "p50": 1.0,
+    "p95": 1.0,
+    "min": 0.0,
+    "max": 2.0
+   }
+  },
+  "definicion_grasa": {
+   "ALMUERZO": {
+    "n": 14,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "ANTES DE DORMIR": {
+    "n": 129,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 1.0,
+    "min": 0.0,
+    "max": 7.0
+   },
+   "ANTES DE ENTRENAR": {
+    "n": 249,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 1.0,
+    "min": 0.0,
+    "max": 4.0
+   },
+   "CENA": {
+    "n": 465,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 1.0,
+    "min": 0.0,
+    "max": 9.0
+   },
+   "COMIDA": {
+    "n": 496,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 3.0,
+    "min": 0.0,
+    "max": 14.0
+   },
+   "DESAYUNO": {
+    "n": 282,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 1.95,
+    "min": 0.0,
+    "max": 10.0
+   },
+   "DESPUES DE ENTRENAR": {
+    "n": 252,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 1.0,
+    "min": 0.0,
+    "max": 7.0
+   },
+   "MEDIA MAÑANA": {
+    "n": 258,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 1.0,
+    "min": 0.0,
+    "max": 7.0
+   },
+   "MEDIA TARDE": {
+    "n": 242,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 1.0,
+    "min": 0.0,
+    "max": 7.0
+   },
+   "MERIENDA": {
+    "n": 186,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 1.0,
+    "min": 0.0,
+    "max": 3.0
+   },
+   "MITAD DE ENTRENAMIENTO": {
+    "n": 76,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 2.0,
+    "min": 0.0,
+    "max": 2.0
+   },
+   "OTHER": {
+    "n": 213,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 2.0,
+    "min": 0.0,
+    "max": 15.0
+   },
+   "RECIEN LEVANTADO": {
+    "n": 239,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 1.0,
+    "min": 0.0,
+    "max": 7.0
+   },
+   "SUPLEMENTOS": {
+    "n": 269,
+    "p05": 0.0,
+    "p50": 3.0,
+    "p95": 8.0,
+    "min": 0.0,
+    "max": 31.0
+   }
+  },
+  "sin_clasificar": {
+   "ANTES DE DORMIR": {
+    "n": 21,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "ANTES DE ENTRENAR": {
+    "n": 40,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 0.0,
+    "min": 0.0,
+    "max": 2.0
+   },
+   "CENA": {
+    "n": 69,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 3.2,
+    "min": 0.0,
+    "max": 23.0
+   },
+   "COMIDA": {
+    "n": 70,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 8.0,
+    "min": 0.0,
+    "max": 24.0
+   },
+   "DESAYUNO": {
+    "n": 51,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 0.5,
+    "min": 0.0,
+    "max": 7.0
+   },
+   "DESPUES DE ENTRENAR": {
+    "n": 51,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 1.0,
+    "min": 0.0,
+    "max": 5.0
+   },
+   "MEDIA MAÑANA": {
+    "n": 43,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 2.8,
+    "min": 0.0,
+    "max": 9.0
+   },
+   "MEDIA TARDE": {
+    "n": 38,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 0.0,
+    "min": 0.0,
+    "max": 0.0
+   },
+   "MERIENDA": {
+    "n": 21,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 4.0,
+    "min": 0.0,
+    "max": 9.0
+   },
+   "MITAD DE ENTRENAMIENTO": {
+    "n": 13,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 0.4,
+    "min": 0.0,
+    "max": 1.0
+   },
+   "OTHER": {
+    "n": 45,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 6.8,
+    "min": 0.0,
+    "max": 26.0
+   },
+   "RECIEN LEVANTADO": {
+    "n": 39,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 0.0,
+    "min": 0.0,
+    "max": 1.0
+   },
+   "SUPLEMENTOS": {
+    "n": 41,
+    "p05": 0.0,
+    "p50": 2.0,
+    "p95": 5.0,
+    "min": 0.0,
+    "max": 6.0
+   }
+  },
+  "volumen_masa": {
+   "ANTES DE DORMIR": {
+    "n": 99,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 1.1,
+    "min": 0.0,
+    "max": 3.0
+   },
+   "ANTES DE ENTRENAR": {
+    "n": 299,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 1.0,
+    "min": 0.0,
+    "max": 6.0
+   },
+   "CENA": {
+    "n": 386,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 2.0,
+    "min": 0.0,
+    "max": 18.0
+   },
+   "COMIDA": {
+    "n": 462,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 10.0,
+    "min": 0.0,
+    "max": 20.0
+   },
+   "DESAYUNO": {
+    "n": 325,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 2.0,
+    "min": 0.0,
+    "max": 30.0
+   },
+   "DESPUES DE ENTRENAR": {
+    "n": 355,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 1.0,
+    "min": 0.0,
+    "max": 11.0
+   },
+   "MEDIA MAÑANA": {
+    "n": 314,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 1.0,
+    "min": 0.0,
+    "max": 11.0
+   },
+   "MEDIA TARDE": {
+    "n": 263,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 1.0,
+    "min": 0.0,
+    "max": 7.0
+   },
+   "MERIENDA": {
+    "n": 98,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 2.0,
+    "min": 0.0,
+    "max": 11.0
+   },
+   "MITAD DE ENTRENAMIENTO": {
+    "n": 131,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 1.0,
+    "min": 0.0,
+    "max": 8.0
+   },
+   "OTHER": {
+    "n": 212,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 3.0,
+    "min": 0.0,
+    "max": 40.0
+   },
+   "RECIEN LEVANTADO": {
+    "n": 264,
+    "p05": 0.0,
+    "p50": 0.0,
+    "p95": 1.0,
+    "min": 0.0,
+    "max": 5.0
+   },
+   "SUPLEMENTOS": {
+    "n": 270,
+    "p05": 0.0,
+    "p50": 3.0,
+    "p95": 8.55,
+    "min": 0.0,
+    "max": 25.0
+   }
+  }
+ },
+ "repeats_summary": {
+  "per_diet_mean": 3.93,
+  "diets_with_any_repeat_share": 0.686
+ },
+ "units_per_food": {
+  "1": {
+   "g": 2063,
+   "unidad": 94,
+   "lata": 9,
+   "loncha": 1
+  },
+  "2": {
+   "g": 2181,
+   "unidad": 65
+  },
+  "3": {
+   "unidad": 1509,
+   "g": 382,
+   "cazo": 11
+  },
+  "4": {
+   "unidad": 1954
+  },
+  "5": {
+   "cucharada": 1448,
+   "cucharadita": 226,
+   "unidad": 38,
+   "cápsula": 9,
+   "lata": 4,
+   "chorrito": 4,
+   "g": 3,
+   "loncha": 2
+  },
+  "6": {
+   "g": 1451,
+   "unidad": 29,
+   "ml": 2,
+   "puñado": 1
+  },
+  "7": {
+   "g": 1181,
+   "unidad": 128,
+   "lata": 4,
+   "loncha": 3
+  },
+  "8": {
+   "g": 1337,
+   "unidad": 14,
+   "loncha": 1
+  },
+  "9": {
+   "g": 1155,
+   "unidad": 137
+  },
+  "10": {
+   "unidad": 1312,
+   "cápsula": 3
+  },
+  "11": {
+   "unidad": 1108
+  },
+  "12": {
+   "lata": 675,
+   "g": 166,
+   "unidad": 29
+  },
+  "13": {
+   "g": 844,
+   "unidad": 23
+  },
+  "14": {
+   "g": 762,
+   "unidad": 24
+  },
+  "15": {
+   "unidad": 786,
+   "cucharada": 1
+  },
+  "16": {
+   "g": 534,
+   "cucharada": 121,
+   "cazo": 25,
+   "unidad": 15
+  },
+  "17": {
+   "g": 552,
+   "unidad": 15,
+   "loncha": 3,
+   "cucharada": 3
+  },
+  "18": {
+   "unidad": 655,
+   "g": 2
+  },
+  "19": {
+   "g": 524,
+   "unidad": 97
+  },
+  "20": {
+   "loncha": 642,
+   "unidad": 4,
+   "g": 2
+  },
+  "21": {
+   "g": 581,
+   "unidad": 20,
+   "cazo": 1
+  },
+  "22": {
+   "unidad": 591,
+   "cápsula": 14
+  },
+  "23": {
+   "g": 530,
+   "ml": 5,
+   "unidad": 4
+  },
+  "24": {
+   "g": 474,
+   "unidad": 53
+  },
+  "25": {
+   "loncha": 238,
+   "g": 177,
+   "unidad": 99
+  },
+  "26": {
+   "g": 497,
+   "unidad": 19
+  },
+  "27": {
+   "g": 498,
+   "unidad": 19,
+   "cazo": 5,
+   "cápsula": 1
+  },
+  "28": {
+   "g": 229,
+   "unidad": 4
+  },
+  "29": {
+   "unidad": 411,
+   "g": 3,
+   "lata": 1
+  },
+  "30": {
+   "unidad": 454,
+   "g": 2
+  },
+  "31": {
+   "g": 418,
+   "unidad": 25
+  },
+  "32": {
+   "unidad": 406,
+   "cápsula": 42
+  },
+  "33": {
+   "unidad": 257
+  },
+  "34": {
+   "g": 349,
+   "loncha": 22,
+   "unidad": 9
+  },
+  "35": {
+   "g": 433,
+   "unidad": 2
+  },
+  "36": {
+   "unidad": 394
+  },
+  "37": {
+   "diente": 323,
+   "g": 50,
+   "unidad": 4
+  },
+  "38": {
+   "unidad": 378
+  },
+  "39": {
+   "g": 342,
+   "unidad": 17,
+   "lata": 1
+  },
+  "40": {
+   "g": 332,
+   "unidad": 5
+  },
+  "41": {
+   "unidad": 325,
+   "g": 14
+  },
+  "42": {
+   "g": 308,
+   "unidad": 5
+  },
+  "43": {
+   "ml": 158,
+   "unidad": 10,
+   "g": 4
+  },
+  "44": {
+   "unidad": 15
+  },
+  "45": {
+   "cucharada": 199,
+   "cucharadita": 44,
+   "g": 40,
+   "unidad": 9
+  },
+  "46": {
+   "unidad": 278,
+   "g": 5
+  },
+  "47": {
+   "g": 128,
+   "cucharada": 33,
+   "unidad": 5,
+   "cazo": 3
+  },
+  "48": {
+   "g": 237,
+   "unidad": 15
+  },
+  "49": {
+   "g": 225
+  },
+  "50": {
+   "unidad": 166,
+   "g": 22
+  },
+  "51": {
+   "unidad": 182
+  },
+  "52": {
+   "unidad": 132,
+   "g": 17,
+   "cápsula": 5
+  },
+  "53": {
+   "g": 147,
+   "unidad": 3
+  },
+  "54": {
+   "g": 151,
+   "cazo": 12,
+   "cucharada": 5,
+   "unidad": 4
+  },
+  "55": {
+   "g": 198,
+   "lata": 1
+  },
+  "56": {
+   "g": 163,
+   "unidad": 21,
+   "cápsula": 11,
+   "cazo": 2
+  },
+  "57": {
+   "g": 165,
+   "unidad": 1
+  },
+  "58": {
+   "unidad": 154
+  },
+  "59": {
+   "g": 149
+  },
+  "60": {
+   "unidad": 148,
+   "loncha": 9
+  },
+  "61": {
+   "g": 155,
+   "unidad": 1,
+   "lata": 1
+  },
+  "62": {
+   "g": 138,
+   "ml": 9,
+   "unidad": 1
+  },
+  "63": {
+   "unidad": 129
+  },
+  "64": {
+   "g": 54,
+   "cápsula": 2
+  },
+  "65": {
+   "unidad": 107
+  },
+  "66": {
+   "g": 145,
+   "unidad": 1
+  },
+  "67": {
+   "unidad": 13
+  },
+  "68": {
+   "g": 121,
+   "unidad": 9,
+   "lata": 1
+  },
+  "69": {
+   "g": 107,
+   "unidad": 6
+  },
+  "70": {
+   "g": 138,
+   "ml": 2,
+   "unidad": 1
+  },
+  "71": {
+   "unidad": 141
+  },
+  "72": {
+   "unidad": 136
+  },
+  "73": {
+   "unidad": 119
+  },
+  "74": {
+   "ml": 74,
+   "unidad": 37,
+   "g": 4
+  },
+  "75": {
+   "cucharadita": 78,
+   "cucharada": 26,
+   "g": 5,
+   "chorrito": 4
+  },
+  "76": {
+   "lata": 66,
+   "unidad": 24,
+   "g": 20
+  },
+  "77": {
+   "unidad": 113
+  },
+  "78": {
+   "g": 91,
+   "unidad": 13
+  },
+  "79": {
+   "unidad": 68,
+   "cucharada": 1
+  },
+  "80": {
+   "unidad": 108,
+   "ml": 1
+  },
+  "81": {
+   "g": 107,
+   "cucharadita": 3
+  },
+  "82": {
+   "g": 103,
+   "unidad": 5,
+   "loncha": 4
+  },
+  "83": {
+   "g": 104
+  },
+  "84": {
+   "g": 105,
+   "unidad": 1
+  },
+  "85": {
+   "g": 102,
+   "diente": 1,
+   "unidad": 1
+  },
+  "86": {
+   "unidad": 80,
+   "g": 4
+  },
+  "87": {
+   "g": 92,
+   "unidad": 4
+  },
+  "88": {
+   "unidad": 99
+  },
+  "89": {
+   "unidad": 86,
+   "ml": 5,
+   "loncha": 1
+  },
+  "90": {
+   "g": 78,
+   "unidad": 1
+  },
+  "91": {
+   "g": 77,
+   "unidad": 3
+  },
+  "92": {
+   "unidad": 1
+  },
+  "93": {
+   "unidad": 23
+  },
+  "94": {
+   "ml": 76,
+   "g": 5,
+   "chorrito": 1
+  },
+  "95": {
+   "g": 85
+  },
+  "96": {
+   "g": 69,
+   "unidad": 1
+  },
+  "97": {
+   "g": 51,
+   "loncha": 31,
+   "unidad": 1
+  },
+  "98": {
+   "g": 31
+  },
+  "99": {
+   "unidad": 28
+  },
+  "100": {
+   "ml": 66,
+   "chorrito": 2,
+   "g": 2
+  },
+  "101": {
+   "g": 73
+  },
+  "102": {
+   "g": 48,
+   "loncha": 3,
+   "unidad": 3
+  },
+  "103": {
+   "unidad": 68,
+   "cápsula": 3,
+   "g": 1
+  },
+  "104": {
+   "g": 65
+  },
+  "105": {
+   "g": 62
+  },
+  "106": {
+   "g": 61,
+   "unidad": 2
+  },
+  "107": {
+   "g": 58,
+   "unidad": 2
+  },
+  "108": {
+   "unidad": 43,
+   "g": 8,
+   "cápsula": 2,
+   "cazo": 2
+  },
+  "109": {
+   "g": 45
+  },
+  "110": {
+   "g": 49
+  },
+  "111": {
+   "unidad": 55,
+   "g": 2
+  },
+  "112": {
+   "unidad": 54
+  },
+  "113": {
+   "unidad": 55
+  },
+  "114": {
+   "g": 31
+  },
+  "115": {
+   "unidad": 1
+  },
+  "116": {
+   "ml": 17,
+   "g": 10,
+   "unidad": 1
+  },
+  "117": {
+   "g": 46,
+   "unidad": 1
+  },
+  "118": {
+   "g": 35
+  },
+  "119": {
+   "unidad": 27,
+   "g": 7
+  },
+  "120": {
+   "g": 32,
+   "ml": 3
+  },
+  "121": {
+   "g": 38
+  },
+  "122": {
+   "g": 35
+  },
+  "123": {
+   "g": 34
+  },
+  "124": {
+   "g": 21,
+   "lata": 2,
+   "unidad": 1
+  },
+  "125": {
+   "unidad": 26,
+   "g": 5
+  },
+  "126": {
+   "g": 27
+  },
+  "127": {
+   "unidad": 20
+  },
+  "128": {
+   "unidad": 25,
+   "g": 4
+  },
+  "129": {
+   "unidad": 35
+  },
+  "130": {
+   "g": 15
+  },
+  "131": {
+   "g": 26,
+   "unidad": 8
+  },
+  "132": {
+   "g": 34
+  },
+  "133": {
+   "unidad": 20,
+   "g": 10
+  },
+  "134": {
+   "unidad": 22
+  },
+  "135": {
+   "g": 28
+  },
+  "136": {
+   "unidad": 10
+  },
+  "137": {
+   "g": 16,
+   "unidad": 2,
+   "lata": 1
+  },
+  "138": {
+   "g": 17
+  },
+  "139": {
+   "g": 8,
+   "cápsula": 7,
+   "cucharada": 3,
+   "unidad": 2,
+   "chorrito": 1
+  },
+  "140": {
+   "unidad": 28
+  },
+  "141": {
+   "g": 23,
+   "unidad": 2
+  },
+  "142": {
+   "unidad": 27
+  },
+  "143": {
+   "unidad": 27
+  },
+  "144": {
+   "g": 15,
+   "unidad": 5
+  },
+  "145": {
+   "unidad": 15
+  },
+  "146": {
+   "g": 12,
+   "unidad": 11
+  },
+  "147": {
+   "g": 18,
+   "unidad": 1
+  },
+  "148": {
+   "unidad": 21,
+   "ml": 1
+  },
+  "149": {
+   "loncha": 16,
+   "g": 6,
+   "unidad": 1
+  },
+  "150": {
+   "g": 15
+  },
+  "151": {
+   "unidad": 18
+  },
+  "152": {
+   "unidad": 19,
+   "loncha": 2,
+   "g": 1
+  },
+  "153": {
+   "g": 14
+  },
+  "154": {
+   "g": 14,
+   "unidad": 2
+  },
+  "155": {
+   "unidad": 11
+  },
+  "156": {
+   "unidad": 9
+  },
+  "157": {
+   "g": 11,
+   "cápsula": 3
+  },
+  "158": {
+   "g": 18,
+   "cápsula": 2
+  },
+  "159": {
+   "g": 8,
+   "unidad": 1
+  },
+  "160": {
+   "g": 20
+  },
+  "161": {
+   "cápsula": 12,
+   "unidad": 7
+  },
+  "162": {
+   "g": 20
+  },
+  "163": {
+   "unidad": 20
+  },
+  "164": {
+   "ml": 2,
+   "g": 1
+  },
+  "165": {
+   "unidad": 15,
+   "chorrito": 1
+  },
+  "166": {
+   "g": 4,
+   "chorrito": 3
+  },
+  "167": {
+   "g": 15
+  },
+  "168": {
+   "g": 12
+  },
+  "169": {
+   "unidad": 9,
+   "g": 6
+  },
+  "170": {
+   "g": 6,
+   "cucharadita": 3,
+   "cucharada": 1
+  },
+  "171": {
+   "unidad": 16
+  },
+  "172": {
+   "ml": 10
+  },
+  "173": {
+   "g": 15
+  },
+  "174": {
+   "ml": 12,
+   "unidad": 2
+  },
+  "175": {
+   "g": 13,
+   "unidad": 1
+  },
+  "176": {
+   "g": 5,
+   "cucharada": 2,
+   "unidad": 1
+  },
+  "177": {
+   "loncha": 12,
+   "g": 1
+  },
+  "178": {
+   "g": 10
+  },
+  "179": {
+   "g": 7,
+   "unidad": 1
+  },
+  "180": {
+   "g": 4,
+   "chorrito": 3
+  },
+  "181": {
+   "g": 2,
+   "unidad": 1
+  },
+  "182": {
+   "cucharada": 7,
+   "cucharadita": 4
+  },
+  "183": {
+   "unidad": 12
+  },
+  "184": {
+   "g": 4,
+   "unidad": 3
+  },
+  "185": {
+   "g": 6,
+   "unidad": 1
+  },
+  "186": {
+   "unidad": 11
+  },
+  "187": {
+   "g": 10
+  },
+  "188": {
+   "cucharada": 8,
+   "chorrito": 1
+  },
+  "189": {
+   "g": 9
+  },
+  "190": {
+   "g": 6
+  },
+  "191": {
+   "lata": 10
+  },
+  "192": {
+   "g": 7
+  },
+  "193": {
+   "g": 8,
+   "unidad": 1
+  },
+  "194": {
+   "g": 7
+  },
+  "195": {
+   "g": 8
+  },
+  "196": {
+   "g": 6
+  },
+  "197": {
+   "unidad": 7
+  },
+  "198": {
+   "g": 6
+  },
+  "199": {
+   "ml": 1
+  },
+  "200": {
+   "g": 6
+  },
+  "201": {
+   "g": 4,
+   "unidad": 2
+  },
+  "202": {
+   "g": 1
+  },
+  "203": {
+   "g": 1
+  },
+  "204": {
+   "unidad": 2
+  },
+  "205": {
+   "cápsula": 5
+  },
+  "206": {
+   "unidad": 1
+  },
+  "207": {
+   "unidad": 5
+  },
+  "208": {
+   "unidad": 1
+  },
+  "209": {
+   "unidad": 1
+  },
+  "210": {
+   "g": 4
+  },
+  "211": {
+   "g": 2
+  },
+  "212": {
+   "unidad": 4
+  },
+  "213": {
+   "unidad": 1
+  },
+  "216": {
+   "g": 2
+  },
+  "219": {
+   "unidad": 2
+  },
+  "220": {
+   "cucharada": 2
+  },
+  "221": {
+   "chorrito": 1
+  },
+  "222": {
+   "g": 1
+  },
+  "225": {
+   "g": 1
+  },
+  "227": {
+   "g": 1
+  },
+  "228": {
+   "unidad": 1
+  }
+ }
+}

@@ -1,0 +1,8 @@
+{
+ "sex": "F",
+ "age": 21,
+ "height_cm": 167,
+ "activity_level": 4,
+ "goal": "mantenimiento",
+ "expect_goal_not_servable": true
+}

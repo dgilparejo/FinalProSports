@@ -1,0 +1,754 @@
+{
+ "diets": 1203,
+ "diets_with_a_supplements_block": 589,
+ "diets_with_a_supplements_block_pct": 0.4896,
+ "min_observations": 10,
+ "supplements_placeable": 47,
+ "supplements_with_modal_slot_over_half": 16,
+ "note": "Respaldo, no criterio principal: la colocacion la deciden primero los CASOS RECUPERADOS (supplement_placement_policy), que resuelven el 74,8 %. Esta tabla contesta el resto.",
+ "placements": {
+  "batido de proteínas": {
+   "food_id": 3,
+   "slot": "DESPUES DE ENTRENAR",
+   "observations": 1771,
+   "concentration": 0.3038,
+   "in_generic_block": 213,
+   "distribution": {
+    "DESPUES DE ENTRENAR": 538,
+    "DESAYUNO": 330,
+    "ANTES DE ENTRENAR": 246,
+    "ANTES DE DORMIR": 214,
+    "RECIEN LEVANTADO": 167,
+    "COMIDA": 78,
+    "MEDIA TARDE": 66,
+    "MERIENDA": 55,
+    "MEDIA MAÑANA": 52,
+    "CENA": 15,
+    "MITAD DE ENTRENAMIENTO": 8,
+    "ALMUERZO": 1,
+    "RECENA": 1
+   }
+  },
+  "multivitamínico": {
+   "food_id": 4,
+   "slot": "COMIDA",
+   "observations": 861,
+   "concentration": 0.36,
+   "in_generic_block": 1115,
+   "distribution": {
+    "COMIDA": 310,
+    "DESAYUNO": 152,
+    "MERIENDA": 88,
+    "RECIEN LEVANTADO": 81,
+    "MEDIA MAÑANA": 72,
+    "CENA": 64,
+    "DESPUES DE ENTRENAR": 46,
+    "MEDIA TARDE": 30,
+    "ANTES DE ENTRENAR": 18
+   }
+  },
+  "aminoácidos": {
+   "food_id": 16,
+   "slot": "MITAD DE ENTRENAMIENTO",
+   "observations": 645,
+   "concentration": 0.2946,
+   "in_generic_block": 121,
+   "distribution": {
+    "MITAD DE ENTRENAMIENTO": 190,
+    "ANTES DE ENTRENAR": 166,
+    "RECIEN LEVANTADO": 147,
+    "DESPUES DE ENTRENAR": 113,
+    "ANTES DE DORMIR": 12,
+    "DESAYUNO": 7,
+    "MEDIA MAÑANA": 3,
+    "MEDIA TARDE": 3,
+    "MERIENDA": 3,
+    "COMIDA": 1
+   }
+  },
+  "creatina": {
+   "food_id": 27,
+   "slot": "DESPUES DE ENTRENAR",
+   "observations": 497,
+   "concentration": 0.3642,
+   "in_generic_block": 30,
+   "distribution": {
+    "DESPUES DE ENTRENAR": 181,
+    "ANTES DE ENTRENAR": 106,
+    "DESAYUNO": 60,
+    "COMIDA": 40,
+    "CENA": 30,
+    "RECIEN LEVANTADO": 29,
+    "MERIENDA": 23,
+    "MEDIA MAÑANA": 15,
+    "MEDIA TARDE": 7,
+    "MITAD DE ENTRENAMIENTO": 5,
+    "ANTES DE DORMIR": 1
+   }
+  },
+  "potasio": {
+   "food_id": 10,
+   "slot": "CENA",
+   "observations": 377,
+   "concentration": 0.2865,
+   "in_generic_block": 947,
+   "distribution": {
+    "CENA": 108,
+    "COMIDA": 89,
+    "RECIEN LEVANTADO": 48,
+    "MEDIA MAÑANA": 38,
+    "DESAYUNO": 19,
+    "ANTES DE ENTRENAR": 18,
+    "MEDIA TARDE": 17,
+    "DESPUES DE ENTRENAR": 16,
+    "MERIENDA": 13,
+    "RECENA": 8,
+    "ANTES DE DORMIR": 3
+   }
+  },
+  "quemagrasa": {
+   "food_id": 32,
+   "slot": "ANTES DE ENTRENAR",
+   "observations": 371,
+   "concentration": 0.558,
+   "in_generic_block": 97,
+   "distribution": {
+    "ANTES DE ENTRENAR": 207,
+    "RECIEN LEVANTADO": 90,
+    "MEDIA MAÑANA": 28,
+    "MITAD DE ENTRENAMIENTO": 16,
+    "DESPUES DE ENTRENAR": 13,
+    "DESAYUNO": 12,
+    "CENA": 3,
+    "MERIENDA": 1,
+    "ANTES DE DORMIR": 1
+   }
+  },
+  "electrolitos": {
+   "food_id": 44,
+   "slot": "COMIDA",
+   "observations": 275,
+   "concentration": 0.3127,
+   "in_generic_block": 23,
+   "distribution": {
+    "COMIDA": 86,
+    "MERIENDA": 47,
+    "CENA": 45,
+    "MEDIA MAÑANA": 31,
+    "DESAYUNO": 26,
+    "MEDIA TARDE": 18,
+    "DESPUES DE ENTRENAR": 14,
+    "ANTES DE ENTRENAR": 5,
+    "RECIEN LEVANTADO": 3
+   }
+  },
+  "complejo zinc-magnesio": {
+   "food_id": 36,
+   "slot": "CENA",
+   "observations": 274,
+   "concentration": 0.1898,
+   "in_generic_block": 165,
+   "distribution": {
+    "CENA": 52,
+    "DESPUES DE ENTRENAR": 49,
+    "COMIDA": 40,
+    "RECIEN LEVANTADO": 34,
+    "MEDIA TARDE": 28,
+    "ANTES DE ENTRENAR": 26,
+    "MEDIA MAÑANA": 20,
+    "DESAYUNO": 20,
+    "MERIENDA": 4,
+    "ANTES DE DORMIR": 1
+   }
+  },
+  "bcaa": {
+   "food_id": 47,
+   "slot": "ANTES DE ENTRENAR",
+   "observations": 202,
+   "concentration": 0.4158,
+   "in_generic_block": 62,
+   "distribution": {
+    "ANTES DE ENTRENAR": 84,
+    "DESPUES DE ENTRENAR": 60,
+    "MITAD DE ENTRENAMIENTO": 25,
+    "RECIEN LEVANTADO": 15,
+    "ANTES DE DORMIR": 5,
+    "MEDIA MAÑANA": 4,
+    "DESAYUNO": 4,
+    "MERIENDA": 2,
+    "MEDIA TARDE": 2,
+    "CENA": 1
+   }
+  },
+  "proteína aislada": {
+   "food_id": 53,
+   "slot": "DESPUES DE ENTRENAR",
+   "observations": 190,
+   "concentration": 0.4895,
+   "in_generic_block": 21,
+   "distribution": {
+    "DESPUES DE ENTRENAR": 93,
+    "ANTES DE ENTRENAR": 47,
+    "RECIEN LEVANTADO": 16,
+    "DESAYUNO": 14,
+    "MEDIA MAÑANA": 13,
+    "COMIDA": 5,
+    "MITAD DE ENTRENAMIENTO": 1,
+    "MEDIA TARDE": 1
+   }
+  },
+  "amilopectina": {
+   "food_id": 54,
+   "slot": "DESPUES DE ENTRENAR",
+   "observations": 180,
+   "concentration": 0.3556,
+   "in_generic_block": 27,
+   "distribution": {
+    "DESPUES DE ENTRENAR": 64,
+    "ANTES DE ENTRENAR": 59,
+    "DESAYUNO": 16,
+    "COMIDA": 11,
+    "MITAD DE ENTRENAMIENTO": 10,
+    "RECIEN LEVANTADO": 8,
+    "MEDIA TARDE": 5,
+    "MEDIA MAÑANA": 4,
+    "CENA": 2,
+    "MERIENDA": 1
+   }
+  },
+  "eaa": {
+   "food_id": 56,
+   "slot": "DESPUES DE ENTRENAR",
+   "observations": 179,
+   "concentration": 0.2961,
+   "in_generic_block": 18,
+   "distribution": {
+    "DESPUES DE ENTRENAR": 53,
+    "COMIDA": 26,
+    "RECIEN LEVANTADO": 24,
+    "DESAYUNO": 23,
+    "MERIENDA": 14,
+    "MEDIA TARDE": 11,
+    "ANTES DE ENTRENAR": 9,
+    "ANTES DE DORMIR": 6,
+    "MEDIA MAÑANA": 6,
+    "CENA": 5,
+    "MITAD DE ENTRENAMIENTO": 2
+   }
+  },
+  "l-carnitina": {
+   "food_id": 52,
+   "slot": "RECIEN LEVANTADO",
+   "observations": 158,
+   "concentration": 0.5443,
+   "in_generic_block": 60,
+   "distribution": {
+    "RECIEN LEVANTADO": 86,
+    "ANTES DE ENTRENAR": 59,
+    "MITAD DE ENTRENAMIENTO": 5,
+    "MEDIA MAÑANA": 3,
+    "CENA": 2,
+    "DESPUES DE ENTRENAR": 2,
+    "ANTES DE DORMIR": 1
+   }
+  },
+  "magnesio": {
+   "food_id": 33,
+   "slot": "CENA",
+   "observations": 141,
+   "concentration": 0.2482,
+   "in_generic_block": 326,
+   "distribution": {
+    "CENA": 35,
+    "MEDIA MAÑANA": 27,
+    "MEDIA TARDE": 26,
+    "COMIDA": 19,
+    "DESPUES DE ENTRENAR": 9,
+    "ANTES DE ENTRENAR": 8,
+    "RECIEN LEVANTADO": 8,
+    "MERIENDA": 7,
+    "DESAYUNO": 2
+   }
+  },
+  "minerales": {
+   "food_id": 67,
+   "slot": "COMIDA",
+   "observations": 136,
+   "concentration": 0.4559,
+   "in_generic_block": 15,
+   "distribution": {
+    "COMIDA": 62,
+    "DESAYUNO": 15,
+    "MERIENDA": 14,
+    "DESPUES DE ENTRENAR": 13,
+    "RECIEN LEVANTADO": 13,
+    "MEDIA MAÑANA": 8,
+    "CENA": 8,
+    "MEDIA TARDE": 3
+   }
+  },
+  "vitamina d": {
+   "food_id": 72,
+   "slot": "CENA",
+   "observations": 114,
+   "concentration": 0.6754,
+   "in_generic_block": 28,
+   "distribution": {
+    "CENA": 77,
+    "COMIDA": 23,
+    "DESAYUNO": 5,
+    "ANTES DE DORMIR": 3,
+    "RECIEN LEVANTADO": 3,
+    "MERIENDA": 3
+   }
+  },
+  "protector articular": {
+   "food_id": 73,
+   "slot": "CENA",
+   "observations": 105,
+   "concentration": 0.3333,
+   "in_generic_block": 28,
+   "distribution": {
+    "CENA": 35,
+    "COMIDA": 32,
+    "RECIEN LEVANTADO": 12,
+    "MEDIA MAÑANA": 7,
+    "DESPUES DE ENTRENAR": 6,
+    "ANTES DE ENTRENAR": 4,
+    "ANTES DE DORMIR": 3,
+    "DESAYUNO": 3,
+    "MERIENDA": 2,
+    "MEDIA TARDE": 1
+   }
+  },
+  "glutamina": {
+   "food_id": 64,
+   "slot": "ANTES DE ENTRENAR",
+   "observations": 104,
+   "concentration": 0.3654,
+   "in_generic_block": 50,
+   "distribution": {
+    "ANTES DE ENTRENAR": 38,
+    "DESPUES DE ENTRENAR": 25,
+    "MITAD DE ENTRENAMIENTO": 21,
+    "MEDIA MAÑANA": 6,
+    "RECIEN LEVANTADO": 4,
+    "MEDIA TARDE": 4,
+    "DESAYUNO": 4,
+    "ANTES DE DORMIR": 1,
+    "CENA": 1
+   }
+  },
+  "vitamina b": {
+   "food_id": 71,
+   "slot": "ANTES DE ENTRENAR",
+   "observations": 100,
+   "concentration": 0.34,
+   "in_generic_block": 42,
+   "distribution": {
+    "ANTES DE ENTRENAR": 34,
+    "RECIEN LEVANTADO": 19,
+    "DESPUES DE ENTRENAR": 19,
+    "DESAYUNO": 10,
+    "MERIENDA": 9,
+    "MEDIA TARDE": 4,
+    "COMIDA": 3,
+    "MEDIA MAÑANA": 1,
+    "CENA": 1
+   }
+  },
+  "tribulus": {
+   "food_id": 63,
+   "slot": "RECIEN LEVANTADO",
+   "observations": 97,
+   "concentration": 0.3505,
+   "in_generic_block": 58,
+   "distribution": {
+    "RECIEN LEVANTADO": 34,
+    "DESPUES DE ENTRENAR": 18,
+    "COMIDA": 17,
+    "ANTES DE ENTRENAR": 10,
+    "CENA": 7,
+    "DESAYUNO": 7,
+    "MEDIA TARDE": 3,
+    "MEDIA MAÑANA": 1
+   }
+  },
+  "hierro": {
+   "food_id": 88,
+   "slot": "RECIEN LEVANTADO",
+   "observations": 87,
+   "concentration": 0.7126,
+   "in_generic_block": 13,
+   "distribution": {
+    "RECIEN LEVANTADO": 62,
+    "DESPUES DE ENTRENAR": 11,
+    "DESAYUNO": 7,
+    "MEDIA MAÑANA": 5,
+    "CENA": 2
+   }
+  },
+  "vitamina k": {
+   "food_id": 79,
+   "slot": "CENA",
+   "observations": 79,
+   "concentration": 0.7468,
+   "in_generic_block": 37,
+   "distribution": {
+    "CENA": 59,
+    "COMIDA": 14,
+    "ANTES DE DORMIR": 3,
+    "RECIEN LEVANTADO": 3
+   }
+  },
+  "omega 3": {
+   "food_id": 15,
+   "slot": "CENA",
+   "observations": 73,
+   "concentration": 0.3562,
+   "in_generic_block": 742,
+   "distribution": {
+    "CENA": 26,
+    "COMIDA": 17,
+    "MERIENDA": 8,
+    "MEDIA TARDE": 7,
+    "RECIEN LEVANTADO": 6,
+    "DESPUES DE ENTRENAR": 5,
+    "ANTES DE DORMIR": 2,
+    "DESAYUNO": 1,
+    "MEDIA MAÑANA": 1
+   }
+  },
+  "vitamina c": {
+   "food_id": 93,
+   "slot": "RECIEN LEVANTADO",
+   "observations": 71,
+   "concentration": 0.7183,
+   "in_generic_block": 20,
+   "distribution": {
+    "RECIEN LEVANTADO": 51,
+    "MEDIA MAÑANA": 9,
+    "ANTES DE ENTRENAR": 5,
+    "DESAYUNO": 3,
+    "DESPUES DE ENTRENAR": 1,
+    "CENA": 1,
+    "COMIDA": 1
+   }
+  },
+  "cafeína": {
+   "food_id": 99,
+   "slot": "ANTES DE ENTRENAR",
+   "observations": 64,
+   "concentration": 0.875,
+   "in_generic_block": 16,
+   "distribution": {
+    "ANTES DE ENTRENAR": 56,
+    "RECIEN LEVANTADO": 3,
+    "MEDIA MAÑANA": 3,
+    "CENA": 2
+   }
+  },
+  "espirulina": {
+   "food_id": 103,
+   "slot": "CENA",
+   "observations": 64,
+   "concentration": 0.3438,
+   "in_generic_block": 8,
+   "distribution": {
+    "CENA": 22,
+    "COMIDA": 19,
+    "MERIENDA": 15,
+    "MEDIA TARDE": 4,
+    "DESAYUNO": 2,
+    "MEDIA MAÑANA": 2
+   }
+  },
+  "arginina": {
+   "food_id": 108,
+   "slot": "ANTES DE ENTRENAR",
+   "observations": 54,
+   "concentration": 0.5741,
+   "in_generic_block": 7,
+   "distribution": {
+    "ANTES DE ENTRENAR": 31,
+    "ANTES DE DORMIR": 19,
+    "DESPUES DE ENTRENAR": 2,
+    "MERIENDA": 1,
+    "RECIEN LEVANTADO": 1
+   }
+  },
+  "taurina": {
+   "food_id": 111,
+   "slot": "ANTES DE ENTRENAR",
+   "observations": 53,
+   "concentration": 0.3019,
+   "in_generic_block": 4,
+   "distribution": {
+    "ANTES DE ENTRENAR": 16,
+    "DESPUES DE ENTRENAR": 12,
+    "CENA": 7,
+    "COMIDA": 5,
+    "RECIEN LEVANTADO": 4,
+    "MEDIA MAÑANA": 3,
+    "DESAYUNO": 3,
+    "MITAD DE ENTRENAMIENTO": 2,
+    "ANTES DE DORMIR": 1
+   }
+  },
+  "calcio": {
+   "food_id": 38,
+   "slot": "CENA",
+   "observations": 41,
+   "concentration": 0.3902,
+   "in_generic_block": 346,
+   "distribution": {
+    "CENA": 16,
+    "RECIEN LEVANTADO": 6,
+    "DESPUES DE ENTRENAR": 6,
+    "DESAYUNO": 5,
+    "COMIDA": 4,
+    "MERIENDA": 2,
+    "MEDIA MAÑANA": 1,
+    "ANTES DE DORMIR": 1
+   }
+  },
+  "probiótico": {
+   "food_id": 113,
+   "slot": "RECIEN LEVANTADO",
+   "observations": 38,
+   "concentration": 0.4737,
+   "in_generic_block": 17,
+   "distribution": {
+    "RECIEN LEVANTADO": 18,
+    "CENA": 7,
+    "DESAYUNO": 5,
+    "COMIDA": 4,
+    "MERIENDA": 2,
+    "ANTES DE ENTRENAR": 1,
+    "MEDIA TARDE": 1
+   }
+  },
+  "onagra": {
+   "food_id": 22,
+   "slot": "CENA",
+   "observations": 37,
+   "concentration": 0.3243,
+   "in_generic_block": 569,
+   "distribution": {
+    "CENA": 12,
+    "DESAYUNO": 7,
+    "MEDIA MAÑANA": 5,
+    "MEDIA TARDE": 5,
+    "COMIDA": 4,
+    "ANTES DE DORMIR": 2,
+    "DESPUES DE ENTRENAR": 2
+   }
+  },
+  "caseína": {
+   "food_id": 125,
+   "slot": "ANTES DE DORMIR",
+   "observations": 33,
+   "concentration": 0.9091,
+   "in_generic_block": 4,
+   "distribution": {
+    "ANTES DE DORMIR": 30,
+    "CENA": 3
+   }
+  },
+  "zinc": {
+   "food_id": 127,
+   "slot": "MERIENDA",
+   "observations": 31,
+   "concentration": 0.3226,
+   "in_generic_block": 5,
+   "distribution": {
+    "MERIENDA": 10,
+    "CENA": 9,
+    "MEDIA MAÑANA": 9,
+    "COMIDA": 1,
+    "DESPUES DE ENTRENAR": 1,
+    "RECIEN LEVANTADO": 1
+   }
+  },
+  "maltodextrina": {
+   "food_id": 141,
+   "slot": "DESPUES DE ENTRENAR",
+   "observations": 26,
+   "concentration": 0.3846,
+   "in_generic_block": 1,
+   "distribution": {
+    "DESPUES DE ENTRENAR": 10,
+    "DESAYUNO": 10,
+    "ANTES DE ENTRENAR": 3,
+    "CENA": 1,
+    "RECIEN LEVANTADO": 1,
+    "COMIDA": 1
+   }
+  },
+  "tirosina": {
+   "food_id": 143,
+   "slot": "MEDIA MAÑANA",
+   "observations": 25,
+   "concentration": 0.48,
+   "in_generic_block": 2,
+   "distribution": {
+    "MEDIA MAÑANA": 12,
+    "ANTES DE ENTRENAR": 4,
+    "RECIEN LEVANTADO": 3,
+    "CENA": 2,
+    "DESAYUNO": 2,
+    "DESPUES DE ENTRENAR": 1,
+    "COMIDA": 1
+   }
+  },
+  "support": {
+   "food_id": 136,
+   "slot": "RECIEN LEVANTADO",
+   "observations": 25,
+   "concentration": 1.0,
+   "in_generic_block": 7,
+   "distribution": {
+    "RECIEN LEVANTADO": 25
+   }
+  },
+  "sinefrina": {
+   "food_id": 145,
+   "slot": "MEDIA MAÑANA",
+   "observations": 22,
+   "concentration": 0.4545,
+   "in_generic_block": 4,
+   "distribution": {
+    "MEDIA MAÑANA": 10,
+    "RECIEN LEVANTADO": 7,
+    "ANTES DE ENTRENAR": 2,
+    "CENA": 2,
+    "DESPUES DE ENTRENAR": 1
+   }
+  },
+  "diurético": {
+   "food_id": 140,
+   "slot": "ANTES DE ENTRENAR",
+   "observations": 18,
+   "concentration": 0.3889,
+   "in_generic_block": 10,
+   "distribution": {
+    "ANTES DE ENTRENAR": 7,
+    "ANTES DE DORMIR": 5,
+    "RECIEN LEVANTADO": 3,
+    "MERIENDA": 2,
+    "MEDIA MAÑANA": 1
+   }
+  },
+  "protector hepático": {
+   "food_id": 134,
+   "slot": "RECIEN LEVANTADO",
+   "observations": 17,
+   "concentration": 0.4706,
+   "in_generic_block": 16,
+   "distribution": {
+    "RECIEN LEVANTADO": 8,
+    "COMIDA": 6,
+    "ANTES DE DORMIR": 3
+   }
+  },
+  "barrita proteica": {
+   "food_id": 128,
+   "slot": "DESPUES DE ENTRENAR",
+   "observations": 16,
+   "concentration": 0.375,
+   "in_generic_block": 20,
+   "distribution": {
+    "DESPUES DE ENTRENAR": 6,
+    "MEDIA TARDE": 6,
+    "MEDIA MAÑANA": 3,
+    "DESAYUNO": 1
+   }
+  },
+  "coenzima q10": {
+   "food_id": 156,
+   "slot": "RECIEN LEVANTADO",
+   "observations": 16,
+   "concentration": 0.5,
+   "in_generic_block": 6,
+   "distribution": {
+    "RECIEN LEVANTADO": 8,
+    "ANTES DE ENTRENAR": 4,
+    "COMIDA": 1,
+    "MEDIA MAÑANA": 1,
+    "MERIENDA": 1,
+    "CENA": 1
+   }
+  },
+  "pre-entreno": {
+   "food_id": 169,
+   "slot": "ANTES DE ENTRENAR",
+   "observations": 15,
+   "concentration": 0.8667,
+   "in_generic_block": 2,
+   "distribution": {
+    "ANTES DE ENTRENAR": 13,
+    "RECIEN LEVANTADO": 2
+   }
+  },
+  "hydroxiter": {
+   "food_id": 161,
+   "slot": "RECIEN LEVANTADO",
+   "observations": 12,
+   "concentration": 0.6667,
+   "in_generic_block": 8,
+   "distribution": {
+    "RECIEN LEVANTADO": 8,
+    "ANTES DE ENTRENAR": 4
+   }
+  },
+  "vitamina e": {
+   "food_id": 142,
+   "slot": "CENA",
+   "observations": 12,
+   "concentration": 0.75,
+   "in_generic_block": 15,
+   "distribution": {
+    "CENA": 9,
+    "DESAYUNO": 2,
+    "MEDIA MAÑANA": 1
+   }
+  },
+  "nac": {
+   "food_id": 171,
+   "slot": "ANTES DE DORMIR",
+   "observations": 12,
+   "concentration": 0.5833,
+   "in_generic_block": 4,
+   "distribution": {
+    "ANTES DE DORMIR": 7,
+    "MITAD DE ENTRENAMIENTO": 2,
+    "RECIEN LEVANTADO": 2,
+    "MEDIA MAÑANA": 1
+   }
+  },
+  "ashwagandha": {
+   "food_id": 183,
+   "slot": "ANTES DE DORMIR",
+   "observations": 12,
+   "concentration": 0.9167,
+   "in_generic_block": 0,
+   "distribution": {
+    "ANTES DE DORMIR": 11,
+    "CENA": 1
+   }
+  },
+  "cla": {
+   "food_id": 129,
+   "slot": "DESAYUNO",
+   "observations": 11,
+   "concentration": 0.4545,
+   "in_generic_block": 24,
+   "distribution": {
+    "DESAYUNO": 5,
+    "MEDIA TARDE": 3,
+    "ANTES DE DORMIR": 2,
+    "RECIEN LEVANTADO": 1
+   }
+  }
+ }
+}

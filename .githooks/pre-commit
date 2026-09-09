@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+# finalprosports pre-commit (S2): the dependency-free suite + the architecture contracts always; the golden model-diet suite
+# when the database is reachable (it needs the loaded corpus). Install once with `make hooks` (git config core.hooksPath .githooks).
+set -euo pipefail
+cd "$(git rev-parse --show-toplevel)"
+export PYTHONUTF8=1 PYTHONIOENCODING=utf-8
+if [ -f .env ]; then set -a; . ./.env; set +a; fi
+if [ "${OS:-}" = "Windows_NT" ]; then PY=backend/.venv/Scripts/python.exe; LINT=backend/.venv/Scripts/lint-imports.exe; else PY=backend/.venv/bin/python; LINT=backend/.venv/bin/lint-imports; fi
+
+echo "pre-commit · tests without dependencies"
+fail=0
+for t in backend/tests/architecture/test_*.py backend/tests/domain/test_*.py backend/tests/application/test_*.py backend/tests/evaluation/test_*.py pipeline/tests/test_*.py; do
+  out=$(cd backend && "../$PY" "../$t" 2>&1) || { echo "$out" | tail -20; fail=1; }
+  echo "$out" | grep '^FAIL' && fail=1
+done
+[ "$fail" = 0 ] || { echo "pre-commit: tests failed"; exit 1; }
+
+echo "pre-commit · import-linter"
+(cd backend && "../$LINT" >/dev/null) || { echo "pre-commit: architecture contracts broken"; exit 1; }
+
+if [ -n "${DATABASE_URL:-}" ] && (cd backend && "../$PY" -c "import sqlalchemy,os; sqlalchemy.create_engine(os.environ['DATABASE_URL']).connect().close()" 2>/dev/null); then
+  echo "pre-commit · golden model diets + infrastructure (database reachable)"
+  (cd backend && "../$PY" -m pytest tests/golden -q -p no:cacheprovider) || { echo "pre-commit: golden suite failed (review the diff; accept with --update-snapshots)"; exit 1; }
+  # Infrastructure runs here too. It used to run only in verify-clean-clone, which is a pre-delivery check, so two
+  # regressions from the dataset-v3 activation (a PDF header and a case-base count) sat undetected for a whole
+  # session: a suite that no gate runs is a suite that does not exist. It needs the same database golden needs.
+  (cd backend && "../$PY" -m pytest tests/infrastructure -q -p no:cacheprovider) || { echo "pre-commit: infrastructure suite failed"; exit 1; }
+else
+  echo "pre-commit · golden suite skipped (database not reachable)"
+fi
+if [ -d frontend/node_modules ] && grep -q '"lint"' frontend/package.json && git diff --cached --name-only | grep -Eq '^frontend/src/.*\.(ts|html|sass|scss)$'; then
+  echo "pre-commit · frontend lint"
+  (cd frontend && npm run -s lint) || { echo "pre-commit: frontend lint failed"; exit 1; }
+fi
+echo "pre-commit · ok"

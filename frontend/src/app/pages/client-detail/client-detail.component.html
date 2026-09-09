@@ -1,0 +1,136 @@
+@if (!client()) {
+  <app-loading />
+} @else {
+  <div class="page-header">
+    <app-button variant="icon" icon="arrow_back" ariaLabel="volver" [routerLink]="['/']" />
+    <h1>
+      {{ displayName(client()) }}
+      @if (client()!.birth_date || client()!.phone || client()!.email) {
+        <span class="muted small contact">{{ contactLine(client()!) }}</span>
+      }
+    </h1>
+    <app-button variant="secondary" icon="assignment_ind" [routerLink]="['/clients', client()!.id, 'intake']">{{ 'detail.intake' | translate }}</app-button>
+    <app-button variant="primary" icon="auto_awesome" [routerLink]="['/clients', client()!.id, 'propose']">{{ 'detail.propose' | translate }}</app-button>
+  </div>
+
+  <div class="grid-1-2">
+    <div>
+      <div class="panel">
+        <div class="panel-title">
+          <h2>{{ 'detail.profile' | translate }}</h2>
+          <span class="muted small">{{ (diets()?.versions?.length ? 'detail.recurrent' : 'detail.new') | translate }}</span>
+        </div>
+        <dl class="facts">
+          <dt>{{ 'fields.sex' | translate }}</dt>
+          <dd>{{ sexLabel(client()!.sex) }}</dd>
+          <dt>{{ 'fields.age' | translate }}</dt>
+          <dd class="num">
+            {{ client()!.age ?? '—' }} <span class="faint">({{ client()!.age_bucket }})</span>
+          </dd>
+          <dt>{{ 'fields.height' | translate }}</dt>
+          <dd class="num">{{ client()!.height_cm ?? '—' }} cm</dd>
+          <dt>{{ 'fields.activity' | translate }}</dt>
+          <dd class="num">{{ client()!.activity_level ?? '—' }} / 6</dd>
+          <dt>{{ 'fields.goal' | translate }}</dt>
+          <dd>{{ client()!.goal | goalLabel }}</dd>
+          <dt>{{ 'fields.sport' | translate }}</dt>
+          <dd>{{ view()?.client?.sport || '—' }}</dd>
+        </dl>
+        <h3>{{ 'detail.restrictions' | translate }}</h3>
+        <app-chips [chips]="restrictionChips()" [emptyLabel]="'detail.none' | translate" />
+        <h3>{{ 'detail.disliked' | translate }}</h3>
+        <app-chips [chips]="dislikedChips()" [emptyLabel]="'detail.none' | translate" />
+        <h3>{{ 'detail.supplements' | translate }}</h3>
+        <app-chips [chips]="supplementChips()" [emptyLabel]="'detail.none' | translate" />
+      </div>
+
+      @if (view(); as v) {
+        <div class="panel">
+          <div class="panel-title">
+            <h2>{{ 'detail.completeness' | translate }}</h2>
+          </div>
+          <div class="row tiles">
+            <app-stat-tile
+              [label]="'detail.algorithm' | translate"
+              [value]="pct(v.completeness.algorithm.ratio)"
+              [tone]="v.completeness.algorithm.ratio === 1 ? 'ok' : 'warn'"
+              [hint]="v.completeness.algorithm.present.length + ' / ' + v.completeness.algorithm.total" />
+            <app-stat-tile
+              [label]="'detail.record' | translate"
+              [value]="pct(v.completeness.record.ratio)"
+              [hint]="v.completeness.record.present.length + ' / ' + v.completeness.record.total" />
+            @if (v.body_composition.bmi) {
+              <app-stat-tile label="IMC" [value]="v.body_composition.bmi" unit="kg/m²" />
+            }
+            @if (v.body_composition.body_fat_pct) {
+              <app-stat-tile [label]="'detail.bodyFat' | translate" [value]="v.body_composition.body_fat_pct" unit="%" hint="US Navy" />
+            }
+          </div>
+          @if (v.completeness.algorithm.missing.length) {
+            <p class="small tone-warn">{{ 'detail.missingAlgorithm' | translate }}: {{ missingAlgorithmText() }}</p>
+          }
+        </div>
+      }
+    </div>
+
+    <div>
+      <div class="panel">
+        <div class="panel-title">
+          <h2>{{ 'detail.history' | translate }}</h2>
+          <span class="muted small">{{ 'detail.historyHint' | translate: { n: diets()?.versions?.length ?? 0 } }}</span>
+        </div>
+        @if (!diets()) {
+          <app-loading />
+        }
+        @if (diets() && !diets()!.versions.length) {
+          <p class="muted">{{ 'detail.noVersions' | translate }}</p>
+        }
+        <mat-accordion>
+          @for (v of diets()?.versions ?? []; track v.id) {
+            <mat-expansion-panel>
+              <mat-expansion-panel-header>
+                <mat-panel-title
+                  ><strong>e{{ v.diet_version }}</strong
+                  >&nbsp; <a [routerLink]="['/diets', v.id]">{{ 'detail.open' | translate }}</a></mat-panel-title
+                >
+                <mat-panel-description
+                  >{{ v.goal | goalLabel }} · {{ v.meals.length }} {{ 'detail.meals' | translate }} · {{ v.items }}
+                  {{ 'detail.items' | translate }}</mat-panel-description
+                >
+              </mat-expansion-panel-header>
+              @for (m of v.meals; track m.slot) {
+                <p class="meal">
+                  <strong>{{ m.slot | slotLabel }}</strong> — {{ describe(m.items) }}
+                </p>
+              }
+            </mat-expansion-panel>
+          }
+        </mat-accordion>
+      </div>
+
+      <div class="panel">
+        <div class="panel-title">
+          <h2>{{ 'detail.saved' | translate }}</h2>
+        </div>
+        @if (!diets()?.saved?.length) {
+          <p class="muted">{{ 'detail.noSaved' | translate }}</p>
+        }
+        <ul class="saved">
+          @for (s of diets()?.saved ?? []; track s.id) {
+            <li>
+              <span class="material-icons">description</span>
+              <a [routerLink]="['/diets', s.id]">{{ versionLabel(s.id) }}</a>
+              <span class="muted small"
+                >{{ s.goal | goalLabel }} · {{ s.strategy }} · {{ (s.edited ? 'detail.edited' : 'detail.notEdited') | translate }}
+                @if (s.edit_ratio !== null) {
+                  · {{ 'detail.editRatio' | translate }} <span class="num">{{ pct(s.edit_ratio) }}</span>
+                }
+                · {{ s.created_at.slice(0, 16) }}</span
+              >
+            </li>
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+}

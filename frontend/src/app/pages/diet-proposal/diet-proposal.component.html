@@ -1,0 +1,234 @@
+<div class="page-header">
+  <app-button variant="icon" icon="arrow_back" ariaLabel="volver" [routerLink]="['/clients', id()]" />
+  <h1>
+    {{ 'proposal.title' | translate }} <span class="muted">{{ client()?.full_name }}</span>
+  </h1>
+  @if (client(); as c) {
+    <span class="muted small who"
+      >{{ sexLabel(c.sex) }} · {{ c.age ?? '—' }} {{ 'proposal.years' | translate }} · {{ 'fields.activity' | translate }} {{ c.activity_level ?? '—' }}
+      @for (r of c.restrictions; track r) {
+        · <span class="tone-danger">{{ restrictionLabel(r) }}</span>
+      }
+    </span>
+  }
+</div>
+
+<div class="panel controls">
+  <div class="row">
+    <app-select class="goal" [label]="'proposal.goal' | translate" [options]="goals" [(value)]="goal" />
+    <app-input class="k" [label]="'proposal.k' | translate" type="number" [min]="3" [max]="20" [(value)]="k" />
+    <app-button variant="primary" icon="auto_awesome" [disabled]="!goal() || busy()" (clicked)="generate()">{{ 'proposal.generate' | translate }}</app-button>
+    <span class="spacer"></span>
+    @if (proposal()) {
+      <span class="muted small"
+        >{{ proposal()!.meals.length }} {{ 'proposal.meals' | translate }} · {{ itemCount() }} {{ 'proposal.items' | translate }} ·
+        {{ proposal()!.notes.length }} {{ 'proposal.notes' | translate }}</span
+      >
+      <app-button variant="primary" icon="save" [disabled]="saving()" (clicked)="save()">{{ 'proposal.save' | translate }}</app-button>
+    }
+  </div>
+</div>
+<app-loading [active]="busy()" />
+
+@if (proposal(); as p) {
+  <!-- strategy band -->
+  <div class="band">
+    <app-chips [chips]="routingChips()" />
+    <span class="small muted band-text"
+      >{{ p.routing.label }}
+      @if (p.routing.previous_version) {
+        · {{ 'proposal.previous' | translate }} <strong>{{ versionLabel(p.routing.previous_version) }}</strong> · {{ p.routing.rotated_items }}
+        {{ 'proposal.rotated' | translate }} ({{ pct(p.routing.renewal_applied) }} / {{ pct(p.routing.renewal_target) }})
+      } @else {
+        · {{ p.retrieved_case_ids.length }} {{ 'proposal.cases' | translate }}, {{ p.routing.same_goal_cases }} {{ 'proposal.sameGoal' | translate }}
+      }
+    </span>
+    <span class="spacer"></span>
+    <app-stat-tile
+      [label]="'proposal.compliance' | translate"
+      [value]="pct(p.validation?.compliance)"
+      [tone]="(p.validation?.compliance ?? 0) >= 0.8 ? 'ok' : 'warn'" />
+    <app-stat-tile
+      [label]="'proposal.forced' | translate"
+      [value]="p.validation?.forced_changes?.length ?? 0"
+      [tone]="p.validation?.forced_changes?.length ? 'warn' : 'neutral'" />
+  </div>
+
+  <div class="grid-3-2">
+    <!-- the diet, editable in line -->
+    <div class="panel diet">
+      @for (m of p.meals; track m.slot) {
+        <div class="slot">
+          <div class="slot-head">
+            <h3>{{ m.slot | slotLabel }}</h3>
+            <span class="spacer"></span>
+            <app-button variant="ghost" icon="add" (clicked)="toggleAdder(m.slot)">{{ 'proposal.addFood' | translate }}</app-button>
+            <app-button variant="icon" icon="delete_outline" ariaLabel="quitar franja" (clicked)="removeSlot(m.slot)" />
+          </div>
+          @if (isAdding(m.slot, null)) {
+            <div class="row adder">
+              <app-autocomplete class="grow" [label]="'proposal.searchFood' | translate" [options]="foodOptions()" (selected)="addFood(m.slot, $event)" />
+              <app-button variant="ghost" icon="playlist_add" (clicked)="openNewFood(m.slot)">{{ 'proposal.newFood' | translate }}</app-button>
+            </div>
+          }
+          @for (g of m.groups; track g.position; let gi = $index) {
+            <div class="group">
+              @for (o of g.options; track $index; let oi = $index) {
+                @if (oi > 0) {
+                  <span class="faint sep">/</span>
+                }
+                <div
+                  class="option"
+                  [class.selected]="isSelected(o)"
+                  [class.rotated]="p.routing.previous_version && o.evidence.support === 0 && !isAddition(o, m.slot)"
+                  [class.addition]="isAddition(o, m.slot)"
+                  role="button"
+                  tabindex="0"
+                  (click)="onOptionClick($event, o, m.slot)"
+                  (keydown.enter)="select(o, m.slot)">
+                  <app-input class="qty" type="number" [compact]="true" [value]="o.quantity" (valueChange)="setQuantity(m.slot, gi, oi, $event)" />
+                  <app-select class="unit" [options]="units" [value]="o.unit" (valueChange)="setUnit(m.slot, gi, oi, $event)" />
+                  <span class="name">{{ o.canonical_name || o.text }}</span>
+                  @if (!isAddition(o, m.slot)) {
+                    <app-evidence-bar class="ev" [support]="o.evidence.support" [showText]="false" />
+                    <span class="faint small num">{{ pct(o.evidence.support) }}</span>
+                  } @else {
+                    <span class="tone-accent small">{{ 'proposal.addedByYou' | translate }}</span>
+                  }
+                  <span class="tools">
+                    <app-select
+                      class="move"
+                      [options]="slots"
+                      [allowEmpty]="true"
+                      [placeholder]="'proposal.move' | translate"
+                      [value]="null"
+                      (valueChange)="moveOption(m.slot, gi, oi, $event)" />
+                    <app-button
+                      variant="icon"
+                      icon="alt_route"
+                      [ariaLabel]="'proposal.addAlternative' | translate"
+                      [title]="'proposal.addAlternative' | translate"
+                      (clicked)="toggleAdder(m.slot, gi)" />
+                    <app-button variant="icon" icon="close" ariaLabel="quitar" (clicked)="removeOption(m.slot, gi, oi)" />
+                  </span>
+                </div>
+              }
+              @if (isAdding(m.slot, gi)) {
+                <div class="row adder alternative">
+                  <app-autocomplete
+                    class="grow"
+                    [label]="'proposal.searchAlternative' | translate"
+                    [options]="foodOptions()"
+                    (selected)="addFood(m.slot, $event, gi)" />
+                  <app-button variant="ghost" icon="playlist_add" (clicked)="openNewFood(m.slot, gi)">{{ 'proposal.newFood' | translate }}</app-button>
+                </div>
+              }
+            </div>
+          }
+        </div>
+      }
+      <div class="row add-slot">
+        <app-select class="goal" [label]="'proposal.addSlot' | translate" [options]="slotOptions()" [(value)]="newSlot" />
+        <app-button variant="secondary" icon="add" [disabled]="!newSlot()" (clicked)="addSlot()">{{ 'proposal.addSlotBtn' | translate }}</app-button>
+      </div>
+
+      <h3>{{ 'proposal.notesTitle' | translate }}</h3>
+      @for (n of p.notes; track $index; let i = $index) {
+        <div class="row note">
+          <app-textarea class="grow" [value]="n" (valueChange)="setNote(i, $event)" [rows]="1" />
+          <app-button variant="icon" icon="close" ariaLabel="quitar nota" (clicked)="removeNote(i)" />
+        </div>
+      }
+      <div class="row note">
+        <app-textarea class="grow" [placeholder]="'proposal.newNote' | translate" [(value)]="newNote" [rows]="1" />
+        <app-button variant="secondary" icon="add" [disabled]="!newNote()" (clicked)="addNote()">{{ 'proposal.addNote' | translate }}</app-button>
+      </div>
+    </div>
+
+    <!-- right rail -->
+    <div>
+      <div class="panel">
+        <div class="panel-title">
+          <h2>{{ 'proposal.evidence' | translate }}</h2>
+          <span class="muted small">{{
+            selected() ? selected()!.option.canonical_name + ' · ' + (selected()!.slot | slotLabel) : ('proposal.pickFood' | translate)
+          }}</span>
+        </div>
+        @if (selected(); as s) {
+          @if (isAddition(s.option, s.slot)) {
+            <p class="small">{{ 'proposal.additionEvidence' | translate }}</p>
+          } @else if (p.routing.previous_version && s.option.evidence.support === 0) {
+            <p class="small tone-rotated">{{ 'proposal.rotatedEvidence' | translate }}</p>
+          } @else if (p.routing.previous_version && s.option.evidence.cases.length === 1 && s.option.evidence.support === 1) {
+            <p class="small">{{ 'proposal.keptEvidence' | translate }}</p>
+          } @else {
+            <app-evidence-bar [support]="s.option.evidence.support" [cases]="s.option.evidence.cases.length" [total]="p.retrieved_case_ids.length" />
+            <p class="faint small">{{ s.option.evidence.cases.slice(0, 8).join(', ') }}{{ s.option.evidence.cases.length > 8 ? ' …' : '' }}</p>
+          }
+          <h3>{{ 'proposal.rulesBacking' | translate }}</h3>
+          <app-chips [chips]="selectedRuleChips()" [emptyLabel]="'proposal.noRules' | translate" />
+        }
+      </div>
+
+      <div class="panel">
+        <div class="panel-title">
+          <h2>{{ 'proposal.validation' | translate }}</h2>
+        </div>
+        @if (p.validation?.forced_changes?.length) {
+          @for (f of p.validation!.forced_changes; track $index) {
+            <p class="small">
+              <span class="material-icons tone-danger inline">block</span> {{ f.slot | slotLabel }}: <strong>{{ f.canonical_name }}</strong> —
+              {{ reasonLabel(f.reason) }}
+            </p>
+          }
+        } @else {
+          <p class="muted small">{{ 'proposal.noForced' | translate }}</p>
+        }
+        @if (p.validation?.warnings?.length) {
+          <p class="small tone-warn">{{ 'proposal.warnings' | translate }}: {{ p.validation!.warnings.join(', ') }}</p>
+        }
+        <app-chips [chips]="ruleChips()" />
+        @if (plausibility().length) {
+          <h3>{{ 'proposal.plausibility' | translate }}</h3>
+          <ul class="small changes">
+            @for (c of plausibility(); track $index) {
+              <li>
+                <strong>{{ c.slot | slotLabel }}</strong> · {{ c.canonical_name }}: {{ c.detail }}
+              </li>
+            }
+          </ul>
+        }
+      </div>
+
+      @if (p.owned_supplements?.length) {
+        <div class="panel">
+          <div class="panel-title">
+            <h2>{{ 'proposal.owned' | translate }}</h2>
+          </div>
+          <app-chips [chips]="ownedChips()" />
+        </div>
+      }
+
+      @if (p.context?.lab_results; as labs) {
+        <div class="panel">
+          <div class="panel-title">
+            <h2>{{ 'proposal.labs' | translate }}</h2>
+            <span class="muted small">{{ labs.out_of_range }} {{ 'view.labsOut' | translate }}</span>
+          </div>
+          @if (!labs.results.length) {
+            <p class="muted small">—</p>
+          }
+          <ul class="labs small">
+            @for (r of labs.results; track r.id) {
+              <li [class]="r.status === 'alto' ? 'tone-danger' : r.status === 'bajo' ? 'tone-warn' : ''">
+                <span>{{ r.marker }}</span
+                ><span class="num">{{ r.value }} {{ r.unit }}</span
+                ><span class="faint">{{ r.ref_low ?? '—' }} – {{ r.ref_high ?? '—' }}</span>
+              </li>
+            }
+          </ul>
+        </div>
+      }
+    </div>
+  </div>
+}

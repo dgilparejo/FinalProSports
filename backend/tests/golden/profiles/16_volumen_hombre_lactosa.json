@@ -1,0 +1,10 @@
+{
+ "sex": "M",
+ "age": 27,
+ "height_cm": 183,
+ "activity_level": 5,
+ "goal": "volumen_masa",
+ "restrictions": [
+  "contains_lactose"
+ ]
+}

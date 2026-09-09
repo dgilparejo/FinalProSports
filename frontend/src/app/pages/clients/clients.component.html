@@ -1,0 +1,83 @@
+<div class="page-header">
+  <!-- Redundante en pantalla (la barra superior y el título de la pestaña ya lo dicen), pero un documento sin
+       encabezado no se puede recorrer con un lector de pantalla: se queda, oculto. -->
+  <h1 class="sr-only">{{ 'clients.title' | translate }}</h1>
+  <app-input class="search" [placeholder]="'clients.search' | translate" [(value)]="filter" />
+  <app-button variant="primary" icon="person_add" (clicked)="openRegister()">{{ 'clients.register' | translate }}</app-button>
+</div>
+<app-loading [active]="loading()" />
+
+@if (!loading() && !all().length) {
+  <div class="empty-state">
+    <span class="material-icons">group_off</span>
+    <h2>{{ 'clients.empty.title' | translate }}</h2>
+    <app-button variant="primary" icon="person_add" (clicked)="openRegister()">{{ 'clients.empty.cta' | translate }}</app-button>
+  </div>
+} @else if (layout.narrow()) {
+  <!--
+    En un móvil el listado NO es una tabla. Siete columnas en 360 px obligan a arrastrar para ver el nombre completo y
+    dejan las restricciones fuera de la pantalla, y un listado de clientes no se lee comparando columnas: se usa para
+    encontrar a alguien y entrar. Cada cliente es una tarjeta con lo mismo que la tabla — ninguna columna se esconde.
+  -->
+  <ul class="cards">
+    @for (c of cards(); track c.id) {
+      <li class="card">
+        <a class="card-name" [routerLink]="['/clients', c.id]">{{ displayName(c) }}</a>
+        <p class="card-facts muted small">
+          {{ sexLabel(c.sex) }} · {{ c.age ?? '—' }} {{ 'proposal.years' | translate }} ·
+          <span class="goal">{{ c.goal | goalLabel }}</span>
+        </p>
+        <app-chips [chips]="restrictionChips(c)" [emptyLabel]="'clients.noRestrictions' | translate" />
+        <p class="card-diets small">
+          <!-- ngx-translate no pluraliza aquí, y «1 dietas guardadas» canta. Dos claves y se elige. -->
+          <span class="num">{{ c.diet_count }}</span> {{ (c.diet_count === 1 ? 'clients.savedCountOne' : 'clients.savedCount') | translate }}
+          @if (!c.diet_count) {
+            <span class="faint">· {{ 'clients.new' | translate }}</span>
+          }
+        </p>
+        <span class="row card-actions">
+          <a [routerLink]="['/clients', c.id, 'intake']">{{ 'clients.intake' | translate }}</a>
+          <a [routerLink]="['/clients', c.id, 'propose']">{{ 'clients.propose' | translate }}</a>
+        </span>
+      </li>
+    }
+  </ul>
+  <p class="muted small">{{ 'clients.count' | translate: { n: rows().length, total: all().length } }}</p>
+} @else {
+  <div class="panel">
+    <app-table [columns]="columns" [rows]="rows()" [clickable]="true" (rowClicked)="open($event)">
+      <ng-template #cell let-row let-col="col">
+        @switch (col.key) {
+          @case ('full_name') {
+            <a [routerLink]="['/clients', row.id]" class="name">{{ displayName(row) }}</a>
+          }
+          @case ('sex') {
+            {{ sexLabel(row.sex) }}
+          }
+          @case ('age') {
+            {{ row.age ?? '—' }}
+          }
+          @case ('goal') {
+            {{ row.goal | goalLabel }}
+          }
+          @case ('restrictions') {
+            <app-chips [chips]="restrictionChips(row)" emptyLabel="—" />
+          }
+          @case ('diet_count') {
+            <span class="num">{{ row.diet_count }}</span>
+            @if (!row.diet_count) {
+              <span class="faint">{{ 'clients.new' | translate }}</span>
+            }
+          }
+          @case ('actions') {
+            <span class="row actions">
+              <a [routerLink]="['/clients', row.id, 'intake']" (click)="$event.stopPropagation()">{{ 'clients.intake' | translate }}</a>
+              <a [routerLink]="['/clients', row.id, 'propose']" (click)="$event.stopPropagation()">{{ 'clients.propose' | translate }}</a>
+            </span>
+          }
+        }
+      </ng-template>
+    </app-table>
+    <p class="muted small">{{ 'clients.count' | translate: { n: rows().length, total: all().length } }}</p>
+  </div>
+}

@@ -1,0 +1,141 @@
+{
+ "_doc": [
+  "Human criterion, versioned (E9, realism batch). Each theme is one instruction the professional gives, with the",
+  "regular expression that recognises it in ANY of his wordings. build_canonical_notes.py measures the support of each theme",
+  "over the corpus and picks its canonical wording; compose_notes then consensuses over THEMES instead of over literal strings.",
+  "Why it is needed: he writes the hydration line in 636 of 1.033 diets across 357 distinct strings, and NOT ONE string in the",
+  "whole corpus reaches the consensus threshold note_t = 0,35. Consensus over text could never see an instruction he always gives.",
+  "The patterns are deliberately generous inside a theme and disjoint between themes; a note may legitimately match two themes",
+  "(«no tomar postres, ni azúcar, ni bebidas alcohólicas» is sugar AND alcohol) and then both are supported.",
+  "rule_ids links a theme to the rules of the constitution it makes evaluable, so a note-level rule can be satisfied by the",
+  "canonical wording instead of by a copied sentence.",
+  "must_match: the canonical wording is chosen among the wordings that satisfy this regex — the note pattern of the rule the theme claims to make evaluable. Without it the most frequent wording can be one the rule engine does not recognise: the hydration canonical was «HAY QUE BEBER AUNQUE NO SE TENGA SED…», which carries the instruction but does not match «beber agua|litros de agua», and agua_2.5L scored 0,019 instead of ~0,79."
+ ],
+ "artefacts": {
+  "_doc": [
+   "NOT notes: section headers the document parser kept, and fragments of the contact footer. 639 occurrences, 14,5 % of the",
+   "field. They were being emitted into proposals — 'Observaciones:' reached a golden snapshot before this filter existed."
+  ],
+  "pattern": "^\\s*(observaciones|recomendaciones|consejos|notas|aclaraciones|importante)\\s*:?\\s*$|^\\s*[/(\"'.,-]*\\s*(tel|telf|tlf|teléfono|telefono|correo|email|e-mail|whatsapp|www|http)\\b|^[\\s(\"'/.,:;-]*$"
+ },
+ "themes": [
+  {
+   "id": "hidratacion",
+   "pattern": "litros de agua|ingesta de agua|beber agua|beber.{0,20}litros|tragos peque|aunque no se tenga sed|hidrataci[oó]n|entre comidas.{0,30}beber|no beber (mucho|mucha cantidad)",
+   "rule_ids": [
+    "agua_2.5L"
+   ],
+   "must_match": "\\d+[.,]?\\d*\\s*(?:litros?|ml\\b|cc\\b)"
+  },
+  {
+   "id": "evitar_bebidas_con_sabor",
+   "pattern": "bebidas con sabor|con gas|azucaradas|zumos|carbonatad|refrescos",
+   "rule_ids": []
+  },
+  {
+   "id": "evitar_azucar_y_postres",
+   "pattern": "no tomar postres|evitar el az[uú]car|evitar az[uú]car|nada de az[uú]car|sin az[uú]car añadid|harinas blancas|cereales en caja|dulces",
+   "rule_ids": [
+    "prohibido_azucar_procesados",
+    "mujeres_prohibicion_azucar"
+   ]
+  },
+  {
+   "id": "evitar_alcohol",
+   "pattern": "alcoh[oó]l",
+   "rule_ids": [],
+   "_doc": "shares its most frequent wording with evitar_azucar_y_postres; compose_notes emits each canonical text once"
+  },
+  {
+   "id": "ansiedad_chocolate_o_gelatina",
+   "pattern": "ansiedad|chocolate negro|chocolate puro|gelatina",
+   "rule_ids": [
+    "ansiedad_chocolate_o_gelatina",
+    "mujeres_chocolate_gelatina"
+   ]
+  },
+  {
+   "id": "descanso",
+   "pattern": "dormir\\s+(de\\s+)?\\d|horas de sue[ñn]o|descansar bien|descanso nocturno",
+   "rule_ids": []
+  },
+  {
+   "id": "frecuencia_de_comidas",
+   "pattern": "horas y media sin comer|sin comer nada|saltarte|saltar.{0,15}comida|dos comidas|2 comidas|cada \\d+ horas",
+   "rule_ids": [
+    "saltarse_comidas_fibra",
+    "saltarse_comidas_fases_tempranas"
+   ],
+   "must_match": "(?:saltarte 1 comida|dos comidas|2 comidas|saltar.*comida)"
+  },
+  {
+   "id": "sal",
+   "pattern": "nada de sal|evitar la sal|sal yodada|sal del himalaya|pizca de sal|pizaca de sal|nunca sal|baja en sodio",
+   "rule_ids": [
+    "sal_himalaya",
+    "mujeres_sal_himalaya"
+   ]
+  },
+  {
+   "id": "especias",
+   "pattern": "especias",
+   "rule_ids": []
+  },
+  {
+   "id": "comer_despacio",
+   "pattern": "masticar|despacio",
+   "rule_ids": [
+    "comer_despacio"
+   ],
+   "must_match": "(?:masticar|despacio)"
+  },
+  {
+   "id": "ayuno_intermitente",
+   "pattern": "16\\s*(a\\s*17\\s*)?horas|ayuno intermitente|16 h\\b",
+   "rule_ids": [
+    "ayuno_16h",
+    "ayuno_estable_por_fase"
+   ],
+   "must_match": "(?:16\\s*(a\\s*17\\s*)?horas|ayuno intermitente|16 h)"
+  },
+  {
+   "id": "sustituir_pescado_por_pollo",
+   "pattern": "sustituir el pescado|sustituir el huevo|por pollo",
+   "rule_ids": [
+    "sustituir_pescado_por_pollo",
+    "pescado_pollo_v1"
+   ],
+   "must_match": "(?:sustituir el pescado|sustituir el huevo|por pollo)"
+  },
+  {
+   "id": "coccion_y_aceite",
+   "pattern": "cocinar|fre[ií]r|aceite.{0,25}crudo|crudos|plancha|horno|hervid",
+   "rule_ids": []
+  },
+  {
+   "id": "fibra",
+   "pattern": "fibra",
+   "rule_ids": [
+    "refuerzo_fibra",
+    "alta_fibra_fases_tempranas",
+    "mujeres_alta_fibra"
+   ],
+   "must_match": "(?:fibra)"
+  },
+  {
+   "id": "horario_comida_y_cena",
+   "pattern": "lo m[aá]s tarde|lo m[aá]s temprano|m[aá]s tarde posible|m[aá]s temprano posible",
+   "rule_ids": [
+    "comida_tarde_cena_temprano"
+   ],
+   "must_match": "(?:lo m[aá]s tarde|lo m[aá]s temprano|m[aá]s tarde posible|m[aá]s temprano posible)"
+  },
+  {
+   "id": "soja",
+   "pattern": "soja",
+   "rule_ids": [
+    "soja_prohibida"
+   ]
+  }
+ ]
+}
