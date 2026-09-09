@@ -185,9 +185,17 @@ fi
 # publica el codigo, y ninguna de las otras puertas lo veia (la de nombres compara con los CLIENTES del corpus; la
 # de formas busca filas por persona). Los patrones viven ahora en la custodia y este paso se la pasa: sin ella la
 # comprobacion lo diria y no fingiria, pero aqui la hay, asi que tiene dientes.
+# Y como el paso anterior, cual aplica depende del arbol -- con una rama mas, porque aqui hay TRES situaciones y
+# solo una es un descuido. Los patrones viven en `_private/`, que por diseno no sale del arbol de datos: en el
+# arbol PUBLICO el fichero no puede existir jamas, asi que fallar alli no denuncia nada, solo hace que la
+# verificacion que el README documenta termine en BROKEN por un paso imposible. Se distingue por
+# `seed/dataset/SYNTHETIC.json`, que el montador deja a la vista precisamente para decir «esta base es inventada».
+# En el arbol del titular no cambia nada: sin custodia sigue siendo FAIL, porque alli si es un olvido.
 CUSTODIA="${FPS_PII_PATTERNS:-$DATASET_DIR/_private/pii_patterns.json}"
 if [ -f "$CUSTODIA" ]; then
   step "professional identity is nowhere in the tree (custody patterns)" bash -c "cd backend && FPS_PII_PATTERNS='$CUSTODIA' '$VPY' ./tests/architecture/test_no_professional_identity_in_the_tree.py"
+elif [ -f "$DATASET_DIR/SYNTHETIC.json" ]; then
+  step "professional identity: NO APLICA en el arbol publico (los patrones son custodia privada)" bash -c "echo 'arbol publico (seed/dataset/SYNTHETIC.json): los patrones viven en _private/ y no viajan; la garantia aqui es la puerta por FORMAS, que ya paso'; exit 0"
 else
   step "professional identity: NO CUSTODY PATTERNS (cannot check)" bash -c "echo 'sin $CUSTODIA no hay patrones que buscar'; exit 1"
 fi
