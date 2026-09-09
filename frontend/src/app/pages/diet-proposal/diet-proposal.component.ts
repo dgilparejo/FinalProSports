@@ -197,7 +197,7 @@ export class DietProposalComponent implements OnInit {
     for (const m of p.meals) {
       for (const o of m.groups.flatMap((g) => g.options)) {
         const rotated = !!p.routing.previous_version && o.evidence.support === 0;
-        const kept = !!p.routing.previous_version && o.evidence.support === 1 && o.evidence.cases.length === 1;
+        const kept = !!p.routing.previous_version && o.evidence.support === 1 && o.evidence.case_count === 1;
         if ((want === 'rotated' && rotated) || (want === 'kept' && kept) || String(o.food_id) === want) {
           this.select(o, m.slot);
           return;

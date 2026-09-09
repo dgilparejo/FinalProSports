@@ -34,7 +34,8 @@ describe('DietViewComponent', () => {
       client: { id: 'c3', full_name: 'Enzo Ficticio Demo' },
       strategy: 'rotation_composer',
       parameters: {},
-      retrieved_case_ids: ['C::v01'],
+      retrieved_cases: 1,
+      retrieved_clients: 1,
       meals: [
         {
           slot: 'COMIDA',
@@ -51,7 +52,7 @@ describe('DietViewComponent', () => {
                   unit: 'g',
                   alternative_group: null,
                   note: null,
-                  evidence: { support: 1, cases: ['C::v01'], rules: [] },
+                  evidence: { support: 1, case_count: 1, client_count: 1, rules: [] },
                 },
               ],
             },
@@ -127,7 +128,8 @@ describe('DietViewComponent', () => {
       strategy: 'case_based_composer',
       parameters: {},
       routing: { code: 'cold_start' },
-      retrieved_case_ids: [],
+      retrieved_cases: 0,
+      retrieved_clients: 0,
       meals: [],
       notes: [],
     });
@@ -169,7 +171,8 @@ describe('DietViewComponent', () => {
       strategy: 'case_based_composer',
       parameters: {},
       routing: { code: 'cold_start' },
-      retrieved_case_ids: [],
+      retrieved_cases: 0,
+      retrieved_clients: 0,
       meals: [],
       notes: [],
     });

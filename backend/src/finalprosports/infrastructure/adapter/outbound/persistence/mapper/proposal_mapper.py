@@ -1,4 +1,9 @@
-"""DietProposal <-> plain dict (the JSON stored in saved_diets.payload and served by the REST layer). One mapper, both directions."""
+"""DietProposal <-> plain dict (the JSON stored in saved_diets.payload). One mapper, both directions.
+
+This is the PERSISTENCE shape, and it carries the corpus case ids (`retrieved_case_ids`, `evidence.cases`): they are the
+traceability of the retrieval and the payload never leaves the server. The REST layer does NOT serve this dict as it is —
+`propose_diet_rest_adapter._corpus_ids_to_counts` replaces those ids with their counts before the response goes out (RNF-08).
+Serving the persistence shape verbatim is exactly how the identifiers reached the screen."""
 from __future__ import annotations
 
 from finalprosports.domain.model import (

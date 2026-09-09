@@ -40,7 +40,7 @@
         · {{ 'proposal.previous' | translate }} <strong>{{ versionLabel(p.routing.previous_version) }}</strong> · {{ p.routing.rotated_items }}
         {{ 'proposal.rotated' | translate }} ({{ pct(p.routing.renewal_applied) }} / {{ pct(p.routing.renewal_target) }})
       } @else {
-        · {{ p.retrieved_case_ids.length }} {{ 'proposal.cases' | translate }}, {{ p.routing.same_goal_cases }} {{ 'proposal.sameGoal' | translate }}
+        · {{ p.retrieved_cases }} {{ 'proposal.cases' | translate }}, {{ p.routing.same_goal_cases }} {{ 'proposal.sameGoal' | translate }}
       }
     </span>
     <span class="spacer"></span>
@@ -159,11 +159,13 @@
             <p class="small">{{ 'proposal.additionEvidence' | translate }}</p>
           } @else if (p.routing.previous_version && s.option.evidence.support === 0) {
             <p class="small tone-rotated">{{ 'proposal.rotatedEvidence' | translate }}</p>
-          } @else if (p.routing.previous_version && s.option.evidence.cases.length === 1 && s.option.evidence.support === 1) {
+          } @else if (p.routing.previous_version && s.option.evidence.case_count === 1 && s.option.evidence.support === 1) {
             <p class="small">{{ 'proposal.keptEvidence' | translate }}</p>
           } @else {
-            <app-evidence-bar [support]="s.option.evidence.support" [cases]="s.option.evidence.cases.length" [total]="p.retrieved_case_ids.length" />
-            <p class="faint small">{{ s.option.evidence.cases.slice(0, 8).join(', ') }}{{ s.option.evidence.cases.length > 8 ? ' …' : '' }}</p>
+            <app-evidence-bar [support]="s.option.evidence.support" [cases]="s.option.evidence.case_count" [total]="p.retrieved_cases" />
+            @if (s.option.evidence.client_count > 0) {
+              <p class="faint small">{{ s.option.evidence.client_count }} {{ 'proposal.distinctClients' | translate }}</p>
+            }
           }
           <h3>{{ 'proposal.rulesBacking' | translate }}</h3>
           <app-chips [chips]="selectedRuleChips()" [emptyLabel]="'proposal.noRules' | translate" />

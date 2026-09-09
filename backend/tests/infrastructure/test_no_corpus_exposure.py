@@ -4,7 +4,8 @@
 Runs against the loaded database (skipped without DATABASE_URL) through the real FastAPI application. The corpus codes are taken from
 the case base itself (the diets table), so the test does not depend on the pseudonym pattern. It walks EVERY route whose path carries a
 client id and asserts that a corpus code is never found (404 / 409 / 422), and that the listing contains none of them. Case ids
-(``CLIENTE_NNN::vNN``) may still appear as EVIDENCE of a proposal: that is the case base doing retrieval, not a client."""
+(``CLIENTE_NNN::vNN``) never appear in any response either: RNF-08, checked by shape over the whole served JSON in
+``test_the_ui_never_renders_a_corpus_identifier``."""
 import json
 import os
 import uuid

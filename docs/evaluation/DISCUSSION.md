@@ -8,7 +8,7 @@ entregada** —estrategia → capa de plausibilidad (S2) → validador— que es
 aplicación ejecutaba compositor + plausibilidad, es decir, las cifras describían un sistema distinto del entregado. La sección 9 recoge lo
 que la red de plausibilidad encontró y el plan no había previsto.
 
-> **Procedencia de las cifras (2026-09-08).** Todo lo que hay en las secciones 0 a 6 y 8 se ha vuelto a medir con la
+> **Procedencia de las cifras (2026-09-08T21:27:18, la ejecución que publica el repositorio).** Todo lo que hay en las secciones 0 a 6 y 8 se ha vuelto a medir con la
 > **configuración entregada** —selección D3 (un caso por cliente, pureza primero) y los cinco pesos de similitud con
 > `body_type = 0`, aprobados el 2026-08-30— sobre las mismas 815 consultas hold-out, con la envolvente de
 > plausibilidad regenerada ese mismo día. La medición anterior de este fichero era del 2026-08-30 a las 00:07, es
@@ -117,48 +117,67 @@ plausibilidad por propuesta (`check_plausibility`); «% viol.» = propuestas con
 
 | Paso | J key | Δ | cumpl. condicional | viol. | % viol. |
 |---|---|---|---|---|---|
-| Suelo: dieta aleatoria del mismo objetivo | 0,203 |  | 0,870 | — | — |
-| + recuperación por atributos (copiar top-1) | 0,240 | +0,035 | 0,886 | — | — |
-| + compositor por consenso (sin degradación) | 0,305 | +0,065 | 0,873 | — | — |
-| + degradación en objetivos minoritarios | 0,305 | +0,001 | 0,873 | 2,02 | 92 % |
-| + validador (restricciones + prohibiciones forzables) | 0,305 | +0,000 | 1,000 | 2,00 | 92 % |
-| **+ capa de plausibilidad = configuración entregada** | **0,306** | +0,000 | 1,000 | **0,03** | **2 %** |
-| Techo: autoconsistencia (con vecino, 815) / (sin vecino, subconjunto) | 0,324 |  | 0,879 | — | — |
+| Suelo: dieta aleatoria del mismo objetivo | 0,205 |  | 0,877 | — | — |
+| + recuperación por atributos (copiar top-1) | 0,240 | +0,035 | 0,776 | — | — |
+| + compositor por consenso (sin degradación) | 0,304 | +0,064 | 0,873 | — | — |
+| + degradación en objetivos minoritarios | 0,305 | +0,001 | 0,873 | 0,40 | 32 % |
+| + validador (restricciones + prohibiciones forzables) | 0,305 | +0,000 | 1,000 | 0,39 | 32 % |
+| **+ capa de plausibilidad = configuración entregada** | **0,306** | +0,000 | 1,000 | **0,03** | **3 %** |
+| Techo: autoconsistencia (con vecino, 815) / (sin vecino, 741) | 0,324 |  | 0,870 | — | — |
 
 La recuperación aporta 0,035 y el compositor otros 0,064 (el paso mayor, y con la selección D3 casi el doble de lo
 que aportaba antes), la degradación mueve 0,001 y el validador no toca la fidelidad. La capa de plausibilidad es lo
-que más cambia y no es en el solapamiento: baja las violaciones de 2,00 a **0,03** por propuesta (92 % → 2 % de
+que más cambia y no es en el solapamiento: baja las violaciones de 0,39 a **0,03** por propuesta (32 % → 3 % de
 propuestas con alguna), el mejor valor medido hasta ahora.
 
-**Y la fila del compositor crudo empeora respecto a la medición anterior en violaciones: 0,70 → 2,02 por propuesta,
-52 % → 92 % de propuestas con alguna.** No es una regresión del solapamiento (que sube) y conviene leerlo entero: la
-envolvente se regeneró el 2026-09-08 con el constructor recalibrado del 30-08, así que las bandas con las que se
-juzga no son las de la medición anterior, y el vecindario D3 —un caso por cliente, más diverso— hace consensos con
-más unidades y cantidades distintas de las que el profesional escribe para ese alimento. Las dos comprobaciones que
-suben son exactamente ésas: `quantity_out_of_range` 788 y `unseen_unit` 673 en las 815 propuestas crudas. **La capa
-las deja en 23 y 0**, que es su trabajo y la razón por la que se entrega activada; pero el dato honesto es que el
-motor entregado necesita más a la capa que el anterior, no menos.
-Parte de esa mejora es la exclusión del cajón genérico `OTHER` de la composición: la mitad de las violaciones
-estructurales de la medición anterior eran franjas construidas dentro de él.
+**Aviso de procedencia: esta sección se ha retranscrito de la ejecución del 2026-09-08 a las 21:27, no de la de las
+20:45.** Las dos midieron las mismas 815 consultas con la misma envolvente (minada a las 20:35 y sin tocar desde
+entonces) y dan el mismo solapamiento hasta el tercer decimal, pero cuentan las violaciones de forma distinta:
+`quantity_out_of_range` 788 → **128** y `unseen_unit` 673 → **17** en el compositor crudo. Que la referencia de
+calibrado también se moviera —las cantidades de las dietas ocultas fuera de su propia envolvente, 1.719 de 28.052
+(6,1 %) → **1.211 de 29.245 (4,1 %)**— con la envolvente y las dietas ocultas idénticas prueba que lo que cambió es
+el **comprobador**, no el motor ni las bandas: `check_plausibility` pasó a resolver el nombre del alimento por el
+CATÁLOGO en vez de por el propio ítem, y con ello dejó de saltarse la exención de las raciones curadas en gramos.
+Se elige la de las 21:27 porque es la única cuyas filas por consulta sobreviven en `_dataset/composer_per_query.jsonl`
+—de donde se regeneran estas cifras y las de `RESULTS.md`— y es la que publica el repositorio.
 
-**Límite declarado del corpus: el cajón `OTHER`.** 4.578 de 50.436 componentes (9,1 %) viven en la franja genérica,
-que agrupa 568 encabezados que el vocabulario no supo mapear. El sistema NO compone dentro de ella —su contenido es
-heterogéneo entre vecinos, y componer por consenso ahí producía 24 alimentos distintos en una sola franja— ni la
-puntúa, porque medir contra algo que no se puede proponer no dice nada. 617 dietas (51 %) tienen algo dentro, con una
-mediana del 10,4 % de su contenido; **41 dietas (3,4 %) están más de la mitad dentro y se declaran irrepresentables y
-excluidas de la evaluación**, 23 de ellas por completo. Las consultas hold-out pasan de 839 a 817 por esa exclusión.
+**La fila del compositor crudo, leída entera.** 0,40 violaciones por propuesta y 32 % de propuestas con alguna: por
+debajo del 0,70 y el 52 % de la medición anterior al motor entregado, y no por mérito del vecindario D3 sino porque
+el comprobador dejó de contar como violación la ración curada en gramos. Las dos comprobaciones que dominan siguen
+siendo las mismas: `items_per_slot` 171 y `quantity_out_of_range` 128 en las 815 propuestas crudas. **La capa las
+deja en 0 y 24**, que es su trabajo y la razón por la que se entrega activada. Parte de esa mejora es la exclusión
+del cajón genérico `OTHER` de la composición: la mitad de las violaciones estructurales de la medición anterior eran
+franjas construidas dentro de él.
+
+**Límite declarado del corpus: el cajón `OTHER`.** El sistema NO compone dentro de la franja genérica —su contenido
+es heterogéneo entre vecinos, y componer por consenso ahí producía 24 alimentos distintos en una sola franja— ni la
+puntúa, porque medir contra algo que no se puede proponer no dice nada. El censo del cajón
+(`_dataset/other_slot_census.json`, 2026-08-29 11:27, sobre una compilación intermedia de **1.208** dietas): 4.578 de
+50.437 componentes (9,1 %) viven en él, agrupando 568 encabezados que el vocabulario no supo mapear; 617 dietas
+(51 %) tienen algo dentro, con una mediana del 10,4 % de su contenido; **41 dietas (3,4 %) están más de la mitad
+dentro y se declaran irrepresentables**, 23 de ellas por completo. Sobre el corpus FINAL de 1.203 dietas
+(`_dataset/declared_figures.json`, 2026-09-09) las cifras equivalentes son **38 irrepresentables (3,2 %), 22 de ellas
+por completo**, 3.730 componentes en el cajón y 552 dietas con algo dentro; el censo no se ha vuelto a pasar sobre la
+compilación final, así que se citan las dos con su fecha en vez de mezclarlas.
+
+La cadena de elegibilidad, en cambio, sí es de la compilación final (`_dataset/loo_eligibility.json`, 2026-08-29
+22:30, y `retrieval_benchmark.eligible_queries`): 1.203 dietas de 261 clientes → 1.173 de 260 al excluir las 30
+dietas-plantilla → 167 clientes y 1.080 consultas al exigir ≥ 2 dietas → 121 clientes y 835 consultas al exigir sexo,
+edad y altura → **120 clientes y 815 consultas** al excluir las irrepresentables. Las consultas hold-out pasan por
+tanto de **835 a 815** por esa exclusión, no de 839 a 817: esas dos cifras eran de la compilación intermedia.
 
 **El compromiso de la capa de plausibilidad, declarado.** La capa (`complete_structure` + `normalize_quantities`, envolvente minada del corpus:
-`docs/data/plausibility_envelope.md`) toca 799 de las 815 propuestas (por propuesta: 0,97 cantidades acotadas a [p05, p95], 0,83 unidades no observadas sustituidas, 0,35 raciones
-pasadas a gramos, 0,31 raciones armonizadas, 0,21 franjas completadas hasta su mínimo, 0,03 raciones de suplemento, 0,01 grupos obligatorios
-añadidos, 0,004 cantidades retiradas) y no cambia el Jaccard de forma medible: +0,000 [+0,000, +0,001] en `normalized_key`, +0,000 en `food_id`,
-+0,000 en familia. A cambio elimina las violaciones que dependen del ítem —cantidad fuera de banda 788 → 23, unidad no observada 673 → 0,
-estructura de franja 10 → 0, alimentos por franja 171 → 0— y deja un residuo de 2 repeticiones de alimento en franja. Referencia de calibrado:
-las 815 dietas ocultas del propio profesional tienen el 6,1 % de sus cantidades fuera de su propia envolvente (1.719 de 28.052; 2,11 por dieta),
+`docs/data/plausibility_envelope.md`) toca 759 de las 815 propuestas (por propuesta: 1,89 raciones
+pasadas a gramos, 0,27 raciones armonizadas, 0,21 franjas completadas hasta su mínimo, 0,16 cantidades acotadas a [p05, p95], 0,03 raciones de suplemento,
+0,03 unidades no observadas sustituidas, 0,01 grupos obligatorios añadidos, 0,004 cantidades retiradas) y no cambia el Jaccard de forma medible:
++0,000 [+0,000, +0,001] en `normalized_key`, +0,000 en `food_id`, +0,000 en familia. A cambio elimina las violaciones que dependen del ítem
+—alimentos por franja 171 → 0, cantidad fuera de banda 128 → 24, unidad no observada 17 → 0,
+estructura de franja 10 → 0— y deja un residuo de 2 repeticiones de alimento en franja. Referencia de calibrado:
+las 815 dietas ocultas del propio profesional tienen el 4,1 % de sus cantidades fuera de su propia envolvente (1.211 de 29.245; 1,49 por dieta),
 por construcción de una banda p05–p95: la configuración entregada (0,03 por propuesta) es **más** conservadora que el propio profesional.
 
 **Las dos capas interactúan y el orden importa, y con el motor entregado la interacción se apaga.** En esta medición la rama
-«plausibilidad sin validador» y la configuración entregada dejan **exactamente las mismas violaciones** (0,031 por propuesta, 23
+«plausibilidad sin validador» y la configuración entregada dejan **exactamente las mismas violaciones** (0,032 por propuesta, 24
 `quantity_out_of_range` y 2 `repeated_food` en las dos): el validador ya no introduce implausibilidad que la capa no pueda limpiar, porque
 `items_per_slot` baja a 0 antes de que él actúe. El defecto declarado en la medición anterior —los sustitutos forzados empujaban la franja por
 encima de su p95 y, como el caso de uso ejecuta **estrategia → capa → validador**, esa implausibilidad entraba después de la capa y no se

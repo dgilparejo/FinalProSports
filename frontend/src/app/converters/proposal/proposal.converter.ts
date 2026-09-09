@@ -1,6 +1,6 @@
 import { Proposal, ProposedMeal, ProposedOption, SaveDietBody } from '@models/diet';
 
-const BODY_KEYS = ['profile', 'strategy', 'parameters', 'retrieved_case_ids', 'meals', 'notes', 'validation'] as const;
+const BODY_KEYS = ['profile', 'strategy', 'parameters', 'meals', 'notes', 'validation'] as const;
 
 /** The subset of a proposal the API accepts back (the routing, gap, context and diff are read-only decorations). */
 export function toProposalBody(p: Proposal): Record<string, unknown> {
@@ -31,10 +31,10 @@ export function newOption(foodId: number, name: string, quantity: number | null,
     unit,
     alternative_group: null,
     note: null,
-    evidence: { support: 0, cases: [], rules: [] },
+    evidence: { support: 0, case_count: 0, client_count: 0, rules: [] },
   };
 }
 
 export function isProfessionalAddition(o: ProposedOption): boolean {
-  return o.evidence.support === 0 && o.evidence.cases.length === 0 && o.evidence.rules.length === 0;
+  return o.evidence.support === 0 && o.evidence.case_count === 0 && o.evidence.rules.length === 0;
 }

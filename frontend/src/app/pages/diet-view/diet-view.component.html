@@ -93,8 +93,7 @@
         <div class="panel-title">
           <h2>{{ 'view.validation' | translate }}</h2>
           <span class="muted small"
-            >{{ 'view.compliance' | translate }} {{ pct(diet()!.validation?.compliance) }} · {{ diet()!.retrieved_case_ids.length }}
-            {{ 'view.cases' | translate }}</span
+            >{{ 'view.compliance' | translate }} {{ pct(diet()!.validation?.compliance) }} · {{ diet()!.retrieved_cases }} {{ 'view.cases' | translate }}</span
           >
         </div>
         <p class="small">{{ diet()!.routing.label }}</p>

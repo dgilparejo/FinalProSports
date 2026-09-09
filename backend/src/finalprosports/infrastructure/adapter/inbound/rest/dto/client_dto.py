@@ -39,12 +39,15 @@ class ProposeDto(BaseModel):
 
 
 class SavedProposalDto(BaseModel):
-    """A proposal as returned by POST /diets/propose, possibly edited by the professional, sent back to be validated and saved."""
+    """A proposal as returned by POST /diets/propose, possibly edited by the professional, sent back to be validated and saved.
+
+    RNF-08: there is no ``retrieved_case_ids`` field, because the response no longer carries one. The corpus identifiers do
+    not leave the server, so the browser cannot echo them back: how many cases backed the proposal travels in
+    ``parameters`` (``k_effective``), which is the reproducibility record and round-trips untouched."""
 
     profile: dict
     strategy: str = "edited"
     parameters: dict = Field(default_factory=dict)
-    retrieved_case_ids: list[str] = Field(default_factory=list)
     meals: list[dict]
     notes: list[str] = Field(default_factory=list)
     validation: dict | None = None

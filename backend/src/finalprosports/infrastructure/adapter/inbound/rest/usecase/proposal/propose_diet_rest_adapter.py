@@ -1,8 +1,10 @@
 """Diets endpoints (E6): propose (use case with automatic strategy routing), save the edited diet, read it, export it as PDF, similar cases.
 
 The propose response makes the engine visible without extra work for the UI: the strategy used and WHY (no history / same goal / goal
-changed), the evidence per food (cases, support, backing rules with prevalence and lift), the validation report with the forced changes,
-and the gap assessment when one was logged."""
+changed), the evidence per food (how many of the k cases contain it and how many distinct clients they are, its support, and the backing
+rules with prevalence and lift), the validation report with the forced changes, and the gap assessment when one was logged.
+
+RNF-08 lives in `_corpus_ids_to_counts`: no corpus identifier is serialized. The evidence is a RECUENTO, not a list of pseudonyms."""
 from fastapi import APIRouter, HTTPException, Query, Response, status
 
 from finalprosports.application.exception.client.client_not_found_error import ClientNotFoundError
@@ -32,10 +34,39 @@ def _fill_names(d: dict, names: dict[int, str]) -> None:
             f["canonical_name"] = names[f["food_id"]]
 
 
+def _corpus_ids_to_counts(d: dict, parameters: dict) -> None:
+    """RNF-08, EN EL ORIGEN: los identificadores del corpus no se serializan.
+
+    ``proposal_to_dict`` es el mismo mapeador que escribe ``saved_diets.payload``, y ahí los ``CLIENTE_NNN::vNN`` SÍ
+    pueden estar: son la trazabilidad de la recuperación y el payload no sale del servidor. Lo que no puede salir es
+    la respuesta HTTP: un identificador en el JSON queda en la pestaña de red y en la memoria del navegador aunque la
+    plantilla no lo pinte, y eso ya es exponerlo. Así que la proyección se hace aquí, en la frontera REST, y se hace
+    una sola vez para las tres rutas que la usan (propose, save, get).
+
+    Lo que la interfaz necesita de verdad es el RECUENTO: cuántos de los k casos respaldan el alimento y cuántos
+    clientes distintos son (ocho versiones de un cliente no respaldan lo mismo que ocho clientes). Nada identificable.
+    """
+    ids = d.pop("retrieved_case_ids", None) or ()
+    # Una dieta GUARDADA se reconstruye de lo que el navegador devolvió, que ya no lleva ids: su recuento es
+    # `k_effective`, que viaja en `parameters` y vuelve intacto.
+    d["retrieved_cases"] = len(ids) or int(parameters.get("k_effective") or 0)
+    d["retrieved_clients"] = len({i.split("::", 1)[0] for i in ids})
+    for meal in d.get("meals", []):
+        for group in meal.get("groups", []):
+            for o in group.get("options", []):
+                ev = o.get("evidence")
+                if ev is None:
+                    continue
+                cases = ev.pop("cases", None) or ()
+                ev["case_count"] = len(cases)
+                ev["client_count"] = len({c.split("::", 1)[0] for c in cases})
+
+
 def proposal_response(proposal, gap=None, names: dict[int, str] | None = None) -> dict:
     d = proposal_to_dict(proposal)
     if names:
         _fill_names(d, names)
+    _corpus_ids_to_counts(d, proposal.parameters)
     routing = proposal.parameters.get("routing", "cold_start")
     d["routing"] = {"code": routing, "label": ROUTING_LABELS.get(routing, routing), "strategy": proposal.strategy,
                     "previous_version": proposal.parameters.get("previous_version"), "rotated_items": proposal.parameters.get("rotated_items"),
@@ -111,7 +142,7 @@ class ProposeDietRestAdapter:
         def save(dto: SavedProposalDto):
             pid = current.current_professional_id()
             proposal = proposal_from_dict(dto.model_dump(exclude={"edited", "original"}))
-            original = proposal_from_dict({k: v for k, v in dto.original.items() if k in ("profile", "strategy", "parameters", "retrieved_case_ids", "meals", "notes", "validation")}) if dto.original else None
+            original = proposal_from_dict({k: v for k, v in dto.original.items() if k in ("profile", "strategy", "parameters", "meals", "notes", "validation")}) if dto.original else None
             saved = save_uc.save(pid, proposal, dto.edited, original)
             return {"id": saved["id"], **proposal_response(saved["proposal"], names=names), "client": who(pid, proposal.profile.client_code), "context": context(pid, proposal.profile.client_code),
                     "diff": saved["diff"].as_dict() if saved["diff"] is not None else None}
@@ -152,10 +183,12 @@ class ProposeDietRestAdapter:
         def get_export(diet_id: str, format: str = Query("pdf", pattern="^(pdf|odt)$", description="pdf | odt")):
             return _export(diet_id, format)
 
-        @self.router.post("/similar-cases", summary="Retrieval only: the k most similar cases for an ad-hoc profile")
+        @self.router.post("/similar-cases", summary="Retrieval only: the k most similar cases for an ad-hoc profile (ranked, never identified)")
         def similar(dto: ProfileRequestDto):
+            """RNF-08: the case is identified by its RANK in this query, never by its corpus id. What a consumer of a
+            retrieval-only endpoint needs is which goal came out and how well it scored, and neither needs a name."""
             pid = current.current_professional_id()
             cases = retrieval.retrieve(pid, to_domain(dto, pid), k=dto.k)
             return {"strategy": root.retrieval_strategy,
-                    "cases": [{"rank": c.rank, "diet_id": c.diet.id, "goal": c.diet.goal.value, "score": round(c.score.total, 4),
+                    "cases": [{"rank": c.rank, "goal": c.diet.goal.value, "score": round(c.score.total, 4),
                                "cosine": round(c.score.vector, 4), "attributes": round(c.score.attributes, 4)} for c in cases]}

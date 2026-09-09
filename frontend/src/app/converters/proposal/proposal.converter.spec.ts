@@ -7,7 +7,8 @@ const PROPOSAL: Proposal = {
   profile: { client_code: 'DEMO' },
   strategy: 'case_based_composer',
   parameters: { k: 20 },
-  retrieved_case_ids: ['C::v01'],
+  retrieved_cases: 20,
+  retrieved_clients: 14,
   meals: [
     {
       slot: 'COMIDA',
@@ -38,7 +39,7 @@ const PROPOSAL: Proposal = {
 describe('proposal converter', () => {
   it('keeps only the body keys and attaches the original for the diff', () => {
     const body = toSaveBody(PROPOSAL, PROPOSAL);
-    expect(Object.keys(body).sort()).toEqual(['edited', 'meals', 'notes', 'original', 'parameters', 'profile', 'retrieved_case_ids', 'strategy', 'validation']);
+    expect(Object.keys(body).sort()).toEqual(['edited', 'meals', 'notes', 'original', 'parameters', 'profile', 'strategy', 'validation']);
     expect(body.original && 'routing' in body.original).toBeFalse();
     expect(toSaveBody(PROPOSAL, null).original).toBeNull();
   });
@@ -49,6 +50,6 @@ describe('proposal converter', () => {
     expect(PROPOSAL.meals[0].groups[0].options[0].quantity).toBe(200);
     expect(itemCount(PROPOSAL.meals)).toBe(3);
     expect(isProfessionalAddition(newOption(9, 'x', null, ''))).toBeTrue();
-    expect(isProfessionalAddition({ ...newOption(9, 'x', null, ''), evidence: { support: 0.5, cases: ['C::v01'], rules: [] } })).toBeFalse();
+    expect(isProfessionalAddition({ ...newOption(9, 'x', null, ''), evidence: { support: 0.5, case_count: 1, client_count: 1, rules: [] } })).toBeFalse();
   });
 });

@@ -17,16 +17,20 @@ const PROPOSAL: Proposal = {
   client: { id: 'c1', full_name: 'Nora Ficticia Demo' },
   strategy: 'case_based_composer',
   parameters: { k: 20, plausibility: { applied: true, changes: [] } },
-  retrieved_case_ids: ['C::v01', 'C::v02'],
+  retrieved_cases: 2,
+  retrieved_clients: 1,
   meals: [
     {
       slot: 'COMIDA',
       groups: [
-        { position: 0, options: [{ ...newOption(1, 'pollo', 200, 'g'), evidence: { support: 0.9, cases: ['C::v01', 'C::v02'], rules: [] } }] },
-        { position: 1, options: [{ ...newOption(2, 'arroz', 150, 'g'), evidence: { support: 0.5, cases: ['C::v01'], rules: [] } }] },
+        { position: 0, options: [{ ...newOption(1, 'pollo', 200, 'g'), evidence: { support: 0.9, case_count: 2, client_count: 1, rules: [] } }] },
+        { position: 1, options: [{ ...newOption(2, 'arroz', 150, 'g'), evidence: { support: 0.5, case_count: 1, client_count: 1, rules: [] } }] },
       ],
     },
-    { slot: 'CENA', groups: [{ position: 0, options: [{ ...newOption(3, 'salmón', 180, 'g'), evidence: { support: 0.6, cases: ['C::v02'], rules: [] } }] }] },
+    {
+      slot: 'CENA',
+      groups: [{ position: 0, options: [{ ...newOption(3, 'salmón', 180, 'g'), evidence: { support: 0.6, case_count: 1, client_count: 1, rules: [] } }] }],
+    },
   ],
   notes: ['Beber 2,5 litros de agua'],
   validation: { compliance: 0.9, rules: [{ rule_id: 'agua_2.5L', applicable: true, satisfied: true, enforced: false }], forced_changes: [], warnings: [] },

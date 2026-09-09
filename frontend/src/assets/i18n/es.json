@@ -222,6 +222,7 @@
     "additionEvidence": "Añadido por el profesional: sin evidencia en los casos recuperados.",
     "rotatedEvidence": "Rotado: sustituye a una especie de la versión anterior dentro de su misma familia.",
     "keptEvidence": "Mantenido de la versión anterior.",
+    "distinctClients": "clientes distintos entre esos casos",
     "rulesBacking": "Reglas que lo respaldan",
     "noRules": "Ninguna regla específica: entra por frecuencia en los casos.",
     "validation": "Validación",

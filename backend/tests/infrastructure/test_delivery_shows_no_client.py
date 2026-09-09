@@ -28,15 +28,17 @@ Tres comprobaciones, y cada una responde a una pregunta distinta:
    propósito (`make demo`), así que se SALTA con el motivo escrito… salvo con `FPS_DELIVERY_CHECK=1`, que es como
    la lanza `make verify-delivery`: entonces falla. Una puerta que se salta cuando importa no es una puerta.
 
-Lo que SÍ sale, declarado y no escondido: la API devuelve identificadores seudónimos de CASO (`CLIENTE_NNN::vNN`)
-en `retrieved_case_ids` y en `/similar-cases`. Son la trazabilidad de la propuesta y no llevan ni nombre, ni perfil,
-ni lectura, ni parámetro. La INTERFAZ no los pinta: muestra su número (`retrieved_case_ids.length`) y no llama a
-`/similar-cases` (comprobado en `test_the_ui_never_renders_a_corpus_identifier`).
+RNF-08: la API NO devuelve ningún identificador del corpus. Los `CLIENTE_NNN::vNN` no salen del servidor — ni en el
+campo de trazabilidad de la propuesta, ni en la evidencia por alimento, ni en `/similar-cases`. Lo que la interfaz
+recibe es el RECUENTO: cuántos de los k casos respaldan cada alimento y cuántos clientes distintos son
+(comprobado sobre el JSON servido, en profundidad y por la FORMA de la cadena, en
+`test_the_ui_never_renders_a_corpus_identifier`).
 
 Ninguna aserción imprime un nombre: cuando encuentra uno lo nombra por la columna y por su longitud, nunca por su
 contenido (regla 1 de las reglas de manejo de datos personales de la memoria).
 """
 import os
+import re
 
 import pytest
 
@@ -187,25 +189,190 @@ def test_the_delivered_database_lists_no_client(ctx):
                         f"(el corpus se queda: {_count(root, CORPUS_SQL['perfiles de caso'], pid)} perfiles de caso intactos)")
 
 
-def test_the_ui_never_renders_a_corpus_identifier():
-    """Los identificadores de caso viajan en el payload; la INTERFAZ solo pinta su número. Comprobado sobre el HTML.
+# ---------------------------------------------------------------------------------------------------------------- #
+# RNF-08 · LA FORMA, NO EL NOMBRE DEL CAMPO.                                                                        #
+# El control anterior vigilaba UN campo (`retrieved_case_ids`) y excluía a propósito el de la evidencia por          #
+# alimento, así que pasaba en verde mientras la pantalla pintaba 312 identificadores del corpus por otra ruta.       #
+# El criterio ahora es la FORMA de la cadena, se busque donde se busque: cualquier identificador con forma de caso   #
+# del corpus, en cualquier profundidad de cualquier respuesta de la API, la rompe — incluida una cuarta ruta que     #
+# nadie ha escrito todavía.                                                                                         #
+# ---------------------------------------------------------------------------------------------------------------- #
+UUID_RE = re.compile(r"^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$", re.IGNORECASE)
+# `EJEMPLO_007`: un seudónimo del corpus es un token en mayúsculas con sufijo numérico. La cartera no tiene ninguno:
+# su clave es un UUID y su nombre es un nombre.
+PSEUDONYM_RE = re.compile(r"[A-Z][A-Z_]{2,}_\d{1,6}")
+TOKEN_RE = re.compile(r"[A-Za-z0-9_:.-]+")
 
-    Es la mitad de la respuesta que no se puede dar desde la API: `retrieved_case_ids` sale de `/diets/propose`, y lo
-    que decide si el usuario ve un seudónimo o no es qué hace la plantilla con esa lista. Si alguien cambia
-    `retrieved_case_ids.length` por `retrieved_case_ids` en una plantilla, esto falla.
+
+def corpus_shaped(value: str) -> str | None:
+    """El token con forma de identificador del corpus que haya en `value`, o None.
+
+    Dos formas, y ninguna mira el nombre del campo:
+      · `algo::algo` cuyo lado izquierdo NO es un UUID — un id de caso (`EJEMPLO_007::v03`). Las dietas de la
+        cartera son `<uuid>::eNN` y sus versiones `<uuid>::vNN`, así que el UUID es lo que las distingue.
+      · un seudónimo suelto (`EJEMPLO_007`), que es como viaja un código de caso sin versión.
     """
-    import re
+    for token in TOKEN_RE.findall(value):
+        if "::" in token and not UUID_RE.match(token.split("::", 1)[0]):
+            return token
+        if PSEUDONYM_RE.fullmatch(token):
+            return token
+    return None
+
+
+def _strings(node, path: str = "$"):
+    """Recorrido en PROFUNDIDAD: toda cadena del JSON con la ruta en la que aparece."""
+    if isinstance(node, str):
+        yield path, node
+    elif isinstance(node, dict):
+        for k, v in node.items():
+            yield from _strings(v, f"{path}.{k}")
+    elif isinstance(node, list):
+        for i, v in enumerate(node):
+            yield from _strings(v, f"{path}[{i}]")
+
+
+def _offences(label: str, payload) -> list[str]:
+    out = []
+    for path, s in _strings(payload):
+        hit = corpus_shaped(s)
+        if hit:
+            out.append(f"{label} {path} -> {hit}")
+    return out
+
+
+def test_the_criterion_is_not_vacuous():
+    """Si el criterio no dispara con un identificador del corpus puesto a mano, el control no vale nada.
+
+    Los seudonimos de aqui son INVENTADOS (`EJEMPLO_NNN`), no codigos del corpus, y da igual: el criterio es la
+    FORMA de la cadena. Poner uno real seria publicar informacion de una persona en el arbol publico -- un
+    `::v03` dice que esa persona tiene al menos tres dietas, que es justo lo que el montador se molesta en
+    borrar de los `.md` que publica (`tools/build_public_tree.sh`, paso 3d)."""
+    assert corpus_shaped("EJEMPLO_007::v03") == "EJEMPLO_007::v03"
+    assert corpus_shaped("EJEMPLO_012") == "EJEMPLO_012"
+    assert corpus_shaped('["EJEMPLO_031::v02", "EJEMPLO_115::v01"]') == "EJEMPLO_031::v02"
+    # ...y si dispara con lo que la aplicación sí puede servir, tampoco: sería un control que obliga a relajarlo.
+    for legitimo in ("a6f0f814-f446-5944-b614-ce6a7b257008", "a6f0f814-f446-5944-b614-ce6a7b257008::e01",
+                     "a6f0f814-f446-5944-b614-ce6a7b257008::v02", "volumen_masa", "agua_2.5L", "ayuno_16h",
+                     "contains_gluten", "0a9e9dc9d703e8d5", "1990-06-15", "60 gr Avena", "Nora Ficticia Demo",
+                     "cold_start", "case_based_composer", "copy_top1_empty_consensus"):
+        assert corpus_shaped(legitimo) is None, legitimo
+
+
+@pytest.fixture
+def cliente_propio(ctx):
+    """Un cliente de cartera REGISTRADO POR LA PRUEBA y borrado al salir, con su dieta guardada.
+
+    Las dos comprobaciones que siguen necesitan una propuesta de verdad, y la primera versión las apoyó en los
+    clientes de `make demo`. Eso las ataba al sembrador, y en un clon limpio la suite de infraestructura corre ANTES
+    de `make demo`: la cartera está vacía, y el control fallaba por falta de datos, que es la otra manera de no
+    comprobar nada (puerta de clon limpio, 2026-09-09). Así que se registra el suyo por la API, ejercita las DOS
+    ramas del enrutado — arranque en frío y, con la versión guardada por delante, rotación — y lo borra en el
+    `finally`, que es lo que la puerta de entrega exige: la cartera no puede quedar con un cliente que no es demo.
+    """
+    root, pid, client = ctx
+    r = client.post("/api/v1/clients", json={"full_name": "Prueba Rnf08 Demo", "birth_date": "1992-03-11", "sex": "M",
+                                             "height_cm": 178, "activity_level": 4, "goal": "volumen_masa"})
+    assert r.status_code == 201, r.text
+    cid = r.json()["id"]
+    try:
+        yield client, cid, "volumen_masa"
+    finally:
+        root.client_repository.delete(pid, cid)             # arrastra dietas guardadas, expediente, báscula y analítica
+        assert root.client_repository.get(pid, cid) is None
+
+
+def test_the_ui_never_renders_a_corpus_identifier(ctx, cliente_propio):
+    """RNF-08 · NINGUNA respuesta de la API lleva un identificador del corpus, en ninguna parte de su JSON.
+
+    No basta con que la plantilla no lo pinte: un payload que lo contiene lo expone igual — queda en la pestaña de
+    red y en la memoria del navegador. Así que se comprueba en el ORIGEN, sobre el JSON servido, recorrido en
+    profundidad, y el criterio es la forma de la cadena (`corpus_shaped`) y no el nombre del campo.
+    """
+    client, cid, goal = cliente_propio
+    ofensas: list[str] = []
+    ofensas += _offences("GET /clients", client.get("/api/v1/clients").json())
+    ofensas += _offences("GET /rules", client.get("/api/v1/rules").json())
+    ofensas += _offences("GET /catalog/foods", client.get("/api/v1/catalog/foods").json())
+    # retrieval puro: es la ruta que devolvía `diet_id` por diseño
+    ofensas += _offences("POST /similar-cases", client.post("/api/v1/similar-cases",
+                                                            json={"sex": "M", "age": 30, "height_cm": 178, "activity_level": 4,
+                                                                  "goal": "volumen_masa", "k": 8}).json())
+    for ruta in ("/api/v1/clients/{c}", "/api/v1/clients/{c}/record", "/api/v1/clients/{c}/lab-results",
+                 "/api/v1/clients/{c}/body-composition", "/api/v1/clients/{c}/diets"):
+        r = client.get(ruta.format(c=cid))
+        assert r.status_code == 200, (ruta, r.status_code)
+        ofensas += _offences(f"GET {ruta}", r.json())
+
+    # (a) arranque en frío: el consenso de los k casos, que es donde vivía la evidencia por alimento
+    r = client.post("/api/v1/diets/propose", json={"client_id": cid, "goal": goal})
+    assert r.status_code == 200, r.text
+    fria = r.json()
+    assert fria["routing"]["previous_version"] is None, "el cliente acaba de registrarse: no puede tener versión anterior"
+    ofensas += _offences("POST /diets/propose (arranque en frío)", fria)
+
+    # (b) la vuelta completa: guardar lo que el navegador puede devolver y volver a leerlo
+    cuerpo = {k: v for k, v in fria.items() if k in ("profile", "strategy", "parameters", "meals", "notes", "validation")}
+    r = client.post("/api/v1/diets", json={**cuerpo, "edited": False, "original": cuerpo})
+    assert r.status_code == 201, r.text
+    guardada = r.json()
+    ofensas += _offences("POST /diets", guardada)
+    r = client.get(f"/api/v1/diets/{guardada['id']}")
+    assert r.status_code == 200, r.text
+    ofensas += _offences("GET /diets/{id}", r.json())
+
+    # (c) y la otra rama del enrutado: con la versión guardada por delante, la propuesta rota sobre ella
+    r = client.post("/api/v1/diets/propose", json={"client_id": cid, "goal": goal})
+    assert r.status_code == 200, r.text
+    rotada = r.json()
+    assert rotada["routing"]["previous_version"] == guardada["id"], rotada["routing"]
+    ofensas += _offences("POST /diets/propose (rotación)", rotada)
+
+    assert not ofensas, (f"{len(ofensas)} identificadores del corpus en la respuesta de la API "
+                         f"(el navegador los recibe, se pinten o no):\n  - " + "\n  - ".join(ofensas[:15]))
+
+
+def test_the_explainability_panel_survives_the_scrub(ctx, cliente_propio):
+    """RF-09 · quitar los identificadores no deja al panel sin qué explicar.
+
+    El requisito pide, PARA CADA ALIMENTO, tres cosas: en cuántos de los casos recuperados aparecía, qué reglas lo
+    respaldan y su respaldo. Las tres siguen en la respuesta después de la proyección — la primera pasa de ser una
+    lista de seudónimos a ser el número, que es lo que la pantalla pintaba ya («aparece en 15 de 20 casos»), más
+    cuántos clientes distintos son, que antes no se daba.
+    """
+    client, cid, goal = cliente_propio
+    r = client.post("/api/v1/diets/propose", json={"client_id": cid, "goal": goal})
+    assert r.status_code == 200, r.text
+    p = r.json()
+
+    assert isinstance(p["retrieved_cases"], int) and p["retrieved_cases"] > 0                     # el total sobre el que se cuenta
+    assert isinstance(p["retrieved_clients"], int) and p["retrieved_clients"] > 0
+    opciones = [o for m in p["meals"] for g in m["groups"] for o in g["options"]]
+    assert opciones, "una propuesta sin alimentos no prueba nada del panel"
+    for o in opciones:
+        ev = o["evidence"]
+        assert set(ev) == {"support", "case_count", "client_count", "rules"}, ev.keys()
+        assert isinstance(ev["case_count"], int) and 0 <= ev["case_count"] <= p["retrieved_cases"]
+        assert 0 <= ev["client_count"] <= ev["case_count"]                                        # un caso, un cliente como máximo
+        assert isinstance(ev["support"], (int, float)) and 0.0 <= ev["support"] <= 1.0
+        assert isinstance(ev["rules"], list)
+    # y el panel tiene algo que decir de verdad: hay alimentos respaldados por casos y alimentos respaldados por reglas
+    assert any(o["evidence"]["case_count"] > 0 for o in opciones), "ningún alimento cita un caso: el panel quedaría vacío"
+    assert any(o["evidence"]["rules"] for o in opciones), "ninguna regla respalda a ningún alimento"
+    assert p["validation"] and p["validation"]["compliance"] is not None
+
+
+def test_no_template_reaches_for_a_case_identifier():
+    """La otra mitad: los dos campos que llevaban los ids ya no existen, y ninguna plantilla puede volver a pedirlos."""
     from pathlib import Path
     web = Path(__file__).resolve().parents[3] / "frontend" / "src" / "app"
     if not web.exists():
         pytest.skip("frontend no presente")
     ofensas = []
-    for html in web.rglob("*.html"):
-        for n, line in enumerate(html.read_text(encoding="utf-8").splitlines(), 1):
-            for m in re.finditer(r"retrieved_case_ids(\.\w+)?", line):
-                if m.group(1) not in (".length",):
-                    ofensas.append(f"{html.name}:{n}")
-    assert not ofensas, f"una plantilla usa los identificadores de caso, no su número: {ofensas}"
-    # y nadie llama a /similar-cases desde el frontend
-    llamadas = [f.name for f in web.rglob("*.ts") if "similar-cases" in f.read_text(encoding="utf-8")]
-    assert not llamadas, f"el frontend llama a /similar-cases, que devuelve identificadores del corpus: {llamadas}"
+    for f in list(web.rglob("*.html")) + list(web.rglob("*.ts")):
+        for n, line in enumerate(f.read_text(encoding="utf-8").splitlines(), 1):
+            for campo in ("retrieved_case_ids", "evidence.cases", "similar-cases"):
+                if campo in line:
+                    ofensas.append(f"{f.name}:{n} ({campo})")
+    assert not ofensas, ("el frontal pide un campo que la API ya no sirve, o llama al endpoint de recuperación "
+                        f"pura: {ofensas}")

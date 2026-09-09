@@ -7,9 +7,15 @@ export interface RuleSupport {
   prevalence: number | null;
   lift: number | null;
 }
+/**
+ * RNF-08: the evidence of a food is a COUNT, never a list of corpus identifiers. `case_count` is how many of the k
+ * retrieved cases contain it in this slot and `client_count` how many distinct clients those cases are (eight versions
+ * of one client do not back a food the way eight clients do). The API does not serialise the identifiers at all.
+ */
 export interface Evidence {
   support: number;
-  cases: string[];
+  case_count: number;
+  client_count: number;
   rules: RuleSupport[];
 }
 export interface ProposedOption {
@@ -108,7 +114,9 @@ export interface Proposal {
   profile: Record<string, unknown>;
   strategy: string;
   parameters: Record<string, unknown> & { plausibility?: { applied: boolean; changes: PlausibilityChange[] } };
-  retrieved_case_ids: string[];
+  /** How many cases the retrieval used, and how many distinct clients they are (RNF-08: the ids stay in the server). */
+  retrieved_cases: number;
+  retrieved_clients: number;
   meals: ProposedMeal[];
   notes: string[];
   validation: Validation | null;
@@ -126,7 +134,6 @@ export interface SaveDietBody {
   profile: Record<string, unknown>;
   strategy: string;
   parameters: Record<string, unknown>;
-  retrieved_case_ids: string[];
   meals: ProposedMeal[];
   notes: string[];
   validation: Validation | null;
